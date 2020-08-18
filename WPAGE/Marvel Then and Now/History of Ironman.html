@@ -1,0 +1,171 @@
+<HTML>
+<HEAD>
+<TITLE>Iron Man</TITLE>
+<STYLE Type="Text/CSS">
+BODY {scrollbar-arrow-color: yellow; scrollbar-base-color: white; scrollbar-dark-shadow: red; scrollbar-track-color: yellow; scrollbar-face-color: red;} 
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript1.2">
+<!-- Distributed by http://www.hypergurl.com
+
+//Circling text trail by Tim Tilton http://www.tempermedia.com
+
+
+// Place your message here
+var msg='Welcome To The History of Ironman!!!';
+
+var font='Verdana,Arial';
+var size=3; // up to seven
+var color='yellow';
+
+// This is not the rotation speed, its the reaction speed, keep low!
+// Set this to 1 for just plain rotation w/out drag
+var speed=0.5;
+
+// This is the rotation speed, set it negative if you want
+// it to spin clockwise
+var rotation=0.015;
+
+// Alter no nothing below!
+//---------------------------------------------------
+
+var ns=(document.layers);
+var ie=(document.all);
+var msg=msg.split('');
+var n=msg.length; 
+var a=size*15;
+var currStep=0;
+var ymouse=0;
+var xmouse=0;
+var scrll=0;
+var props="<font face="+font+" size="+size+" color="+color+">";
+
+if (ie)
+window.pageYOffset=0
+
+// writes the message
+	if (ns){
+	for (i=0; i < n; i++)
+		document.write('<layer name="nsmsg'+i+'" top=0 left=0 height='+a+' width='+a+'><center>'+props+msg[i]+'</font></center></layer>');
+	}
+	if (ie){
+		document.write('<div id="outer" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+		for (i=0; i < n; i++)
+			document.write('<div id="iemsg" style="position:absolute;top:0px;left:0;height:'+a+';width:'+a+';text-align:center;font-weight:regular;cursor:default">'+props+msg[i]+'</font></div>');
+			document.write('</div></div>');
+	}
+	(ns)?window.captureEvents(Event.MOUSEMOVE):0;
+
+function Mouse(evnt){
+	ymouse = (ns)?evnt.pageY+20-(window.pageYOffset):event.y; // y-position
+	xmouse = (ns)?evnt.pageX+20:event.x-20; // x-position
+}
+
+if (ns||ie)
+(ns)?window.onMouseMove=Mouse:document.onmousemove=Mouse;
+y=new Array();
+x=new Array();
+Y=new Array();
+X=new Array();
+for (i=0; i < n; i++){
+	y[i]=0;
+	x[i]=0;
+	Y[i]=0;
+	X[i]=0;
+}
+
+function makecircle(){ // rotation properties
+if (ie) outer.style.top=document.body.scrollTop;
+currStep-=rotation;
+	for (i=0; i < n; i++){ // makes the circle
+		var d=(ns)?document.layers['nsmsg'+i]:iemsg[i].style;
+		d.top=y[i]+a*Math.sin((currStep+i*1)/3.8)+window.pageYOffset-15;
+		d.left=x[i]+a*Math.cos((currStep+i*1)/3.8)*2; // remove *2 for just a plain circle, not oval
+	}
+}
+
+function drag(){ // makes the resistance
+	scrll=(ns)?window.pageYOffset:0;
+	y[0]=Math.round(Y[0]+=((ymouse)-Y[0])*speed);
+	x[0]=Math.round(X[0]+=((xmouse)-X[0])*speed);
+	for (var i=1; i < n; i++){
+		y[i]=Math.round(Y[i]+=(y[i-1]-Y[i])*speed);
+		x[i]=Math.round(X[i]+=(x[i-1]-X[i])*speed);
+
+	}
+	makecircle();
+	// not rotation speed, leave at zero
+	setTimeout('drag()',10);
+}
+if (ns||ie)window.onload=drag;
+
+// -->
+</SCRIPT>
+</HEAD>
+<BODY Bgcolor="Black" Text="White">
+<CENTER><B><Font color="Lavander" Size="5" Face="Verdana">History of </Font></B><br><IMG src="ironmanlogo.gif"></CENTER><br>
+<P align="justify">Iron Man, like knights of old, is identified by the armor he wears. The best-dressed of the Marvel heroes, he
+has changed his look frequently since his debut in 1963, but he can afford to: the man who wears the suits (and designs them) 
+is wealthy inventor Tony Stark. So the man make the clothes, but do the clothes make the man?</P>
+<P align="justify">Not only does Tony Stark have no super powers of his own, but the armor that gives him strength was also 
+created to keep his damaged heart beating; he could not survive without his iron shell. Eventually his cardiac condition was 
+corrected by a heart transplant, and a later that left him paralyzed was repaired with a microchip. So even without his high-tech 
+costume Tony Stark is a mixture of man and machine, what science fiction writers call a cyborg.</P>
+<IMG src="ironman2.gif" align="left">
+<P align="justify">Exactly who Stark might be without his armor is difficult to say. Writer Stan Lee and artist Don Heck initially 
+presented him as a suave playboy, part of a long tradition of rich men who have become masked heroes. Yet unlike most of his 
+predecessors, Stark got his income from a specific source: he manufactured and sold weapons. This was a slightly sinister 
+occupation, despite its undoubted utility, and there were hints that Stark was ambivalent about his role.  When his business 
+was menaced by a hostile takeover in a 1979 storyline, he collapsed into alcoholism, and a friend was obliged to take over 
+temporarily the job of Iron Man. So the suit an function without Stark, but can Stark function without the suit?</P>
+<P align="justify">Stark publicly proclaims that Iron Man is his bodyguard, and to avoid prosecution for his own violence he once 
+announced that the man in the suit had died and been replaced. He might have been talking about himself, since he is empowered 
+by machinery and sustained by another man's heart. Beneath his polished veneer, Iron Man may be the most troubled of Marvel's 
+heroes, forever fighting to prove that his armor is not hollow.</P>
+<Font face="Verdana" size="4" Color="Yellow">A Hero With a Heart</Font>
+<P align="justify">Seeming to pluck his ideas out the air Stan Lee showed something like vision when he chose the country of 
+Vietnam as the setting for the origin of Iron Man (Tale of Suspense #39, March 1963). In 1963 comparatively few American 
+were interested in Vietnam, but bfore long the war being waged there would become the most crucial and controversial event 
+of the 1960s. For Lee, the setting may have been merely expedient, enabling him to introduce the Communist villains he still 
+employed with some regularity. Later, he had second thoughts about his somewhat simplistic treatment of the Asian nation's 
+problems. yet Iron Man was a character whose very premise demanded political intrigue.</P>
+<P align="justify">The protagonist of the tale, Tony Stark, is a millionaire inventor and arms manufacturer who lead a seemingly 
+charmed life, but who soon develops a problem, as did all of Marvel's best characters. While testing experimental transistor 
+powered weapons in the jungles of Vietnam, Stark ins injured by an exploding booby trap and is captured by the enemy. Fatally 
+injured by a pice f shrapnel that is working its way toward his heart, Stark is ordered to spend his last days inventing new 
+armaments for the Communists; instead he constructs a suit of transistorized armor that also serves as a pacemaker to keep 
+his heart beating. As Iron Man, he conquers his foes and manages to escape, but he is doomed to remain at least partially 
+encased in metal until the day he dies. Life as a Marvel hero was never a bed of roses.</P>
+<IMG src="ironman.gif" align="right">
+<P align="justify">Don Heck had the honor of drawing the initial Iron Man story, a rare opportunity in the days when Jack Kirby 
+Seemed to get first crack at just about everything. And, in fact Kirby did have a hand in Iron Man. "He designed the costume," 
+says Heck, "because he was doing the cover. The covers were always done first. But I created the look of the characters, like 
+Tony Stark and his secretary Peeper Potts." Over all, it was Heck's solid craftsmanship that set Iron Man on the road to success.</P>
+<P align="justify">Meanwhile, heck was introduced to the intricacies of The Marvel Method of comic book creation. When he was 
+first handed a story synopsis, Heck told editor Lee: "You've got to be kidding. I'm not used to that. I'm used to a full script." Eventually 
+Heck adjusted, and gradually came to enjoy the chance to contribute to the stories, but the remembers that some artists "said the hell 
+with it and left." Some top talents in the field passed in and out of the company quickly because they never adapted to Lee's revolutionary 
+method. "Stan would call me up," says Heck, "and he'd give me the first couple of pages over the phone, and the last page. I'd say, 
+'What about the stuff in between?' and he'd say, 'Fill it in.'"</P>
+<P align="justify">Heck's solid background in war comics helped him get Iron Man off to a good start, but he wasn't entirely pleased 
+with the character's armor despite his boundless admeration for Jack Kirby. " He was terrific," syas Heck. "He was always willing to 
+help somebody or tell you how to do something.  And as for the super heroes, the main reason they existed was Jack Kirby. He used 
+to call them 'the guys in long underwear.'"</P>
+<P align="justify">Kirby's original Iron Man suit, realistically bulky given the circumstances under which Tony Stark had to build it, soon 
+changed from forbidding gray to gold. Later, it was streamlined into a red-and-gold design by Steve Ditko. Perhaps because the suit is a 
+machine, many artists have been tempted to tinker with it, and over the years, Iron Man's costumed appearance has changed more 
+often than any other super hero.</P>
+<IMG src="ironman3.gif" align="left">
+<P align="justify">Iron Man, a wealthy patriot with a war injury, might have reminded some readers of John F. Kennedy, whose 
+inauguration in1961 had infused the United States with a feeling of adventurous optimism. Stan Lee has never compared J.F.K. to 
+Iron Man, but he has speculated that the Kennedy era's spirit provided the ideal atmosphere for the introduction of new super heroes. 
+Kennedy's assassination in 1963 ended the era all too quickly, and signaled the advent of the turmoil that would characterize the rest of 
+the decade. Kennedy had encouraged the buildup of American troops in Vietnam, and as the war there became more deadly and more 
+divisive, Iron Man began to look even more like a symbol of The United States: he went halfway around the world to fight for what he 
+thought was right, and he came home with a wound that seemed as if it would never heal.</P>
+
+
+
+
+
+
+

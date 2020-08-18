@@ -1,0 +1,296 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>From beeps to soundscapes — designing mobile game audio</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="Game_User_Experience_Library_v1_1_en_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='Game_User_Experience_Library_v1_1_en.css'>");}
+//-->
+</script>
+<style>
+<!--
+A:visited { color:#800080; }
+A:link { color:#0000ff; }
+-->
+</style><style type="text/css">
+<!--
+h2.whs1 { margin-left:0pt; }
+ol.whs2 { list-style:disc; }
+ul.whs3 { list-style:disc; }
+img_whs4 { width:13px; height:7px; border-style:none; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "h2.whs1 {margin-left:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+</head>
+<body lang="EN-US"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Articles\nFrom beeps to soundscapes — designing mobile game audio");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("Game_User_Experience_Library_v1_1_en.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h2 class="whs1">From beeps to soundscapes — designing mobile 
+ game audio</h2>
+
+<p class=BodyHeading1>Learning from the past</p>
+
+<p class=BodyCopy>No game would be complete without sounds — they are an 
+ essential part of any game. Video game audio started as simple beeps in 
+ the 70s and progressed to CD-quality sounds and licensed music titles 
+ in the 90s. More recently, video game music has evolved towards interactive 
+ music and rhythm games such as the Dance Dance Revolution. Currently, 
+ the history of game audio is repeating itself on mobile platforms. While 
+ only a few years ago mobile games produced simple beeps, they are now 
+ catching up to the level of audio on video games. </p>
+
+<p class=BodyCopy>A good (and bad) example of mobile audio is the Tamagotchi. 
+ It soon became infamous for its annoying, beeping sounds that often occurred 
+ in inappropriate places — many schools around the world even banned the 
+ virtual pets. Nonetheless, they became wildly popular. But problems aside, 
+ this article handles some user experience issues in designing audio for 
+ mobile games and takes a quick look at where mobile game audio is heading.</p>
+
+<p class=BodyHeading1>Do’s and don’ts of mobile game audio</p>
+
+<p class=BodyCopy>The two key issues for any positive user experience are 
+ mobility and context of use. There are places where it is inappropriate 
+ to make any sounds, and there are other situations where it improves the 
+ game experience. Moreover, players may switch the context during the game; 
+ they should, for example, be able to turn sounds on after leaving a bus, 
+ without restarting the game. Background noises, conversations with others, 
+ and audio accessories such as headset usage also affect the overall experience. 
+ </p>
+
+<p class=InlineBodyHeading2>Remember mobile context:</p>
+
+<ol type="disc" class="whs2">
+	
+	<ul type="disc" class="whs3">
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">The 
+ game should be playable without the sounds.</p></li>
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">Allow 
+ silent starting of games. <br>
+		If intro music is implemented, there must be a way to switch it 
+ off. Prompt for sound settings at the start of the game.</p></li>
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">Sound 
+ settings should comply with the device profile — even if the user changes 
+ the device profile during the game.</p></li>
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">Adjust 
+ the level of audio to be appropriate in each supported device.</p></li>
+	</ul>
+</ol>
+
+<p class=BodyCopy>An additional issue is the mobile device’s capabilities. 
+ For example, the small screen size is a key limitation in mobile games, 
+ but audio is not. Especially Symbian C++ game sounds are getting to the 
+ point where the possibilities are greater than limitations. </p>
+
+<p class=BodyCopy>From a cognitive point of view, the auditory channel 
+ is an excellent way to relay information and give feedback to the player. 
+ While the background music can be used to enhance the emotions and mood 
+ of the game, a specific sound effect can be used to communicate meaningful 
+ game information. </p>
+
+<p class=InlineBodyHeading2>Do not:</p>
+
+<ol type="disc" class="whs2">
+	
+	<ul type="disc" class="whs3">
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">Include 
+ loud or high-pitched sounds.</p></li>
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">Have 
+ sounds on as the default.</p></li>
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">Use 
+ sounds that are similar to ring tones and alert tones.</p></li>
+	</ul>
+</ol>
+
+<p class=InlineBodyHeading2>Do:</p>
+
+<ol type="disc" class="whs2">
+	
+	<ul type="disc" class="whs3">
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">Give 
+ the player full control over background music and sound effects. <br>
+		Allow setting the volume close to silent. On some devices this 
+ has to be done by setting the volume of sound files lower, or mixing the 
+ sound yourself, instead of just relying on the audio APIs.</p></li>
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">Use 
+ sound to provide meaningful feedback.</p></li>
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">Use 
+ sounds to communicate what happens in the game outside the mobile device 
+ screen.</p></li>
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">Use 
+ sounds to get the player’s attention.</p></li>
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">Have 
+ a reasonable default setting for sound volume for each device type.</p></li>
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">Use 
+ unique sound — the sounds must not be confused with one another. Negative 
+ events should produce negative sounds and positive events should produce 
+ positive sounds.</p></li>
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">Allow 
+ the user to change sound settings during the game.</p></li>
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">Use 
+ background music to elicit emotions and game moods.</p></li>
+	</ul>
+</ol>
+
+<p class=InlineBodyHeading2>In multiplayer games, use sounds to:</p>
+
+<ol type="disc" class="whs2">
+	
+	<ul type="disc" class="whs3">
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">Give 
+ feedback about other players’ actions. </p></li>
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">Build 
+ tension by indicating who is about to win or lose.</p></li>
+		
+		<li class=kadov-p-Cbodytextbullets><p class=bodytextbullets
+												style="margin-left: 0in;">Relieve 
+ tension by indicating who has won or lost.</p></li>
+	</ul>
+</ol>
+
+<p class=BodyCopy>In Bluetooth multiplayer games, background music should 
+ be synchronized for all players in order to avoid an auditory mess. It 
+ is also noteworthy that in Bluetooth games sounds from one player’s device 
+ relay information to other players as well. Sad sounds from the opponent’s 
+ game may be happy for the winning user. </p>
+
+<p class=BodyHeading1>The future of mobile game audio</p>
+
+<p class=BodyCopy>Interesting topics include audio games — games that are 
+ based purely on audio. Some current audio-based games and resources are 
+ available at the <span style="text-underline: none;"><a href="http://www.audiogames.net/"
+														target=_blank>www.audiogames.net</a></span> 
+ <img src="Game_User_Experience_Library_v1_1_en_files/image014.gif" width="13px" height="7px" border="0" class="img_whs4">&nbsp;Web site. These games are mainly designed for the 
+ blind, but they offer many interesting insights for mobile game developers 
+ too. </p>
+
+<p class=BodyCopy>One interesting audio-focused pilot project has already 
+ been started. The “Songs of North” is a multiplayer location-based game 
+ that uses sounds to communicate what is happening in the game world, so 
+ that players don’t always need to have visual information on the game 
+ world. More information can be found at <span style="text-underline: none;"><a 
+ href="http://www.uta.fi/hyper/projektit/mogame/english.html"
+	target=_blank>www.uta.fi/hyper/projektit/mogame/english.html</a></span> 
+ <img src="Game_User_Experience_Library_v1_1_en_files/image014.gif" width="13px" height="7px" border="0" class="img_whs4">.</p>
+
+<p class=BodyCopy>Another interesting future direction is games that are 
+ affected by the music. The basic idea is that a music file, such as an 
+ MP3 file or a ring tone, is analyzed, and the game events and characteristics 
+ are affected by the selected background music. Some prototype implementations 
+ have already been developed by the Nokia Research Center. More information 
+ can be found from the Game Developers Conference session notes at <span 
+ style="text-underline: none;"><a href="http://www.cmpevents.com/sessions/GD/NovelWays.doc"
+									target=_blank>www.cmpevents.com/sessions/GD/NovelWays.doc</a></span> 
+ <img src="Game_User_Experience_Library_v1_1_en_files/image014.gif" width="13px" height="7px" border="0" class="img_whs4">&nbsp;(J. Holm, K. Havukainen, and J. Arrasvuori). According 
+ to the article, “Even a very trivial game can be made interesting if the 
+ player can affect the difficulty level by changing the background music 
+ to his/her favorite tune. When the music has control over some of the 
+ actions on the screen, a player may end up saying: ‘I passed the game 
+ with Queen’s Show Must Go On, but Steep’s Rearrange is far too difficult 
+ for me!”</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

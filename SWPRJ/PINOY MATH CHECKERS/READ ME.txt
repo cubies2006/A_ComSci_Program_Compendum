@@ -1,0 +1,31 @@
+READ ME
+
+
+Copy the the entire Pinoy Math Checkers folder to your desired destination.Then follow the next steps to run the program.
+
+A. Database
+	1. Install MS SQL Server 2000
+	2. Restore database and name it 'Damath'
+
+B. Server
+	1. Install jdk-1_5_0_07-nb-5_0-win-ml 
+	2. Run the server by clicking the shortcut icon 'PMC Server'
+
+C. Client
+	1. Install Flash Player for tutorial
+	2. Copy the MyCommandButton.ocx and paste it to this directory C:\WINDOWS\system32
+	3. Open the Binary folder and open 'config' in Notepad. 
+	4. Type the IP address of the server and save it.
+	5. Open 'settings' in Notepad and again type the IP address of the server and save it.
+	6. Open all DLL files inside 'Binary' folder (Connectivity, Logic and md5) using            C:\Windows\System32\regsvr32.exe 
+	7. Now, you can run the game by clicking the shortcut icon 'Pinoy Math Checkers'
+
+
+
+NOTE:
+* The list of top 14 highest total scores is updated every 10-15 minutes. 
+* If you want to open the game 'Pinoy Math Checkers' in PC Server, just skip nos. 3-5 and proceed to no.5
+* If you have any question regarding the system, just contact me (Richelle)
+
+	email address: rlm_141@yahoo.com
+  

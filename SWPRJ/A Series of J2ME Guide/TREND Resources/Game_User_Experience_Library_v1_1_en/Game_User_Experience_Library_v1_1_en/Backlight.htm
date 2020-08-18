@@ -1,0 +1,144 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Backlight</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="Game_User_Experience_Library_v1_1_en_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='Game_User_Experience_Library_v1_1_en.css'>");}
+//-->
+</script>
+<style>
+<!--
+A:visited { color:#800080; }
+A:link { color:#0000ff; }
+-->
+</style><style type="text/css">
+<!--
+ol.whs1 { list-style:disc; }
+ul.whs2 { list-style:disc; }
+img_whs3 { width:26px; height:15px; border-style:none; }
+img_whs4 { width:34px; height:15px; border-style:none; }
+img_whs5 { width:54px; height:15px; border-style:none; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+</head>
+<body lang="EN-US"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Usability guidelines\nGame experience\nBacklight");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("Game_User_Experience_Library_v1_1_en.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h2>Backlight</h2>
+
+<p class=BodyCopy>Many devices turn the light off after 15 seconds of idle 
+ time to save battery. This is a relatively short time in some games. If 
+ the backlight goes off during a game, it is difficult for the player to 
+ see what to do. If the user presses a key to get the light back, the application 
+ will react to it just like any other key press, and it might affect the 
+ game. In Series 40 3rd Edition and S60 3rd Edition devices, it is possible 
+ to control the backlight with the Backlight API.</p>
+
+<ol type="disc" class="whs1">
+	
+	<ul type="disc" class="whs2">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">In the 
+ help, tell which button is safe to push if the backlight goes off during 
+ the game. When communicated as one of the controls, this information takes 
+ the least space and text. For example, 4=left, 6=right, #=backlight.</p></li>
+	</ul>
+</ol>
+
+<p class=InlineBodyHeading><span style="border: none #000000 1.0pt; padding: 0pt;"><span 
+ style="font-size: 0pt;
+		color: #000000;
+		background: #000000;
+		layout-grid-mode: line;"><font color=black ><span class=msoChangeProp>&nbsp;</span></font></span></span><span 
+ lang=EN-GB><img src="Game_User_Experience_Library_v1_1_en_files/image016.jpg" width="26px" height="15px" border="0" class="img_whs3"></span></p>
+
+<ol type="disc" class="whs1">
+	
+	<ul type="disc" class="whs2">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">In some 
+ <b>MIDP 2.0</b> devices there is no way for applications to control the 
+ status of the backlight.</p></li>
+	</ul>
+</ol>
+
+<p class=InlineBodyHeading><img src="Game_User_Experience_Library_v1_1_en_files/image019.gif" alt="*" width="34px" height="15px" border="0" class="img_whs4">&nbsp;&nbsp;&nbsp; <img src="Game_User_Experience_Library_v1_1_en_files/image017.gif" width="54px" height="15px" border="0" class="img_whs5"></p>
+
+<ol type="disc" class="whs1">
+	
+	<ul type="disc" class="whs2">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">The game 
+ should keep the backlight on by calling the <span class=CodeinText>User::ResetInactivityTime();</span> 
+ method every ten seconds. To save battery power, approximately a minute 
+ should go by before the application allows the device to turn the lights 
+ off.</p></li>
+	</ul>
+</ol>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

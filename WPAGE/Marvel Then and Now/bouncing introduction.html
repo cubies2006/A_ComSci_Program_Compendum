@@ -1,0 +1,203 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Language" content="en-us">
+
+<script language="JavaScript">
+<!-- Ball Intro - Kurt Grigg http://website.lineone.net/~kurt.grigg/javascript -->
+<!-- Distributed by http://www.hypergurl.com
+
+//Change link url here to the page you want to go to on click.
+goTo="main home page.html";
+
+//Size of stationary ball. This is a transparent gif.
+F=150;
+
+//Moving ball sizes. Add to array for more balls, min 2.
+S=new Array(90,20,30,40,50)
+
+//Speeds.
+min=10;
+max=20;
+
+//Alter nothing past here. Co-ordinates will be lost!
+n6=(document.getElementById&&!document.all);
+n4=(document.layers);
+ie=(document.all);
+
+d=(n4||ie)?'document.':'document.getElementById("';
+a=(n4||n6)?'':'all.';
+n6r=(n6)?'")':'';
+s=(n4)?'':'.style'; 
+TY=0;
+TX=0;
+I=new Array();
+P=new Array();
+HT=new Array();
+HY=new Array();
+HX=new Array();
+Y=new Array();
+X=new Array();
+A=new Array();
+PY=new Array();
+PX=new Array();
+CR=new Array();
+D=new Array();
+B=new Array();
+SP=new Array();
+SP2=new Array();
+Q=new Array();
+CY=new Array();
+CX=new Array();
+IL=new Array();
+ILS=new Array();
+TD=new Array();
+SH=new Array();
+L=new Array();
+p1x=new Array();
+p1y=new Array();
+p2x=new Array();
+p2y=new Array();
+CY=new Array();
+CX=new Array();
+FDS=new Array();
+DS=new Array();
+
+if (ie){
+document.write("<a href='"+goTo+"'><img src='marvelbackgroundlogo.jpg' border='0' height='"+F+"' width='"+F+"' id='still' style='position:absolute;top:300px;left:438px;width:"+F+";height:"+F+"'></a>");
+}
+if (n6){
+document.write("<div id='still' style='position:absolute;top:179px;left:438px;width:'"+F+"';height:'"+F+"';cursor:move'>");
+document.write("<a href='"+goTo+"'><img src='marvelbackgroundlogo.jpg' border='0' height='"+F+"' width='"+F+"'></a>");
+document.write("</div>");
+}
+if (n4){
+document.write("<layer name='still' top=200 left=450>");
+document.write("<a href='"+goTo+"'><img src='marvelbackgroundlogo.jpg' border='0' height='"+F+"' width='"+F+"'></a>");
+document.write("</layer>");
+}
+for (i=0; i < S.length; i++){
+if (ie){
+document.write("<img id='move"+i+"' src='BallA.gif' height='"+S[i]+"' width='"+S[i]+"' style='position:absolute;top:0px;left:0px;height:"+S[i]+";width:"+S[i]+"'>");
+}
+if (n6){
+document.write("<div id='move"+i+"' style='position:absolute;top:0px;left:0px;height:"+S[i]+";width:"+S[i]+"'>");
+document.write("<img src='BallA.gif' height='"+S[i]+"' width='"+S[i]+"'>");
+document.write("</div>");
+}
+if (n4){
+document.write("<layer name='move"+i+"' top=0 left=0>");
+document.write("<img src='BallA.gif' height='"+S[i]+"' width='"+S[i]+"'>");
+document.write("</layer>");
+}
+
+Y[i]=10;
+X[i]=10;
+D[i]=30;
+SP[i]=min+Math.floor(Math.random()*max);
+SP2[i]=SP[i];
+}
+
+
+function Move(){
+H=(n4||n6)?window.innerHeight:document.body.clientHeight;
+W=(n4||n6)?window.innerWidth:document.body.clientWidth;
+T1=eval(d+a+"still"+n6r+s);
+R1=F/2;
+T1.top=H/2-R1;
+T1.left=W/2-R1;
+//center of stationary ball!! 
+TY=(ie)?T1.pixelTop+F/2:parseInt(T1.top)+F/2;
+TX=(ie)?T1.pixelLeft+F/2:parseInt(T1.left)+F/2;
+for (i=0; i < S.length; i++){
+T2=eval(d+a+"move"+i+n6r+s);
+R2=S[i]/2;
+CR[i]=R2+R1;
+//center of moving balls!!
+PY[i]=(ie)?T2.pixelTop+S[i]/2:parseInt(T2.top)+S[i]/2;
+PX[i]=(ie)?T2.pixelLeft+S[i]/2:parseInt(T2.left)+S[i]/2;
+//Angle between center of balls and still!!
+ay=PY[i]-TY;
+ax=PX[i]-TX;
+A[i]=Math.atan2(ay,ax)*180/Math.PI;
+if (A[i] < 0) A[i]+=360;
+//Shortest distance between centre's of stationary and moving balls!!
+dx=TY-PY[i];
+dy=TX-PX[i];
+DS[i]=Math.sqrt(dx*dx+dy*dy);
+FDS[i] = Math.floor(DS[i]);
+Q[i]=(FDS[i]-CR[i]);
+if (Q[i] < 0) Q[i]=0;
+//The following is based on a standard line/circle intersection routine. 
+B[i]=R1/R2+1;
+CY[i]=PY[i]-(DS[i]/B[i])*Math.sin(A[i]*Math.PI/180);
+CX[i]=PX[i]-(DS[i]/B[i])*Math.cos(A[i]*Math.PI/180);
+//Line start point!! 
+p1y[i]=CY[i];
+p1x[i]=CX[i];
+//Line end point!!
+p2y[i]=CY[i]+1*Math.sin(D[i]*Math.PI/180);
+p2x[i]=CX[i]+1*Math.cos(D[i]*Math.PI/180);
+L[i]=(p2x[i]-p1x[i])*(p2x[i]-p1x[i])+(p2y[i]-p1y[i])*(p2y[i]-p1y[i]);
+//Travelling towards if SH is less than zero.
+SH[i]=2*((p2x[i]-p1x[i])*(p1x[i]-TX)+(p2y[i]-p1y[i])*(p1y[i]-TY));
+TD[i]=TX*TX+TY*TY+p1x[i]*p1x[i]+p1y[i]*p1y[i]-2*(TX*p1x[i]+TY*p1y[i])-R1*R1;//OK!
+//Contact possible if IL is greater than zero!
+IL[i]=SH[i]*SH[i]-4*L[i]*TD[i];
+ILS[i]=Math.sqrt(IL[i]);
+HT[i]=(-SH[i]-ILS[i])/(2*L[i]);
+HX[i]=p1x[i]+HT[i]*(p2x[i]-p1x[i]);//Contact point x.
+HY[i]=p1y[i]+HT[i]*(p2y[i]-p1y[i]);//Contact point y.  
+//Required angle.
+a1= HY[i]-TY;
+a2= HX[i]-TX;
+I[i]=Math.atan2(a1,a2)*180/Math.PI;
+if (I[i] < 0) I[i]+=360;
+//Distance to impact point.
+d1=HY[i]-CY[i];
+d2=HX[i]-CX[i];
+P[i]=Math.floor(Math.sqrt(d1*d1+d2*d2)*2);
+//Error adjust. For this situation only!
+if (Q[i] <= 0) Q[i]=0;
+if (SP[i] == 0) Q[i]=0;
+E=(R1 > R2)?SP[i]*2:SP[i];
+
+if ((P[i] <= E) && (IL[i] > 1) && (SH[i] < 0)){
+SP[i]=0;
+Y[i]=(TY-R2)+CR[i]*Math.sin(I[i]*Math.PI/180);
+X[i]=(TX-R2)+CR[i]*Math.cos(I[i]*Math.PI/180);
+}
+if ((Q[i] == 0) && (SH[i] <= -1)){
+D[i]=A[i]*2-180-D[i];
+SP[i]=SP2[i];
+}
+if (D[i] < 0) D[i]+=360;
+Y[i]+=SP[i]*Math.sin(D[i]*Math.PI/180);
+X[i]+=SP[i]*Math.cos(D[i]*Math.PI/180);
+VB=180-D[i];
+HB=0-D[i];
+//Edge rebounds!
+if(Y[i]<1){Y[i]=1;D[i]=HB}  
+if(Y[i]+S[i]>H){Y[i]=H-S[i];D[i]=HB}  
+if(X[i]<1){X[i]=1;D[i]=VB}      
+if(X[i]+S[i]>W){X[i]=W-S[i];D[i]=VB} 
+//Corner rebounds! not necessary but looks nice.
+if((Y[i]<1)&&(X[i]<1)){Y[i]=1;X[i]=1;D[i]=45}
+if((Y[i]<1)&&(X[i]+S[i]>W)){Y[i]=1;X[i]=W-S[i];D[i]=135}
+if((Y[i]+S[i]>H)&&(X[i]<1)){Y[i]=H-S[i];X[i]=1;D[i]=315}
+if((Y[i]+S[i]>H)&&(X[i]+S[i]>W)){Y[i]=H-S[i];X[i]=W-S[i];D[i]=225}
+T2.top=Y[i];
+T2.left=X[i];
+}//end loop!
+setTimeout('Move()',20);
+}
+//-->
+</script>
+</HEAD>
+<BODY onload="Move();" bgcolor="#000080">
+<p align="center"><font color="#FF9933" face="Georgia Ref" size="4">You are 
+about to enter the MARVELOUS World of MARVEL</font></p>
+<p align="center"><font face="Arial" color="#FFFFFF">Click the image below to 
+enter the site</font></p>
+<p align="center">&nbsp;</p>
+</BODY>
+</HTML>

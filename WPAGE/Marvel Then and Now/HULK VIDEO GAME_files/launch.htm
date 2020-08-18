@@ -1,0 +1,613 @@
+
+
+
+// variables for embeded player		
+var ifilm_partner1_win = null;
+var r1_error_win = null;
+var cch;
+
+// Company/Skin configuration
+var cid = "1";
+var sid = "1";
+var refsite = "";
+
+var up = null;
+if (getIFILMChip("ifilm_session","up") != null && getIFILMChip("ifilm_session","up") != "") {
+	up = getIFILMChip("ifilm_session","up"); 
+} else {
+	up = -2;
+}
+
+function launchPref() {
+//	movieArgs = "/media/sapext/sniffer/sniffer.jsp?pinfo=fid:2400440|bw:200";
+	fid = "2400440";
+	bw = "200";
+
+	var size = null;
+	var wndWidth = null;
+	var wndHeight = null;
+	var query = "";
+	var strPage = location.toString();
+	var nLen = strPage.length;
+	if (strPage.indexOf("?") != -1) {
+		query = strPage.substring(strPage.indexOf("?") + 1,nLen);	
+	}	
+	if (query != "") {
+		var lst = query.split("&");
+		for (var x = 0; x < lst.length; x++) {
+			var item1data = lst[x];
+			var item1 = item1data.split("=");
+			var itemValue = unescape(item1[1]);
+			itemValue = itemValue.replace("+", " ");
+			if (typeof itemValue == "undefined") 
+				itemValue = "";
+			eval("var " + item1[0] + " = '" + itemValue + "';");
+		}
+	}
+
+	if (up == null) {
+		up = -1;
+	} else {
+		up++;
+		setIFILMChip("ifilm_session","up", up, "", "/");
+	}
+
+	movieArgs = "/media/sniffer?stage=sniffer&pinfo=ap:-1|up:" + up + "|ipt:ifilm|gpt:1|fid:" + fid + "|bw:" + bw + "|refsite:" + refsite + "|sid:" + sid + "|cid:" + cid + "|cch:" + cch + "|gl1:" + geolocation1 + "|gl2:" + geolocation2 + "|gl3:" + geolocation3;
+
+	var resizeable;		
+	if (is_mac || is_nav || is_aol) {
+		resizeable = "resizable=no"
+	} else {
+		resizeable = "resizable=yes"
+	}
+	if (is_win && is_nav && is_major == 4) {
+		size = 'width=670,height=410';
+		wndWidth = 670;
+		wndHeight = 410;				
+	} else if (is_win && is_ie) {
+		size = 'width=690,height=424';
+		wndWidth = 690;
+		wndHeight = 424;								
+	} else if (is_mac && is_ie) {
+		size = 'width=680,height=390';
+		wndWidth = 680;
+		wndHeight = 390;								
+	} else if (is_mac && is_nav) {
+		size = 'width=676,height=386';
+		wndWidth = 676;
+		wndHeight = 386;	
+	} else if (is_mac && is_safari) {
+		size = 'width=626,height=354';
+		wndWidth = 626;
+		wndHeight = 354;					
+	} else {
+		size = 'width=684,height=416';
+		wndWidth = 684;
+		wndHeight = 416;				
+	}		
+	
+	if (movieArgs != "") {
+		if ( ifilm_partner1_win && !ifilm_partner1_win.closed ) {
+			ifilm_partner1_win.location.href = movieArgs;
+			setTimeout("ifilm_partner1_win.focus();",500);
+		} else {
+			ifilm_partner1_win = window.open(movieArgs,'IFILM_PARTNER','menubar=no,' + resizeable + ',scrollbars=no,toolbar=no,' + size);
+			setTimeout("ifilm_partner1_win.focus();",500);
+		}
+	}
+}
+
+// Need to modify to get parameters and call new playVideo
+function getMovieQueryString() {
+	var size = null;
+	var wndWidth = null;
+	var wndHeight = null;
+	var value = "";
+	var query = location.search.substring(1);
+	var pos = query.indexOf("movie=");
+	if (pos != -1) {
+		// path of movie args
+		var moviePath = query.substr(6);
+				
+		var fid = "";
+		var mt = "";
+		var bw = "";
+		var refsite = "";
+		var rcid = "";
+		var prn = "";
+		var it = "";
+		var pop = "";
+		var lid = "";	
+		var cch = "";
+		var cr = "";
+		var ec = "";
+		var nLen = moviePath.length
+		var moviePathQuery = moviePath.substring(moviePath.indexOf("?") + 1,nLen);	
+		if (moviePathQuery != "") {
+			var lst = moviePathQuery.split("&");
+			for (var x = 0; x < lst.length; x++) {
+				var item1data = lst[x];
+				var item1 = item1data.split("=");
+				var itemValue = unescape(item1[1]);
+				itemValue = itemValue.replace("+", " ");
+				if (typeof itemValue == "undefined") 
+					itemValue = "";
+				eval("var " + item1[0] + " = '" + itemValue + "';");
+			}				
+		}
+				
+		// popup emebeded player
+		if ( moviePath != "" ) {
+			if (up == null) {
+				up = -1;
+			} else {
+				up++;
+				setIFILMChip("ifilm_session","up", up, "", "/");
+			}		
+		
+			movieArgs = "/media/sniffer?stage=setpref&hidUserPrefPlayer=" + mt + "&pinfo=ap:-1|up:" + up + "|ipt:ifilm|gpt:1|fid:" + fid + "|mt:" + mt + "|bw:" + bw + "|refsite:" + refsite + "|rcid:" + rcid + "|prn:" + prn + "|it:" + it + "|pop:" + pop + "|lid:" + lid + "|sid:" + sid + "|cid:" + cid + "|cch:" + cch + "|cr:" + cr + "|gl1:" + geolocation1 + "|gl2:" + geolocation2 + "|gl3:" + geolocation3;
+			var resizeable;		
+			if (is_mac || is_nav || is_aol) {
+				resizeable = "resizable=no"
+			} else {
+				resizeable = "resizable=yes"
+			}
+			// SAP Extended
+			if (is_win && is_nav && is_major == 4) {
+				size = 'width=670,height=410';
+				wndWidth = 670;
+				wndHeight = 410;				
+			} else if (is_ie) {
+				size = 'width=670,height=412';
+				wndWidth = 670;
+				wndHeight = 412;								
+			} else {
+				size = 'width=670,height=412';
+				wndWidth = 670;
+				wndHeight = 412;				
+			}			
+			
+			if (movieArgs != "") {
+				if ( ifilm_partner1_win && !ifilm_partner1_win.closed ) {
+					ifilm_partner1_win.location.href = movieArgs;
+					setTimeout("ifilm_partner1_win.focus();",500);
+				} else {
+					ifilm_partner1_win = window.open(movieArgs,'IFILM_PARTNER','menubar=no,' + resizeable + ',scrollbars=no,toolbar=no,' + size);
+					setTimeout("ifilm_partner1_win.focus();",500);
+				}
+			}
+		}					
+	}		
+}	
+
+getMovieQueryString();
+
+
+function isRealOne() {
+	RealOneInst = 'undetermined';
+	var hasMacPlugin = false;
+	
+	if (is_nav) {
+		IERPCtl = 0;
+	}
+	
+	if (navigator.plugins) {
+		if ((navigator.userAgent.charAt(8)) >= ('3')) {
+			var nPlayerInstalled=2;
+			var i=0;
+			while (navigator.plugins[i]){
+				if ((navigator.plugins[i].name) == 'RealOne Player Version Plugin'){
+					nPlayerInstalled=1;
+					szPlayerVersion=navigator.plugins[i].description;
+					break;
+				}
+				if (navigator.plugins[i].name.indexOf("RealPlayer") != -1 && navigator.plugins[i].name.indexOf("Mac") != -1) {
+					hasMacPlugin = true;
+				}
+				i++;
+			}
+//			alert("hasMacPlugin:" + hasMacPlugin);
+			if ( nPlayerInstalled == 2 ){
+//				alert("document.IERPCtl:" + document.IERPCtl);
+				var nRPVersion = IERPCtl.RealPlayerVersion;
+//				alert("nRPVersion 1:" + nRPVersion);
+				if (nRPVersion == "undefined" || nRPVersion == null) {
+					if (is_safari) {
+						if (hasMacPlugin) {							
+							// Has RealPlayer Mac
+							nPlayerInstalled=1;	
+						} else {							
+							nPlayerInstalled=2;
+						}	
+					} else {
+//						alert("document.RealPlayer:" + document.RealPlayer);
+						if (document.RealPlayer == "undefined") {					
+//							alert("not installed because can't find document.RealPlayer");
+							if (hasMacPlugin) {							
+								// Has RealPlayer Mac
+								nPlayerInstalled=3;	
+							} else {							
+								nPlayerInstalled=2;
+							}	
+						} else {
+//							alert("typeof(document.RealPlayer.GetVersionInfo):" + typeof(document.RealPlayer.GetVersionInfo));
+							if (typeof(document.RealPlayer.GetVersionInfo) == "undefined") {
+								if (hasMacPlugin) {							
+									// Has RealPlayer Mac
+									nPlayerInstalled=3;	
+								} else {							
+									nPlayerInstalled=2;
+								}	
+							} else {
+								rp = document.RealPlayer.GetVersionInfo();
+								//list obtained from page 31 in embedded player extended functionality guide
+								if ((rp.indexOf("6.0.8") != -1 && rp.split(".")[3] > 1024) || (rp.split(".")[2] > 8)) {
+									nPlayerInstalled=1;
+								} else {
+									nPlayerInstalled=2;
+								}	
+							}
+						}						
+					}
+				} else {
+					nPlayerInstalled=1;
+				}	
+			}
+		}       
+		if (nPlayerInstalled == 1){
+			if (agt.indexOf('(r1 ') != -1) {
+				RealOneInst = 'using';
+			} else {
+				RealOneInst = 'installed';  
+			}
+		} else if (nPlayerInstalled == 2){
+			RealOneInst = 'notinstalled';
+		} else if (nPlayerInstalled == 3){
+			RealOneInst = 'undetermined';
+		} else {
+			RealOneInst = 'undetermined';		
+		}		
+	} else {
+		RealOneInst = 'undetermined';
+	}
+	return RealOneInst;     
+}
+
+var checkbrowser;
+if (!(is_win && is_ie) && getIFILMChip("ifilm_session","r1") != null && getIFILMChip("ifilm_session","r1") != "") {
+	checkbrowser = getIFILMChip("ifilm_session","r1"); 
+} else {
+	checkbrowser = isRealOne(); 
+//	var exp = new Date();
+//	fixIFILMDate(exp);
+//	exp.setTime(exp.getTime() + 365 * 24 * 60 * 60 * 1000);	
+	setIFILMChip("ifilm_session","r1", checkbrowser, "", "/");
+}	
+
+
+
+function playVideo(fid, bw, secure, lid, cr, refsite) {
+	// Advars
+//	adVars = getAdVars();
+//	var cch = "";
+//	var fid = "";
+	var mt = "";
+//	var bw = "";
+	var rcid = "";
+	var prn = "";
+	var it = "";
+	var pop = "";
+//	var lid = "";	
+
+	// Company/Skin configuration
+	var cid = "1";
+	var sid = "1";
+	var ec = "";
+
+	var strUrl = "";
+
+	if (typeof cch == "undefined") {
+		cch = "";
+	}	
+	
+	if (typeof refsite == "undefined") {
+		refsite = "";
+	}
+	
+	var query = "";
+	var strPage = location.toString();
+	var nLen = strPage.length;
+	if (strPage.indexOf("?") != -1) {
+		query = strPage.substring(strPage.indexOf("?") + 1,nLen);	
+	}	
+	if (query != "") {
+		var lst = query.split("&");
+		for (var x = 0; x < lst.length; x++) {
+			var item1data = lst[x];
+			var item1 = item1data.split("=");
+			var itemValue = unescape(item1[1]);
+			itemValue = itemValue.replace("+", " ");
+			if (typeof itemValue == "undefined") 
+				itemValue = "";
+			eval("var " + item1[0] + " = '" + itemValue + "';");
+		}
+	}	
+	
+
+	var realOneSuperPass = getFeatureValue(0);
+	var bad = true;
+	if (realOneSuperPass != null) {
+		if (realOneSuperPass) {
+			bad = false;
+		}
+	}
+	if (secure == 'yes') {
+		// Load Real Player Specific Harvest Tags
+		//if (typeof(sitepage) != "undefined") {
+		//window.harvestRealFrame.location.href='/global/includes/sitetracking/defaulttag_realplayer.jsp';
+		//}
+		if (is_aol){
+			// version for AOL browsers
+			r1_error_win = window.open("/media/components/sniffer/error/aol.jsp?cid=1&sid=1",'r1popup','width=250,height=300,toolbar=no,scrollbars=no,resizable=no,directories=no,location=no,status=no,menubar=no');
+			setTimeout("r1_error_win.focus();",500);
+		} else {	
+			if (bw == "56" || bw == "200") {
+				bw = "MULTI";
+			}
+			if (secure == "yes") {
+				mt = "ros";
+			} else {
+				mt = "ro";
+			}					
+			ipt = "realone";
+			
+//			var pinfo = "ipt:" + ipt + "|fid:" + fid + "|mt:" + mt + "|bw:" + bw + "|refsite:" + refsite + "|rcid:" + rcid + "|prn:" + prn + "|it:" + it + "|pop:" + pop + "|lid:" + lid + "|sid:" + sid + "|cid:" + cid + "|cch:" + cch + "|cr:" + cr + "|gl1:" + geolocation1 + "|gl2:" + geolocation2 + "|gl3:" + geolocation3;
+//			strUrl = "/media/getmetafile.ram?pinfo=" + pinfo;	
+
+			var pinfo = "ipt:" + ipt + "|fid:" + fid + "|mt:" + mt + "|bw:" + bw + "|refsite:" + refsite + "|rcid:" + rcid + "|prn:" + prn + "|it:" + it + "|pop:" + pop + "|lid:" + lid + "|sid:" + sid + "|cid:" + cid + "|cch:" + cch + "|cr:" + cr + "|gl1:" + geolocation1 + "|gl2:" + geolocation2 + "|gl3:" + geolocation3 + "|plf:r1ram|bad:" + bad;
+			strUrl = "/media/getplaylist.ram?pinfo=" + pinfo;				
+			
+			if (checkbrowser == 'using') {
+				 window.location = (strUrl);  // here's where people using R1 will go
+			}
+			if (checkbrowser == 'installed') {  // here's where people with R1 will go
+				 window.location = (strUrl);
+			}
+			if (checkbrowser =='undetermined' || checkbrowser =='notinstalled') {
+				// now the tricky part : people we're not sure about yet
+				numPlugins = navigator.plugins.length;
+				oldRealPlayer = 'false';
+				for (i = 0; i < numPlugins; i++) {
+					plugin = navigator.plugins[i];
+					if (plugin.name.substring(0,10)=="RealPlayer") {
+						oldRealPlayer = 'true';
+					}
+				}	
+			}		
+			if (is_mac) {
+				// Need to expand sniffing for OSX since 
+				// they now have a working RealONE player
+				if (oldRealPlayer == 'true'){
+					window.location = (strUrl);
+				} else {
+					if (secure == 'yes') {
+						r1_error_win = window.open('/media/components/sniffer/error/ifilmplus.jsp?cid=1&sid=1','r1popup','width=400,height=320,toolbar=no,scrollbars=no,resizable=no,directories=no,location=no,status=no,menubar=no');
+						setTimeout("r1_error_win.focus();",500);
+					}
+					if (secure == 'no') {
+						r1_error_win = window.open('/media/components/sniffer/error/free.jsp?cid=1&sid=1','r1popup','width=250,height=300,toolbar=no,scrollbars=no,resizable=no,directories=no,location=no,status=no,menubar=no');
+						setTimeout("r1_error_win.focus();",500);
+					}
+				}
+			} else {
+				if (navigator.userAgent.indexOf("95") != -1) {
+					oldRealPlayer = 'false';
+					document.writeln('<script language="VBscript">');
+					document.writeln('on error resume next');
+					document.writeln('RealPlayerG2 = not IsNull(CreateObject("rmocx.RealPlayer G2 Control"))');
+					document.writeln('if (RealPlayerG2) then');
+					document.writeln('oldRealPlayerIE=\"true\"');
+					document.writeln('else');
+					document.writeln('oldRealPlayerIE=\"false\"');
+					document.writeln('end if');
+					document.writeln('</scr' + 'ipt>');
+				
+					numPlugins = navigator.plugins.length;
+					for (i = 0; i < numPlugins; i++) {
+						plugin = navigator.plugins[i];
+						if (plugin.name.substring(0,10)=="RealPlayer") {
+							oldRealPlayer = 'true';
+						}
+					}
+	
+					if (oldRealPlayer == 'true' || oldRealPlayerIE == 'true'){	
+						// Popup the install RealOne error
+						if (secure == 'yes') {
+							r1_error_win = window.open('/media/components/sniffer/error/ifilmplus.jsp?cid=1&sid=1','r1popup','width=400,height=320,toolbar=no,scrollbars=no,resizable=no,directories=no,location=no,status=no,menubar=no');
+							setTimeout("r1_error_win.focus();",500);
+						}
+						if (secure == 'no') {
+							r1_error_win = window.open('/media/components/sniffer/error/free.jsp?cid=1&sid=1','r1popup','width=250,height=300,toolbar=no,scrollbars=no,resizable=no,directories=no,location=no,status=no,menubar=no');
+							setTimeout("r1_error_win.focus();",500);						
+						}	
+					} else {
+						if (secure == 'yes') {
+							r1_error_win = window.open('/media/components/sniffer/error/ifilmplus.jsp?cid=1&sid=1','r1popup','width=400,height=320,toolbar=no,scrollbars=no,resizable=no,directories=no,location=no,status=no,menubar=no');
+							setTimeout("r1_error_win.focus();",500);
+						}	
+						if (secure == 'no') {
+							r1_error_win = window.open('/media/components/sniffer/error/free.jsp?cid=1&sid=1','r1popup','width=250,height=300,toolbar=no,scrollbars=no,resizable=no,directories=no,location=no,status=no,menubar=no');
+							setTimeout("r1_error_win.focus();",500);
+						}
+					}	 	
+				} else {
+					// Windows (non Windows 95)
+					if (is_win) {
+						if (checkbrowser == 'using' || checkbrowser =='installed') {
+							window.location = (strUrl);
+						} else {
+							if (secure == 'yes') {
+								r1_error_win = window.open('/media/components/sniffer/error/ifilmplus.jsp?cid=1&sid=1','r1popup','width=400,height=320,toolbar=no,scrollbars=no,resizable=no,directories=no,location=no,status=no,menubar=no');
+								setTimeout("r1_error_win.focus();",500);
+							}
+							if (secure == 'no') {
+								r1_error_win = window.open('/media/components/sniffer/error/free.jsp?cid=1&sid=1','r1popup','width=250,height=300,toolbar=no,scrollbars=no,resizable=no,directories=no,location=no,status=no,menubar=no');
+								setTimeout("r1_error_win.focus();",500);
+							}
+						} 
+					} else {
+						r1_error_win = window.open('/media/components/sniffer/error/otherOS.jsp?cid=1&sid=1','r1popup','width=250,height=160,toolbar=no,scrollbars=no,resizable=no,directories=no,location=no,status=no,menubar=no');	
+						setTimeout("r1_error_win.focus();",500);
+					}
+				}
+			}
+		}	
+	} else {
+		// Free content
+		if (checkbrowser == 'using') {
+			if (bw == "56" || bw == "200") {
+				bw = "MULTI";
+			}
+			if (secure == "yes") {
+				mt = "ros";
+			} else {
+				mt = "ro";
+			}				
+			ipt = "realone";
+							
+//			var pinfo = "ipt:" + ipt + "|fid:" + fid + "|mt:ro|bw:" + bw + "|refsite:" + refsite + "|rcid:" + rcid + "|prn:" + prn + "|it:" + it + "|pop:" + pop + "|lid:" + lid + "|sid:" + sid + "|cid:" + cid + "|cch:" + cch + "|cr:" + cr + "|gl1:" + geolocation1 + "|gl2:" + geolocation2 + "|gl3:" + geolocation3;
+//			strUrl = "/media/getmetafile.ram?pinfo=" + pinfo;	
+
+			var pinfo = "ipt:" + ipt + "|fid:" + fid + "|mt:ro|bw:" + bw + "|refsite:" + refsite + "|rcid:" + rcid + "|prn:" + prn + "|it:" + it + "|pop:" + pop + "|lid:" + lid + "|sid:" + sid + "|cid:" + cid + "|cch:" + cch + "|cr:" + cr + "|gl1:" + geolocation1 + "|gl2:" + geolocation2 + "|gl3:" + geolocation3 + "|plf:r1ram|bad:" + bad;
+			strUrl = "/media/getplaylist.ram?pinfo=" + pinfo;	
+			
+			window.location = (strUrl);  // here's where people using R1 will go
+		} else {
+		
+	// 		Upsell RealONE here? 
+	//		if (upsell == "yes") {
+	//			redirect to RealMedia
+	//		} else {
+	//			continue to popup IFILM player
+	//		}
+	
+	
+			// Check User Preferences
+			var allcookies = document.cookie;
+			if (allcookies.indexOf("ifilm_sap2_prefs=") == -1) {    
+				// Go through the sniffer
+				//movieArgs = "http://start.real.com/3rd?pid=ifilm_status&url=reallaunch.jsp&pinfo=fid:" + fid + "|mt:" + mt + "|bw:" + bw + "|refsite:" + refsite + "|rcid:" + rcid + "|prn:" + prn + "|it:" + it + "|pop:" + pop + "|lid:" + lid + "|sid:" + sid + "|cid:" + cid + "|" + adVars;
+				//movieArgs = "/media/sapext/sniffer/sniffer.jsp?pinfo=fid:" + fid + "|mt:" + mt + "|bw:" + bw + "|refsite:" + refsite + "|rcid:" + rcid + "|prn:" + prn + "|it:" + it + "|pop:" + pop + "|lid:" + lid + "|sid:" + sid + "|cid:" + cid + "|" + adVars;
+				//movieArgs = "/media/prefcheck?pinfo=ipt:ifilm|gpt:1|fid:" + fid + "|mt:" + mt + "|bw:" + bw + "|refsite:" + refsite + "|rcid:" + rcid + "|prn:" + prn + "|it:" + it + "|pop:" + pop + "|lid:" + lid + "|sid:" + sid + "|cid:" + cid + "|" + adVars;
+				if (up == null) {
+					up = -1;
+				} else {
+					up++;
+					setIFILMChip("ifilm_session","up", up, "", "/");
+				}				
+				movieArgs = "/media/sniffer?stage=prefcheck&pinfo=ap:-1|up:" + up + "|ipt:ifilm|gpt:1|fid:" + fid + "|mt:" + mt + "|bw:" + bw + "|refsite:" + refsite + "|rcid:" + rcid + "|prn:" + prn + "|it:" + it + "|pop:" + pop + "|lid:" + lid + "|sid:" + sid + "|cid:" + cid + "|cch:" + cch + "|cr:" + cr + "|gl1:" + geolocation1 + "|gl2:" + geolocation2 + "|gl3:" + geolocation3;
+			} else {				
+				// User has a preference, picky....
+				var prefs = getIFILMCookie("ifilm_sap2_prefs");
+
+				var arrPrefs = prefs.split("|");
+				
+				var arrPlayerPref = arrPrefs[0].split("=");
+				prefPlayer = arrPlayerPref[1];
+				
+				if (arrPrefs.length > 1) {
+					var arrPlayerType = arrPrefs[1].split("=");
+					ipt = arrPlayerType[1];
+				} else {
+					// Default Player Type
+					ipt = "ifilm";
+				}
+	
+				if ((prefPlayer == "ro" || prefPlayer == "rm") && (bw == "56" || bw == "200")) {
+					bw = "MULTI";
+				}
+				
+				if (prefPlayer == "ro") {
+					// Load Real Player Specific Harvest Tags
+					window.harvestRealFrame.location.href='/global/includes/sitetracking/defaulttag_realplayer.jsp';
+	
+					// RealONE is the users Preferred Player
+					if (secure == "yes") {
+						mt = "ros";
+					} else {
+						mt = "ro";
+					}					
+					ipt = "realone";					
+					
+//					var pinfo = "ipt:" + ipt + "|fid:" + fid + "|mt:" + mt + "|bw:" + bw + "|refsite:" + refsite + "|rcid:" + rcid + "|prn:" + prn + "|it:" + it + "|pop:" + pop + "|lid:" + lid + "|sid:" + sid + "|cid:" + cid + "|cch:" + cch + "|cr:" + cr + "|gl1:" + geolocation1 + "|gl2:" + geolocation2 + "|gl3:" + geolocation3;
+//					strUrl = "/media/getmetafile.ram?pinfo=" + pinfo;
+
+					var pinfo = "ipt:" + ipt + "|fid:" + fid + "|mt:" + mt + "|bw:" + bw + "|refsite:" + refsite + "|rcid:" + rcid + "|prn:" + prn + "|it:" + it + "|pop:" + pop + "|lid:" + lid + "|sid:" + sid + "|cid:" + cid + "|cch:" + cch + "|cr:" + cr + "|gl1:" + geolocation1 + "|gl2:" + geolocation2 + "|gl3:" + geolocation3 + "|plf:r1ram|bad:" + bad;
+					strUrl = "/media/getplaylist.ram?pinfo=" + pinfo;
+					movieArgs = "";
+					window.location = strUrl;
+				} else {
+					if (up == null) {
+						up = -1;
+					} else {
+						up++;
+						setIFILMChip("ifilm_session","up", up, "", "/");
+					}				
+					var pinfo = "ap:-1|up:" + up + "|ipt:" + ipt + "|fid:" + fid + "|mt:" + prefPlayer + "|bw:" + bw + "|refsite:" + refsite + "|rcid:" + rcid + "|prn:" + prn + "|it:" + it + "|pop:" + pop + "|lid:" + lid + "|sid:" + sid + "|cid:" + cid + "|cch:" + cch + "|cr:" + cr + "|gl1:" + geolocation1 + "|gl2:" + geolocation2 + "|gl3:" + geolocation3;
+					//movieArgs = "/media/player3/showistream?ipt=ifilm&fid=" + fid + "&mt=" + prefPlayer + "&bw=" + bw + "&refsite=" + refsite + "&rcid=" + rcid + "&prn=" + prn + "&it=" + it + "&pop=" + pop + "&lid=" + lid + "&sid=" + sid + "&cid=" + cid + "&" + adVars + "&pinfo=" + pinfo;
+					movieArgs = "/media/sniffer?stage=getistream&pinfo=" + pinfo;
+				}				
+			}
+			
+			var resizeable;		
+			var size = null;
+			var wndWidth = null;
+			var wndHeight = null;
+			if (is_mac || is_nav || is_aol) {
+				resizeable = "resizable=no"
+			} else {
+				resizeable = "resizable=yes"
+			}
+			// Exact Insides
+			// Chrome Adjustments
+			// SAP Extended
+			if (is_win && is_nav && is_major == 4) {
+				size = 'width=670,height=410';
+				wndWidth = 670;
+				wndHeight = 410;				
+			} else if (is_win && is_ie) {
+				size = 'width=690,height=424';
+				wndWidth = 690;
+				wndHeight = 424;								
+			} else if (is_mac && is_ie) {
+				size = 'width=680,height=390';
+				wndWidth = 680;
+				wndHeight = 390;								
+			} else if (is_mac && is_nav) {
+				size = 'width=676,height=386';
+				wndWidth = 676;
+				wndHeight = 386;	
+			} else if (is_mac && is_safari) {
+				size = 'width=626,height=354';
+				wndWidth = 626;
+				wndHeight = 354;					
+			} else {
+				size = 'width=684,height=416';
+				wndWidth = 684;
+				wndHeight = 416;				
+			}		
+			
+			if (movieArgs != "") {
+				if ( ifilm_partner1_win && !ifilm_partner1_win.closed ) {
+					ifilm_partner1_win.location.href = movieArgs;
+					setTimeout("ifilm_partner1_win.focus();",500);
+				} else {
+					ifilm_partner1_win = window.open(movieArgs,'IFILM_PARTNER','menubar=no,' + resizeable + ',scrollbars=no,toolbar=no,' + size);
+					setTimeout("ifilm_partner1_win.focus();",500);
+				}
+			}
+
+		}
+	}		
+	
+}	

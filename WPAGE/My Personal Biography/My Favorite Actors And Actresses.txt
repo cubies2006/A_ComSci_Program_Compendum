@@ -1,0 +1,73 @@
+<HTML>
+<HEAD>
+<TITLE>My Favorite Actors And Actresses</TITLE>
+<Bgsound src="Book of Days - Enya.mp3" loop="Infinite">
+<meta http-equiv="Page-Enter" content="BlendTrans(Duration=3.0,Transition=18)">
+</TITLE>
+</HEAD>
+<BODY Background="clouds.jpg" Bgproperties="fixed" vlink="Lavander" text="Black">
+<IMG src="koreaSoC1.gif" align="left">
+<IMG src="koreaSoC1.gif" align="right">
+<Font Color="Teal" face="Garamond" size="7"><CENTER>XXV. My Favorite Actors And Actresses</CENTER></Font>
+<Font face="Bookman Old Style">
+<OL Type="I">
+<li><B>SONG HYE KYO</B>
+<CENTER><IMG src="hye kyo.jpg" height="80%" width="30%">
+<IMG src="song hye kyo.jpg" height="80%" width="60%">
+<IMG src="song hye kyo 2.jpg" height="80%" width="30%">
+<IMG src="song hye kyo 3.jpg" height="80%" width="60%"></CENTER>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;She is my most favorite actress in South Korea that I had known. She is one
+of the most beautiful faces that the world could offer. She was born on February 26, 1982. She played as Jenny on the "Autumn In My Heart". She also appeared
+in "Guardian Angel" being the leading role as Dolly. She has other talents too aside from acting. She can play a piano and figure skating.
+She's a buddhist. She dreamed to become a fashion designer. Just like Won Bin, she is popular because of her physical appearance not merely in
+her acting skills.</P>
+<li><B>PARK YONG HA</B>
+<CENTER><IMG src="park yong ha.jpg" height="80%" width="40%">
+<IMG src="park yong ha 2.jpg" height="80%" width="40%"></CENTER>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Although he is not as popular as Won Bin and Song Seung Heon, but he is one
+of my favorite actors in South Korea. Because his style is not of arrogant type not like the 2 mentioned earlier. He played as Raymond
+in "Winter Sonata". And he also played as Harvey in "Loving You".</P>
+<CENTER><IMG src="friends 2.jpg" height="100%" width="80%"></CENTER>
+<CENTER><Font size="4" face="Comic San MS"><I>* Fukada Kyoko and Won Bin played as Tomoko and Kim Ji-Hoon respectively in the first Korean-Japanese 
+drama series to released entitled "Friends"</I></Font></CENTER>
+<br>
+<li><B>WON BIN</B>
+<CENTER><IMG src="won bin super.gif" height=70%" width="35%"></CENTER>
+<CENTER><IMG src="won_bin.jpg" height="140%" width="50%">
+<IMG src="won bin ultra.jpg" height=140%" width="45%">
+<IMG src="won bin w song hye kyo.jpeg" height=100%" width="75%">
+<IMG src="won bin omega.jpg" height="120%" width="45%"></CENTER>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;He is my most favorite actor in South Korea that I had known. He was born on September 29, 1977. He was voted
+as the "Most Beautiful Man of April 2003". He is not only a popular actor, but he is also athletic. He knows how to play basketball,
+computer games, taekwondo, swimming, motorcycle, and car racing. His favorite pet is puppy. His most favorite word is freedom. His good 
+point was that he has a clear objective in whatever he does. But his bad point was that he's a little stubborn. I'd first known him in "Autumn 
+In My Heart" as Andrew and in "Friends" with Fukada Kyoko as Kim Ji-Hoon. He is popular in terms of his physical appearances,
+but not in his acting career. Before he was discovered, he was only a stylist of Cha In-Pyo.</P>
+<li><B>FUKADA KYOKO</B>
+<CENTER><IMG src="fukada 2.jpg" height="90%" width="55%">
+<IMG src="fukada kyoko 2.jpg" height="90%" width="55%">
+<IMG src="fukada kyoko.jpg" height="90%" width="70%"></CENTER>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;She is my most favorite actress in Japan. She is not only beautiful, but she
+also has a appeal of being sweet. She played as Tomoko in "Friends" with Won Bin. "Friends" is the first ever drama collaboration between Korea and Japan.</P>
+<CENTER><IMG src="endless love 3-2.jpg" height="120%" width="45%"><br><Font size="4" face="Comic San MS"><I>* Son Ye Jin and Song Seung Heon are the leading casts in "Endless Love 3: Summer Scent"</I></Font><br><br></CENTER>
+<li><B>SON YE JIN</B>
+<CENTER><IMG src="yejin.jpg" height="100%" width="45%">
+<IMG src="yejin 2.jpg" height="100%" width="45%">
+<IMG src="yejin 3.jpg" height="100%" width="45%">
+<IMG src="yejin 4.jpg" height="100%" width="45%"></CENTER>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;She is the most common and most nice among the 3 leading actresses in the
+Endless Love series. She is so simple to the fact that she can wear virtually any clothes which is suitable for her. She played as Abbie in "Summer Scent".</P>
+<li><B>SONG SEUNG HEON</B>
+<CENTER><IMG src="song seung heon.jpg" height="80%" width="45%">
+<IMG src="song seung heon 2.jpg" height="80%" width="35%"></CENTER>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;He is one of the most popular actors in South Korea because of his acting skills and his sense of appeal. He was born on
+October 5, 1976. His talents were health club, swimming, and bowling. He played as Johnny in "Autumn In My Heart". He also played as Carlo in "Summer Scent". He started out 
+as a model before venturing to showbizness.</P>
+</OL>
+<CENTER><A HREF="My Favorite Actors And Actresses.html" border="0"><IMG src="Go Top.gif" alt="GO TOP"></A></CENTER>
+<br>
+<CENTER><A HREF="Home_Page.html"><IMG src="Earth6.gif" alt="HOME" border="0" height="15%" width="10%"></A></CENTER>
+<A HREF="My Favorite TV Shows.html"><IMG src="Back.gif" border="0" align="left"></A>
+<A HREF="My Favorite Movies.html"><IMG src="Next.gif" border="0" align="right"></A>
+</BODY>
+</HTML>

@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<script src="function.js"></script>
+		<script language="javascript" type="text/javascript">
+			function ValidateFrom() {
+				if (!notEmpty(document.frm.txtName,"Name required.")) {
+					return false;
+				}
+				return true;
+			}
+		</script>
+		<title>NAME</title>
+	</head>
+	<body>
+		<form name="frm" method="get" action="#" onsubmit="return ValidateFrom()">
+			Name:<input type="text" name="txtName" /><br />
+			<input type="submit" name="Submit" value="Submit" />
+		</form>
+	</body>
+</html>

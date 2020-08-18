@@ -1,0 +1,11 @@
+<HTML>
+<HEAD>
+<TITLE>Rules In Life</TITLE>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=3.0,Transition=12)">
+<Bgsound src="Someone Like Me - Atomic Kitten.mp3" loop="Infinite">
+</HEAD>
+<BODY Background="clouds.jpg" Bgproperties="fixed" Text="Black" link="Teal"  vlink="Lavander">
+<Font Color="Black" face="Garamond" size="10"><CENTER>XVIII. Rules In Life</CENTER></Font>
+<br>
+</BODY>
+</HTML>

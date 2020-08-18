@@ -1,0 +1,104 @@
+<HTML>
+<HEAD>
+<TITLE>Guestbook</TITLE>
+</HEAD>
+<BODY Background="clouds.jpg">
+<FORM Action="mailto:hantaeseuk@yahoo.com" Method="Post">
+<CENTER><Font face="Verdana">Kindly enter the needed information from this guestbook in order for us to know each other!!!</Font></CENTER>
+<P>Name:&nbsp;&nbsp;&nbsp;<Input Type="text" name="visitors_name" size="20" Maxlength="20"></P>
+<P>Age:&nbsp;&nbsp;&nbsp;<Input Type="text" name="visitors_age" size="2" Maxlength="2"></P>
+<P>Gender:&nbsp;&nbsp;&nbsp;<Select name="visitors_gender" size="1">
+<option>Male
+<option>Female
+</Select></P>
+<P>Date of Birth:&nbsp;&nbsp;&nbsp;
+<Select name="month" size="1">
+<option>January
+<option>February
+<option>March
+<option>April
+<option>May
+<option>June
+<option>July
+<option>August
+<option>September
+<option>October
+<option>November
+<option>December
+</Select>
+<Select name="day" size="1">
+<option>1
+<option>2
+<option>3
+<option>4
+<option>5
+<option>6
+<option>7
+<option>8
+<option>9
+<option>10
+<option>11
+<option>12
+<option>13
+<option>14
+<option>15
+<option>16
+<option>17
+<option>18
+<option>19
+<option>20
+<option>21
+<option>22
+<option>23
+<option>24
+<option>25
+<option>26
+<option>27
+<option>28
+<option>29
+<option>30
+<option>31
+</Select>
+<Input type="Text" Size="4" Maxlength="4"></P>
+<P>Address:&nbsp;&nbsp;&nbsp;<Input Type="text" name="visitors_address" size="60" Maxlength="55"></P>
+<P>Civil Status:&nbsp;&nbsp;&nbsp;<Select name="visitors_status" size="1">
+<option>Single
+<option>Married
+</Select></P>
+<P>Country:&nbsp;&nbsp;&nbsp;<Select name="visitors_country" size="1">
+<Option>Australia
+<Option>Canada
+<Option>China
+<Option>France
+<Option>Germany
+<Option>Japan
+<Option Selected>Philippines
+<Option>South Korea
+<Option>United Kingdom
+<Option>United States of America
+</Select>
+<P>E-mail address:&nbsp;&nbsp;&nbsp;<Input type="Text" Name="visitors_email" Size="30" Maxlength="30"></P>
+<P>Alternate E-mail address: (if there is any)&nbsp;&nbsp;&nbsp;<Input type="Text" Name="visitors_email" Size="30" Maxlength="30"></P>
+<P>What are your field of interests?<br>
+<Input type="checkbox" name="interests" value="sports">Sports&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<Input type="checkbox" name="interests" value="computer">Computer</P>
+<Input type="checkbox" name="interests" value="history">History&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<Input type="checkbox" name="interests" value="literature">Literature</P>
+<Input type="checkbox" name="interests" value="sciences">Sciences&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<Input type="checkbox" name="interests" value="music">Music</P>
+<Input type="checkbox" name="interests" value="arts">Arts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<Input type="checkbox" name="interests" value="humanities">Humanities</P>
+<P>What is your rating in my personal website? (5 is the Highest while 1 is the Lowest)<br>
+<Input type="radio" name="rating" value="1">1
+<Input type="radio" name="rating" value="2">2
+<Input type="radio" name="rating" value="3">3
+<Input type="radio" name="rating" value="4">4
+<Input type="radio" name="rating" value="5">5</P>
+<P>Do you have any comments or suggestions regarding to my personal website? Please feel free to speak your mind!!!</P>
+<CENTER><Textarea name="comment" rows="20" cols="50" wrap="soft"></Textarea></CENTER><br><br>
+<CENTER><Input Type="submit" Name="Submit"><Input Type="reset" Name="Start All Over"></CENTER>
+</FORM>
+
+
+
+

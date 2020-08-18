@@ -1,0 +1,125 @@
+<HTML>
+
+<HEAD>
+		<script src="function.js"></script>
+		<script language="javascript">
+			function validateForm()
+			{
+				if (document.frmInfo.chkSubjectHeader.checked)
+				{
+					for (counter=0;counter<document.frmInfo.chkSubjectDetail.length;counter++)
+					{
+						document.frmInfo.chkSubjectDetail[counter].checked=true;
+					}
+				}
+				else
+				{
+					for (counter=0;counter<document.frmInfo.chkSubjectDetail.length;counter++)
+					{
+						document.frmInfo.chkSubjectDetail[counter].checked=false;
+					}
+				}
+			}
+			function validateRemoveItem()
+			{	
+				var remove = false;			
+				for (i = 0; i < document.frmInfo.chkSubjectDetail.length; i++)
+				{
+					if (document.frmInfo.chkSubjectDetail[i].checked)
+					{
+						remove = true;
+					}
+				}
+				if (remove==false)
+				{
+					alert("Please select at least one item to remove.");
+					return false;
+				}
+				else
+				{
+					if (confirm("This will remove the selected subjects on your list. Are you sure you want to continue?"))
+					{
+						document.frmInfo.chkSubjectHeader.checked = false;
+						for (i = 0; i < document.frmInfo.chkSubjectDetail.length; i++)
+						{
+							document.frmInfo.chkSubjectDetail[i].checked = false;
+						}
+						alert("Done");
+						return true;
+					}
+					else
+					{
+						return false;
+					}
+				}
+			}
+		</script>
+		<TITLE>Students Subject Linking</TITLE>
+</HEAD>
+
+<BODY>
+<Form name="frmInfo"method="get" action="#">
+<font face="Verdana">Student # &nbsp;&nbsp;&nbsp;: 20030123456 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Course&nbsp; : BSCS<br>
+Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;: Vincent Dee &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Year&nbsp;&nbsp;&nbsp;&nbsp; : 4</font><br>
+<TABLE border=1 width="633">
+<TR>
+	<TD width="32"><font face="Verdana"><b>
+    <Input type="checkbox" name="chkSubjectHeader" onClick="validateForm()" value="ON"></b></font></TD>
+	<TD align="center" width="79"><b><font face="Verdana">CODE</font></b></TD>
+	<TD align="center" width="194"><b><font face="Verdana">TITLE</font></b></TD>
+	<TD align="center" width="98"><b><font face="Verdana">SECTION</font></b></TD>
+	<TD align="center" width="196"><b><font face="Verdana">SCHEDULE</font></b></TD>
+</TR>
+
+<TR>
+	<TD width="32"><Input type="checkbox" name="chkSubjectDetail" value="ON"></TD>
+	<TD width="79"><font face="Verdana" size="2">&nbsp;PE 101</font></TD>
+	<TD width="194"><font face="Verdana" size="2">&nbsp;PHYSICAL FITNESS</font></TD>
+	<TD width="98"><font face="Verdana" size="2">&nbsp;CBA</font></TD>
+	<TD width="196"><font face="Verdana" size="2">&nbsp;MF / 1:00PM - 2:00PM</font></TD>
+</TR>
+
+<TR>
+	<TD width="32"><Input type="checkbox" name="chkSubjectDetail" value="ON"></TD>
+	<TD width="79"><font face="Verdana" size="2">&nbsp;MA 101</font></TD>
+	<TD width="194"><font face="Verdana" size="2">&nbsp;COLLEGE ALGEBRA</font></TD>
+	<TD width="98"><font face="Verdana" size="2">&nbsp;CBA</font></TD>
+	<TD width="196"><font face="Verdana" size="2">&nbsp;MWF / 7:30AM - 8:30AM</font></TD>
+</TR>
+
+<TR>
+	<TD width="32"><Input type="checkbox" name="chkSubjectDetail" value="ON"></TD>
+	<TD width="79"><font face="Verdana" size="2">&nbsp;MA 104</font></TD>
+	<TD width="194"><font face="Verdana" size="2">&nbsp;TRIGONOMETRY</font></TD>
+	<TD width="98"><font face="Verdana" size="2">&nbsp;CBA</font></TD>
+	<TD width="196"><font face="Verdana" size="2">&nbsp;MWF / 8:30AM - 9:30AM</font></TD>
+</TR>
+
+<TR>
+	<TD width="32"><Input type="checkbox" name="chkSubjectDetail" value="ON"></TD>
+	<TD width="79"><font face="Verdana" size="2">&nbsp;EN 101</font></TD>
+	<TD width="194"><font face="Verdana" size="2">&nbsp;ENGLISH 1</font></TD>
+	<TD width="98"><font face="Verdana" size="2">&nbsp;CBA</font></TD>
+	<TD width="196"><font face="Verdana" size="2">&nbsp;MWF / 9:30AM - 10:30AM</font></TD>
+</TR>
+
+<TR>
+	<TD width="32"><Input type="checkbox" name="chkSubjectDetail" value="ON"></TD>
+	<TD width="79"><font face="Verdana" size="2">&nbsp;FI 101</font></TD>
+	<TD width="194"><font face="Verdana" size="2">&nbsp;FILIPINO 1</font></TD>
+	<TD width="98"><font face="Verdana" size="2">&nbsp;CBA</font></TD>
+	<TD width="196"><font face="Verdana" size="2">&nbsp;MWF / 11:00AM - 12:00PM</font></TD>
+</TR>
+
+</TABLE>
+
+<TABLE border="1" width="633">
+<TR>
+	<TD width="317"><b><Input type="submit" name="cmdRemove" value="Remove Selected Item" style="font-family: Verdana; font-weight: bold" onClick="return validateRemoveItem()"></b></TD>
+	<TD width="300"><Input type="button" name="cmdClose" value="Close" style="float: right; font-family: Verdana; font-weight: bold" onClick="window.close()"></TD>
+</TR>
+</TABLE>
+</form>
+
+</BODY>
+</HTML>

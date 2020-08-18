@@ -1,0 +1,39 @@
+BODY {
+	SCROLLBAR-FACE-COLOR: #6666ff; BACKGROUND: url(cocback.gif) #ffffff fixed; SCROLLBAR-HIGHLIGHT-COLOR: #0000cc; SCROLLBAR-SHADOW-COLOR: #000044; SCROLLBAR-3DLIGHT-COLOR: #0000ff; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-TRACK-COLOR: #aaaaff; FONT-FAMILY: Verdana, serif; SCROLLBAR-DARKSHADOW-COLOR: #000000
+}
+A {
+	active: #880088
+}
+:link {
+	COLOR: #000088
+}
+:visited {
+	COLOR: #880000
+}
+:hover {
+	BACKGROUND: #efefef; COLOR: #660000
+}
+H1 {
+	FILTER: DropShadow(Color=#DDDDDD, OffX=3, OffY=3, Positive=1); WIDTH: 100%; COLOR: #000000; HEIGHT: 10px
+}
+P {
+	MARGIN-LEFT: 0.5em; TEXT-INDENT: 2em; MARGIN-RIGHT: 0.5em; TEXT-ALIGN: justify
+}
+P.normal {
+	MARGIN-LEFT: 0.5em; TEXT-INDENT: 0em; MARGIN-RIGHT: 0.5em; TEXT-ALIGN: justify
+}
+LI {
+	MARGIN-LEFT: 0em; TEXT-INDENT: 1em; MARGIN-RIGHT: 0.5em; TEXT-ALIGN: justify
+}
+LI.textbody {
+	MARGIN-LEFT: 0.5em; MARGIN-RIGHT: 0.5em; TEXT-ALIGN: justify; text-hanging: 2em
+}
+HR {
+	
+}
+.fifty {
+	WIDTH: 50%; TEXT-ALIGN: center
+}
+.fiftyblack {
+	WIDTH: 50%; COLOR: #000000; TEXT-ALIGN: center
+}

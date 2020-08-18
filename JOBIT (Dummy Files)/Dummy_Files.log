@@ -1,0 +1,8 @@
+Line 62: Class MSComctlLib.ProgressBar of control prgGenerate was not a loaded control class.
+Line 153: Class MSAdodcLib.Adodc of control RecallDestination was not a loaded control class.
+Line 200: Class MSAdodcLib.Adodc of control RecallSource was not a loaded control class.
+Line 385: Class MSComctlLib.ListView of control ExistingFilesList was not a loaded control class.
+Line 435: Class MSAdodcLib.Adodc of control Files was not a loaded control class.
+Line 922: Class MSComctlLib.StatusBar of control DummyStatus was not a loaded control class.
+Line 963: Class MSAdodcLib.Adodc of control Users was not a loaded control class.
+Line 1010: Class MSAdodcLib.Adodc of control UserLog was not a loaded control class.

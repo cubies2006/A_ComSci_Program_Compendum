@@ -1,0 +1,51 @@
+.mmbody {
+	FONT: 8pt Verdana, Arial, Helvetica, sans-serif
+}
+.mmbodysml {
+	FONT-SIZE: 70%; LINE-HEIGHT: 120%; FONT-FAMILY: Verdana, Arial, sans-serif
+}
+.heading1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; COLOR: #cc3333; FONT-STYLE: normal; FONT-FAMILY: Arial, Verdana, sans-serif; FONT-VARIANT: normal
+}
+.heading2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; FONT-VARIANT: normal
+}
+A:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; COLOR: #ffff00; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-VARIANT: normal; TEXT-DECORATION: underline
+}
+A:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-VARIANT: normal; TEXT-DECORATION: underline
+}
+A {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; COLOR: #cc3333; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-VARIANT: normal; TEXT-DECORATION: underline
+}
+A.link1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #cccccc; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.link1:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffff00; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.link2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #cc3333; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.link2:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #ffff00; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+.heading3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #cc3333; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.textBox {
+	BACKGROUND-COLOR: #d5888a
+}
+P {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-VARIANT: normal
+}
+.toplink {
+	COLOR: #999999; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TD {
+	FONT-SIZE: 10pt; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.mmbodysml2 {
+	FONT-SIZE: 8pt; COLOR: #ffffff; FONT-STYLE: italic; FONT-FAMILY: Verdana, Arial, sans-serif
+}

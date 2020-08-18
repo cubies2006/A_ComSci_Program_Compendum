@@ -1,0 +1,1 @@
+document.write("&copy; 2002-2004 Strange Haven Inc.");

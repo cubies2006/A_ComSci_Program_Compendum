@@ -1,0 +1,377 @@
+<HTML>
+<HEAD>
+<TITLE>Photos of X-MEN</TITLE>
+<STYLE Type="Text/CSS">
+BODY {scrollbar-arrow-color: black; scrollbar-base-color: silver; scrollbar-dark-shadow: silver; scrollbar-track-color: black; scrollbar-face-color: silver;} 
+</STYLE>
+<script LANGUAGE="JavaScript" FPTYPE="mydynamicanimation">
+<!-- Distributed by http://www.hypergurl.com
+  dynamicanimAttr = "mydynamicanimation"
+  animateElements = new Array()
+  currentElement = 0
+  speed = 0
+  stepsZoom = 8
+  stepsWord = 8
+  stepsFly = 12
+  stepsSpiral = 16
+  steps = stepsZoom
+  step = 0
+  outString = ""
+  function mydynAnimation()
+  {
+    var ms = navigator.appVersion.indexOf("MSIE")
+    ie4 = (ms>0) && (parseInt(navigator.appVersion.substring(ms+5, ms+6)) >= 4)
+    if(!ie4)
+    {
+      if((navigator.appName == "Netscape") &&
+         (parseInt(navigator.appVersion.substring(0, 1)) >= 4))
+      {
+        for (index=document.layers.length-1; index >= 0; index--)
+        {
+            layer=document.layers[index]
+            if (layer.left==10000)
+                layer.left=0
+        }
+      }
+      return
+    }
+    for (index=document.all.length-1; index >= document.body.sourceIndex; index--)
+    {
+      el = document.all[index]
+      animation = el.getAttribute(dynamicanimAttr, false)
+      if(null != animation)
+      {
+        if(animation == "dropWord" || animation == "flyTopRightWord" || animation == "flyBottomRightWord")
+        {
+          ih = el.innerHTML
+          outString = ""
+          i1 = 0
+          iend = ih.length
+          while(true)
+          {
+            i2 = startWord(ih, i1)
+            if(i2 == -1)
+              i2 = iend
+            outWord(ih, i1, i2, false, "")
+            if(i2 == iend)
+              break
+            i1 = i2
+            i2 = endWord(ih, i1)
+            if(i2 == -1)
+              i2 = iend
+            outWord(ih, i1, i2, true, animation)
+            if(i2 == iend)
+              break
+            i1 = i2
+          }
+          document.all[index].innerHTML = outString
+          document.all[index].style.posLeft = 0
+          document.all[index].setAttribute(dynamicanimAttr, null)
+        }
+        if(animation == "zoomIn" || animation == "zoomOut")
+        {
+          ih = el.innerHTML
+          outString = "<SPAN " + dynamicanimAttr + "=\"" + animation + "\" style=\"position: relative; left: 10000;\">"
+          outString += ih
+          outString += "</SPAN>"
+          document.all[index].innerHTML = outString
+          document.all[index].style.posLeft = 0
+          document.all[index].setAttribute(dynamicanimAttr, null)
+        }
+      }
+    }
+    i = 0
+    for (index=document.body.sourceIndex; index < document.all.length; index++)
+    {
+      el = document.all[index]
+      animation = el.getAttribute(dynamicanimAttr, false)
+      if (null != animation)
+      {
+        if(animation == "flyLeft")
+        {
+          el.style.posLeft = 10000-offsetLeft(el)-el.offsetWidth
+          el.style.posTop = 0
+        }
+        else if(animation == "flyRight")
+        {
+          el.style.posLeft = 10000-offsetLeft(el)+document.body.offsetWidth
+          el.style.posTop = 0
+        }
+        else if(animation == "flyTop" || animation == "dropWord")
+        {
+          el.style.posLeft = 0
+          el.style.posTop = document.body.scrollTop-offsetTop(el)-el.offsetHeight
+        }
+        else if(animation == "flyBottom")
+        {
+          el.style.posLeft = 0
+          el.style.posTop = document.body.scrollTop-offsetTop(el)+document.body.offsetHeight
+        }
+        else if(animation == "flyTopLeft")
+        {
+          el.style.posLeft = 10000-offsetLeft(el)-el.offsetWidth
+          el.style.posTop = document.body.scrollTop-offsetTop(el)-el.offsetHeight
+        }
+        else if(animation == "flyTopRight" || animation == "flyTopRightWord")
+        {
+          el.style.posLeft = 10000-offsetLeft(el)+document.body.offsetWidth
+          el.style.posTop = document.body.scrollTop-offsetTop(el)-el.offsetHeight
+        }
+        else if(animation == "flyBottomLeft")
+        {
+          el.style.posLeft = 10000-offsetLeft(el)-el.offsetWidth
+          el.style.posTop = document.body.scrollTop-offsetTop(el)+document.body.offsetHeight
+        }
+        else if(animation == "flyBottomRight" || animation == "flyBottomRightWord")
+        {
+          el.style.posLeft = 10000-offsetLeft(el)+document.body.offsetWidth
+          el.style.posTop = document.body.scrollTop-offsetTop(el)+document.body.offsetHeight
+        }
+        else if(animation == "spiral")
+        {
+          el.style.posLeft = 10000-offsetLeft(el)-el.offsetWidth
+          el.style.posTop = document.body.scrollTop-offsetTop(el)-el.offsetHeight
+        }
+        else if(animation == "zoomIn")
+        {
+          el.style.posLeft = 10000
+          el.style.posTop = 0
+        }
+        else if(animation == "zoomOut")
+        {
+          el.style.posLeft = 10000
+          el.style.posTop = 0
+        }
+        else
+        {
+          el.style.posLeft = 10000-offsetLeft(el)-el.offsetWidth
+          el.style.posTop = 0
+        }
+        el.initLeft = el.style.posLeft
+        el.initTop = el.style.posTop
+        animateElements[i++] = el
+      }
+    }
+    window.setTimeout("animate();", speed)
+  }
+  function offsetLeft(el)
+  {
+    x = el.offsetLeft
+    for (e = el.offsetParent; e; e = e.offsetParent)
+      x += e.offsetLeft;
+    return x
+  } 
+  function offsetTop(el)
+  {
+    y = el.offsetTop
+    for (e = el.offsetParent; e; e = e.offsetParent)
+      y += e.offsetTop;
+    return y
+  } 
+  function startWord(ih, i)
+  {
+    for(tag = false; i < ih.length; i++)
+    {
+      c = ih.charAt(i)
+      if(c == '<')
+        tag = true
+      if(!tag)
+        return i
+      if(c == '>')
+        tag = false
+    }
+    return -1
+  }
+  function endWord(ih, i)
+  {
+    nonSpace = false
+    space = false
+    while(i < ih.length)
+    {
+      c = ih.charAt(i)
+      if(c != ' ')
+        nonSpace = true
+      if(nonSpace && c == ' ')
+        space = true
+      if(c == '<')
+        return i
+      if(space && c != ' ')
+        return i
+      i++
+    }
+    return -1
+  }
+  function outWord(ih, i1, i2, dyn, anim)
+  {
+    if(dyn)
+      outString += "<SPAN " + dynamicanimAttr + "=\"" + anim + "\" style=\"position: relative; left: 10000;\">"
+    outString += ih.substring(i1, i2)
+    if(dyn)
+      outString += "</SPAN>"
+  }
+  function animate()
+  {
+    el = animateElements[currentElement]
+    animation = el.getAttribute(dynamicanimAttr, false)
+    step++
+    if(animation == "spiral")
+    {
+      steps = stepsSpiral
+      v = step/steps
+      rf = 1.0 - v
+      t = v * 2.0*Math.PI
+      rx = Math.max(Math.abs(el.initLeft), 200)
+      ry = Math.max(Math.abs(el.initTop),  200)
+      el.style.posLeft = Math.ceil(-rf*Math.cos(t)*rx)
+      el.style.posTop  = Math.ceil(-rf*Math.sin(t)*ry)
+    }
+    else if(animation == "zoomIn")
+    {
+      steps = stepsZoom
+      el.style.fontSize = Math.ceil(50+50*step/steps) + "%"
+      el.style.posLeft = 0
+    }
+    else if(animation == "zoomOut")
+    {
+      steps = stepsZoom
+      el.style.fontSize = Math.ceil(100+200*(steps-step)/steps) + "%"
+      el.style.posLeft = 0
+    }
+    else
+    {
+      steps = stepsFly
+      if(animation == "dropWord" || animation == "flyTopRightWord" || animation == "flyBottomRightWord")
+        steps = stepsWord
+      dl = el.initLeft / steps
+      dt = el.initTop  / steps
+      el.style.posLeft = el.style.posLeft - dl
+      el.style.posTop = el.style.posTop - dt
+    }
+    if (step >= steps) 
+    {
+      el.style.posLeft = 0
+      el.style.posTop = 0
+      currentElement++
+      step = 0
+    }
+    if(currentElement < animateElements.length)
+      window.setTimeout("animate();", speed)
+  }
+//-->
+</script>
+</HEAD>
+<BODY Background="X-Men Background.jpg" onload="mydynAnimation()">
+<CENTER><B><Font color="Lavander" Size="5" Face="Verdana"><p align="center" mydynamicanimation="flyTopRightWord"
+style="position: relative !important; left: 10000 !important">Photos of X-MEN</p></Font></B></CENTER><br>
+<TABLE Align="center" Border="2" Bordercolorlight="Skyblue" Bordercolordark="Blue">
+<TR>
+<TD><A href="apocalypse.jpg"><IMG src="apocalypse.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="cyclops.jpg"><IMG src="cyclops.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="cyclops2.jpg"><IMG src=" cyclops2.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="cyclops3.jpg"><IMG src="cyclops3.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="cyclops4.jpg"><IMG src="cyclops4.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="cyclops5.jpg"><IMG src="cyclops5.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="jeangrey.jpg"><IMG src="jeangrey.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="magneto.jpg"><IMG src="magneto.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="magneto2.jpg"><IMG src="magneto2.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="magneto3.jpg"><IMG src="magneto3.jpg" height="60" width="60" border="0"></A></TD>
+</TR>
+<TR>
+<TD><A href="magneto4.jpg"><IMG src="magneto4.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="magneto5.jpg"><IMG src="magneto5.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="magneto6.jpg"><IMG src="magneto6.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="magneto7.jpg"><IMG src="magneto7.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="magneto8.jpg"><IMG src="magneto8.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="magneto9.jpg"><IMG src="magneto9.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="magneto10.jpg"><IMG src="magneto10.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="magneto11.jpg"><IMG src="magneto11.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="magneto12.jpg"><IMG src="magneto12.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="magneto13.jpg"><IMG src="magneto13.jpg" height="60" width="60" border="0"></A></TD>
+</TR>
+<TR>
+<TD><A href="magneto14.jpg"><IMG src="magneto14.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="magneto15.jpg"><IMG src="magneto15.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="onslaught.jpg"><IMG src="onslaught.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="onslaught2.jpg"><IMG src="onslaught2.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="onslaught3.jpg"><IMG src="onslaught3.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="onslaught4.jpg"><IMG src="onslaught4.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="onslaught5.jpg"><IMG src="onslaught5.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="onslaught6.jpg"><IMG src="onslaught6.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="storm.jpg"><IMG src="storm.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="storm2.jpg"><IMG src="storm2.jpg" height="60" width="60" border="0"></A></TD>
+</TR>
+<TR>
+<TD><A href="storm.jpg"><IMG src="storm.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="storm2.jpg"><IMG src="storm2.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="storm3.jpg"><IMG src="storm3.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="storm4.jpg"><IMG src="storm4.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="storm5.jpg"><IMG src="storm5.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="storm6.jpg"><IMG src="storm6.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="storm7.jpg"><IMG src="storm7.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="storm8.jpg"><IMG src="storm8.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="storm9.jpg"><IMG src="storm9.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="storm10.jpg"><IMG src="storm10.jpg" height="60" width="60" border="0"></A></TD>
+</TR>
+<TR>
+<TD><A href="storm11.jpg"><IMG src="storm11.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="wolverine.jpg"><IMG src="wolverine.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="wolverine2.jpg"><IMG src="wolverine2.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="wolverine3.jpg"><IMG src="wolverine3.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="wolverine4.jpg"><IMG src="wolverine4.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="wolverine5.jpg"><IMG src="wolverine5.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="wolverine6.jpg"><IMG src="wolverine6.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="wolverinepunisher.jpg"><IMG src="wolverinepunisher.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="wolverinepunisher2.jpg"><IMG src="wolverinepunisher2.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="magneto16.jpg"><IMG src="magneto16.jpg" height="60" width="60" border="0"></A></TD>
+</TR>
+<TR>
+<TD><A href="x2movie1.jpg"><IMG src="x2movie1.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie2.jpg"><IMG src="x2movie2.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie3.jpg"><IMG src="x2movie3.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie4.jpg"><IMG src="x2movie4.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie5.jpg"><IMG src="x2movie5.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie6.jpg"><IMG src="x2movie6.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie7.jpg"><IMG src="x2movie7.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie8.jpg"><IMG src="x2movie8.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie9.jpg"><IMG src="x2movie9.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie10.jpg"><IMG src="x2movie10.jpg" height="60" width="60" border="0"></A></TD>
+</TR>
+<TR>
+<TD><A href="x2movie11.jpg"><IMG src="x2movie11.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie12.jpg"><IMG src="x2movie12.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie13.jpg"><IMG src="x2movie13.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie14.jpg"><IMG src="x2movie14.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie15.jpg"><IMG src="x2movie15.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie16.jpg"><IMG src="x2movie16.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie17.jpg"><IMG src="x2movie17.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie18.jpg"><IMG src="x2movie18.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie19.jpg"><IMG src="x2movie19.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie20.jpg"><IMG src="x2movie20.jpg" height="60" width="60" border="0"></A></TD>
+</TR>
+<TR>
+<TD><A href="x2movie21.jpg"><IMG src="x2movie21.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie22.jpg"><IMG src="x2movie22.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie23.jpg"><IMG src="x2movie23.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie24.jpg"><IMG src="x2movie24.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie25.jpg"><IMG src="x2movie25.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie26.jpg"><IMG src="x2movie26.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie27.jpg"><IMG src="x2movie27.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie28.jpg"><IMG src="x2movie28.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie29.jpg"><IMG src="x2movie29.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie30.jpg"><IMG src="x2movie30.jpg" height="60" width="60" border="0"></A></TD>
+</TR>
+<TR>
+<TD><A href="x2movie31.jpg"><IMG src="x2movie31.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie32.jpg"><IMG src="x2movie32.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie33.jpg"><IMG src="x2movie33.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie34.jpg"><IMG src="x2movie34.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie35.jpg"><IMG src="x2movie35.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie36.jpg"><IMG src="x2movie36.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie37.jpg"><IMG src="x2movie37.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie38.jpg"><IMG src="x2movie38.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie39.jpg"><IMG src="x2movie39.jpg" height="60" width="60" border="0"></A></TD>
+<TD><A href="x2movie40.jpg"><IMG src="x2movie40.jpg" height="60" width="60" border="0"></A></TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>

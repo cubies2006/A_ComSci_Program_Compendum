@@ -1,0 +1,298 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Implementation examples</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="Game_User_Experience_Library_v1_1_en_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='Game_User_Experience_Library_v1_1_en.css'>");}
+//-->
+</script>
+<style>
+<!--
+A:visited { color:#800080; }
+A:link { color:#0000ff; }
+-->
+</style><style type="text/css">
+<!--
+img_whs1 { width:13px; height:7px; border-style:none; }
+td.whs2 { x-cell-content-align:top; width:100.9pt; border:solid #333333 1.0pt; padding:0pt 5.4pt 0pt 5.4pt; padding-left:0px; padding-top:0px; padding-right:0px; padding-bottom:0px; background-color:#e6e6e6; }
+td.whs3 { x-cell-content-align:top; width:127.25pt; border:solid #333333 1.0pt; border-left:none; padding:0pt 5.4pt 0pt 5.4pt; padding-left:0px; padding-top:0px; padding-right:0px; padding-bottom:0px; background-color:#e6e6e6; }
+td.whs4 { x-cell-content-align:top; width:100.95pt; border:solid #333333 1.0pt; border-left:none; padding:0pt 5.4pt 0pt 5.4pt; padding-left:0px; padding-top:0px; padding-right:0px; padding-bottom:0px; background-color:#e6e6e6; }
+td.whs5 { x-cell-content-align:top; width:114.0pt; border:solid #333333 1.0pt; border-left:none; padding:0pt 5.4pt 0pt 5.4pt; padding-left:0px; padding-top:0px; padding-right:0px; padding-bottom:0px; background-color:#e6e6e6; }
+tr.whs6 { mso-yfti-irow:0; mso-yfti-firstrow:yes; page-break-inside:avoid; }
+td.whs7 { x-cell-content-align:top; width:100.9pt; border:solid #333333 1.0pt; border-top:none; padding:0pt 5.4pt 0pt 5.4pt; padding-left:0px; padding-top:0px; padding-right:0px; padding-bottom:0px; }
+img_whs8 { width:114px; height:114px; border-style:none; }
+td.whs9 { x-cell-content-align:top; width:127.25pt; border-top:none; border-left:none; border-bottom:solid #333333 1.0pt; border-right:solid #333333 1.0pt; padding:0pt 5.4pt 0pt 5.4pt; padding-left:0px; padding-top:0px; padding-right:0px; padding-bottom:0px; }
+td.whs10 { x-cell-content-align:top; width:100.95pt; border-top:none; border-left:none; border-bottom:solid #333333 1.0pt; border-right:solid #333333 1.0pt; padding:0pt 5.4pt 0pt 5.4pt; padding-left:0px; padding-top:0px; padding-right:0px; padding-bottom:0px; }
+td.whs11 { x-cell-content-align:top; width:114.0pt; border-top:none; border-left:none; border-bottom:solid #333333 1.0pt; border-right:solid #333333 1.0pt; padding:0pt 5.4pt 0pt 5.4pt; padding-left:0px; padding-top:0px; padding-right:0px; padding-bottom:0px; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+</head>
+<body lang="EN-US"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Articles\nImplementing usability\nImplementation examples");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("Game_User_Experience_Library_v1_1_en.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h2>Implementation examples</h2>
+
+<p class=BodyCopy>The table below contains examples of how to implement 
+ usability in mobile games. These games were evaluated as a part of creating 
+ the <a href="http://www.forum.nokia.com/info/sw.nokia.com/id/d9d9ad4a-efd8-42bd-ba70-dcc35bab9422/Series_40_DP_1_0_Usability_Guidelines_For_J2ME_Games_v1_2_en.pdf.html"
+		target=_blank>Series 40 Developer Platform 1.0: Usability Guidelines 
+ for J2ME™ Games</a> <img src="Game_User_Experience_Library_v1_1_en_files/image014.gif" width="13px" height="7px" border="0" class="img_whs1"> document available at www.forum.nokia.com.</p>
+
+<table class=NormalTable
+		x-use-null-cells
+		style="width: 443.1pt;
+				margin-left: 67.75pt;
+				border: none;
+				x-border-left: 1px table-solid;
+				x-border-top: 1px table-solid;
+				x-border-right: 1px table-solid;
+				x-border-bottom: 1px table-solid;
+				border-collapse: separate;
+				border-spacing: 0px;
+				border-spacing: 0px;"
+		cellspacing=0
+		width=591>
+
+<tr>
+<td bgcolor="#E6E6E6" valign="top" width="100.9pt" class="whs2">
+<p class=tabletitle-center>Before</td>
+<td bgcolor="#E6E6E6" valign="top" width="127.3pt" class="whs3">
+<p class=tabletitle-center>Problem</td>
+<td bgcolor="#E6E6E6" valign="top" width="100.9pt" class="whs4">
+<p class=tabletitle-center>After</td>
+<td bgcolor="#E6E6E6" valign="top" width="114pt" class="whs5">
+<p class=tabletitle-center>Fix</td></tr>
+
+<tr class="whs6">
+<td rowspan="7" valign="top" width="100.9pt" class="whs7">
+<p class=Pienikuva><img src="Game_User_Experience_Library_v1_1_en_files/image087.jpg" width="114px" height="114px" border="0" class="img_whs8"></td>
+<td valign="top" width="127.3pt" class="whs9">
+<p class=taultxt-bold
+	style="margin-left: 5pt;">Lack of feedback</p>
+<p class=tabletext
+	style="margin-left: 5pt;">When throwing the ball, there is not enough 
+ feedback.</p>
+<p class=tabletext
+	style="margin-left: 5pt;">The user does not know that the character 
+ can be moved when the ball has been thrown.</td>
+<td valign="top" width="100.9pt" class="whs10">
+<p class=Pienikuva><img src="Game_User_Experience_Library_v1_1_en_files/image089.jpg" width="114px" height="114px" border="0" class="img_whs8"></td>
+<td valign="top" width="114pt" class="whs11">
+<p class=tabletext
+	style="margin-left: 5pt;">In-game help is provided. The user sees that 
+ the character can move and which buttons to press to do this. Both number 
+ and arrow keys work; the symbols are arrows and they are marked with numbers.</td></tr>
+
+<tr class="whs6">
+<td valign="top" width="127.3pt" class="whs9">
+<p class=tabletext
+	style="margin-left: 5pt;">The player does not necessarily realize that 
+ points have been scored and how many points are earned. There is not enough 
+ feedback.</td>
+<td valign="top" width="100.9pt" class="whs10">
+<p class=Pienikuva><img src="Game_User_Experience_Library_v1_1_en_files/image091.jpg" width="114px" height="114px" border="0" class="img_whs8"></td>
+<td valign="top" width="114pt" class="whs11">
+<p class=tabletext
+	style="margin-left: 5pt;">Clear feedback is provided. The player learns 
+ the difference between different throws and the scored points.</td></tr>
+
+<tr class="whs6">
+<td valign="top" width="127.3pt" class="whs9">
+<p class=tabletext
+	style="margin-left: 5pt;">If the player misses two throws in a row, 
+ the next round begins. There are four rounds altogether. The only feedback 
+ for ending a round is that the number changes at the top of the screen.</td>
+<td valign="top" width="100.9pt" class="whs10">
+<p class=Pienikuva><img src="Game_User_Experience_Library_v1_1_en_files/image093.jpg" width="114px" height="114px" border="0" class="img_whs8"></td>
+<td valign="top" width="114pt" class="whs11">
+<p class=tabletext
+	style="margin-left: 5pt;">Clear feedback is provided to indicate that 
+ the round has changed. This also brings the concept of game rounds to 
+ the user’s attention.</td></tr>
+
+<tr class="whs6">
+<td valign="top" width="127.3pt" class="whs9">
+<p class=tabletext
+	style="margin-left: 5pt;">While waiting for the user to do something, 
+ the character on the screen does nothing and is completely frozen.</td>
+<td valign="top" width="100.9pt" class="whs10">
+<p class=Pienikuva><img src="Game_User_Experience_Library_v1_1_en_files/image095.jpg" width="114px" height="114px" border="0" class="img_whs8"></td>
+<td valign="top" width="114pt" class="whs11">
+<p class=tabletext
+	style="margin-left: 5pt;">To create some activity and make the character 
+ look alive, the character begins to bounce the ball while waiting for 
+ the user to do something.</td></tr>
+
+<tr class="whs6">
+<td valign="top" width="127.3pt" class="whs9">
+<p class=taultxt-bold
+	style="margin-left: 5pt;">Main menu</p>
+<p class=tabletext
+	style="margin-left: 5pt;">The main menu is purely text-based and does 
+ not differ from the UI in the rest of the device. It doesn't feel like 
+ a game and not many commands fit on the screen at one time.</td>
+<td valign="top" width="100.9pt" class="whs10">
+<p class=Pienikuva><img src="Game_User_Experience_Library_v1_1_en_files/image097.jpg" width="114px" height="114px" border="0" class="img_whs8"></td>
+<td valign="top" width="114pt" class="whs11">
+<p class=tabletext
+	style="margin-left: 5pt;">The menu has been replaced by a graphic version 
+ with the theme of the game. Commands fit on the screen nicely and the 
+ whole appearance is more pleasing.</td></tr>
+
+<tr class="whs6">
+<td rowspan="2" valign="top" width="127.3pt" class="whs9">
+<p class=taultxt-bold
+	style="margin-left: 5pt;">New game mode</p>
+<p class=tabletext
+	style="margin-left: 5pt;">There is only one game mode, which becomes 
+ repetitive after a while.</td>
+<td valign="top" width="100.9pt" class="whs10">
+<p class=Pienikuva><img src="Game_User_Experience_Library_v1_1_en_files/image099.jpg" width="114px" height="114px" border="0" class="img_whs8"></td>
+<td valign="top" width="114pt" class="whs11">
+<p class=tabletext
+	style="margin-left: 5pt;">The game concept has been expanded to include 
+ several game modes. On the left is a picture of a multiplayer version 
+ (hot seat).</td></tr>
+
+<tr class="whs6">
+<td valign="top" width="100.9pt" class="whs10">
+<p class=Pienikuva><img src="Game_User_Experience_Library_v1_1_en_files/image101.gif" width="114px" height="114px" border="0" class="img_whs8"></td>
+<td valign="top" width="114pt" class="whs11">
+<p class=tabletext
+	style="margin-left: 5pt;">Here is another new game mode, which is time-limited. 
+ The player must score as many points as possible in a limited time.</td></tr>
+
+<tr class="whs6">
+<td rowspan="2" valign="top" width="100.9pt" class="whs7">
+<p class=Pienikuva><img src="Game_User_Experience_Library_v1_1_en_files/image103.gif" width="114px" height="114px" border="0" class="img_whs8"></td>
+<td valign="top" width="127.3pt" class="whs9">
+<p class=taultxt-bold
+	style="margin-left: 5pt;">Game world to match real world</p>
+<p class=tabletext
+	style="margin-left: 5pt;">The game has an invisible barrier to the 
+ right of the spaceship — the player cannot go right, although there is 
+ nothing visible preventing him.</td>
+<td valign="top" width="100.9pt" class="whs10">
+<p class=Pienikuva><img src="Game_User_Experience_Library_v1_1_en_files/image105.gif" width="114px" height="114px" border="0" class="img_whs8"></td>
+<td valign="top" width="114pt" class="whs11">
+<p class=tabletext
+	style="margin-left: 5pt;">The new version does not contain such barriers. 
+ Note also the little information circle where a player can get hints on 
+ how to play the game.</td></tr>
+
+<tr class="whs6">
+<td valign="top" width="127.3pt" class="whs9">
+<p class=taultxt-bold
+	style="margin-left: 5pt;">Secret levels</p>
+<p class=tabletext
+	style="margin-left: 5pt;">The secret levels are accessed after the 
+ current level has been completed and only if the player has collected 
+ a certain item to open the bonus level.</td>
+<td valign="top" width="100.9pt" class="whs10">
+<p class=Pienikuva><img src="Game_User_Experience_Library_v1_1_en_files/image107.gif" width="114px" height="114px" border="0" class="img_whs8"></td>
+<td valign="top" width="114pt" class="whs11">
+<p class=tabletext
+	style="margin-left: 5pt;">The bonus level is accessed directly after 
+ reaching the item, which makes the connection more obvious to the user.</td></tr>
+
+<tr>
+<td valign="top" width="100.9pt" class="whs7">
+<p class=Pienikuva><img src="Game_User_Experience_Library_v1_1_en_files/image109.gif" width="114px" height="114px" border="0" class="img_whs8"></td>
+<td valign="top" width="127.3pt" class="whs9">
+<p class=taultxt-bold
+	style="margin-left: 5pt;">In-game help</p>
+<p class=tabletext
+	style="margin-left: 5pt;">Players have the wrong impression about game 
+ characters and their roles.</td>
+<td valign="top" width="100.9pt" class="whs10">
+<p class=Pienikuva><img src="Game_User_Experience_Library_v1_1_en_files/image111.gif" width="114px" height="114px" border="0" class="img_whs8"></td>
+<td valign="top" width="114pt" class="whs11">
+<p class=tabletext
+	style="margin-left: 5pt;">A window appears the first time this creature 
+ is encountered. It tells the user important details about the creature.</td></tr>
+
+<tr>
+<td valign="top" width="100.9pt" class="whs7">
+<p class=Pienikuva><img src="Game_User_Experience_Library_v1_1_en_files/image113.jpg" width="114px" height="114px" border="0" class="img_whs8"></td>
+<td valign="top" width="127.3pt" class="whs9">
+<p class=taultxt-bold
+	style="margin-left: 5pt;">Game menu</p>
+<p class=tabletext
+	style="margin-left: 5pt;">The game has two different menus, one depicted 
+ on the left. The menu does not look like it is part of a game, and scrolling 
+ is almost always needed.</td>
+<td valign="top" width="100.9pt" class="whs10">
+<p class=Pienikuva><img src="Game_User_Experience_Library_v1_1_en_files/image115.jpg" width="114px" height="114px" border="0" class="img_whs8"></td>
+<td valign="top" width="114pt" class="whs11">
+<p class=tabletext
+	style="margin-left: 5pt;">The new version has only one menu, similar 
+ to the one on the left. (Note: The contents of the menu are different 
+ from the one shown here; pay attention only to the visual appearance). 
+ This menu is clearly different from the device UI in general.</td></tr>
+</table>
+
+<p class=InlineFigureText1>&nbsp;</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

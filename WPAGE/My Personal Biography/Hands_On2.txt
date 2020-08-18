@@ -1,0 +1,72 @@
+<HTML>
+<HEAD>
+<TITLE>An Inspirational Poem</TITLE>
+<Bgsound src="Whole Again - Atomic Kitten.mp3" loop="Infinite">
+<meta http-equiv="Page-Enter" content="BlendTrans(Duration=3.0,Transition=3)">
+</HEAD>
+<BODY Background="clouds.jpg" link="Teal" vlink="Lavander" bgproperties="fixed" text="Black">
+<Font color="Blue" size="7" face="Garamond"><CENTER>III. An Inspirational Poem</CENTER></Font>
+<IMG src="dove.gif" align="left">
+<IMG src="dove.gif" align="right">
+<br>
+<CENTER><Font face="Bookman Old Style" 
+color="Teal" size="5">I TRIED TO CLIMB THE MOUNTAIN TODAY</Font></CENTER>
+<br><br>
+<Font face="Garamond">
+<IMG src="RonC.jpg" align="left" height="45%" width="25%">
+<B><P align="left">I tried to climb the mountain today. As I inched my way<br>
+up the path, I felt overwhelmed, so I had to turn back.</P>
+<P align="left">I tried to climb the mountain today. On my journey, darkness<br>
+started to fall, and I was full of fear, so I had to return to<br>
+a safe place.</P>
+<p align="left">I was ready to climb the mountain today. But it<br>
+was so hot outside, I thought I better stay in my nice<br>
+air-conditioned house and rest up for tomorrow's attempt</P>
+<P align="left">I was about to climb the mountain today. But I had so many<br>
+other things to do, so instead of climbing the mountain I<br>
+took care of much more important tasks. I washed my car,<br>
+mowed the grass and watched the big game. Today the mountain<br>
+will just have to wait.</P>
+<IMG src="ronandjoni.jpg" align="left" height="45%" width="25%">
+<P align="left">I was going to climb the mountain today. But as I stared at<br>
+the mountain in it's majestic beauty, I knew I stood no chance<br>
+of making it to the top, so I figured why even bother trying.</P>
+<P align="left">I have forgotten about climbing the mountain today; until a<br>
+friend came by and asked me what I was up to lately. I told<br>
+him I was thinking about climbing that mountain some day.<br>
+I went on and on about how I was going to accomplish this<br>
+task.</P>
+<P align="left">Finally, he said, "I just got back from climbing the mountain.<br>
+For the longest time I told myself I was trying to climb the<br>
+mountain but never made any progress. I almost let the dream<br>
+of making it to the top die. I came up with every excuse of<br>
+why I could not make it up the mountain, but never once did<br>
+I give myself a reason why I could. One day as I stared at<br>
+the mountain and pondered, I realized that if I didn't make<br>
+an attempt at this dream all my dreams will eventually die."</P>
+<br><br>
+<IMG src="grad.jpg" align="left" height="45%" width="35%">
+<P align="left">"The next morning, I started my climb." He continued, "It was<br>
+not easy, and at times I wanted to quit. But no matter what I<br>
+faced, I placed one foot in front of the other, keeping a<br>
+steady pace. When the wind tried to blow me over the edge,<br>
+I kept walking. When the voices inside my head screamed<br>
+"stop!" I focused on my goal never letting it out of sight,<br>
+and I kept moving forward. At times, I was ready to quit, but<br>
+I knew I had come too far. Time and time again, I reassured<br>
+myself that I was going to finish this journey. I struggled<br>
+to make it to the top, but I climbed the mountain!"</P>
+<P align="left">"I have to be going," my friend said. "Tomorrow is a new day to<br>
+accomplish more dreams. By the way, what are you going to do<br>
+tomorrow?</P>
+<P align="left">I looked at him, with intensity and confidence in my eyes, and<br>
+said, "I have a mountain to climb."</P>
+<P align="left">- <I>Gary Barnes</I></P>
+</B>
+<CENTER><A HREF="Hands_On2.html" border="0"><IMG src="Go Top.gif" alt="GO TOP"></A></CENTER>
+<br>
+<CENTER><A HREF="Home_Page.html"><IMG src="Earth6.gif" alt="HOME" border="0" height="15%" width="10%"></A></CENTER>
+<A HREF="Hands_On1.html"><IMG src="Back.gif" border="0" align="left"></A>
+<A HREF="Page3.html"><IMG src="Next.gif" border="0" align="right"></A>
+</BODY>
+</HTML>

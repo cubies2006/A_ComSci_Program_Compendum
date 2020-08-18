@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<tocdata>
+<item name="Introduction" url="Introduction.htm" />
+<item name="How to use the Game User Experience Library" url="How_to_use_the_Game_User_Experience_Library.htm" />
+<item name="Change history" url="Change_history.htm" />
+<item name="Copyright" url="Copyright.htm" />
+<book name="Top ten guidelines" url="Top_ten_guidelines.htm" >
+  <item name="Series 40 platform: Top 10 usability guidelines for Java™ ME games" url="Series_40_platform_top_10_usability_guidelines_for_Java_ME.htm" />
+  <item name="S60 1st Edition: Top 10 usability guidelines for Java™ ME games" url="S60_1st_Edition_Top_10_usability_guidelines_for_Java_ME_games.htm" />
+  <item name="S60 2nd Edition: Top 10 usability guidelines for Java™ ME games" url="S60_2nd_Edition_Top_10_usability_guidelines_for_Java_ME_games.htm" />
+  <item name="S60 2nd Edition: Top 10 usability guidelines for Symbian C++ games" url="S60_2nd_Edition_Top_10_usability_guidelines_for_Symbian_C_games.htm" />
+</book>
+<item name="Checklists" url="Checklists.htm" />
+<book name="Main menu design" url="Main_menu_design.htm" >
+  <item name="Game main menu — S60, Symbian C++" url="Game_main_menu___S60_Symbian_C.htm" />
+  <item name="Game main menu — S60, Java™ ME" url="Game_main_menu___S60_Java_ME.htm" />
+  <item name="Navigation diagram — S60" url="Navigation_diagram__S60.htm" />
+</book>
+<book name="Usability guidelines" url="Usability_guidelines.htm" >
+  <book name="Pre-game" url="Pre_game.htm" >
+    <item name="Loading" url="Loading.htm" />
+    <item name="Intro" url="Intro.htm" />
+    <item name="Main menu" url="Main_menu.htm" />
+    <item name="Main menu implementation" url="Main_menu_implementation.htm" />
+    <item name="Navigation keys" url="Navigation_keys.htm" />
+    <item name="Pause menu" url="Pause_menu.htm" />
+    <item name="Login menu" url="Login_menu.htm" />
+    <item name="Bluetooth connection menu" url="Bluetooth_connection_menu.htm" />
+    <item name="List design" url="List_design.htm" />
+    <item name="Handling payments" url="Handling_payments.htm" />
+    <item name="Help" url="Help.htm" />
+    <item name="Save the user’s time" url="Save_the_users_time.htm" />
+    <item name="Text entry" url="Text_entry.htm" />
+  </book>
+  <book name="Game experience" url="Game_experience.htm" >
+    <item name="Make the user comfortable" url="Make_the_user_comfortable.htm" />
+    <item name="Keys and game controls" url="Keys_and_game_controls.htm" />
+    <item name="Graphics" url="Graphics.htm" />
+    <item name="Backlight" url="Backlight.htm" />
+    <item name="Sounds" url="Sounds.htm" />
+    <item name="Match with the real world" url="Match_with_the_real_world.htm" />
+    <item name="Feedback" url="Feedback.htm" />
+    <item name="Give control to the user" url="Give_control_to_the_user.htm" />
+    <item name="Game design" url="Game_design.htm" />
+    <item name="End key" url="End_key.htm" />
+    <item name="Pause" url="Pause.htm" />
+    <item name="In-game help" url="In_game_help.htm" />
+    <item name="Latency in multiplayer games" url="Latency_in_multiplayer_games.htm" />
+    <item name="Text" url="Text.htm" />
+  </book>
+  <book name="Post-game" url="Post_game.htm" >
+    <item name="Restart" url="Restart.htm" />
+    <item name="High-score list" url="High_score_list.htm" />
+  </book>
+</book>
+<book name="Articles" url="Articles.htm" >
+  <item name="Mobile game user experience" url="Mobile_game_user_experience.htm" />
+  <item name="Navigation and user experience in S60 games" url="Navigation_and_user_experience_in_S60_games.htm" />
+  <item name="Mobile game usability" url="Mobile_game_usability.htm" />
+  <book name="Implementing usability" url="Implementing_usability.htm" >
+    <item name="Methods" url="Methods.htm" />
+    <item name="Usability implementation process" url="Usability_implementation_process.htm" />
+    <item name="Implementation examples" url="Implementation_examples.htm" />
+    <item name="Tips on implementing usability" url="Tips_on_implementing_usability.htm" />
+  </book>
+  <item name="Full-screen usage in S60" url="Full_screen_usage_in_S60.htm" />
+  <item name="Selling the game experience" url="Selling_the_game_experience.htm" />
+  <item name="Well-designed high-score lists in mobile games" url="Well_designed_high_score_lists_in_mobile_games.htm" />
+  <item name="At the core of mobile game usability: the pause menu" url="At_the_core_of_mobile_game_usability_the_pause_menu.htm" />
+  <item name="From beeps to soundscapes — designing mobile game audio" url="From_beeps_to_soundscapes___designing_mobile_game_audio.htm" />
+</book>
+<item name="Links and references" url="Links_and_references.htm" />
+<item name="Evaluate this document" url="Evaluate_this_resource.htm" />
+
+</tocdata>

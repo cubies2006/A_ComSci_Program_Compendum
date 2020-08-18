@@ -1,0 +1,203 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Navigation and user experience in S60 games</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="Game_User_Experience_Library_v1_1_en_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='Game_User_Experience_Library_v1_1_en.css'>");}
+//-->
+</script>
+<style>
+<!--
+A:visited { color:#800080; }
+A:link { color:#0000ff; }
+-->
+</style><style type="text/css">
+<!--
+img_whs1 { width:462px; height:388px; border-style:none; }
+ul.whs2 { list-style:decimal; }
+ol.whs3 { list-style:decimal; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+</head>
+<body lang="EN-US"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Articles\nNavigation and user experience in S60 games");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("Game_User_Experience_Library_v1_1_en.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h2>Navigation and user experience in S60 games</h2>
+
+<p class=BodyCopy>Some developers may have questions about the importance 
+ of navigation as part of the game experience. After all, users don’t spend 
+ that much time in the game menu — they spend most of their time playing 
+ the game. And that is exactly what we are trying to accomplish with these 
+ guidelines. </p>
+
+<p class=BodyCopy>If the navigational structure of the game is usable, 
+ users can concentrate on playing the game. In actual practice, our user 
+ tests revealed that users spend a considerable amount of game time trying 
+ to navigate. In these tests, navigation emerged as one of the greatest 
+ sources of frustration and a major cause of bad user experiences. To ensure 
+ a good user experience, developers should commit to making navigation 
+ so intuitive that users don’t even notice it.</p>
+
+<p class=BodyCopy>When playing a game, users should not feel that they 
+ are simply using the device; rather, they should experience the game world. 
+ The game navigation structure should support this experience, which is 
+ why the use of high-level UI components should be avoided. Game menus 
+ should look and feel like the game, not like the rest of the device. If 
+ high-level UI components are used, they should support the game user experience. 
+ In practice, this means that the user experience should be seamless; high-level 
+ UI dialogs should be used only in the game menu, not in the game itself. 
+ </p>
+
+<p class=BodyCopy>The figure below represents three different implementations 
+ of the same game. In the first example, the game menu and game are implemented 
+ with custom graphics in full-screen mode. Here, the game experience is 
+ not disturbed by device graphics. This kind of seamless experience should 
+ be the goal when designing a game's navigation structure. </p>
+
+<p class=BodyCopy>In the second example, the game's main menu is implemented 
+ with standard device UI components, but the game itself offers an undisturbed 
+ experience. This implementation can be used if necessary.</p>
+
+<p class=BodyCopy>In the final example, some events in the game itself 
+ are represented to the user with standard UI dialogs, which easily disturbs 
+ the game experience. This implementation should be avoided.&nbsp; </p>
+
+<p class=BodyText>&nbsp;</p>
+
+<p class=InlineBodyText
+	style="text-align: left;"
+	align=left><img src="Game_User_Experience_Library_v1_1_en_files/image069.jpg" width="462px" height="388px" border="0" class="img_whs1"></p>
+
+<p class=Caption>Figure: Three different implementations of the game menu</p>
+
+<p class=BodyCopy>Even if game menus are implemented with custom graphics, 
+ this does not mean that the interaction style should be custom. On the 
+ contrary, the style of interaction should be consistent, even if custom 
+ graphics are used. The user should encounter familiar controls in navigation, 
+ and custom graphics should have some familiar characteristics. This way, 
+ users can transfer their existing knowledge about UI style for S60 Platform 
+ 2nd Edition to the game. In the optimum situation, users would know intuitively 
+ how to use game menus, although they look different from the rest of the 
+ device. To achieve this goal, developers should consider preserving the 
+ following characteristics in the game UI:</p>
+
+<ul type="1" class="whs2">
+	
+	<ol type="1" class="whs3">
+		
+		<li style="/*begin!kadov{{*/ font-family: Arial; /*}}end!kadov*/ "
+			class=kadov-P-CBodyCopy><p class=BodyCopy
+										style="margin-left: 0pt;"><span 
+ style="font-family: Arial;">Use the navigation key as a primary control. 
+ Users are likely to be very familiar with a five-way navigation key. Users 
+ should be allowed to move focus with the navigation key and select items 
+ with it. Also many users are used to conducting default actions with the 
+ navigation key. </span></p></li>
+		
+		<li style="/*begin!kadov{{*/ font-family: Arial; /*}}end!kadov*/ "
+			class=kadov-P-CBodyCopy><p class=BodyCopy
+										style="margin-left: 0pt;"><span 
+ style="font-family: Arial;">Display softkey labels on the screen. Users 
+ are likely to be very familiar with the concept of softkeys, and this 
+ familiarity should not be wasted. Softkey labels should always be used, 
+ even in full-screen mode. A minimalist solution for a softkey label is 
+ a simple symbol that tells the user which softkey opens the game menu.</span></p></li>
+		
+		<li style="/*begin!kadov{{*/ font-family: Arial; /*}}end!kadov*/ "
+			class=kadov-P-CBodyCopy><p class=BodyCopy
+										style="margin-left: 0pt;"><span 
+ style="font-family: Arial;">Use the left softkey as an Options menu and 
+ also as a secondary selection key. The pop-up Options menu is familiar 
+ to users. However, it might be a good idea to avoid using pop-up menus 
+ with S60 graphics to maintain a coherent user experience, especially in 
+ Java™ ME games. Similar functionality can be used in more complex games 
+ if the pop-up menu is implemented with custom graphics. </span></p></li>
+		
+		<li style="/*begin!kadov{{*/ font-family: Arial; /*}}end!kadov*/ "
+			class=kadov-P-CBodyCopy><p class=BodyCopy
+										style="margin-left: 0pt;"><span 
+ style="font-family: Arial;">Use the right softkey for Exit / Cancel / 
+ Back. Note that in the UI styles for the S60 platform, settings are saved 
+ when the settings screen is exited with the right softkey. As a general 
+ rule, users should be able to exit an application by repeatedly pressing 
+ the right softkey from any game menu, except from the game itself. The 
+ only exceptions are situations where the user may risk losing information.</span></p></li>
+		
+		<li style="/*begin!kadov{{*/ font-family: Arial; /*}}end!kadov*/ "
+			class=kadov-P-CBodyCopy><p class=BodyCopy
+										style="margin-left: 0pt;"><span 
+ style="font-family: Arial;">Provide automatic saving and loading of application 
+ states. Normally in S60 applications, saving and loading are handled automatically 
+ when opening and closing an application. Also, multitasking replaces the 
+ functionality of save and load in its own way: If an application is interrupted 
+ or the user exits the application with the End key or the Application 
+ key, the application is not terminated but is switched to the background 
+ instead. This allows the user to return to the application later, after 
+ dealing with the interruption. This functionality works even if users 
+ are not aware of the multitasking capability of their device.</span></p></li>
+	</ol>
+</ul>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

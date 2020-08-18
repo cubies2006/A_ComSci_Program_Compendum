@@ -1,0 +1,5 @@
+-libraryjars C:\WTK25\lib\wma20.jar;C:\WTK25\lib\mmapi.jar;C:\WTK25\lib\midpapi20.jar;C:\WTK25\lib\cldcapi11.jar
+-injars C:\WTK25\apps\CUBIES A 2D Mobile Game\bin\CUBIES A 2D Mobile Game.jar
+-outjar C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\CUBIES A 2D Mobile Game.jar
+-keep public class * extends javax.microedition.midlet.MIDlet 
+-dontusemixedcaseclassnames

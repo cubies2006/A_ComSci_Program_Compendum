@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0051)http://www.samruby.com/Heroes/MadamWeb/madamweb.htm -->
+<HTML><HEAD><TITLE>Madam Web</TITLE>
+<STYLE Type="Text/CSS">
+BODY {scrollbar-arrow-color: blue; scrollbar-base-color: black; scrollbar-dark-shadow: blue; scrollbar-track-color: darkblue; scrollbar-face-color: red;} 
+</STYLE>
+<style>
+.spanstyle {
+	position:absolute;
+	visibility:visible;
+	top:-50px;
+	font-size:10pt;
+	font-family:Verdana;
+      font-weight:bold;
+	color:black;
+}
+</style>
+<script>
+
+/*
+Cursor Trailor Text- By Peter Gehrig (http://www.24fun.ch/)
+Distributed by Hypergurl. For more java scripts visit
+Hypergurl.com http://www.hypergurl.com
+*/
+
+var x,y
+var step=20
+var flag=0
+
+// Welcome to Hypergurl!!!
+var message="Madam Web "
+message=message.split("")
+
+var xpos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	xpos[i]=-50
+}
+
+var ypos=new Array()
+for (i=0;i<=message.length-1;i++) {
+	ypos[i]=-50
+}
+
+function handlerMM(e){
+	x = (document.layers) ? e.pageX : document.body.scrollLeft+event.clientX
+	y = (document.layers) ? e.pageY : document.body.scrollTop+event.clientY
+	flag=1
+}
+
+function makesnake() {
+	if (flag==1 && document.all) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("span"+(i)+".style")
+    		thisspan.posLeft=xpos[i]
+			thisspan.posTop=ypos[i]
+    	}
+	}
+	
+	else if (flag==1 && document.layers) {
+    	for (i=message.length-1; i>=1; i--) {
+   			xpos[i]=xpos[i-1]+step
+			ypos[i]=ypos[i-1]
+    	}
+		xpos[0]=x+step
+		ypos[0]=y
+	
+		for (i=0; i<message.length-1; i++) {
+    		var thisspan = eval("document.span"+i)
+    		thisspan.left=xpos[i]
+			thisspan.top=ypos[i]
+    	}
+	}
+		var timer=setTimeout("makesnake()",30)
+}
+
+</script>
+<META http-equiv=Content-Language content=en-us>
+<META content="Microsoft FrontPage 5.0" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"></HEAD>
+<BODY text=#000000 vLink=#800000 aLink=#000000 link=#800000 bgColor=#c8c22b>
+<script>
+<!-- Beginning of JavaScript supplied by hypergurl http://www.hypergurl.com hide script -
+
+for (i=0;i<=message.length-1;i++) {
+    document.write("<span id='span"+i+"' class='spanstyle'>")
+	document.write(message[i])
+    document.write("</span>")
+}
+
+if (document.layers){
+	document.captureEvents(Event.MOUSEMOVE);
+}
+document.onmousemove = handlerMM;
+
+// - End of JavaScript - -->
+</script>
+<P align=center><BR><IMG height=97 src="Madam Web_files/MadamWebLogo.gif" 
+width=315 border=0><BR><BR>&nbsp;</P>
+<DIV align=center>
+<CENTER>
+<TABLE style="BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=0 width=700 
+border=0>
+  <TBODY>
+  <TR>
+    <TD width=325>
+      <P align=center><IMG height=339 src="Madam Web_files/MadamWeb.gif" 
+      width=273 border=0></P></TD>
+    <TD width=373>
+      <P align=center><STRONG><FONT size=2><FONT 
+      color=#800000><EM><U>Name</U>:</EM></FONT> Cassandra 
+      Web</FONT></STRONG></P>
+      <P align=center><STRONG><FONT size=2><FONT 
+      color=#800000><EM><U>ID</U>:</EM></FONT> Known</FONT></STRONG></P>
+      <P align=center><STRONG><FONT size=2><FONT 
+      color=#800000><EM><U>Relatives</U>:</EM></FONT> Jonathan Webb, Husband 
+      (deceased)...Charlotte Witter, Granddaughter</FONT></STRONG></P>
+      <P align=center><EM><STRONG><FONT color=#800000 
+      size=2><U>Affiliates</U>:</FONT></STRONG></EM><FONT size=2> <STRONG>Ally 
+      of Spider-Man, Spider-Woman I, Spider-Woman II, and Spider-Woman 
+      III</STRONG></FONT></P>
+      <P align=center><FONT size=2><EM><FONT 
+      color=#800000><U><STRONG>Enemies</STRONG></U><STRONG>:</STRONG></FONT></EM> 
+      <STRONG>Juggernaut, Norman Osborn</STRONG></FONT></P>
+      <P align=center><STRONG><FONT size=2><FONT 
+      color=#800000><EM><U>Powers</U>:</EM></FONT> Web is a psychic with sensory 
+      powers including clairvoyance, telepathy, and precognition. She also has 
+      the ability to sense the presence of psionic powers in other beings. 
+      Ability to take on astral forms.</FONT></STRONG></P>
+      <P align=center><STRONG><FONT size=2><FONT 
+      color=#800000><EM><U>Origin</U>:</EM></FONT> Cassandra's powers are due to 
+      genetic mutation. She has been blind since birth and was dependant on a 
+      web-like cybernetically linked external life support system due to 
+      Myasthenia Gravis, a disease which erodes the central nervous 
+      system.</FONT></STRONG></P></TD></TR></TBODY></TABLE></CENTER></DIV>
+<P align=center>&nbsp;</P>
+<P align=center>&nbsp;</P>
+<P align=center>&nbsp;</P>
+<DIV align=center>
+<CENTER>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle width="55%">
+      <P align=center><STRONG><FONT size=2><FONT color=#800000><EM><U>1st 
+      App.</U>:</EM></FONT> <I>Amazing Spider-Man</I> #210</FONT></STRONG></P>
+      <P align=center><A 
+      href="http://www.samruby.com/AmazingSpider-ManI/Large/AmazSpid210.JPG" 
+      target=_blank><IMG height=91 src="Madam Web_files/AmazSpid210_small.jpg" 
+      width=60 border=2 
+      xthumbnail-orig-image="../../AmazingSpider-ManI/Large/AmazSpid210.JPG"></A></P>
+      <P align=center><FONT size=2><B>November</B></FONT><B><FONT size=2> 
+      1980</FONT></B></P>
+      <P align=center><FONT size=2><EM><STRONG><U><BR><FONT 
+      color=#800000>Spider-Man Appearances</FONT></U><FONT 
+      color=#800000>:</FONT></STRONG></EM> <STRONG><I>Amazing Spider-Man</I> 
+      #210, 216, 229, 230, 239, 441, V2 6 &amp; 14...<I>Spider-Man</I> 
+      #96</STRONG></FONT></P>
+      <P align=center><FONT size=2><EM><STRONG><U><BR><FONT color=#800000>Other 
+      Appearances</FONT></U><FONT color=#800000>:</FONT></STRONG></EM> 
+      <STRONG><I>Spider-Woman </I>V3<I> </I>#1, 3-11 &amp; 
+    14</STRONG></FONT></P></TD>
+    <TD align=middle width="45%"><IMG height=304 
+      src="Madam Web_files/MadamWebNew.gif" width=322 
+border=0></TD></TR></TBODY></TABLE></CENTER></DIV>
+<P align=center>&nbsp;</P>
+<P align=center>&nbsp;</P>
+<DIV align=center>
+<CENTER>
+<TABLE borderColor=#800000 cellSpacing=1 width="100%" border=2>
+  <TBODY>
+  <TR>
+    <TD width="3%">
+      <P align=center><I><B>1<BR>9<BR>8<BR>2</B></I></P></TD>
+    <TD align=middle width="10%">
+      <P align=center><A 
+      href="http://www.samruby.com/AmazingSpider-ManJ/Large/AmazSpid229.JPG" 
+      target=_blank><IMG height=91 src="Madam Web_files/AmazSpid229_small.jpg" 
+      width=60 border=2 
+      xthumbnail-orig-image="../../AmazingSpider-ManJ/Large/AmazSpid229.JPG"></A></P></TD>
+    <TD align=middle width="87%"><FONT size=2><B>Madam Web was introduced 
+      innocently in <A 
+      href="http://www.samruby.com/AmazingSpider-ManI/amazing_spiderman_210.htm" 
+      target=_blank><I>Amazing Spider-Man</I> #210</A>, as peter Parker first 
+      learned of a teacher of paranormal phenomena. Skeptical at first, Peter 
+      met Madam Web as Spider-Man, and she helped him rescue the publisher of 
+      the <I>Daily Globe</I>. She also became aware that Peter Parker was 
+      Spider-Man, but his secret was safe with Madam Web. Spider-Man next sought 
+      the help of Madam Web in <A 
+      href="http://www.samruby.com/AmazingSpider-ManI/amazing_spiderman_216.htm" 
+      target=_blank><I>Amazing Spider-Man</I> #216</A>. In that issue, Madam Web 
+      helped Spider-Man with the assassination attempt on a runner in a marathon 
+      race. About a year and a half later, Madam Web would become a character in 
+      one of the greatest Spider-Man stories 
+ever.</B></FONT></TD></TR></TBODY></TABLE></CENTER></DIV>
+<P align=center>&nbsp;</P>
+<DIV align=center>
+<CENTER>
+<TABLE borderColor=#800000 height=92 cellSpacing=1 width="100%" border=2>
+  <TBODY>
+  <TR>
+    <TD align=middle width="87%" height=87><FONT size=2><B>In <A 
+      href="http://www.samruby.com/AmazingSpider-ManJ/amazing_spiderman_229.htm" 
+      target=_blank><I>Amazing Spider-Man</I> #229</A> &amp; <A 
+      href="http://www.samruby.com/AmazingSpider-ManJ/amazing_spiderman_230.htm" 
+      target=_blank>#230</A>, Madam Web was sought by Black Tom Cassidy, a 
+      long-time cohort of the Juggernaut. They sought to use her powers for 
+      their gain, but she was ripped apart from her life-support system by the 
+      Juggernaut. After being taken to the hospital, Cassandra suffered from 
+      severe shock &amp; brain damage. She became amnesiac and also forgot that 
+      Peter was Spider-Man. It was a long time between appearances after 
+      Spider-Man makes a visit to see her in <A 
+      href="http://www.samruby.com/AmazingSpider-ManJ/amazing_spiderman_239.htm" 
+      target=_blank><I>Amazing Spider-Man</I> #239</A>, but her life was forever 
+      to change in the pages of <A 
+      href="http://www.samruby.com/SpidB/spid096.htm" 
+      target=_blank><I>Spider-Man </I>#96</A> when she was offered the 
+      opportunity to participate in the Gathering of Five by Norman 
+      Osborn.</B></FONT></TD>
+    <TD align=middle width="10%" height=87>
+      <P align=center><A href="http://www.samruby.com/SpidB/96.gif" 
+      target=_blank><IMG height=91 src="Madam Web_files/96_small.gif" width=60 
+      border=2 xthumbnail-orig-image="../../SpidB/96.gif"></A></P></TD>
+    <TD width="4%" height=87>
+      <P 
+align=center><I><B>1<BR>9<BR>9<BR>8</B></I></P></TD></TR></TBODY></TABLE></CENTER></DIV>
+<P align=center>&nbsp;</P>
+<DIV align=center>
+<CENTER>
+<TABLE borderColor=#800000 cellSpacing=1 width="100%" border=2>
+  <TBODY>
+  <TR>
+    <TD width="3%">
+      <P align=center><I><B>1<BR>9<BR>7<BR>2</B></I></P></TD>
+    <TD align=middle width="10%">
+      <P align=center><A 
+      href="http://www.samruby.com/AmazingSpider-ManR/Large/AmazSpid447.JPG" 
+      target=_blank><IMG height=91 src="Madam Web_files/AmazSpid447_small.jpg" 
+      width=60 border=2 
+      xthumbnail-orig-image="../../AmazingSpider-ManR/Large/AmazSpid447.JPG"></A></P></TD>
+    <TD align=middle width="87%"><B><FONT size=2>Feeble and old, Web was in 
+      the state of decrepitude, and was to die soon, but she eventually gave in 
+      to Norman's "promise" of immortality and participated in the Gathering. At 
+      first, she was thought to have "won" the "prize" of death, but it turned 
+      out all but good for Ms. Web: She became much younger, and was now able to 
+      take on an astral form. Very shortly later, the new younger Madam Web 
+      showed up almost monthly in the pages of Spider-Woman V3, where she 
+      initially formed a "Spider-Woman" team by recruiting all three women who 
+      has taken that mantle. Together, they defeated Web's granddaughter: the 
+      evil Spider-Woman IV. She hasn't been seen much 
+  since.</FONT></B></TD></TR></TBODY></TABLE></CENTER></DIV>
+<P align=center><BR>&nbsp;</P>
+<P align=center><STRONG><EM>Spider-Man Friend Rating:</EM><FONT 
+color=#000000>&nbsp;</FONT>&nbsp;<FONT color=#800000>&nbsp; <BIG><BIG>6 
+</BIG></BIG><SMALL><SMALL>(out of 10)</SMALL></SMALL></FONT></STRONG></P>
+<HR>
+</BODY>
+</HTML>

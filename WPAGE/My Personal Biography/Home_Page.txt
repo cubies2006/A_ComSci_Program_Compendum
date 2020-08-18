@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+<TITLE>Welcome To My Personal Website</TITLE>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=3.0,Transition=23)">
+<Bgsound src="Right Now - Atomic Kitten.mp3" loop="Infinite">
+</HEAD>
+<BODY Background="clouds.jpg" bgproperties="fixed" link="Teal" vlink="Lavander" Text="White">
+<!--Author: Ronald Ong Dee-->
+<!--Description: Personal Site-->
+<br>
+<TABLE Height="100%" Width="100%" Background="multicolorstars.gif" Border="3" Bordercolorlight="Turquoise" Bordercolordark="Teal">
+<TR>
+<TD colspan="2">
+<hr color="Red" size="5">
+<Font color="Yellow" size="4"><CENTER><I>Get to Know More About Ronald Ong Dee!!!</I></CENTER></Font>
+<hr color="Red" size="5">
+</TD>
+</TR>
+<TR>
+<TD colspan="2">
+<br>
+<CENTER><IMG src="RonC.jpg"></CENTER>
+</TD>
+</TR>
+<TR>
+<TD>
+<Font size="3">
+<A HREF="Page1.html"><Font color="White">My Autobiography</Font></A><br>
+<A HREF="Hands_On1.html"><Font color="White">My Resume</Font></A><br>
+<A HREF="Hands_On2.html"><Font color="White">An Inspirational Poem</Font></A><br>
+<A HREF="Page3.html"><Font color="White">My Transformation</Font></A><br>
+<A HREF="About My Family.html"><Font color="White">About My Family</Font></A><br>
+<A HREF="My Bestfriends Photos.html"><Font color="White">My Bestfriends Photos</Font></A><br>
+<A HREF="My Family Background.html"><Font color="White">My Family Background</Font></A><br>
+<A HREF="My Friends.html"><Font color="White">My Friends</Font></A><br>
+<A HREF="My Friendster.html"><Font color="White">My Friendster</Font></A><br>
+<A HREF="Places I Want To Hang Out.html"><Font color="White">Places I Want To Hang Out</Font></A><br>
+<A HREF="Page2.html"><Font color="White">My Calendar</Font></A><br>
+<A HREF="My Fashion Sense.html"><Font color="White">My Fashion Sense</Font></A><br>
+<A HREF="My Inspirations.html"><Font color="White">My Inspirations</Font></A><br>
+<A HREF="My Strengths.html"><Font color="White">My Strengths</Font></A><br>
+<A HREF="My Weaknesses.html"><Font color="White">My Weaknesses</Font></A><br>
+</TD>
+<TD>
+<Font size="3">
+Likes<br>
+Dislikes<br>
+<A HREF="Rules In Life.html"><Font color="White">Rules in Life</Font></A><br>
+<A HREF="My Favorite Quotes.html"><Font color="White">My Favorite Quotes Anything Under The Sun</Font></A><br>
+Inspirational Stories Which Had Touched My Life<br>
+My Favorite Music<br>
+<A HREF="Lyrics of My Favorite Music.html"><Font color="White">Lyrics Of My Favorite Music</Font></A><br>
+<A HREF="Pictures of My Favorite Singers, Their Songs, and Their Where Abouts.html"><Font color="White">Pictures of My Favorite Singers, Their Songs, and Their Where Abouts</Font></A><br>
+<A HREF="My Favorite TV Shows.html"><Font color="white">My Favorite T. V. Shows</Font></A><br>
+<A HREF="My Favorite Actors And Actresses.html"><Font color="white">My Favorite Actors And Actresses</Font></A><br>
+<A HREF="My Favorite Movies.html"><Font color="white">My Favorite Movies</Font></A><br>
+Movies Of Great Influence To Me From Which I Can Relate<br>
+Latest Technologies I Want To Have<br>
+My Dreams in Life<br>
+My Ambitions in Life<br>
+</TD>
+</TR>
+</TABLE>
+</OL>
+<CENTER><IMG src="tree-seasons.gif" height="70%" width="30%"></CENTER>
+<br>
+<A HREF="Page1.html"><IMG src="Next.gif" border="0" align="right"></A>
+<CENTER><A HREF="Home_Page.html" border="0"><IMG src="Go Top.gif" alt="GO TOP"></A></CENTER>
+</BODY>
+</HTML>

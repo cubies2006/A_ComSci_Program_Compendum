@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<TITLE>My Ambitions In Life</TITLE>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=3.0,Transition=17)">
+<Bgsound src="Bye Now - Atomic Kitten.mp3" loop="Infinite">
+</HEAD>
+<BODY Background="clouds.jpg" Bgproperties="fixed" vlink="lavander">
+<Font face="Tahoma">
+<CENTER><Font size="9" color="Royalblue" face="Garamond">XXX. My Ambitions In Life</Font></CENTER>
+<IMG src="bunny.gif" align="left">
+<IMG src="bunny.gif" align="right">
+<BODY>
+<P align="justify">After I'd graduated my course in Computer Science, I wanted to take up ECE (Electronics And
+Communications Engineering) maybe for 2 years or so when I'm working already. After that, I'll take up a Masteral 
+Degree in Computer Science. I wanna be a successful and a self-fulfilled Computer Programmer in a International computer
+company.</P>
+<P align="justify">I must be able to bring my parents in China by 2008 for us to watch the "Beijing Olympics". After that, I wanted
+to travel to other countries to see the latest trends in the Computer world like gadgets, programming languages, and others.</P>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I want to have my own house and also a condominium unit.. at any reputable building.
+then if i have earn about 500,000 a month, i will have the privilege of buying a car, maybe civic honda or altis.. if i have a chance to go to canada, 
+and my auntie had me petitioned, then ill start a new life their.. and maybe meet my future wife there..</P>
+<CENTER><A HREF="My Ambitions In Life.html" border="0"><IMG src="Go Top.gif" alt="GO TOP"></A></CENTER>
+<br>
+<CENTER><A HREF="Home_Page.html"><IMG src="Earth6.gif" alt="HOME" border="0" height="15%" width="10%"></A></CENTER>
+<A HREF="My Dreams In life.html"><IMG src="Back.gif" border="0" align="left"></A>
+</BODY>
+</HTML>

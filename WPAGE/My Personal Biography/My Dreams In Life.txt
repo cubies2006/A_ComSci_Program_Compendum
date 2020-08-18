@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<TITLE>My Dreams In Life</TITLE>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=3.0,Transition=14)">
+<Bgsound src="See Ya - Atomic Kitten.mp3" loop="Infinite">
+</HEAD>
+<BODY Background="clouds.jpg" Bgproperties="fixed" vlink="lavander">
+<Font face="Tahoma">
+<CENTER><Font size="9" color="Gray" face="Garamond">XXIX. My Dreams In Life</Font></CENTER>
+<IMG src="plane.gif" align="left">
+<IMG src="plane.gif" align="right">
+<P align="justify">I dream to learn how to play soccer, basketball, and snow skiing.  I also dream to learn how to
+fly an airplane "rotationally" around the world.</P>
+<P align="justify">I see myself going to korea a year later.. and 5 yrs later ill gonna took up my doctorate degree in engineering.
+10 years later, i wanna go to europe.
+<P align="justify"> Probably, i'll go to ireland and U.K... so that if i have gone to our reunion. i can prove myself to them. </P>
+<CENTER><A HREF="My Favorite Music.html" border="0"><IMG src="Go Top.gif" alt="GO TOP"></A></CENTER>
+<br>
+<CENTER><A HREF="Home_Page.html"><IMG src="Earth6.gif" alt="HOME" border="0" height="15%" width="10%"></A></CENTER>
+<A HREF="Latest Technologies I Want To Have.html"><IMG src="Back.gif" border="0" align="left"></A>
+<A HREF="My Ambitions In Life.html"><IMG src="Next.gif" border="0" align="right"></A>
+</BODY>
+</HTML>

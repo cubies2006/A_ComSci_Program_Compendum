@@ -1,0 +1,186 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>End key</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="Game_User_Experience_Library_v1_1_en_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='Game_User_Experience_Library_v1_1_en.css'>");}
+//-->
+</script>
+<style>
+<!--
+A:visited { color:#800080; }
+A:link { color:#0000ff; }
+-->
+</style><style type="text/css">
+<!--
+img_whs1 { width:34px; height:15px; border-style:none; }
+img_whs2 { width:13px; height:7px; border-style:none; }
+ol.whs3 { list-style:disc; }
+ul.whs4 { list-style:disc; }
+img_whs5 { width:54px; height:15px; border-style:none; }
+img_whs6 { width:26px; height:15px; border-style:none; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+</head>
+<body lang="EN-US"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Usability guidelines\nGame experience\nEnd key");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("Game_User_Experience_Library_v1_1_en.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h2>End key</h2>
+
+<p class=BodyHeading2><img src="Game_User_Experience_Library_v1_1_en_files/image019.gif" width="34px" height="15px" border="0" class="img_whs1"></p>
+
+<p class=BodyCopy>According to the<i> <a href="http://www.forum.nokia.com/info/sw.nokia.com/id/7e457a32-caf7-41bf-889f-162ff3bef363/S60_UI_Style_Guide_v1_2_en.pdf.html"
+										target=_blank
+										style="font-style: normal;">S60 
+ UI Style Guide</a> </i><img src="Game_User_Experience_Library_v1_1_en_files/image014.gif" width="13px" height="7px" border="0" class="img_whs2">, the device should return to the 
+ idle state when the user presses the End key within an application. The 
+ application should not be terminated. This is logical and clear behavior 
+ in single- and two-player games where the game can be paused. However, 
+ in games with more than two players, the pause is not convenient. From 
+ S60 2nd Edition, Feature Pack 3 onwards, pressing the End key closes the 
+ application.</p>
+
+<ol type="disc" class="whs3">
+	
+	<ul type="disc" class="whs4">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">In single- 
+ and two-player games, if the user presses the End key, pause the game 
+ and switch it to the background. The player(s) should be able to continue 
+ the game.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">In games 
+ with more than two players, if the users press the End key, they are dropped 
+ from the game or the game can be switched to the background without the 
+ game being paused. The other players should be able to keep on playing. 
+ The preferred action depends on the game type. See <a href="http://www.forum.nokia.com/info/sw.nokia.com/id/fc4dc5e2-0f4e-4c92-a89a-a86ad721d519/Multi_play_Mobi_v1_1_en.pdf.html"
+														target=_blank>Overview 
+ of Multiplayer Mobile Game Design</a> <img src="Game_User_Experience_Library_v1_1_en_files/image014.gif" width="13px" height="7px" border="0" class="img_whs2"> for more information.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">From 
+ S60 2nd Edition, Feature Pack 3 onwards, pressing the End key closes the 
+ application. This can cause inconvenience to players on some devices. 
+ </p></li>
+		
+		<ul type="disc" class="whs4">
+			
+			<li style="list-style: circle;"
+				type=circle
+				class=kadov-p-CGuideline2><p class=Guideline2
+											style="margin-left: 0in;"><img src="Game_User_Experience_Library_v1_1_en_files/image017.gif" width="54px" height="15px" border="0" class="img_whs5"><br>
+			In Symbian games, it is possible to catch and ignore a <span 
+ class=CodeinText>KAknUidValueEndKeyCloseEvent</span> window server event 
+ in <span class=CodeinText>AppUI's HandleWsEventL().</span> This sends 
+ the application in the background instead of closing it. It should be 
+ possible to implement a save-and-exit behavior by catching that event, 
+ saving the game state and then calling the base class implementation of 
+ <span class=CodeinText>HandleWsEventL()</span> <span class=CodeinText>with 
+ KAknUidValueEndKeyCloseEvent</span>. </p></li>
+			
+			<li style="list-style: circle;"
+				type=circle
+				class=kadov-p-CGuideline2><p class=Guideline2
+											style="margin-left: 0in;"><img src="Game_User_Experience_Library_v1_1_en_files/image016.jpg" alt="*" width="26px" height="15px" border="0" class="img_whs6"><br>
+			In Java™ ME games the game can save the situation before closing. 
+ This is possible with the <span class=CodeinText>destroyApp() </span>method.</p></li>
+		</ul>
+	</ul>
+</ol>
+
+<p class=InlineBodyHeading2><img src="Game_User_Experience_Library_v1_1_en_files/image018.gif" alt="*" width="34px" height="15px" border="0" class="img_whs1"></p>
+
+<ol type="disc" class="whs3">
+	
+	<ul type="disc" class="whs4">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">Perform 
+ a clean shutdown with auto-save. This is possible using the <span class=CodeinText>destroyApp()</span> 
+ method of the newer devices. It allows the application to save its current 
+ state, which can be recovered when the application is reopened.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">When 
+ restarting with a saved game available, the first command in the menu 
+ is Continue game.</p></li>
+	</ul>
+</ol>
+
+<p class=BodyHeading1>See also</p>
+
+<p class=BodyCopy>Usability guidelines &gt; Game experience &gt; <a href="Pause.htm"
+	target=_self>Pause</a></p>
+
+<p class=BodyCopy>Articles &gt; <ins cite="mailto:Inari%20Frank"
+									datetime="2006-04-20T08:48"><span class=Hyperlink><a 
+ href="At_the_core_of_mobile_game_usability_the_pause_menu.htm"
+	target=_self>At the core of mobile game usability: the pause menu</a></span></ins></p>
+
+<p class=Guideline>&nbsp;</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

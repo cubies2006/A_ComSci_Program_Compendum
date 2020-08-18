@@ -1,0 +1,8 @@
+MIDlet-1: dropOff, /dropOff.png, dropOff.dropOff
+MIDlet-Jar-Size: 5708
+MIDlet-Jar-URL: dropOff.jar
+MIDlet-Name: dropOff
+MIDlet-Vendor: Unknown
+MIDlet-Version: 1.0
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-1.0

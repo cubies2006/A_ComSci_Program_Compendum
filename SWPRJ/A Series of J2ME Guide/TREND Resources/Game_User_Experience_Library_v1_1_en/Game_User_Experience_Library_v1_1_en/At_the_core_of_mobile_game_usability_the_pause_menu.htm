@@ -1,0 +1,285 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>At the core of mobile game usability: the pause menu</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="Game_User_Experience_Library_v1_1_en_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='Game_User_Experience_Library_v1_1_en.css'>");}
+//-->
+</script>
+<style>
+<!--
+A:visited { color:#800080; }
+A:link { color:#0000ff; }
+-->
+</style><style type="text/css">
+<!--
+img_whs1 { width:126px; height:148px; margin-top:16px; margin-bottom:16px; margin-left:16px; margin-right:16px; border-style:none; }
+img_whs2 { width:126px; height:149px; margin-left:0px; margin-right:0px; margin-top:0px; margin-bottom:0px; float:none; border-style:none; }
+img_whs3 { width:126px; height:150px; border-style:none; }
+tr.whs4 { mso-yfti-irow:0; mso-yfti-firstrow:yes; mso-yfti-lastrow:yes; height:58.1pt; }
+td.whs5 { x-cell-content-align:top; width:407.25pt; border:solid #0000ff 2.25pt; padding:0pt 3.5pt 0pt 3.5pt; height:58.1pt; padding-left:0px; padding-top:0px; padding-right:0px; padding-bottom:0px; }
+ul.whs6 { list-style:disc; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "img_whs2 {margin-left:1pt;margin-right:1pt;margin-top:1pt;margin-bottom:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+</head>
+<body lang="EN-US"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Articles\nAt the core of mobile game usability: the pause menu");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("Game_User_Experience_Library_v1_1_en.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h2>At the core of mobile game usability: the pause menu</h2>
+
+<p class=BodyHeading1>Introduction</p>
+
+<p class=BodyCopy>This article discusses issues related to the pause feature 
+ in mobile games and provides some guidelines for improving the overall 
+ usability and game experience of mobile games. The examples used in this 
+ article are based on the S60 and Series 40 platforms.</p>
+
+<p class=BodyCopy>In a mobile context, users face interruptions and distractions 
+ such as an incoming call from home, a new message from a friend, or getting 
+ off at the bus stop. Thus, providing an easy and fast way to pause the 
+ game and being able to continue it later is an essential feature of a 
+ mobile game. The pause menu is used when the player switches context, 
+ for example when adjusting sound levels or pausing the game for a few 
+ seconds. The game developer’s understanding of the mobile context is often 
+ visible from the pause menu implementation; it is the essence of mobile 
+ game usability.</p>
+
+<p class=BodyCopy><b style="font-weight: bold;">Tip:</b> To quickly evaluate 
+ a mobile game’s quality, take a look at its pause menu.</p>
+
+<p class=BodyCopy>The following guidelines will help developers in designing 
+ usable pause features.</p>
+
+<p class=BodyHeading1>To pause or not to pause?</p>
+
+<p class=BodyCopy><script type="text/javascript" language="JavaScript"><!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) <= 4)) 
+{  if (parseInt(navigator.appVersion) != 2) document.write("<img src='Game_User_Experience_Library_v1_1_en_files/image150.jpg' width='126px' height='148px' border='0' class='img_whs1'>");}
+else
+{   document.write("<img src='Game_User_Experience_Library_v1_1_en_files/image150.jpg' style='margin-top:16px;margin-bottom:16px;margin-left:16px;margin-right:16px;' width='126px' height='148px' border='0' class='img_whs1'>");}
+//--></script><noscript><img src='Game_User_Experience_Library_v1_1_en_files/image150.jpg' style='margin-top:16px;margin-bottom:16px;margin-left:16px;margin-right:16px;' width='126px' height='148px' border='0' class='img_whs1'></noscript>&nbsp;&nbsp;&nbsp; <script type="text/javascript" language="JavaScript"><!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) <= 4)) 
+{  if (parseInt(navigator.appVersion) != 2) document.write("<img src='Game_User_Experience_Library_v1_1_en_files/image151.jpg' width='126px' height='148px' border='0' class='img_whs1'>");}
+else
+{   document.write("<img src='Game_User_Experience_Library_v1_1_en_files/image151.jpg' style='margin-top:16px;margin-bottom:16px;margin-left:16px;margin-right:16px;' width='126px' height='148px' border='0' class='img_whs1'>");}
+//--></script><noscript><img src='Game_User_Experience_Library_v1_1_en_files/image151.jpg' style='margin-top:16px;margin-bottom:16px;margin-left:16px;margin-right:16px;' width='126px' height='148px' border='0' class='img_whs1'></noscript></p>
+
+<p class=BodyCopy>Some games might not seem to need a pause menu at all. 
+ There does not seem to be any point for a pause menu in strategy games 
+ that do not contain real-time action. However, users still need a pause 
+ feature — the ability to interrupt the game quickly and continue it later. 
+ </p>
+
+<p class=BodyCopy>In Series 40 devices, the quickest way to quit a game 
+ is by pressing the End key. This should save the current situation and 
+ quit the game. When the player later opens the game again, the first option 
+ should be “continue game.” So, even strategy games need a pause feature, 
+ but it can be implemented as automatic saving and loading.</p>
+
+<p class=BodyCopy>Automatic saving and loading can be used as a Pause feature 
+ in Series 40 games.</p>
+
+<p class=BodyCopy>S60 games are similar but a bit more complex because 
+ of the platform’s multitasking features. The user can press the Application 
+ key (or also the End key prior to S60 2nd Edition, Feature Pack 3) to 
+ quickly exit the game. The game should then be paused, and also saved. 
+ The implementation of multitasking in S60 works well with interruptions 
+ — even so that users often do not even notice it. Unfortunately, it cannot 
+ be relied on as an “automatic save game feature”; users could power off 
+ the device, and thus lose the game. The same goes for other multitasking 
+ platforms, such as Series 80. </p>
+
+<p class=BodyCopy><b style="font-weight: bold;">Tip:</b> Advanced S60 users 
+ may know that a game can be paused by opening the Power key menu and selecting 
+ keypad lock. If this feature could be useful for pausing your game, it 
+ should be mentioned in the game instructions. This feature could be useful 
+ for always-on games, which still need to be physically paused, even if 
+ the game is not paused.</p>
+
+<p class=BodyCopy>The context change in a S60 game needs to be thought 
+ out too. Users may have had sounds on when they switched the game to the 
+ background, but when they continue the game, they might be in a situation 
+ where they prefer the silent mode. This is one reason more for providing 
+ sound settings in Pause menus. This also means that games should check 
+ the current profile when continuing the game from a paused state.</p>
+
+<p class=BodyHeading1>Pause menu or main menu?</p>
+
+<p class=BodyCopy><script type="text/javascript" language="JavaScript"><!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) <= 4)) 
+{  if (parseInt(navigator.appVersion) != 2) document.write("<img src='Game_User_Experience_Library_v1_1_en_files/image152.jpg' x-maintain-ratio='TRUE' width='126px' height='149px' border='0' class='img_whs2'>");}
+else
+{   document.write("<img src='Game_User_Experience_Library_v1_1_en_files/image152.jpg' x-maintain-ratio='TRUE' style='margin-left:0px;margin-right:0px;margin-top:0px;margin-bottom:0px;' width='126px' height='149px' border='0' class='img_whs2'>");}
+//--></script><noscript><img src='Game_User_Experience_Library_v1_1_en_files/image152.jpg' x-maintain-ratio='TRUE' style='margin-left:0px;margin-right:0px;margin-top:0px;margin-bottom:0px;' width='126px' height='149px' border='0' class='img_whs2'></noscript>&nbsp;&nbsp;<img src="Game_User_Experience_Library_v1_1_en_files/image153.jpg" width="126px" height="150px" border="0" class="img_whs3"></p>
+
+<p class=BodyCopy>There are two recommended ways for implementing the pause 
+ feature. The first is having a separate pause menu. This is recommended 
+ for more complex games. The other is combining the game main menu and 
+ pause menu to a single menu. This is recommended for very simple games.</p>
+
+<p class=BodyHeading1>Disable sounds and music</p>
+
+<p class=BodyCopy>A game is often paused when something happens in the 
+ player’s surroundings. Pressing the pause button should automatically 
+ stop all the sounds, music, vibrations, and other animations. On platforms 
+ that support multitasking, it is essential that the game does not consume 
+ resources while it is open in the background. Some bad examples include 
+ games that consume memory or processing power while in the background. 
+ Some games have even played sounds when in the background, and novice 
+ users might not know how to close the application, except by powering 
+ off the whole device. <i>Minimize the use of system resources when paused.</i></p>
+
+<p class=BodyHeading1>Actions in the pause menu</p>
+
+<p class=BodyCopy>The default action in a pause menu is, of course, resuming 
+ the game.</p>
+
+<p class=BodyCopy>The player should be able to resume the game with the 
+ same key with which the game was paused. Using different keys for pause 
+ and resume is not recommended and not very intuitive for the player. This 
+ is usually conveniently implemented by having “Resume game” as the first 
+ option in the pause menu.</p>
+
+<p class=BodyCopy>In addition to just pausing and resuming, provide options 
+ that might be useful for the player. In some games, it might be a good 
+ idea to add options for other frequently needed actions, such as quickly 
+ restarting the level or exiting the game. Players should also be able 
+ to read Help topics without leaving the game. It is a good idea to add 
+ Help topics to the pause menu. This way, players don’t need to memorize 
+ all the instructions before trying the game. This is an especially useful 
+ feature in complex games. </p>
+
+<p class=BodyHeading1>Resuming the game</p>
+
+<p class=BodyCopy>In action games, using the pause menu might get a player’s 
+ character killed; typically, when the user continues the action, the user 
+ might get surprised, or might not yet be prepared for the action. Some 
+ common solutions for this include displaying the game situation in the 
+ background of the pause menu, or not having the game action start instantly 
+ after the “resume” key press.</p>
+
+<p class=BodyCopy>To sum up: </p>
+
+<table class=NormalTable
+		x-use-null-cells
+		style="margin-left: 39.5pt;
+				border: none;
+				x-border-left: 1px table-solid;
+				x-border-top: 1px table-solid;
+				x-border-right: 1px table-solid;
+				x-border-bottom: 1px table-solid;
+				border-collapse: separate;
+				border-spacing: 0px;
+				border-spacing: 0px;"
+		cellspacing=0>
+
+<tr class="whs4">
+<td height="77" valign="top" width="407.3pt" class="whs5">
+<ul type="disc" class="whs6">
+	
+	<li style="/*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p-CInlineBadfig2><p class=InlineBadfig2
+										style="margin-left: 0in;"><span 
+ style="font-family: Arial; color: #000000;"><font color=black >A mobile game needs to be 
+ paused frequently and quickly.</font></span></p></li>
+	
+	<li style="/*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p-CInlineBadfig2><p class=InlineBadfig2
+										style="margin-left: 0in;"><span 
+ style="font-family: Arial; color: #000000;"><font color=black >Allow players to continue 
+ the game later, without getting the player’s character killed.</font></span></p></li>
+	
+	<li style="/*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p-CInlineBadfig2><p class=InlineBadfig2
+										style="margin-left: 0in;"><span 
+ style="font-family: Arial; color: #000000;"><font color=black >Provide Help; it might be 
+ needed during the game.</font></span></p></li>
+	
+	<li style="/*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p-CInlineBadfig2><p class=InlineBadfig2
+										style="margin-left: 0in;"><span 
+ style="font-family: Arial; color: #000000;"><font color=black >Provide sound and vibration 
+ settings; they are needed when the user changes context.</font></span></p></li>
+	
+	<li style="/*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p-CInlineBadfig2><p class=InlineBadfig2
+										style="margin-left: 0in;"><span 
+ style="font-family: Arial; color: #000000;"><font color=black >Minimize the use of system 
+ resources when paused.</font></span></p></li>
+</ul></td></tr>
+</table>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

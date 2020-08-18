@@ -1,0 +1,5 @@
+file consist 
+	default.asp
+	vote.asp
+	pink.jpg
+	and remainng file are text Data base

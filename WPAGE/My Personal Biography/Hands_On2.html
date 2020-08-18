@@ -1,0 +1,160 @@
+<HTML>
+<HEAD>
+<TITLE>An Inspirational Poem</TITLE>
+<Bgsound src="Whole Again - Atomic Kitten.mp3" loop="Infinite">
+<meta http-equiv="Page-Enter" content="BlendTrans(Duration=3.0,Transition=3)">
+</HEAD>
+<BODY Background="clouds.jpg" link="Teal" vlink="Lavander" bgproperties="fixed" text="Black">
+<script type="text/javascript">
+
+/*
+Simple Image Trail script- By JavaScriptKit.com
+Visit http://www.javascriptkit.com for this script and more
+This notice must stay intact
+*/
+
+var trailimage=["test.gif", 100, 99] //image path, plus width and height
+var offsetfrommouse=[10,-20] //image x,y offsets from cursor position in pixels. Enter 0,0 for no offset
+var displayduration=0 //duration in seconds image should remain visible. 0 for always.
+
+if (document.getElementById || document.all)
+document.write('<div id="trailimageid" style="position:absolute;visibility:visible;left:0px;top:0px;width:1px;height:1px"><img src="'+trailimage[0]+'" border="0" width="'+trailimage[1]+'px" height="'+trailimage[2]+'px"></div>')
+
+function gettrailobj(){
+if (document.getElementById)
+return document.getElementById("trailimageid").style
+else if (document.all)
+return document.all.trailimagid.style
+}
+
+function truebody(){
+return (!window.opera && document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function hidetrail(){
+gettrailobj().visibility="hidden"
+document.onmousemove=""
+
+}
+
+function followmouse(e){
+var xcoord=offsetfrommouse[0]
+var ycoord=offsetfrommouse[1]
+if (typeof e != "undefined"){
+xcoord+=e.pageX
+ycoord+=e.pageY
+}
+else if (typeof window.event !="undefined"){
+xcoord+=truebody().scrollLeft+event.clientX
+ycoord+=truebody().scrollTop+event.clientY
+}
+var docwidth=document.all? truebody().scrollLeft+truebody().clientWidth : pageXOffset+window.innerWidth-15
+var docheight=document.all? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+if (xcoord+trailimage[1]+3>docwidth || ycoord+trailimage[2]> docheight)
+gettrailobj().display="none"
+else 
+gettrailobj().display=""
+gettrailobj().left=xcoord+"px"
+gettrailobj().top=ycoord+"px"
+}
+
+document.onmousemove=followmouse
+
+if (displayduration>0)
+setTimeout("hidetrail()", displayduration*1000)
+
+</script>
+<Font color="Blue" size="7" face="Garamond"><CENTER>III. An Inspirational Poem</CENTER></Font>
+<IMG src="dove.gif" align="left" height="80" width="80">
+<IMG src="dove.gif" align="right" height="80" width="80">
+<br>
+<CENTER>
+<IMG src="normi2.gif" height="50" width="45">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<IMG src="normt2.gif" height="50" width="45">
+<IMG src="normr.gif" height="50" width="45">
+<IMG src="normi.gif" height="50" width="45">
+<IMG src="norme.gif" height="50" width="45">
+<IMG src="normd.gif" height="50" width="45"><br>
+<IMG src="normt2.gif" height="50" width="45">
+<IMG src="normo.gif" height="50" width="45">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<IMG src="normc2.gif" height="50" width="45">
+<IMG src="norml.gif" height="50" width="45">
+<IMG src="normi.gif" height="50" width="45">
+<IMG src="normm.gif" height="50" width="45">
+<IMG src="normb.gif" height="50" width="45"><br>
+<IMG src="normt2.gif" height="50" width="45">
+<IMG src="normh.gif" height="50" width="45">
+<IMG src="norme.gif" height="50" width="45"><br>
+<IMG src="normm2.gif" height="50" width="45">
+<IMG src="normo.gif" height="50" width="45">
+<IMG src="normu.gif" height="50" width="45">
+<IMG src="normn.gif" height="50" width="45">
+<IMG src="normt.gif" height="50" width="45">
+<IMG src="norma.gif" height="50" width="45">
+<IMG src="normi.gif" height="50" width="45">
+<IMG src="normn.gif" height="50" width="45"><br>
+<IMG src="normt2.gif" height="50" width="45">
+<IMG src="normo.gif" height="50" width="45">
+<IMG src="normd.gif" height="50" width="45">
+<IMG src="norma.gif" height="50" width="45">
+<IMG src="normy.gif" height="50" width="45"><br>
+</CENTER>
+<br><br>
+<Font face="Garamond">
+<IMG src="RonC.jpg" align="left" height="45%" width="25%">
+<B><P align="left">I tried to climb the mountain today. As I inched my way<br>
+up the path, I felt overwhelmed, so I had to turn back.</P>
+<P align="left">I tried to climb the mountain today. On my journey, darkness<br>
+started to fall, and I was full of fear, so I had to return to<br>
+a safe place.</P>
+<p align="left">I was ready to climb the mountain today. But it<br>
+was so hot outside, I thought I better stay in my nice<br>
+air-conditioned house and rest up for tomorrow's attempt</P>
+<P align="left">I was about to climb the mountain today. But I had so many<br>
+other things to do, so instead of climbing the mountain I<br>
+took care of much more important tasks. I washed my car,<br>
+mowed the grass and watched the big game. Today the mountain<br>
+will just have to wait.</P>
+<IMG src="ronandjoni.jpg" align="left" height="45%" width="25%">
+<P align="left">I was going to climb the mountain today. But as I stared at<br>
+the mountain in it's majestic beauty, I knew I stood no chance<br>
+of making it to the top, so I figured why even bother trying.</P>
+<P align="left">I have forgotten about climbing the mountain today; until a<br>
+friend came by and asked me what I was up to lately. I told<br>
+him I was thinking about climbing that mountain some day.<br>
+I went on and on about how I was going to accomplish this<br>
+task.</P>
+<P align="left">Finally, he said, "I just got back from climbing the mountain.<br>
+For the longest time I told myself I was trying to climb the<br>
+mountain but never made any progress. I almost let the dream<br>
+of making it to the top die. I came up with every excuse of<br>
+why I could not make it up the mountain, but never once did<br>
+I give myself a reason why I could. One day as I stared at<br>
+the mountain and pondered, I realized that if I didn't make<br>
+an attempt at this dream all my dreams will eventually die."</P>
+<br><br>
+<IMG src="grad.jpg" align="left" height="45%" width="35%">
+<P align="left">"The next morning, I started my climb." He continued, "It was<br>
+not easy, and at times I wanted to quit. But no matter what I<br>
+faced, I placed one foot in front of the other, keeping a<br>
+steady pace. When the wind tried to blow me over the edge,<br>
+I kept walking. When the voices inside my head screamed<br>
+"stop!" I focused on my goal never letting it out of sight,<br>
+and I kept moving forward. At times, I was ready to quit, but<br>
+I knew I had come too far. Time and time again, I reassured<br>
+myself that I was going to finish this journey. I struggled<br>
+to make it to the top, but I climbed the mountain!"</P>
+<P align="left">"I have to be going," my friend said. "Tomorrow is a new day to<br>
+accomplish more dreams. By the way, what are you going to do<br>
+tomorrow?</P>
+<P align="left">I looked at him, with intensity and confidence in my eyes, and<br>
+said, "I have a mountain to climb."</P>
+<P align="left">- <I>Gary Barnes</I></P>
+</B>
+<CENTER><A HREF="Hands_On2.html" border="0"><IMG src="Go Top.gif" alt="GO TOP"></A></CENTER>
+<br>
+<CENTER><A HREF="Home_Page.html"><IMG src="Earth6.gif" alt="HOME" border="0" height="15%" width="10%"></A></CENTER>
+<A HREF="Hands_On1.html"><IMG src="Back.gif" border="0" align="left"></A>
+<A HREF="Page3.html"><IMG src="Next.gif" border="0" align="right"></A>
+</BODY>
+</HTML>

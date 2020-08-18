@@ -1,0 +1,33 @@
+A:link {
+	COLOR: #003399; LINE-HEIGHT: normal
+}
+A:active {
+	COLOR: #ff9933; LINE-HEIGHT: normal
+}
+A:visited {
+	COLOR: #0055bb; LINE-HEIGHT: normal
+}
+.body {
+	FONT-SIZE: 10pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.bodybold {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.small {
+	FONT-SIZE: 9px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.smallbold {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.big {
+	FONT-SIZE: 11pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.bigbold {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.huge {
+	FONT-SIZE: 15pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.hugebold {
+	FONT-WEIGHT: bold; FONT-SIZE: 15pt; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}

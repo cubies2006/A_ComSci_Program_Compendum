@@ -1,0 +1,175 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Game main menu — S60, Symbian C++</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="Game_User_Experience_Library_v1_1_en_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='Game_User_Experience_Library_v1_1_en.css'>");}
+//-->
+</script>
+<style>
+<!--
+A:visited { color:#800080; }
+A:link { color:#0000ff; }
+-->
+</style><style type="text/css">
+<!--
+img_whs1 { width:34px; height:15px; border-style:none; }
+img_whs2 { width:54px; height:15px; border-style:none; }
+img_whs3 { width:195px; height:212px; border-style:none; }
+img_whs4 { width:197px; height:214px; border-style:none; }
+img_whs5 { width:200px; height:216px; border-style:none; }
+ol.whs6 { list-style:disc; }
+ul.whs7 { list-style:disc; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+</head>
+<body lang="EN-US"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Main menu design\nGame main menu — S60, Symbian C++");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("Game_User_Experience_Library_v1_1_en.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h2>Game main menu <span lang=EN-GB>—</span> S60, Symbian C++</h2>
+
+<p class=BodyCopy><img src="Game_User_Experience_Library_v1_1_en_files/image019.gif" width="34px" height="15px" border="0" class="img_whs1">&nbsp;&nbsp; <img src="Game_User_Experience_Library_v1_1_en_files/image017.gif" width="54px" height="15px" border="0" class="img_whs2"></p>
+
+<p class=BodyCopy>There are basically three possibilities for presenting 
+ the game’s main menu:</p>
+
+<p class=BodyCopy><img src="Game_User_Experience_Library_v1_1_en_files/image024.jpg" width="195px" height="212px" border="0" class="img_whs3"></p>
+
+<p class=InlineBodyTextNumbered
+	style="font-family: Arial;"><b style="font-weight: bold;">1.&nbsp;&nbsp;&nbsp;Create 
+ the entire menu system from scratch. </b><br>
+This implementation is recommended for all games and entertainment applications. 
+ However, although it provides the most flexibility and the best chance 
+ for a good user experience, it is also the easiest way to make mistakes. 
+ Even if custom graphics are used, interaction needs to be consistent with 
+ other S60 applications. See the article &quot;<a href="Navigation_and_user_experience_in_S60_games.htm"
+													target=_self>Navigation 
+ and user experience in S60 games</a>&quot; for the key S60 interaction-style 
+ issues that should be considered when implementing the game menu with 
+ custom graphics. This main menu implementation should only be used if 
+ it can be done well — it should work at least as well as the higher-level 
+ UI. If standard graphics UI components are used together with custom graphics, 
+ they should be used consistently. Use of standard graphics UI components 
+ should be limited to game main menus; they should not be used in the game 
+ itself.</p>
+
+<p class=InlineBodyTextNumbered1>&nbsp;</p>
+
+<p class=InlineBodyTextNumbered1><img src="Game_User_Experience_Library_v1_1_en_files/image026.jpg" width="197px" height="214px" border="0" class="img_whs4"></p>
+
+<p class=BodyCopy>&nbsp;</p>
+
+<p class=InlineBodyTextNumbered><b style="font-weight: bold;"><span style="font-family: Arial;">2. 
+ &nbsp;&nbsp;Customize 
+ S60 UI components. </b><br>
+Developers can create their own custom components or modify Avkon UI components, 
+ and implement the game's main menu with modified S60 UI components. This 
+ implementation is suitable for games with complex navigation structures.</span></p>
+
+<p class=InlineBodyTextNumbered1>&nbsp;</p>
+
+<p class=InlineBodyTextNumbered1><img src="Game_User_Experience_Library_v1_1_en_files/image028.jpg" width="200px" height="216px" border="0" class="img_whs5"></p>
+
+<p class=BodyCopy>&nbsp;</p>
+
+<p class=InlineBodyTextNumbered
+	style="font-family: Arial;"><span style="font-weight: bold;"><B>3.</B></span><span 
+ style="font: 7.0pt 'Times New Roman';"><font size=1 style="font-size:7pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ </font></span><b>Implement the menu with the standard S60 look and feel</b>. 
+ <br>
+The game's main menu can also be presented with standard S60 UI components. 
+ This implementation is not recommended. </p>
+
+<ol type="disc" class="whs6">
+	
+	<ul type="disc" class="whs7">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">It is 
+ recommended to implement the game's main menu with custom graphics, but 
+ only if it can be done well. The navigation key should be used as the 
+ main control. Softkeys should be labeled, and they should be used consistently 
+ with S60 interaction style.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Avoid 
+ using UI components with standard graphics in the game itself.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">When 
+ designing a game user interface, you should understand the user interfaces 
+ of similar games, both on devices and other platforms. However, you should 
+ not just copy the UI. In case of conflicts, you can refer to this documentation 
+ package.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Use of 
+ terms in game menus needs to be consistent. For example, if the game is 
+ a Formula 1 racing game, terms that support this picture should be used, 
+ not terms from a rally game.</p></li>
+	</ul>
+</ol>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

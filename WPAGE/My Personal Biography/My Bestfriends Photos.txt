@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+<TITLE>My Bestfriends Photos</TITLE>
+<Bgsound src="uh jjuh myun - Seo Jin Young.wma" loop="Infinite">
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=3.0,Transition=17)">
+</HEAD>
+<BODY background="clouds.jpg" bgproperties="fixed" link="Teal" vlink="Lavander">
+<IMG src="cat.gif" align="left" height="10%" width="10%">
+<IMG src="cat.gif" align="right" height="10%" width="10%">
+<CENTER><Font size="9" color="Magenta" face="Garamond">VI. My Bestfriends Photos</Font></CENTER>
+<br>
+<CENTER><IMG src="2nd Year life.bmp" alt="This is me with my friends when I was in 2nd Year. From left to right: Ruby, my friend Van, my bestfriend Jacqueline, and Bryan. This picture was shot on the backyard of the Barasoain Church."  height="80%" width="60%"></CENTER>
+<br>
+<CENTER><IMG src="close friend.jpg" alt="Beside me is my another bestfriend in high school. She is Joni Mae. This picture was shot when we had a reunion last year." height="80%" width="60%"></CENTER>
+<br>
+<CENTER><A HREF="My Bestfriends Photos.html" border="0"><IMG src="Go Top.gif" alt="GO TOP"></A></CENTER>
+<br>
+<CENTER><A HREF="Home_Page.html"><IMG src="Earth6.gif" alt="HOME" border="0" height="15%" width="10%"></A></CENTER>
+<A HREF="About My Family.html"><IMG src="Back.gif" border="0" align="left"></A>
+<A HREF="My family Background.html"><IMG src="Next.gif" border="0" align="right"></A>
+</BODY>
+</HTML>

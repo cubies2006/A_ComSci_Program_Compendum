@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<TITLE>My Family Background</TITLE>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=3.0,Transition=18)">
+<Bgsound src="doo bun jjae sarang - Seo Jin Young.wma" loop="Infinite">
+</HEAD>
+<BODY Background="clouds.jpg" Bgproperties="fixed" link="Teal" vlink="Lavander" text="yellow">
+<IMG src="moon_eclipse.gif" align="left">
+<IMG src="moon_eclipse.gif" align="right">
+<CENTER><Font size="9" color="Green" face="Garamond">VII. My Family Background</Font></CENTER>
+<Font face="Garamond" size="4">
+<br><br><br><br>
+<TABLE Background="blackstars.gif" height="100%" width="100%">
+<TR>
+<TD>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My parent's roots are Chinese in origin. But my father was naturalized and became a 
+Filipino citizen. While my mother is a pure Chinese citizen. My father came from a middle class family.
+While my mother came from a poor one. My father was the 3rd among the siblings. He is considered to be the most
+unfavored by his parents. I don't know why although he's very intelligent. His father came from Fookien, China. My grand-grandfather used to
+be a respected town-elder which is comparable to our present Barangay captain. On one occassion, because of clanish war, his son which is my
+grandfather's father, which was held hostage and was killed by a group of goons. After that, my great-grandmother remarried again. But events
+turned out to be sour to my grandfather. He was occassionally mistreated by his stepfather. On one occassion, he run away from home and join
+my great-great grand-father's cousin and migrated to the Philippines in order to escape the oppressive treatment of his stepfather. During his
+stay in the Philippines, he started doing add jobs, messenger jobs, salesman jobs, and learn the ropes of the trades. After years of sacrifices
+and hardwork and diligence, he was able to set up a small business of buy and sell. And later, it expanded into a small lumber yard and hardware.</P> 
+</TD>
+</TR>
+<TR>
+<TD>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Later, he went back to China and married my grandmother. They bear 7 children: 4 males (which 
+includes my father) and 3 females. Soon, these children grown up and they started to help in the family business. But too bad, my grandfather
+contacted lung cancer because of his habit of being a chain-smoker during his youth. But after his death, the family business dwindled and the
+family fall apart. Everybody has their own life to take care of and at that time, logging was totally ban. So it was very hard to get lumber supplies.
+So some of the family switched to other businesses or endeavors. Some were successful and others were not because they grew up in an environment 
+where the business is hardware and construction supply. Some of his brothers greedily acquired and sold family properties without parting other 
+members. We were one family that were left out of such transaction.</P>
+</TD>
+</TR>
+<TR>
+<TD>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now, about my mother and her parents. My grandmother (mother's side) is a widow managing a
+small sari-sari store in Mayhalique. Religiously buddhist, kind, sincere, and loveable. We loved our mother's mother over our father's mother. 
+My grandmother was of a poor class. But through her persistence and struggles, she was able to raise a family of 4. In the siblings of 4, 3 girls 
+and a boy. My mother is the youngest among them. But Pedro, my uncle is the pet of my grandmother (mother's side).</P>
+</TD>
+</TR>
+<TR>
+<TD>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Because of the financial crisis that we're experiencing and the downtrend of businesses, my father
+has to close his small shop and temporarily lease the place to another person dealing in Auto Supplies. From the rental due, this is where we get our
+family expenses. But sometimes, we had to make ends-meet and also had to secure loan from my auntie in Dagupan in order to pay off some emergency
+expenses. My parents were very thankful that I got a scholarship at UE. And this lightens their financial load.</P>
+</TD>
+</TR>
+</TABLE>
+</Font>
+<br>
+<CENTER><A HREF="My Family Background.html" border="0"><IMG src="Go Top.gif" alt="GO TOP"></A></CENTER>
+<br>
+<CENTER><A HREF="Home_Page.html"><IMG src="Earth6.gif" alt="HOME" border="0" height="15%" width="10%"></A></CENTER>
+<A HREF="My Bestfriends Photos.html"><IMG src="Back.gif" border="0" align="left"></A>
+<A HREF="My Friends.html"><IMG src="Next.gif" border="0" align="right"></A>
+</BODY>
+</HTML>

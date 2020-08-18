@@ -1,0 +1,455 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>S60 2nd Edition: Top 10 usability guidelines for Symbian C++</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="Game_User_Experience_Library_v1_1_en_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='Game_User_Experience_Library_v1_1_en.css'>");}
+//-->
+</script>
+<style>
+<!--
+A:visited { color:#800080; }
+A:link { color:#0000ff; }
+-->
+</style><style type="text/css">
+<!--
+div.whs1 { border:solid #003CCD 1.0pt; padding:1.0pt 4.0pt 1.0pt 4.0pt; margin-left:27.0pt; margin-right:0pt; background-color:#003ccd; }
+ul.whs2 { list-style:disc; }
+img_whs3 { width:13px; height:7px; border-style:none; }
+-->
+</style><script type="text/javascript" language="JavaScript">
+<!--
+if ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) == 4))
+{
+  var strNSS = "<style type='text/css'>";
+  strNSS += "div.whs1 {margin-right:1pt; }";
+  strNSS +="</style>";
+  document.write(strNSS);
+}
+//-->
+</script>
+<script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+</head>
+<body lang="EN-US"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Top ten guidelines\nS60 2nd Edition: Top 10 usability guidelines for Symbian C++ games");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("Game_User_Experience_Library_v1_1_en.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h2><span lang=EN-GB>S60 2nd Edition: Top 10 usability guidelines for Symbian 
+ C++ games</span></h2>
+
+<div class="whs1">
+<p class=InlineBodyHeading1White2
+	style="margin-top: 0pt; margin-bottom: 0pt;">Pre-game</p>
+</div>
+
+<p class=BodyHeading2Blue><span lang=EN-GB>1. Appropriate main menu implementation</span><span 
+ lang=EN-GB
+	style="font-size: 11.0pt;
+			font-family: NokiaSansSemiBold;
+			color: #0574F0;
+			font-weight: normal;"><font size=3 color=#0574f0 style="font-size:11.000000pt;">&nbsp;</font></span></p>
+
+<ul type="disc" class="whs2">
+	
+	<ul type="disc" class="whs2">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Implement 
+ the game's Main menu with custom graphics, but only if it can be done 
+ well.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Avoid 
+ using UI components with standard graphics in the game itself.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Use the 
+ navigation key as a primary control. Users should be allowed to move focus 
+ with the navigation key and select items with it.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Use the 
+ left softkey as Select or Options menu. </p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Use the 
+ right softkey for Exit / Cancel / Back.</p></li>
+	</ul>
+</ul>
+
+<div class="whs1">
+<p class=InlineBodyHeading1White
+	style="margin-top: 0pt; margin-bottom: 0pt;">Game experience</p>
+</div>
+
+<p class=BodyHeading2Blue><span lang=EN-GB>2. Pause and save</span><span 
+ lang=EN-GB
+	style="font-size: 11.0pt;
+			font-family: NokiaSansSemiBold;
+			color: #0574F0;
+			font-weight: normal;"><font size=3 color=#0574f0 style="font-size:11.000000pt;">&nbsp;</font></span></p>
+
+<ul type="disc" class="whs2">
+	
+	<ul type="disc" class="whs2">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Single-player 
+ games</p></li>
+		
+		<ul type="disc" class="whs2">
+			
+			<li class=kadov-p-CInlineGuideline><p class=InlineGuideline
+													style="margin-left: 0in;">Provide 
+ save game capability (except for very short games).</p></li>
+			
+			<li class=kadov-p-CInlineGuideline><p class=InlineGuideline
+													style="margin-left: 0in;">Provide 
+ pause game capability.</p></li>
+		</ul>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Two-player 
+ games</p></li>
+		
+		<ul type="disc" class="whs2">
+			
+			<li class=kadov-p-CInlineGuideline><p class=InlineGuideline
+													style="margin-left: 0in;">The 
+ game should go into Pause mode for both players if one of the players 
+ is interrupted. It must be possible to continue the game.</p></li>
+			
+			<li class=kadov-p-CInlineGuideline><p class=InlineGuideline
+													style="margin-left: 0in;">The 
+ player who was not interrupted should receive information about why the 
+ game is being paused. For example, “Waiting for the other player to continue.”</p></li>
+		</ul>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Games 
+ with more than two players</p></li>
+		
+		<ul type="disc" class="whs2">
+			
+			<li class=kadov-p-CInlineGuideline><p class=InlineGuideline
+													style="margin-left: 0in;"><span 
+ style="font-family: 'Courier New';"><span style="font: 7.0pt 'Times New Roman';"><font size=1 style="font-size:7pt;">&nbsp;</font></span></span>Design 
+ games so that the interruption of one player does not interfere with the 
+ other players’ game. The interrupted player’s game can be switched to 
+ the background without pausing the game or the player can be dropped from 
+ the game. The preferred action depends on the game type.</p></li>
+		</ul>
+	</ul>
+</ul>
+
+<p class=BodyHeading2Blue><span lang=EN-GB>3. Provide feedback</span><span 
+ lang=EN-GB
+	style="font-size: 11.0pt;
+			font-family: NokiaSansSemiBold;
+			color: #0574F0;
+			font-weight: normal;"><font size=3 color=#0574f0 style="font-size:11.000000pt;">&nbsp;</font></span></p>
+
+<ul type="disc" class="whs2">
+	
+	<ul type="disc" class="whs2">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Provide 
+ clear feedback on essential elements in the game: when a level is completed, 
+ when a bonus level is reached, when the players succeed (score a goal 
+ or kill an enemy), etc.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Essential 
+ elements need visual feedback so that the game is playable without sounds.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">In multiplayer 
+ games, provide clear feedback about who has won and lost. Communicate 
+ to the user about his/her performance by using “you” instead of a name 
+ or color symbol. </p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">After 
+ the user has uploaded a file (for example, a clip or a ghost) to a server, 
+ provide clear feedback that the file has been uploaded and where the destination 
+ folder is.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">After 
+ the user has sent a challenge to a friend, provide feedback that the challenge 
+ has been sent successfully.</p></li>
+	</ul>
+</ul>
+
+<p class=BodyHeading2Blue><span lang=EN-GB>4. Status</span><span lang=EN-GB
+	style="font-size: 11.0pt;
+			font-family: NokiaSansSemiBold;
+			color: #0574F0;
+			font-weight: normal;"><font size=3 color=#0574f0 style="font-size:11.000000pt;">&nbsp;</font></span></p>
+
+<ul type="disc" class="whs2">
+	
+	<ul type="disc" class="whs2">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">Determine 
+ the most important information for players and display it clearly on the 
+ screen, making sure there is not too much information — one or two status 
+ indicators are plenty for most games. If this is not sufficient, the design 
+ may need to be refined to allow a simpler interface.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">In multiplayer 
+ games, players must be able to identify both their own and the other player’s 
+ status in the game at all times.</p></li>
+	</ul>
+</ul>
+
+<p class=BodyHeading2Blue><span lang=EN-GB>5. Challenge</span><span lang=EN-GB
+	style="font-size: 11.0pt;
+			font-family: NokiaSansSemiBold;
+			color: #0574F0;
+			font-weight: normal;"><font size=3 color=#0574f0 style="font-size:11.000000pt;">&nbsp;</font></span></p>
+
+<ul type="disc" class="whs2">
+	
+	<ul type="disc" class="whs2">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Provide 
+ rewards early on to keep beginners motivated. Rewards can be new levels, 
+ abilities, weapons, etc. Providing rewards in a random schedule maintains 
+ motivation for the longest time.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Do not 
+ make the game more difficult by altering constants, such as the physics 
+ model attributes. Instead the challenge should come from difficult tasks. 
+ </p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Create 
+ as human-like AI as possible — reasonable but not completely predictable.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">When 
+ feasible in multiplayer games, provide player-ranking and player matching 
+ systems that try to match players of equivalent skill against one another.</p></li>
+	</ul>
+</ul>
+
+<p class=BodyHeading2Blue><span lang=EN-GB>6. No sound abuse</span><span 
+ lang=EN-GB
+	style="font-size: 11.0pt;
+			font-family: NokiaSansSemiBold;
+			color: #0574F0;
+			font-weight: normal;"><font size=3 color=#0574f0 style="font-size:11.000000pt;">&nbsp;</font></span></p>
+
+<ul type="disc" class="whs2">
+	
+	<ul type="disc" class="whs2">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Keep 
+ the default sound volume close to the volume of the phone’s regular sound 
+ — not too quiet, but not much louder, either.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Allow 
+ the user to adjust the sound level of both background music and tones.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Sounds 
+ must not be too loud or too high-pitched, and users must be able to turn 
+ sounds off easily.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">In Bluetooth 
+ multiplayer games, background music should be synchronized for all players 
+ to avoid an auditory mess.</p></li>
+	</ul>
+</ul>
+
+<p class=BodyHeading2Blue><span lang=EN-GB>7. Distinctive graphics</span><span 
+ lang=EN-GB
+	style="font-size: 11.0pt;
+			font-family: NokiaSansSemiBold;
+			color: #0574F0;
+			font-weight: normal;"><font size=3 color=#0574f0 style="font-size:11.000000pt;">&nbsp;</font></span></p>
+
+<ul type="disc" class="whs2">
+	
+	<ul type="disc" class="whs2">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">The objects’ 
+ and characters’ appearance must match their functionality/activity. </p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">Different 
+ items must appear clearly different and their functionalities should be 
+ distinctive as well.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">In multiplayer 
+ games, characters need to look different enough so that the players can 
+ identify who is who.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">In multiplayer 
+ game<span style="margin-left: 0pt;">s, make sure that the colors of the 
+ characters appear the same for all players.</span></p></li>
+	</ul>
+</ul>
+
+<p class=BodyHeading2Blue><span lang=EN-GB>8. Provide in-game help</span><span 
+ lang=EN-GB
+	style="font-size: 11.0pt;
+			font-family: NokiaSansSemiBold;
+			color: #0574F0;
+			font-weight: normal;"><font size=3 color=#0574f0 style="font-size:11.000000pt;">&nbsp;</font></span></p>
+
+<ul type="disc" class="whs2">
+	
+	<ul type="disc" class="whs2">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">Provide 
+ in-game help to the user. Training mode is the preferred solution. </p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">The in-game 
+ help feature should not stop the game. The player should be able to skip 
+ the help should s/he so choose.</p></li>
+	</ul>
+</ul>
+
+<div class="whs1">
+<p class=InlineBodyHeading1White
+	style="margin-top: 0pt; margin-bottom: 0pt;">Post-game</p>
+</div>
+
+<p class=BodyHeading2Blue><span lang=EN-GB>9. High-score list</span><span 
+ lang=EN-GB
+	style="font-size: 11.0pt;
+			font-family: NokiaSansSemiBold;
+			color: #0574F0;
+			font-weight: normal;"><font size=3 color=#0574f0 style="font-size:11.000000pt;">&nbsp;</font></span></p>
+
+<ul type="disc" class="whs2">
+	
+	<ul type="disc" class="whs2">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">There 
+ should be a high-score list, if it fits the game idea. A high-score list 
+ motivates the player to compete against his/her previous score or some 
+ friend’s score.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Games 
+ become more interesting when players can compare their performance with 
+ the performance of possible community members. Give the user the possibility 
+ of updating his/her scores to the high-score list of the game community.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Show 
+ in the community high-score list both the scores of some of the best players 
+ and the scores of players who performed closest to the user.</p></li>
+	</ul>
+</ul>
+
+<p class=BodyHeading2Blue><span lang=EN-GB>10. Easy restart</span><span 
+ lang=EN-GB
+	style="font-size: 11.0pt;
+			font-family: NokiaSansSemiBold;
+			color: #0574F0;
+			font-weight: normal;"><font size=3 color=#0574f0 style="font-size:11.000000pt;">&nbsp;</font></span></p>
+
+<ul type="disc" class="whs2">
+	
+	<ul type="disc" class="whs2">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">Provide 
+ an easy way to restart single-player game. For example, in the Game Over 
+ screen, provide a “Replay,” “Play again,” or “Restart” command, taking 
+ the user back to the beginning of the game, with the same settings as 
+ before.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">In multiplayer 
+ games, provide a quick way to start a new game with same opponents.</p></li>
+	</ul>
+</ul>
+
+<p class=InlineNormal1
+	style="text-align: right;"
+	align=right><b style="font-weight: bold;"><i style="font-style: italic;"><span 
+ style="color: #0040CD;"><font color=#0040cd >Research by Idean Research, <a href="http://www.ideanresearch.com/"
+														target=_blank>www.ideanresearch.com</a> 
+ </font></span></i></b><img src="Game_User_Experience_Library_v1_1_en_files/image014.gif" width="13px" height="7px" border="0" class="img_whs3"></p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

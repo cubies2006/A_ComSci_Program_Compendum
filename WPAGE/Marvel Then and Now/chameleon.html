@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0055)http://www.samruby.com/Villains/Chameleon/chameleon.htm -->
+<HTML><HEAD><TITLE>Chameleon</TITLE>
+<STYLE Type="Text/CSS">
+BODY {scrollbar-arrow-color: blue; scrollbar-base-color: black; scrollbar-dark-shadow: blue; scrollbar-track-color: darkblue; scrollbar-face-color: red;} 
+</STYLE>
+<script language="JavaScript">
+<!--
+//you can assign the initial color of the background here
+r=255;
+g=255;
+b=255;
+flag=0;
+t=new Array;
+o=new Array;
+d=new Array;
+
+function hex(a,c)
+{
+t[a]=Math.floor(c/16)
+o[a]=c%16
+switch (t[a])
+{
+case 10:
+t[a]='A';
+break;
+case 11:
+t[a]='B';
+break;
+case 12:
+t[a]='C';
+break;
+case 13:
+t[a]='D';
+break;
+case 14:
+t[a]='E';
+break;
+case 15:
+t[a]='F';
+break;
+default:
+break;
+}
+switch (o[a])
+{
+case 10:
+o[a]='A';
+break;
+case 11:
+o[a]='B';
+break;
+case 12:
+o[a]='C';
+break;
+case 13:
+o[a]='D';
+break;
+case 14:
+o[a]='E';
+break;
+case 15:
+o[a]='F';
+break;
+default:
+break;
+}
+}
+
+function ran(a,c)
+{
+if ((Math.random()>2/3||c==0)&&c<255)
+{
+c++
+d[a]=2;
+}
+else
+{
+if ((Math.random()<=1/2||c==255)&&c>0)
+{
+c--
+d[a]=1;
+}
+else d[a]=0;
+}
+return c
+}
+function do_it(a,c)
+{
+if ((d[a]==2&&c<255)||c==0)
+{
+c++
+d[a]=2
+}
+else
+if ((d[a]==1&&c>0)||c==255)
+{
+c--;
+d[a]=1;
+}
+if (a==3)
+{
+if (d[1]==0&&d[2]==0&&d[3]==0)
+flag=1
+}
+return c
+}
+function disco()
+{
+if (flag==0)
+{
+r=ran(1, r);
+g=ran(2, g);
+b=ran(3, b);
+hex(1,r)
+hex(2,g)
+hex(3,b)
+document.bgColor="#"+t[1]+o[1]+t[2]+o[2]+t[3]+o[3]
+flag=50
+}
+else
+{
+r=do_it(1, r)
+g=do_it(2,g)
+b=do_it(3,b)
+hex(1,r)
+hex(2,g)
+hex(3,b)
+document.bgColor="#"+t[1]+o[1]+t[2]+o[2]+t[3]+o[3]
+flag--
+}
+if (document.all)
+setTimeout('disco()',50)
+}
+//-->
+</script>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR></HEAD>
+<BODY text=#000000 vLink=#ff0000 aLink=#000000 link=#ff0000 bgColor=#ffffff onload="disco()">
+<P align=center>
+<img border="0" src="chameleon1.gif" width="222" height="79"></P>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD width="43%">
+      <P align=center>
+      <img border="0" src="chameleon2.gif" width="216" height="352"></P></TD>
+    <TD width="57%">
+      <P align=center><FONT size=2 face="Verdana"><FONT 
+      color=#ff0000><EM><STRONG><U>Name:</U></STRONG></EM></FONT><FONT 
+      color=#000000> <STRONG>Dmitri Smerdyakov</STRONG></FONT></FONT></P>
+      <P align=center><FONT size=2 face="Verdana"><FONT 
+      color=#ff0000><EM><STRONG><U>ID:</U></STRONG></EM></FONT><FONT 
+      color=#000000> <STRONG>Secret</STRONG></FONT></FONT></P>
+      <P align=center><FONT size=2 face="Verdana"><FONT 
+      color=#ff0000><EM><STRONG><U>Relatives:</U></STRONG></EM></FONT><FONT 
+      color=#000000> <STRONG>Early Servant to Kraven to 
+      Hunter.</STRONG></FONT></FONT></P>
+      <P align=center><FONT size=2 face="Verdana"><FONT 
+      color=#ff0000><EM><STRONG><U>Affiliates:</U></STRONG></EM></FONT><FONT 
+      color=#008000> </FONT><FONT color=#000000><STRONG>Allies of Kraven the 
+      Hunter, The Leader, HYDRA, Hammerhead, Scorpion, 
+      Tarantula.</STRONG></FONT></FONT></P>
+      <P align=center><FONT size=2 face="Verdana"><FONT 
+      color=#ff0000><U><EM><STRONG>Enemies:</STRONG></EM></U> </FONT><FONT 
+      color=#000000><STRONG>Spider-Man, Hulk, Daredevil, Captain America, 
+      Ironman.</STRONG></FONT></FONT></P>
+      <P align=center><FONT size=2 face="Verdana"><FONT 
+      color=#ff0000><EM><STRONG><U>Powers:</U></STRONG></EM> 
+      </FONT><STRONG><FONT color=#000000>One of the greatest living Masters of 
+      Disguise, Quick-Change artist &amp; Actor Supreme...Also a master at 
+      creating life-like masks, disguises, and make-up...His malleable flesh can 
+      assume the features of any person...Has used a hologram projector in his 
+      belt to aid him in further disguising 
+      capabilities.</FONT></STRONG></FONT></P>
+      <P align=center><FONT size=2 face="Verdana"><FONT 
+      color=#ff0000><EM><U><STRONG>Origin:</STRONG></U></EM></FONT><FONT 
+      color=#ffff00> </FONT><STRONG><FONT color=#000000>Very little is known 
+      about the man known as Dmitri Smerdyakov other than he was a Servant-Boy 
+      to Kraven the Hunter when young and had a somewhat strange relationship 
+      with him till Kraven took his own life many years later...The Chameleon 
+      took years trying to gain Kraven's respect in the form of crime after 
+      following him to America from East 
+  Europe.</FONT></STRONG></FONT></P></TD></TR></TBODY></TABLE>
+<P>&nbsp;</P>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle width="50%">
+      <P align=center><FONT size=2 face="Verdana"><FONT color=#ff0000><EM><STRONG><U>1st 
+      App.:</U></STRONG></EM></FONT><FONT color=#000000> <STRONG><EM>Amazing 
+      Spider-Man</EM> #1<BR></STRONG></FONT></FONT></P>
+      <P align=center><FONT size=2 face="Verdana"><FONT color=#ff0000><U><EM><STRONG>Origin 
+      Issues:</STRONG></EM></U> </FONT><FONT color=#000000><STRONG><EM>Amazing 
+      Spider-Man</EM> #1 &amp; 389...<EM>Chapter One</EM> 
+      #2<BR></STRONG></FONT></FONT></P>
+      <P align=center><FONT size=2 face="Verdana"><FONT color=#ff0000><EM><STRONG><U>Spider-Man 
+      Appearances:</U></STRONG></EM></FONT><FONT color=#000000> 
+      <STRONG><EM>Amazing Spider-Man</EM> #1, 15, 80, 186, 307, 340-343 (In 
+      Disguise), 375, 388, 389, 394 &amp; 403 (Cameo)...<EM>Spectacular 
+      Spider-Man</EM> #154, 165, 211 &amp; 241-245...<EM>Web Of Spider-Man</EM> 
+      #51-55, 64, 65, 112 &amp; 117...<EM>Spider-Man</EM> 
+      #45...<I>Webspinners</I> #10 &amp; 11...<EM>Marvel Team-Up 
+      </EM>#27...<EM>Sensational Spider-Man</EM> '96...<EM>Chapter One</EM> #2 
+      &amp; 9...<I>Get Kraven</I> #1<BR></STRONG></FONT></FONT></P>
+      <P align=center><FONT size=2 face="Verdana"><FONT color=#ff0000><STRONG><U><EM>Other 
+      Appearances</EM>:</U></STRONG> </FONT><FONT 
+      color=#000000><STRONG><EM>Tales To Astonish </EM>#62, 63 (Cameo), 66 
+      (Cameo)<EM>...Tales Of Suspense</EM> #58<EM>...Incredible Hulk</EM> 
+      #154...<EM>Daredevil</EM> #134...<EM>Captain America: Sentinel Of Liberty 
+      </EM>#5 &amp; 6...<I>Thunderbolts</I> '97 Annual 
+      (Cameo)</STRONG></FONT></FONT></P></TD>
+    <TD align=middle width="50%">
+    <img border="0" src="chameleon3.gif" width="186" height="353"></TD></TR></TBODY></TABLE>
+<P>&nbsp;</P>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle width="50%">
+    <img border="0" src="chameleon4.gif" width="147" height="363"></TD>
+    <TD align=middle width="50%"><font face="Verdana"><BR>
+    <img border="0" src="chameleon5.gif" width="105" height="162"><BR>
+      </font><FONT color=#ff0000 face="Verdana"><A 
+      href="http://www.samruby.com/Villains/Chameleon/chameleons_history.htm#Logo"><STRONG><BR></STRONG></A></FONT>
+      <P align=center><FONT color=#000000 face="Verdana"><STRONG><EM>Spider-Man Fear 
+      Rating:</EM> <BIG><BIG>6 </BIG></BIG><SMALL><SMALL>(out of 
+      10)</SMALL></SMALL></STRONG></FONT></P>
+      <P align=center></P></TD></TR></TBODY></TABLE>
+<HR>
+<p align="right"><a href="carnage.htm">
+<img border="0" src="iconcarnage.gif" align="left" width="50" height="70" alt="PREVIOUS: Carnage"></a><a href="doctor%20octopus%20i.html"><img border="0" src="icondococt.jpg" width="50" height="70" alt="NEXT: Doctor Octopus"></a></p>
+</BODY>
+</HTML>

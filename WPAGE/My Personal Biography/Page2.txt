@@ -1,0 +1,78 @@
+<HTML>
+<HEAD>
+<TITLE>My Calendar</TITLE>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=3.0,Transition=11)">
+<Bgsound src="Porcelain - Moby.mp3" loop="Infinite">
+</HEAD>
+<BODY Background="clouds.jpg" vlink="Lavander" >
+<Font face="Tahoma">
+<IMG src="cake w balloons.gif" align="left">
+<IMG src="gift.gif" align="right">
+<CENTER><Font size="9" color="Gray" face="Garamond">XI. My Calendar</Font></CENTER>
+<br><br><h1><CENTER>SEPTEMBER</CENTER><br><br>
+<TABLE Bgcolor="5" Cellpadding="5" Cellspacing="10" width="51%" bgcolor="#00FF00" Bordercolorlight="#C0C0C0" Bordercolordark="C0C0C0" align="center">
+<TR align="center">
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>MON</B></CENTER></TD>
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>TUE</B></CENTER></TD>
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>WED</B></CENTER></TD>
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>THU</B></CENTER></TD>
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>FRI</B></CENTER></TD>
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>SAT</B></CENTER></TD>
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>SUN</B></CENTER></TD>
+</TR>
+<TR align="center">
+<TD Width="17" Bgcolor="#FFFFFF"><CENTER></CENTER></TD>
+<TD Width="17" Bgcolor="#FFFFFF"><CENTER></CENTER></TD>
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>1</B></CENTER></TD>
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>2</B></CENTER></TD>
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>3</B></CENTER></TD>
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>4</B></CENTER></TD>
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>5</B></CENTER></TD>
+</TR>
+<TR align="center">
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>6</B></TD>
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>7</B></CENTER></TD>
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>8</B></CENTER></TD>
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>9</B></CENTER></TD>
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>10</B></CENTER></TD>
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>11</B></CENTER></TD>
+<TD Width="17" Bgcolor="#COCOCO"><CENTER><B>12</B></CENTER></TD>
+</TR>
+<TR align="center">
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>13</B></CENTER></TD>
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>14</B></CENTER></TD>
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>15</B></CENTER></TD>
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>16</B></CENTER></TD>
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>17</B></CENTER></TD>
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>18</B></CENTER></TD>
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>19</B></CENTER></TD>
+</TR>
+<TR align="center">
+<TD Width="17" Background="RonE2.jpg"><a href="Page1.html" Style="text-decoration:none;"><CENTER><Font color="#00FF00"><B>20</B></Font></CENTER></a></TD>
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>21</B></CENTER></TD>
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>22</B></CENTER></TD>
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>23</B></CENTER></TD>
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>24</B></CENTER></TD>
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>25</B></CENTER></TD>
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>26</B></CENTER></TD>
+</TR>
+<TR align="center">
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>27</B></CENTER></TD>
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>28</B></CENTER></TD>
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>29</B></CENTER></TD>
+<TD Width="17" Bgcolor="#C0C0C0"><CENTER><B>30</B></CENTER></TD>
+<TD Width="17" Bgcolor="#FFFFFF"><CENTER></CENTER></TD>
+<TD Width="17" Bgcolor="#FFFFFF"><CENTER></CENTER></TD>
+<TD Width="17" Bgcolor="#FFFFFF"><CENTER></CENTER></TD>
+</TR>
+</TABLE>
+<br>
+<h4><P align="center"><Font face="Garamond">20 IS A SPECIAL DAY FOR ME BECAUSE IT'S MY BIRTHDAY!!! ANYWAY, MY BIRTHDAY PRECEEDED MY MOM'S BIRTHDAY FOR A DAY!!!</Font></P>
+<CENTER><A HREF="Page2.html" border="0"><IMG src="Go Top.gif" alt="GO TOP"></A></CENTER>
+<br>
+<CENTER><A HREF="Home_Page.html"><IMG src="Earth6.gif" alt="HOME" border="0" height="15%" width="10%"></A></CENTER>
+<A HREF="Places I Want To Hang Out.html"><IMG src="Back.gif" border="0" align="left"></A>
+<A HREF="My Fashion Sense.html"><IMG src="Next.gif" border="0" align="right"></A>
+</BODY>
+</HTML>
+

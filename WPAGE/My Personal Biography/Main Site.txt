@@ -1,0 +1,11 @@
+<HTML>
+<HEAD>
+<TITLE>Using Frames</TITLE>
+</HEAD>
+<Frameset rows="20%, *">
+	<frame src="Page_Title.html" noresize>
+<Frameset cols="25%, *">
+	<frame src="">
+</Frameset>
+</Frameset>
+</HTML>

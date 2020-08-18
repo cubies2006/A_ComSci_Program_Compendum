@@ -1,0 +1,357 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Well-designed high-score lists in mobile games</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="Game_User_Experience_Library_v1_1_en_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='Game_User_Experience_Library_v1_1_en.css'>");}
+//-->
+</script>
+<style>
+<!--
+A:visited { color:#800080; }
+A:link { color:#0000ff; }
+-->
+</style><style type="text/css">
+<!--
+tr.whs1 { height:17.15pt; }
+td.whs2 { x-cell-content-align:bottom; width:153.0pt; padding:0pt 5.4pt 0pt 5.4pt; height:17.15pt; padding-left:0px; padding-top:0px; padding-right:0px; padding-bottom:0px; }
+td.whs3 { x-cell-content-align:bottom; width:36.0pt; padding:0pt 5.4pt 0pt 5.4pt; height:17.15pt; padding-left:0px; padding-top:0px; padding-right:0px; padding-bottom:0px; }
+td.whs4 { width:153.0pt; padding:0pt 5.4pt 0pt 5.4pt; padding-left:0px; padding-top:0px; padding-right:0px; padding-bottom:0px; }
+img_whs5 { width:143px; height:169px; border-style:none; }
+td.whs6 { x-cell-content-align:top; width:36.0pt; padding:0pt 5.4pt 0pt 5.4pt; padding-left:0px; padding-top:0px; padding-right:0px; padding-bottom:0px; }
+img_whs7 { width:144px; height:170px; border-style:none; }
+img_whs8 { width:149px; height:176px; border-style:none; }
+img_whs9 { width:148px; height:174px; border-style:none; }
+img_whs10 { width:149px; height:175px; border-style:none; }
+tr.whs11 { height:142.35pt; }
+td.whs12 { width:276.55pt; border:solid #0000ff 2.25pt; border-right:none; padding:0pt 5.4pt 0pt 5.4pt; height:142.35pt; padding-left:0px; padding-top:0px; padding-right:0px; padding-bottom:0px; }
+ul.whs13 { list-style:disc; }
+td.whs14 { width:137.45pt; border:solid #0000ff 2.25pt; border-left:none; padding:0pt 5.4pt 0pt 5.4pt; height:142.35pt; padding-left:0px; padding-top:0px; padding-right:0px; padding-bottom:0px; }
+img_whs15 { width:140px; height:165px; border-style:none; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+</head>
+<body lang="EN-US"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Articles\nWell-designed high-score lists in mobile games");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("Game_User_Experience_Library_v1_1_en.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h2>Well-designed high-score lists in mobile games</h2>
+
+<p class=BodyHeading1>Introduction</p>
+
+<p class=BodyCopy>Keeping players motivated and providing a positive user 
+ experience are vital components for the success of any mobile game. High-score 
+ lists are used to motivate players in almost every game. This article 
+ addresses issues related to high-score lists and scoring systems in mobile 
+ games. </p>
+
+<p class=BodyCopy>While most games implement a high-score list, it frequently 
+ consists of nothing more than names and scores. The essential question 
+ to bear in mind is this: What is the value of a high-score list to a player? 
+ If the high-score list does not contribute anything positive to the player’s 
+ experience, then it might be perceived as an additional, useless step. 
+ The high-score list should feel like a reward, not a punishment!</p>
+
+<p class=BodyHeading1>Select appropriate, interesting scoring units</p>
+
+<p class=BodyCopy>Instead of simply counting &quot;points,&quot; use a 
+ more concrete, game-relevant measure for success. For example, completion 
+ time, distance achieved, or number of enemies killed/hostages freed are 
+ much more interesting reflections of the game. Additionally, this kind 
+ of scoring creates a sense of continuity between games and makes it easier 
+ to recall the feeling of achievement from previous games or anticipate 
+ success in future games. Hence, the scoring system should be based on 
+ the type and context of the game.</p>
+
+<p class=BodyCopy>&nbsp;</p>
+
+<table class=TableGrid
+		x-use-null-cells
+		style="margin-left: 59.4pt;
+				border-collapse: collapse;
+				border-spacing: 0px;
+				border-spacing: 0px;"
+		cellspacing=0>
+
+<tr class="whs1">
+<td height="23" valign="bottom" width="153pt" class="whs2">
+<p class=InlineBad>Prefer</td>
+<td height="23" valign="bottom" width="36pt" class="whs3">
+<p class=InlineBad>&nbsp;</td>
+<td height="23" valign="bottom" width="153pt" class="whs2">
+<p class=InlineBad>Avoid</td></tr>
+
+<tr>
+<td width="153pt" class="whs4">
+<p class=Good><img src="Game_User_Experience_Library_v1_1_en_files/image142.jpg" width="143px" height="169px" border="0" class="img_whs5"></td>
+<td valign="top" width="36pt" class="whs6">
+<p class=BodyCopy>&nbsp;</td>
+<td width="153pt" class="whs4">
+<p class=Bad><img src="Game_User_Experience_Library_v1_1_en_files/image144.jpg" width="144px" height="170px" border="0" class="img_whs7"></td></tr>
+
+<tr>
+<td width="153pt" class="whs4">
+<p class=InlineBadfig
+	style="text-align: center;"
+	align=center>Scoring units are related to the game world. The results 
+ screen is interesting and useful.</td>
+<td valign="top" width="36pt" class="whs6">
+<p class=InlineBodyCopy8
+	style="text-align: center;"
+	align=center>&nbsp;</td>
+<td width="153pt" class="whs4">
+<p class=InlineBadfig1
+	style="text-align: center;"
+	align=center>Only abstract points are displayed. It is not clear how 
+ well the player has succeeded.</td></tr>
+</table>
+
+<p class=BodyHeading1>Make it easy to skip</p>
+
+<p class=BodyCopy>If game sessions are brief — for example, a minute or 
+ two — then dealing with the high-score list should also be a quick experience 
+ for the user. It is always a good idea to allow users to skip the &quot;entering 
+ name&quot; phase, for example, players can select OK even if they did 
+ not enter their name, and continue to press a single key to quickly move 
+ forward. Predictive text entry does not work well with names, and it should 
+ be avoided in name entry fields.</p>
+
+<table class=TableGrid
+		x-use-null-cells
+		style="margin-left: 59.4pt;
+				border-collapse: collapse;
+				border-spacing: 0px;
+				border-spacing: 0px;"
+		cellspacing=0>
+
+<tr class="whs1">
+<td height="23" valign="bottom" width="153pt" class="whs2">
+<p class=Bad><b style="font-weight: bold;"><span style="font-family: Arial;">Prefer</span></b></td>
+<td height="23" valign="bottom" width="36pt" class="whs3">
+<p class=Bad>&nbsp;</td>
+<td height="23" valign="bottom" width="153pt" class="whs2">
+<p class=Bad><b style="font-weight: bold;"><span style="font-family: Arial;">Avoid</span></b></td></tr>
+
+<tr>
+<td width="153pt" class="whs4">
+<p class=Good><img src="Game_User_Experience_Library_v1_1_en_files/image145.jpg" width="149px" height="176px" border="0" class="img_whs8"></td>
+<td valign="top" width="36pt" class="whs6">
+<p class=BodyCopy>&nbsp;</td>
+<td width="153pt" class="whs4">
+<p class=Bad><img src="Game_User_Experience_Library_v1_1_en_files/image147.jpg" width="149px" height="176px" border="0" class="img_whs8"></td></tr>
+
+<tr>
+<td width="153pt" class="whs4">
+<p class=InlineBadfig
+	style="text-align: center;"
+	align=center>Allow users to skip name entry with one softkey press. 
+ Remember the last name entered.</td>
+<td valign="top" width="36pt" class="whs6">
+<p class=InlineBodyCopy8
+	style="text-align: center;"
+	align=center>&nbsp;</td>
+<td width="153pt" class="whs4">
+<p class=InlineBadfig1
+	style="text-align: center;"
+	align=center>Do not force players to enter a name every time they finish 
+ a game.</td></tr>
+</table>
+
+<p class=BodyHeading1>&nbsp;</p>
+
+<p class=BodyHeading1>Only good scorers may enter their name</p>
+
+<p class=BodyCopy>Many games provide high-score lists with prefilled results. 
+ Often character names from the game world or from game development teams 
+ are used. This helps players measure their success, and provides them 
+ with goals to achieve. This is a very good practice in mobile games, because 
+ it reduces the amount of text entry and navigation. Forcing a player to 
+ go through the high-score list each time the game ends may be frustrating, 
+ especially with a low score.</p>
+
+<table class=TableGrid
+		x-use-null-cells
+		style="margin-left: 59.4pt;
+				border-collapse: collapse;
+				border-spacing: 0px;
+				border-spacing: 0px;"
+		cellspacing=0>
+
+<tr class="whs1">
+<td height="23" valign="bottom" width="153pt" class="whs2">
+<p class=Bad><b style="font-weight: bold;"><span style="font-family: Arial;">Prefer</span></b></td>
+<td height="23" valign="bottom" width="36pt" class="whs3">
+<p class=Bad>&nbsp;</td>
+<td height="23" valign="bottom" width="153pt" class="whs2">
+<p class=InlineBad>Avoid</td></tr>
+
+<tr>
+<td width="153pt" class="whs4">
+<p class=Good><img src="Game_User_Experience_Library_v1_1_en_files/image065.jpg" width="148px" height="174px" border="0" class="img_whs9"></td>
+<td valign="top" width="36pt" class="whs6">
+<p class=BodyCopy>&nbsp;</td>
+<td width="153pt" class="whs4">
+<p class=Bad><img src="Game_User_Experience_Library_v1_1_en_files/image149.jpg" width="149px" height="175px" border="0" class="img_whs10"></td></tr>
+
+<tr>
+<td width="153pt" class="whs4">
+<p class=InlineBadfig
+	style="text-align: center;"
+	align=center>The high-score list is prefilled with results. The result 
+ from the just finished game is highlighted.</td>
+<td valign="top" width="36pt" class="whs6">
+<p class=InlineBodyCopy8
+	style="text-align: center;"
+	align=center>&nbsp;</td>
+<td width="153pt" class="whs4">
+<p class=InlineBadfig1
+	style="text-align: center;"
+	align=center>The user has been forced to enter a name every time s/he 
+ has finished a game. As a result, the high-score list is full of blank 
+ names.</td></tr>
+</table>
+
+&nbsp;
+
+<p class=BodyHeading1>Make it social!</p>
+
+<p class=BodyCopy>High-score lists are social in nature. Great score results 
+ are not just for a player’s private enjoyment — they are shared with others. 
+ This is a core feature of high-score lists: Players compare their performances 
+ and brag about them with others! High scores and scoring systems also 
+ allow players to compete with each other, or establish their own personal 
+ goals. </p>
+
+<p class=BodyCopy>A good scoring system also allows players to form a meta-game 
+ on top of the actual game. For example, good games allow players to define 
+ their own goals, such as finishing a level with all bonus points collected 
+ or all secrets found. Another example is letting players compete with 
+ each other by comparing scores — even in a single-player game! </p>
+
+<p class=BodyCopy>Good online high-score lists are a bit more complicated 
+ to design. Players do not want to see just the top 10 results; rather, 
+ they want something to which they can compare themselves. In multiplayer 
+ games, players are often ranked so that they can compare themselves to 
+ others, view their rank, and find equally skilled players for matches. 
+ In single-player games, temporary high-score lists can be used. For example, 
+ a list of “Today’s top players” provides everyone with a chance to get 
+ on the list — at least for a few minutes. After all, high-score lists 
+ are all about feeling good about oneself; telling a player s/he scored 
+ lowest among thousands of players is not very supportive.</p>
+
+<p class=BodyCopy>To sum up:</p>
+
+<table class=TableGrid
+		x-use-null-cells
+		style="margin-left: 50.4pt;
+				border: none;
+				x-border-left: 1px table-solid;
+				x-border-top: 1px table-solid;
+				x-border-right: 1px table-solid;
+				x-border-bottom: 1px table-solid;
+				border-collapse: separate;
+				border-spacing: 0px;
+				border-spacing: 0px;"
+		cellspacing=0>
+
+<tr class="whs11">
+<td height="190" width="276.5pt" class="whs12">
+<ul type="disc" class="whs13">
+	
+	<li style="/*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p-CInlineBadfig2><p class=InlineBadfig2
+										style="margin-left: 0in;"><span 
+ style="font-family: Arial; color: #000000;"><font color=black >List only the ten (or fewer) 
+ highest scores. </font></span></p></li>
+	
+	<li style="/*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p-CInlineBadfig2><p class=InlineBadfig2
+										style="margin-left: 0in;"><span 
+ style="font-family: Arial; color: #000000;"><font color=black >Make it fast to skip name 
+ entry and start a new game. </font></span></p></li>
+	
+	<li style="/*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p-CInlineBadfig2><p class=InlineBadfig2
+										style="margin-left: 0in;"><span 
+ style="font-family: Arial; color: #000000;"><font color=black >Instead of providing a blank 
+ field for name entry, provide the last entered name as the default.&nbsp;&nbsp; 
+ </font></span></p></li>
+	
+	<li style="/*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p-CInlineBadfig2><p class=InlineBadfig2
+										style="margin-left: 0in;"><span 
+ style="font-family: Arial; color: #000000;"><font color=black >High-score lists are social 
+ in nature. Design scoring systems to allow meta-games!</font></span></p></li>
+	
+	<li style="/*begin!kadov{{*/ color: #000000; /*}}end!kadov*/ "
+		class=kadov-p-CInlineBadfig2><p class=InlineBadfig2
+										style="margin-left: 0in;"><span 
+ style="font-family: Arial; color: #000000;"><font color=black >Allow players to clear the 
+ high-score list.</font></span></p></li>
+</ul></td>
+<td height="190" width="137.4pt" class="whs14">
+<p class=Badfig>&nbsp; <img src="Game_User_Experience_Library_v1_1_en_files/image064.jpg" width="140px" height="165px" border="0" class="img_whs15"></td></tr>
+</table>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Graphics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="Game_User_Experience_Library_v1_1_en_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='Game_User_Experience_Library_v1_1_en.css'>");}
+//-->
+</script>
+<style>
+<!--
+A:visited { color:#800080; }
+A:link { color:#0000ff; }
+-->
+</style><style type="text/css">
+<!--
+img_whs1 { width:34px; height:15px; border-style:none; }
+img_whs2 { width:26px; height:15px; border-style:none; }
+img_whs3 { width:54px; height:15px; border-style:none; }
+img_whs4 { width:13px; height:7px; border-style:none; }
+ol.whs5 { list-style:disc; }
+ul.whs6 { list-style:disc; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+</head>
+<body lang="EN-US"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Usability guidelines\nGame experience\nGraphics");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("Game_User_Experience_Library_v1_1_en.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h2>Graphics</h2>
+
+<p class=BodyHeading1>Screen size</p>
+
+<p class=BodyCopy>Note that screen resolution does not necessarily mean 
+ that the screen is physically larger. Game graphics need to be optimized 
+ for device screen resolution, but also for the physical size of the device 
+ screen. For example, using same font size in all devices may make the 
+ text too small to be read.</p>
+
+<p class=BodyCopy><img src="Game_User_Experience_Library_v1_1_en_files/image019.gif" alt="*" width="34px" height="15px" border="0" class="img_whs1">&nbsp; <span style="border: none #000000 1.0pt; padding: 0pt;"><span 
+ style="font-size: 0pt;
+		color: #000000;
+		background: #000000;
+		layout-grid-mode: line;"><font color=black ><span class=msoChangeProp>&nbsp;</span></font></span></span><img src="Game_User_Experience_Library_v1_1_en_files/image016.jpg" width="26px" height="15px" border="0" class="img_whs2"></p>
+
+<p class=BodyCopy>In Java™ ME, there is no API for directly getting the 
+ screen physical size. However, screen size can be deduced from the font 
+ sizes. Font sizes can be asked with the <span class=CodeinText>Font.getHeight()</span> 
+ method. </p>
+
+<p class=BodyCopy><img src="Game_User_Experience_Library_v1_1_en_files/image019.gif" alt="*" width="34px" height="15px" border="0" class="img_whs1">&nbsp; <img src="Game_User_Experience_Library_v1_1_en_files/image017.gif" width="54px" height="15px" border="0" class="img_whs3">&nbsp;</p>
+
+<p class=BodyCopy>In S60 2nd Edition, Feature Pack 3 devices, applications 
+ may be scaled by the compatibility mode. From S60 3rd Edition onwards, 
+ legacy applications designed for the 176x208 resolution are not supported. 
+ Applications can query the screen size using the command: <span class=CodeinText>CEikAppUI::ApplicationRect()</span>.<span 
+ class=CodeinText>&nbsp;</span></p>
+
+<p class=BodyCopy>The physical screen size can be calculated in Symbian 
+ applications. Class <span class=CodeinText>CWsScreenDevice</span> provides 
+ method <span class=CodeinText>SizeInTwips()</span>. One twip is equal 
+ to 1/1440 inch.</p>
+
+<p class=BodyCopy>For more information on, see document <a href="http://www.forum.nokia.com/info/sw.nokia.com/id/72d411ef-30cf-4fea-a7e8-e6fc35f7f7f2/S60_Platform_Scalable_UI_Support_v4_2_en.pdf.html"
+															target=_blank>S60 
+ Platform: Scalable UI Support</a> <img src="Game_User_Experience_Library_v1_1_en_files/image014.gif" width="13px" height="7px" border="0" class="img_whs4"></p>
+
+<p class=InlineBodyHeading1>S60 screen orientation</p>
+
+<p class=BodyCopy><img src="Game_User_Experience_Library_v1_1_en_files/image019.gif" alt="*" width="34px" height="15px" border="0" class="img_whs1">&nbsp; <img src="Game_User_Experience_Library_v1_1_en_files/image016.jpg" width="26px" height="15px" border="0" class="img_whs2"></p>
+
+<p class=BodyCopy>Information about changed modes can be obtained with 
+ the <span class=CodeinText>Displayable.isShown()</span> method. Navigation 
+ key directions work normally in all modes.</p>
+
+<p class=BodyCopy><img src="Game_User_Experience_Library_v1_1_en_files/image019.gif" alt="*" width="34px" height="15px" border="0" class="img_whs1">&nbsp; <img src="Game_User_Experience_Library_v1_1_en_files/image017.gif" width="54px" height="15px" border="0" class="img_whs3">&nbsp;</p>
+
+<p class=BodyCopy>On S60 3rd Edition devices, games may be run on different 
+ screen resolutions and orientations. </p>
+
+<p class=BodyCopy>Symbian games can detect the current screen orientation, 
+ for example, with <span class=CodeinText>CWsScreenDevice::GetDefaultScreenSizeAndRotation()</span>, 
+ and it is also possible to detect orientation changes on-the-fly by implementing 
+ a <span class=CodeinText>CCoeControl::HandleResourceChange()</span> and 
+ check for events of type <span class=CodeinText>KEikDynamicLayoutVariantSwitch</span>.</p>
+
+<p class=BodyCopy>Layout-aware applications, that is, any application that 
+ is not a legacy application, will have to be able to respond to changes 
+ in screen size and layout. They can detect changes in layout with the 
+ following methods (note that applications should try to ensure that layout 
+ events are processed only once for each control):</p>
+
+<ol type="disc" class="whs5">
+	
+	<ul type="disc" class="whs6">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">Application 
+ UIs can override <span class=CodeinText>HandleResourceChangeL()</span> 
+ to detect the <span class=CodeinText>KEikDynamicLayoutVariantSwitch</span> 
+ message and re-layout of their main controls from this.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">Controls 
+ can override <span class=CodeinText>HandleResourceChange()</span> to detect 
+ the <span class=CodeinText>KEikDynamicLayoutVariantSwitch</span> message 
+ and re-layout themselves and their components.</p></li>
+	</ul>
+</ol>
+
+<p class=BodyCopy>For more information, see the SDK Help (Developer Guides 
+ &gt; S60 Platform: Scalable UI Support &gt; Layout-Aware Applications).</p>
+
+<p class=BodyHeading1>Harmonious colors</p>
+
+<p class=BodyCopy>Although a color screen can be very informative, it should 
+ not be overused. Colors that have special meaning, such as a color highlight 
+ for a selected item, must be easily recognizable.</p>
+
+<ol type="disc" class="whs5">
+	
+	<ul type="disc" class="whs6">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">The coloring 
+ scheme within the game and the navigational structure should be consistent. 
+ </p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">The selected 
+ item should stand out clearly.</p></li>
+	</ul>
+</ol>
+
+<p class=BodyHeading1>Match functionality with appearance</p>
+
+<p class=BodyCopy>Graphics need to be distinguishable from one another. 
+ For example, opponents should not get mixed with each other or with some 
+ other objects.</p>
+
+<ol type="disc" class="whs5">
+	
+	<ul type="disc" class="whs6">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">The objects’ 
+ and characters’ appearance must match their functionality/activity. It 
+ should be possible to make a reasonable guess about a character’s purpose 
+ based on appearance. For example, enemies should intuitively stand out 
+ from rewards.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Different 
+ items must appear clearly different, and their functionalities should 
+ be distinctive as well. Items and animations should be sufficiently unique. 
+ In particular, different enemy characters must be unique.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">In<span 
+ class=MultiplayerChar> </span><span class=MultiplayerChar><span style="font-family: Arial;">multiplayer</span></span> 
+ games, characters need to look different enough that the players can identify 
+ who is who. For example, do not use colors that are too similar.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">In <span 
+ class=MultiplayerChar><span style="font-family: Arial;">multiplayer</span></span> 
+ games, make sure that the colors of the characters appear the same for 
+ all players. Users should be able to identify themselves as a particular 
+ color and have everybody see them as that same color. </p></li>
+	</ul>
+</ol>
+
+<p class=BodyHeading1>Use each screen fully</p>
+
+<p class=BodyCopy>Ideally developers should use the full screen, without 
+ leaving blank areas. If blank areas exist, images can be centered in the 
+ screen.</p>
+
+<ol type="disc" class="whs5">
+	
+	<ul type="disc" class="whs6">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">Balance 
+ graphics and blank areas evenly on the screen.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">The background 
+ must not look bland or too busy.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">The background 
+ image of the game must not be confused with the game objects and characters. 
+ The background is not there just to be pretty — advanced players can use 
+ it to time or align actions and events.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0in;">The background 
+ should be different from the foreground; make its objects less detailed 
+ and less colorful. </p></li>
+	</ul>
+</ol>
+
+<p class=BodyHeading1>See also</p>
+
+<p class=BodyCopy>Usability guidelines &gt; Game experience &gt; <a href="Feedback.htm"
+	target=_self>Feedback</a></p>
+
+<p class=BodyCopy>Usability guidelines &gt; Game experience &gt; <a href="Match_with_the_real_world.htm"
+	target=_self>Match with the real world</a></p>
+
+<p class=Seealso>Articles &gt; <ins cite="mailto:Inari%20Frank"
+									datetime="2006-04-20T08:48"><span class=Hyperlink><a 
+ href="Full_screen_usage_in_S60.htm"
+	target=_self>Full-screen usage in </span></ins><ins cite="mailto:Inari%20Frank"
+														datetime="2006-04-20T08:48">Full-screen 
+ usage in S60</ins></a><br>&nbsp;</p>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

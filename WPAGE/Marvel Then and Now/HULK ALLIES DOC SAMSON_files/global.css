@@ -1,0 +1,165 @@
+.2 {
+	COLOR: #99ffcc
+}
+A {
+	FONT-SIZE: 11px; COLOR: #cc3366; FONT-FAMILY: verdana, 'arial narrow', arial
+}
+A:hover {
+	COLOR: #ffcc99
+}
+A.2 {
+	COLOR: #ffcc99
+}
+A.2:hover {
+	COLOR: #99ffcc
+}
+A.footer {
+	COLOR: #ccffcc
+}
+A.footer:hover {
+	COLOR: #ffcc99
+}
+A.nav_bar_left {
+	COLOR: #ccffcc; TEXT-DECORATION: none
+}
+A.nav_bar_left:hover {
+	COLOR: #ffcc99; TEXT-DECORATION: underline
+}
+BODY {
+	FONT-SIZE: 11px; MARGIN: 0px; COLOR: #ffccff; FONT-FAMILY: verdana, 'arial narrow', arial; BACKGROUND-COLOR: #003300
+}
+.character_names {
+	FONT-WEIGHT: bold; COLOR: #669966
+}
+DIV {
+	FONT-SIZE: 11px; COLOR: #003300; FONT-FAMILY: verdana, 'arial narrow', arial
+}
+.enemy_names {
+	FONT-WEIGHT: bold; COLOR: darkred
+}
+.footer {
+	FONT-SIZE: 11px; COLOR: #ffccff; FONT-FAMILY: verdana, 'arial narrow', arial
+}
+.footer1 {
+	FONT-SIZE: 11px; COLOR: #ffccff; FONT-FAMILY: verdana, 'arial narrow', arial
+}
+.footer2 {
+	FONT-SIZE: 10px; COLOR: #ffccff; FONT-FAMILY: verdana, 'arial narrow', arial
+}
+H1 {
+	FONT-SIZE: 19px; PADDING-BOTTOM: 0em; PADDING-TOP: 0.25em; FONT-FAMILY: 'arial black'
+}
+.h1_1 {
+	COLOR: #669966
+}
+.h1_1b {
+	COLOR: #336633
+}
+.h1_2 {
+	COLOR: #ccffcc
+}
+.h1_3 {
+	COLOR: #ccffcc
+}
+.h1_4 {
+	COLOR: #cc0000
+}
+.h1_5 {
+	FONT-SIZE: 24px; COLOR: #cc99ff; FONT-FAMILY: stencil, 'showcard gothic', arial
+}
+.h1_9 {
+	COLOR: #ccffcc
+}
+H2 {
+	FONT-SIZE: 15px; PADDING-BOTTOM: 0.5em; MARGIN: 0em; PADDING-TOP: 0.25em; FONT-FAMILY: 'arial black'
+}
+.h2_1 {
+	COLOR: #669966
+}
+.h2_2 {
+	COLOR: #ccffcc
+}
+.h2_3 {
+	COLOR: #ccffcc
+}
+.h2_4 {
+	COLOR: #cc0000
+}
+.h2_5 {
+	COLOR: #cc99ff; FONT-FAMILY: stencil, 'showcard gothic', arial
+}
+.h2_9 {
+	COLOR: #ccffcc
+}
+.h2_updates {
+	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; FONT-SIZE: 12px; PADDING-BOTTOM: 0em; MARGIN: 0em; COLOR: #ffcc66; PADDING-TOP: 0em; FONT-FAMILY: 'arial black'
+}
+H3 {
+	FONT-SIZE: 12px; PADDING-BOTTOM: 0.5em; MARGIN: 0em; PADDING-TOP: 0.25em; FONT-FAMILY: 'arial black'
+}
+.h3_1 {
+	COLOR: #669966
+}
+.h3_2 {
+	COLOR: #ccffcc
+}
+.h3_3 {
+	COLOR: #ccffcc
+}
+.h3_5 {
+	FONT-SIZE: 15px; COLOR: #cc99ff; FONT-FAMILY: stencil, 'showcard gothic', arial
+}
+.h3_9 {
+	COLOR: #ccffcc
+}
+.nav_bar_left {
+	PADDING-BOTTOM: 0.25em
+}
+.panel_main {
+	PADDING-RIGHT: 1.5em; PADDING-LEFT: 1.5em; FONT-SIZE: 11px; PADDING-BOTTOM: 1.5em; COLOR: #000000; PADDING-TOP: 1.5em; FONT-FAMILY: verdana, 'arial narrow', arial; BACKGROUND-COLOR: #ffffff
+}
+.panel_1 {
+	PADDING-RIGHT: 0em; PADDING-LEFT: 1em; FONT-SIZE: 11px; PADDING-BOTTOM: 0em; COLOR: #000000; FONT-FAMILY: verdana, 'arial narrow', arial
+}
+.panel_2 {
+	PADDING-RIGHT: 0em; PADDING-LEFT: 1em; FONT-SIZE: 11px; PADDING-BOTTOM: 0em; COLOR: #000000; FONT-FAMILY: verdana, 'arial narrow', arial; BACKGROUND-COLOR: #669966
+}
+.panel_3 {
+	PADDING-RIGHT: 0em; PADDING-LEFT: 1em; FONT-SIZE: 11px; PADDING-BOTTOM: 0em; COLOR: #dddddd; FONT-FAMILY: verdana, 'arial narrow', arial; BACKGROUND-COLOR: #336633
+}
+.panel_4 {
+	PADDING-RIGHT: 0em; PADDING-LEFT: 1em; FONT-SIZE: 11px; PADDING-BOTTOM: 0em; COLOR: #dddddd; FONT-FAMILY: verdana, 'arial narrow', arial; BACKGROUND-COLOR: #cc0000
+}
+.panel_5 {
+	PADDING-RIGHT: 0em; PADDING-LEFT: 1em; FONT-SIZE: 18px; PADDING-BOTTOM: 0em; COLOR: #cc99ff; FONT-FAMILY: jokerman, 'showcard gothic', stencil, arial; BACKGROUND-COLOR: #663399
+}
+.panel_9 {
+	PADDING-RIGHT: 0em; PADDING-LEFT: 1em; FONT-SIZE: 11px; PADDING-BOTTOM: 0em; COLOR: #eeeeee; FONT-FAMILY: verdana, 'arial narrow', arial; BACKGROUND-COLOR: #000000
+}
+.recuadro_2 {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: verdana, 'arial narrow', arial; BACKGROUND-COLOR: #669966
+}
+.recuadro_3 {
+	FONT-SIZE: 11px; COLOR: #ccffcc; FONT-FAMILY: verdana, 'arial narrow', arial; BACKGROUND-COLOR: #336633; TEXT-ALIGN: left
+}
+.short_margin {
+	MARGIN: 1.4em
+}
+.stars_1 {
+	FONT-SIZE: 20px; COLOR: #669966; FONT-FAMILY: wingdings
+}
+.stars_2 {
+	FONT-SIZE: 20px; COLOR: #ffffcc; FONT-FAMILY: wingdings
+}
+.stars_3 {
+	FONT-SIZE: 20px; COLOR: #ffffcc; FONT-FAMILY: wingdings
+}
+.stars_4 {
+	FONT-SIZE: 20px; COLOR: #ffffcc; FONT-FAMILY: wingdings
+}
+TD {
+	FONT-SIZE: 11px; COLOR: #003300; FONT-FAMILY: verdana, 'arial narrow', arial
+}
+TH {
+	FONT-SIZE: 11px; COLOR: #669966; FONT-FAMILY: verdana, 'arial narrow', arial
+}

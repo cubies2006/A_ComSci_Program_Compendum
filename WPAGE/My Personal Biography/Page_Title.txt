@@ -1,0 +1,9 @@
+<HTML>
+<HEAD>
+<TITLE>Page Title</TITLE>
+</HEAD>
+<BODY>
+<Font color="Blue" face="Garamond" size="6"><Marquee behavior="alternate" direction="right"><IMG src="Welcome12.gif"></Marquee><br>
+<CENTER><B>TO MY PERSONAL WEBSITE</CENTER></B></Font>
+</BODY>
+</HTML>

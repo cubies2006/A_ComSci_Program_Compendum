@@ -1,0 +1,110 @@
+<HTML>
+<HEAD>
+<TITLE>My Resume</TITLE>
+<Bgsound src="Say Yes - Jung In Ho.mp3" loop="Infinite">
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=3.0,Transition=3)">
+</HEAD>
+<BODY Background="clouds.jpg" Bgproperties="fixed" vlink="Lavander" text="White">
+<Font color="Yellow" size="7" face="Garamond"><CENTER>II. My Resume</CENTER></Font>
+<TABLE Background="starstruck.gif" Border="3" Bordercolorlight="Silver" Bordercolordark="Gray" Height="100%" Width="100%">
+<TR>
+<TD>
+<IMG src="RonC.jpg" height="70%" width="20%" align="right">
+<br>
+PERSONAL INFORMATION:
+<UL Type="disc">
+<li><dd>Address:</dd><B> (Originally #7) New Brgy. #25 Del Monte Corner A. Bonifacio St. Brgy. San Jose, Quezon City</B>
+<li><dd>E-mail:</dd><B> lord2_vader@yahoo.co.uk, and hantaeseuk@yahoo.com</B>
+<li><dd>Tel No.:</dd><B> 365-61-56</B>
+<li><dd>Cell No.:</dd><B> (None)</B>
+</UL>
+</TD>
+</TR>
+<TR>
+<TD>
+<hr color="Turquoise">
+<Font color="Deepskyblue" size="7"><B><CENTER>Ronald Ong Dee</CENTER></B></Font>
+<hr color="Turquoise">
+</TD>
+</TR>
+<TR>
+<TD>
+<Font face="Palatino Linotype">
+<OL Type="I">
+<li>PERSONAL DATA:
+<OL Type="1">
+<br>
+<li><dd>Date of Birth:</dd><B> September 20, 1985</B>
+<li><dd>Age:</dd><B> 18 3/4</B>
+<li><dd>Sex:</dd><B> Male</B>
+<li><dd>Weight:</dd><B> 130 pounds</B>
+<li><dd>Height:</dd><B> 5'5''</B>
+<li><dd>Civil Status:</dd><B> Single</B>
+<li><dd>Religion:</dd><B> Born Again Christian</B>
+<li><dd>Father's Name:</dd><B> Leoncio Dee</B>
+<li><dd>Mother's Name:</dd><B> Rosa Ong</B>
+</OL>
+<br>
+</TD>
+</TR>
+<TR>
+<TD>
+<hr color="Turquoise">
+<br>
+<li>EDUCATIONAL BACKGROUND:
+<OL Type="1">
+<br>
+<li><dd>ELEMENTARY</dd>
+<OL Type="square">
+<li><dd>School:</dd><B> Philippine Cultural High School (Caloocan Annex)</B>
+<li><dd>School Address:</dd><B> 175th 8th Avenue Extension Caloocan City</B>
+<li><dd>School Years:</dd><B> 1992-1998</B>
+<li><dd>Achievements:</dd><B> 3rd Place Math contest</B> 
+</OL>
+<br>
+<li><dd>HIGH SCHOOL</dd>
+<OL Type="square">
+<li><dd>School:</dd><B> Philippine Cultural High School (Caloocan Annex)</B>
+<li><dd>School Address:</dd><B> 175th 8th Avenue Extension, Grace Park, Caloocan City</B>
+<li><dd>School Years:</dd><B> 1998-2002</B>
+<li><dd>Achievements:</dd><B> 8th in Overall Ranking (2nd Honor in Our Class), 
+Quiz Bee (Best in Social Studies)</B>
+</OL>
+<br>
+<li><dd>COLLEGE</dd>
+<OL Type="square">
+<li><dd>School:</dd><B> University of the East (Manila Main)</B>
+<li><dd>School Address:</dd><B> 2219 C. M. Recto Avenue, Manila</B>
+<li><dd>School Years:</dd><B> 2002-present</B>
+<li><dd>Achievements:</dd><B> Tan Yan Kee Scholar, STA-TXT-TICS (1st Place), 
+Speed Typing Contests (1st Place)</B>
+</OL>
+<br>
+</OL>
+<br>
+<hr color="Turquoise">
+<br>
+<li>SKILLS/HOBBIES:
+<br>
+<OL Type="disc">
+<li>Playing Playstation
+<li>Watching MTV
+<li>Reading Star Wars Novels
+<li>Watching different Korean drama series
+<li>Doing and Studying Computer Programs
+<li>Surfing the Internet
+<li>Solving Mathematical problems like Calculus
+</OL>
+</OL>
+</Font>
+</TD>
+</TR>
+</TABLE>
+<br>
+<CENTER><A HREF="Hands_On1.html" border="0"><IMG src="Go Top.gif" alt="GO TOP"></A></CENTER>
+<br>
+<CENTER><A HREF="Home_Page.html"><IMG src="Earth6.gif" border="0" alt="HOME" height="15%" width="10%"></A></CENTER>
+<A HREF="Page1.html"><IMG src="Back.gif" border="0" align="left"></A>
+<A HREF="Hands_On2.html"><IMG src="Next.gif" border="0" align="right"></A>
+</BODY>
+</HTML>

@@ -1,0 +1,8 @@
+MIDlet-1: TempConv2Mid, TempConv2Mid.png, TempConv2Mid
+MIDlet-Jar-Size: 100
+MIDlet-Jar-URL: TempConv2Mid.jar
+MIDlet-Name: TempConv2Mid
+MIDlet-Vendor: Unknown
+MIDlet-Version: 1.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0

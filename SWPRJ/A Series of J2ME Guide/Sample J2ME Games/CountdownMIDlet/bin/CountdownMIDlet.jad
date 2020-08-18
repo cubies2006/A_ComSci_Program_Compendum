@@ -1,0 +1,8 @@
+MIDlet-1: CountdownMIDlet, CountdownMIDlet.png, CountdownMIDlet
+MIDlet-Jar-Size: 2565
+MIDlet-Jar-URL: CountdownMIDlet.jar
+MIDlet-Name: CountdownMIDlet
+MIDlet-Vendor: Unknown
+MIDlet-Version: 1.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0

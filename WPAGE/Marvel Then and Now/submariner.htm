@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0055)http://www.samruby.com/Heroes/Submariner/submariner.htm -->
+<HTML><HEAD><TITLE>Submariner</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR>
+<META content=FrontPage.Editor.Document name=ProgId></HEAD>
+<BODY text=#000000 vLink=#296b7b aLink=#000000 link=#296b7b bgColor=#c2efed 
+background="A SUMRUBY SUBMARINER_files/WaterBeadAqua.gif">
+<SCRIPT language=JavaScript>
+
+<!-- Begin
+Image0 = new Image();
+Image0.src = "bubbleaqua.gif";
+Amount = 20; 
+Ymouse = -50;
+Xmouse = -50;
+Ypos = new Array();
+Xpos = new Array();
+Speed = new Array();
+rate = new Array();
+grow = new Array();
+Step = new Array();
+Cstep = new Array();
+nsSize = new Array();
+ns = (document.layers)?1:0;
+(document.layers)?window.captureEvents(Event.MOUSEMOVE):0;
+function Mouse(evnt) {
+Ymouse=(document.layers)?evnt.pageY-20:event.y-20;
+Xmouse=(document.layers)?evnt.pageX:event.x;
+}
+(document.layers)?window.onMouseMove=Mouse:document.onmousemove=Mouse;
+for (i = 0; i < Amount; i++) {
+Ypos[i] = Ymouse;
+Xpos[i] = Xmouse;
+Speed[i] = Math.random()*4+1;
+Cstep[i] = 0;
+Step[i] = Math.random()*0.1+0.05;
+grow[i] = 8;
+nsSize[i] = Math.random()*15+5;
+rate[i] = Math.random()*0.5+0.1;
+}
+if (ns) {
+for (i = 0; i < Amount; i++) {
+document.write("<LAYER NAME='sn"+i+"' LEFT=0 TOP=0><img src="+Image0.src+" name='N' width="+nsSize[i]+" height="+nsSize[i]+"></LAYER>");
+   }
+}
+else {
+document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+for (i = 0; i < Amount; i++) {
+document.write('<img id="si" src="'+Image0.src+'" style="position:absolute;top:0px;left:0px;filter:alpha(opacity=90)">');
+}
+document.write('</div></div>');
+}
+function MouseBubbles() {
+var hscrll = (document.layers)?window.pageYOffset:document.body.scrollTop;
+var wscrll = (document.layers)?window.pageXOffset:document.body.scrollLeft;
+for (i = 0; i < Amount; i++){
+sy = Speed[i] * Math.sin(270 * Math.PI / 180);
+sx = Speed[i] * Math.cos(Cstep[i] * 4);
+Ypos[i] += sy;
+Xpos[i] += sx; 
+if (Ypos[i] < -40) {
+Ypos[i] = Ymouse;
+Xpos[i] = Xmouse;
+Speed[i] = Math.random() * 6 + 4;
+grow[i] = 8;
+nsSize[i] = Math.random() * 15 + 5;
+}
+if (ns) {
+document.layers['sn'+i].left = Xpos[i] + wscrll;
+document.layers['sn'+i].top = Ypos[i] + hscrll;
+}
+else {
+si[i].style.pixelLeft = Xpos[i] + wscrll;
+si[i].style.pixelTop = Ypos[i] + hscrll;
+si[i].style.width = grow[i];
+si[i].style.height = grow[i]; 
+}
+grow[i] += rate[i]; 
+Cstep[i] += Step[i];
+if (grow[i] > 24) grow[i] = 25;
+}
+setTimeout('MouseBubbles()', 10);
+}
+MouseBubbles();
+//  End -->
+</SCRIPT>
+
+<DIV style="POSITION: relative">
+<P align=center><IMG height=134 
+src="A SUMRUBY SUBMARINER_files/SubmarinerLogoBlue.gif" width=273 border=0> 
+<P align=center><BR>
+<DIV align=center>
+<CENTER>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD width="50%">
+      <P align=center><IMG height=378 
+      src="A SUMRUBY SUBMARINER_files/SubmarinerNew.gif" width=224 
+    border=0></P></TD>
+    <TD width="50%">
+      <P align=center><B><FONT size=2><U><EM><FONT 
+      color=#296b7b>Name:</FONT></EM></U> Prince (Of Atlantis) Namor 
+      McKenzie</FONT></B></P>
+      <P align=center><B><FONT size=2><U><EM><FONT 
+      color=#296b7b>ID:</FONT></EM></U> Known</FONT></B></P>
+      <P align=center><B><FONT size=2><U><EM><FONT 
+      color=#296b7b>Relatives:</FONT></EM></U> Dorma, Wife (Deceased)...Marrina, 
+      Wife (Deceased), Namora, Cousin (Deceased)...Namorita, 2nd 
+      Cousin...Leonard McKenzie, Father (Deceased)...Fen, Mother 
+      (Deceased)</FONT></B></P>
+      <P align=center><B><FONT size=2><U><EM><FONT 
+      color=#296b7b>Affiliates:</FONT></EM></U> Member of the Defenders...Former 
+      member of the Avengers, Invaders, Liberty Legion &amp; All-Winners 
+      Squad...Ally of Captain America, Fantastic Four, Human Torch (Golden 
+      Age)</FONT></B></P>
+      <P align=center><B><FONT size=2><U><EM><FONT color=#296b7b>Major 
+      Enemies:</FONT></EM></U> Attuma, Tiger Shark, Master Man, Warrior Woman, 
+      Llyra, Dr. Doom, Krang, Byrrah, Naga, U-Man, Orka</FONT></B></P>
+      <P align=center><B><FONT size=2><U><EM><FONT 
+      color=#296b7b>Powers:</FONT></EM></U> Superhuman strength, Speed &amp; 
+      Stamina (greater underwater) &amp; ability to adapt to underwater 
+      conditions &amp; breath underwater...Can swim up to 60 MPH for 
+      hours...Amphibious &amp; ability to fly. Also the ability to 
+      telepathically command undersea life.</FONT></B></P>
+      <P align=center><B><FONT size=2><U><EM><FONT 
+      color=#296b7b>Origin:</FONT></EM></U> Namor is a mutant hybrid of Homo 
+      Sapiens and the off-shoot human race called Homo 
+    Mermanus.</FONT></B></P></TD></TR></TBODY></TABLE></CENTER></DIV>
+<P align=center>&nbsp;</P>
+<P align=center>&nbsp;</P>
+<P align=center>&nbsp;</P>
+<DIV align=center>
+<CENTER>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle width="52%">
+      <P align=center><FONT size=2><U><EM><STRONG><FONT color=#296b7b>1st 
+      App.:</FONT></STRONG></EM></U> <STRONG><I>Motion Pictures Funnies 
+      Weekly</I> #1<BR>&amp; <I>Marvel Comics</I> #1<BR>(Modern/ Silver Age) 
+      <I>Fantastic Four</I> #4</STRONG></FONT></P>
+      <P align=center><IMG height=162 
+      src="A SUMRUBY SUBMARINER_files/Marvel1.gif" width=113 border=0></P>
+      <P align=center><STRONG><FONT size=2>November 1939</FONT></STRONG></P>
+      <P align=center><FONT size=2><U><EM><STRONG><FONT color=#296b7b>Origin 
+      Issues:</FONT></STRONG></EM></U> <STRONG><I>Fantastic Four</I> #4 &amp; 
+      Annual #1...<I>Submariner</I> #1...<I>Saga Of The Submariner </I>#1 &amp; 
+      2</STRONG></FONT></P></TD>
+    <TD align=middle width="48%"><IMG height=374 
+      src="A SUMRUBY SUBMARINER_files/Submariner.gif" width=239 
+  border=0></TD></TR></TBODY></TABLE></CENTER></DIV>
+<P align=center><FONT size=2><STRONG><U><EM><FONT color=#296b7b>Spider-Man 
+Appearances:</FONT></EM></U></STRONG>&nbsp;<STRONG> </STRONG></FONT><B><FONT 
+size=2><EM>Amazing Spider-Man</EM> #211, 214 &amp; 215...<I>Marvel Team-Up</I> 
+#14 &amp; 111...<EM>Web Of Spider-Man</EM> #73...<EM>Untold Tales</EM> '96 &amp; 
+'97...<EM>Daredevil </EM>#77...<I>Defenders</I> #52 &amp; 
+107-109...<EM>Submariner</EM> #40 &amp; 69</FONT></B> 
+<P align=center>&nbsp;</P>
+<P align=center>&nbsp;</P>
+<DIV align=left>
+<TABLE cellPadding=2 width="75%" border=2>
+  <TBODY>
+  <TR>
+    <TD align=middle><B><FONT size=2>Prince Namor is actually the very first 
+      character introduced into the Marvel Universe way back in 1939. He carried 
+      a successful title for 42 issues in the Golden Age of comics as well as 
+      appearing in other titles. Just a couple of issues into the Silver Age, 
+      Namor was brought back in the pages of <I>Fantastic Four</I> #4. Sometimes 
+      a villain, many more times a hero, the Submariner has always been a very 
+      important character in the Marvel Universe and eventually appeared in 
+      <I>Tales To Astonish</I> for over 30 issues before receiving his own title 
+      for over 70 and again for over 50. While the hot-head Namor is not exactly 
+      a great hero to combine forces with, he has teamed up with just about 
+      every character in the Marvel Universe including Spider-Man.</FONT></B></TD>
+    <TD align=middle><IMG height=162 
+      src="A SUMRUBY SUBMARINER_files/Mtu14.gif" width=105 
+  border=0></TD></TR></TBODY></TABLE></DIV>
+<P align=center>&nbsp;</P>
+<P align=center>&nbsp;</P>
+<P align=center>&nbsp;</P>
+<DIV align=right>
+<TABLE cellPadding=2 width="75%" border=2>
+  <TBODY>
+  <TR>
+    <TD align=middle><IMG height=162 
+      src="A SUMRUBY SUBMARINER_files/Asm211.gif" width=104 border=0></TD>
+    <TD align=middle><B><FONT size=2>The Submariner and Spider-Man has met up 
+      only a few relative times over their careers. One early memorable one was 
+      in <I>Daredevil</I> #77 in a story that was concluded in <I>Submariner</I> 
+      #40. Namor made his <I>Marvel Team-Up</I> debut in issue #14 and had a 
+      major battle issue with Spidey in <I>Submariner </I>#69. They met again in 
+      the pages of <I>Amazing Spider-Man</I> #211, 214 &amp; 215 where they 
+      battled then joined forces against the Frightful Four. Namor has been a 
+      founding member of the Defenders and can be seen alongside Spider-Man as 
+      well as his Defender teammates in issues #52 &amp; 107-109. The Submariner 
+      has been a prominent character for over 60 years and continues to be a 
+      part of the action in the Marvel 
+Universe.&nbsp;</FONT></B></TD></TR></TBODY></TABLE></DIV>
+<P align=center> </P>
+<P align=center><BR></P>
+<TABLE cellSpacing=0 cellPadding=0 width=729 border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle width=364>
+      <P align=center><IMG height=341 
+      src="A SUMRUBY SUBMARINER_files/SubmarinerNamor.gif" width=288 
+      border=0></P></TD>
+    <TD align=middle width=365>
+      <P align=center><B>For much more on the Submariner, visit these sites 
+      devoted solely to him!</B></P>
+      <P align=center>&nbsp;</P>
+      <P align=center><B><FONT size=4><A 
+      href="http://www.jps.net/xephyr/rich/scifi/namor.html">Imperious 
+      Rex!</A></FONT></B></P>
+      <P align=center>&nbsp;</P>
+      <P align=center><B><FONT size=4><A 
+      href="http://www.chivian.com/chivian/SubMariner.shtml">SubMariner</A></FONT></B></P>
+      <P align=center>&nbsp;</P>
+      <P align=center><STRONG><FONT color=#000000><EM>Spider-Man Friend 
+      Rating:</EM> </FONT><FONT color=#296b7b><BIG><BIG>3 
+      </BIG></BIG><SMALL><SMALL>(out of 10)</SMALL></SMALL></FONT></STRONG></P>
+      <P>&nbsp;</P></TD></TR></TBODY></TABLE>
+<P align=center><STRONG><EM><FONT color=#000000><BR></FONT></EM></STRONG></P>
+<HR>
+
+<P align=center><SMALL><STRONG>This site &amp; all scanned images created &amp; 
+maintained by</STRONG> </SMALL><STRONG><BIG><A 
+href="mailto:samruby@aol.com">Eric Gillette</A></BIG><SMALL><BR>Thank you very 
+much for your visit!</SMALL></STRONG></P>
+<P align=center><A href="http://www.marvel.com/"><STRONG><FONT 
+color=#296b7b><SMALL>Spider-Man &amp; The Submariner ™&nbsp; and © 1999 Marvel 
+Characters, Inc.</SMALL><BR><SMALL>All Rights Reserved</SMALL><BR><SMALL>Please 
+visit The Marvel Official Site 
+at:</SMALL><BR><SMALL>http://www.marvel.com</SMALL></FONT></STRONG></A></P></DIV></BODY></HTML>

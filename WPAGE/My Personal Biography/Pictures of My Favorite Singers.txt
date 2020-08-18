@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<TITLE>Pictures of My Favorite Singers</TITLE>
+<Bgsound src="Confide In Me - Kylie Minogue.mp3" loop="Infinite">
+<meta http-equiv="Page-Enter" content="RevealTrans(Duration=4.0,Transition=4)">
+</HEAD>
+<BODY Background="clouds.jpg" bgproperties="fixed" vlink="Lavander" text="Black">
+<Font Color="Royalblue" face="Garamond" size="7"><CENTER>XXIII. Pictures of My Favorite Singers</CENTER></Font>
+<br>
+<TABLE Border="3" Height="80%" Width="80%">
+<TR Vspace="50%">
+<TD Height="30%" Width="30%"><A HREF="Amy Lee 1.jpg" border="0"><IMG src="Amy Lee 1.jpg" Height="30%" Width="100%"><A HREF="Atomic Kitten.jpg" border="0"><IMG src="Atomic Kitten.jpg" Height="30%" Width="100%"><A HREF="The Corrs.jpg" border="0"><IMG src="The Corrs.jpg" Height="30%" Width="100%"></TD>
+<TD Height="30%" Width="30%"><A HREF="Amy Lee 2.jpg" border="0"><IMG src="Amy Lee 2.jpg" Height="30%" Width="100%"><A HREF="Atomic Kitten 2.jpg" border="0"><IMG src="Atomic Kitten 2.jpg" Height="30%" Width="100%"><A HREF="The Corrs 2.jpg" border="0"><IMG src="The Corrs 2.jpg" Height="30%" Width="100%"></TD>
+<TD Height="30%" Width="30%"><A HREF="Amy Lee 3.jpg" border="0"><IMG src="Amy Lee 3.jpg" Height="30%" Width="100%"><A HREF="Atomic Kitten 3.jpg" border="0"><IMG src="Atomic Kitten 3.jpg" Height="30%" Width="100%"><A HREF="The Corrs 3.jpg" border="0"><IMG src="The Corrs 3.jpg" Height="30%" Width="100%"></TD>
+<TD Height="30%" Width="30%"><A HREF="Amy Lee 4.jpg" border="0"><IMG src="Amy Lee 4.jpg" Height="30%" Width="100%"><A HREF="Atomic Kitten 4.jpg" border="0"><IMG src="Atomic Kitten 4.jpg" Height="30%" Width="100%"><A HREF="The Corrs 4.jpg" border="0"><IMG src="The Corrs 4.jpg" Height="30%" Width="100%"></TD>
+<TD Height="30%" Width="30%"><A HREF="Amy Lee 5.jpg" border="0"><IMG src="Amy Lee 5.jpg" Height="30%" Width="100%"><A HREF="Atomic Kitten 5.jpg" border="0"><IMG src="Atomic Kitten 5.jpg" Height="30%" Width="100%"><A HREF="The Corrs 5.jpg" border="0"><IMG src="The Corrs 5.jpg" Height="30%" Width="100%"></TD>
+<TD Height="30%" Width="30%"><A HREF="Amy Lee 6.jpg" border="0"><IMG src="Amy Lee 6.jpg" Height="30%" Width="100%"><A HREF="Atomic Kitten 6.jpg" border="0"><IMG src="Atomic Kitten 6.jpg" Height="30%" Width="100%"><A HREF="The Corrs 6.jpg" border="0"><IMG src="The Corrs 6.jpg" Height="30%" Width="100%"></TD>
+<TD Height="30%" Width="30%"><A HREF="Amy Lee 7.jpg" border="0"><IMG src="Amy Lee 7.jpg" Height="30%" Width="100%"><A HREF="Atomic Kitten 7.jpg" border="0"><IMG src="Atomic Kitten 7.jpg" Height="30%" Width="100%"><A HREF="The Corrs 7.jpg" border="0"><IMG src="The Corrs 7.jpg" Height="30%" Width="100%"></TD>
+<TD Height="30%" Width="30%"><A HREF="Amy Lee 8.jpg" border="0"><IMG src="Amy Lee 8.jpg" Height="30%" Width="100%"><A HREF="Atomic Kitten 8.jpg" border="0"><IMG src="Atomic Kitten 8.jpg" Height="30%" Width="100%"><A HREF="The Corrs 8.jpg" border="0"><IMG src="The Corrs 8.jpg" Height="30%" Width="100%"></TD>
+<TD Height="30%" Width="30%"><A HREF="Amy Lee 9.jpg" border="0"><IMG src="Amy Lee 9.jpg" Height="30%" Width="100%"><A HREF="Atomic Kitten 9.jpg" border="0"><IMG src="Atomic Kitten 9.jpg" Height="30%" Width="100%"><A HREF="The Corrs 9.jpg" border="0"><IMG src="The Corrs 9.jpg" Height="30%" Width="100%"></TD>
+</TR>
+</TABLE>
+<br>
+<CENTER><A HREF="Pictures of My Favorite Singers, Their Songs, and Their Where Abouts.html" border="0"><IMG src="Go Top.gif" alt="GO TOP"></A></CENTER>
+<br>
+<CENTER><A HREF="Home_Page.html"><IMG src="Earth6.gif" alt="HOME" border="0" height="15%" width="10%"></A></CENTER>
+<A HREF="Lyrics of My Favorite Music.html"><IMG src="Back.gif" border="0" align="left"></A>
+<A HREF="My Favorite TV Shows.html"><IMG src="Next.gif" border="0" align="right"></A>
+</BODY>
+</HTML>

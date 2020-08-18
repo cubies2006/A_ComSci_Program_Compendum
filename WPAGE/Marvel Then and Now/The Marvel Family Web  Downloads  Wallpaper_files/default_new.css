@@ -1,0 +1,30 @@
+BODY {
+	BACKGROUND-IMAGE: url(/media/images/backgrounds/bolt_back.gif); BACKGROUND-REPEAT: repeat
+}
+.story-text {
+	FONT-SIZE: 10pt; MARGIN-BOTTOM: 25pt; MARGIN-LEFT: 15pt; MARGIN-RIGHT: 10pt; FONT-FAMILY: arial
+}
+.list-text {
+	FONT-SIZE: 9pt; MARGIN-BOTTOM: 5pt; MARGIN-LEFT: 5pt; MARGIN-RIGHT: 10pt; FONT-FAMILY: arial
+}
+.story-date {
+	MARGIN-TOP: 5pt; FONT-WEIGHT: bold; FONT-SIZE: 14pt; MARGIN-LEFT: 15pt; COLOR: red; MARGIN-RIGHT: 10pt; FONT-FAMILY: arial
+}
+.links {
+	MARGIN-TOP: 10pt; FONT-SIZE: 8pt; COLOR: red; FONT-FAMILY: arial; TEXT-ALIGN: center
+}
+.tabNew {
+	MARGIN-BOTTOM: 0px
+}
+A {
+	COLOR: red; TEXT-DECORATION: none
+}
+A.menu {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: goldenrod
+}
+.header-text {
+	FONT-SIZE: 14pt; MARGIN-LEFT: 15pt; MARGIN-RIGHT: 10pt; FONT-FAMILY: arial black
+}
+TD.small {
+	FONT-SIZE: 8pt; FONT-FAMILY: arial
+}

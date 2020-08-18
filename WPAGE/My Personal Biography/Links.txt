@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<TITLE>Links</TITLE>
+</HEAD>
+<Body Background="clouds.gif">
+<br>
+<A HREF="Home_Page.html" target="Output1"><Font color="Black"><CENTER><IMG src="MetalH.gif"  height="30" width="30" border="0"><IMG src="MetalO.gif"  height="30" width="30" border="0"><IMG src="MetalM.gif"  height="30" width="30" border="0"><IMG src="MetalE.gif" height="30" width="30" border="0"></CENTER></Font>
+<Font size="3" face="Bookman Old Style"><UL Type="Square">
+<li><A HREF="Page1.html" target="Output1"><Font color="Black">My Autobiography</Font></A>
+<li><A HREF="Hands_On1.html" target="Output1"><Font color="Black">My Resume</Font></A>
+<li><A HREF="Hands_On2.html" target="Output1"><Font color="Black">An Inspirational Poem</Font></A>
+<li><A HREF="Page3.html" target="Output1"><Font color="Black">My Transformation</Font></A>
+<li><A HREF="About My Family.html" target="Output1"><Font color="Black">About My Family</Font></A>
+<li><A HREF="My Bestfriends Photos.html" target="Output1"><Font color="Black">My Bestfriends Photos</Font></A>
+<li><A HREF="My Family Background.html" target="Output1"><Font color="Black">My Family Background</Font></A>
+<li><A HREF="My Friends.html" target="Output1"><Font color="Black">My Friends</Font></A>
+<li><A HREF="My Friendster.html" target="Output1"><Font color="Black">My Friendster</Font></A>
+<li><A HREF="Places I Want To Hang Out.html" target="Output1"><Font color="Black">Places I Want To Hang Out</Font></A>
+<li><A HREF="Page2.html" target="Output1"><Font color="Black">My Calendar</Font></A>
+<li><A HREF="My Fashion Sense.html" target="Output1"><Font color="Black">My Fashion Sense</Font></A>
+<li><A HREF="My Inspirations.html" target="Output1"><Font color="Black">My Inspirations</Font></A>
+<li><A HREF="My Strengths.html" target="Output1"><Font color="Black">My Strengths</Font></A>
+<li><A HREF="My Weaknesses.html" target="Output1"><Font color="Black">My Weaknesses</Font></A>
+<li><A HREF="Likes.html" target="Output1"><Font color="Black">Likes</Font></A>
+<li><A HREF="Dislikes.html" target="Output1"><Font color="Black">Dislikes</Font></A>
+<li><A HREF="Rules In Life.html" target="Output1"><Font color="Black">Rules in Life</Font></A>
+<li><A HREF="My Favorite Quotes.html" target="Output1"><Font color="Black">My Favorite Quotes Anything Under The Sun</Font></A>
+<li><A HREF="Inspirational Stories.html" target="Output1"><Font color="Black">Inspirational Stories Which Had Touched My Life</Font></A>
+<li><A HREF="My Favorite Music.html" target="Output1"><Font color="Black">My Favorite Music</Font></A>
+<li><A HREF="Lyrics of My Favorite Music.html" target="Output1"><Font color="Black">Lyrics Of My Favorite Music</Font></A>
+<li><A HREF="Pictures of My Favorite Singers.html" target="Output1"><Font color="Black">Pictures of My Favorite Singers</Font></A>
+<li><A HREF="My Favorite TV Shows.html" target="Output1"><Font color="Black">My Favorite T. V. Shows</Font></A>
+<li><A HREF="My Favorite Actors And Actresses.html" target="Output1"><Font color="Black">My Favorite Actors And Actresses</Font></A>
+<li><A HREF="My Favorite Movies.html" target="Output1"><Font color="Black">My Favorite Movies</Font></A>
+<li><A HREF="Movies Of Great Influence.html" target="Output1"><Font color="Black">Movies Of Great Influence To Me From Which I Can Relate</Font></A>
+<li><A HREF="Latest Technologies I Want To Have.html" target="Output1"><Font color="Black">Latest Technologies I Want To Have</Font></A>
+<li><A HREF="My Dreams In Life.html" target="Output1"><Font color="Black">My Dreams in Life</Font></A>
+<li><A HREF="My Ambitions In Life.html" target="Output1"><Font color="Black">My Ambitions in Life</Font></A>
+</UL>
+<CENTER><A HREF="Guestbook.html" target="Output1"><Font face="Bookman Old Style" color="Black"><B>SIGN MY GUESTBOOK!!!</B></Font></A></CENTER>
+</BODY>
+</HTML>

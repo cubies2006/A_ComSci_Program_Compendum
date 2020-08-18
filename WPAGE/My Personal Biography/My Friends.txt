@@ -1,0 +1,187 @@
+<HTML>
+<HEAD>
+<TITLE>My Friends</TITLE>
+<Bgsound src="It's OK - Atomic Kitten.mp3" loop="Infinite">
+<meta http-equiv="Page-Enter" content="BlendTrans(Duration=3.0,Transition=10)">
+</HEAD>
+<BODY Background="clouds.jpg" bgproperties="fixed" vlink="Lavander" text="White">
+<Font Color="Teal" face="Garamond" size="7"><CENTER>VIII. My Friends</CENTER></Font>
+<br>
+<Font face="Bookman Old Style">
+<IMG src="Unicorn.gif" align="left">
+<IMG src="Unicorn.gif" align="right">
+<TABLE Background="movingspots.gif" Border="3">
+<TR>
+<TD>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Friends are the group of people who makes my day bright. Honestly, 
+studying alone is fun, but when you have no one to talk with, it's pretty boring at all. Since no man is an island. Then
+everyone needs to have a companion and to socialize. But I can say that not all friends are trustworthy, but there are 
+few royal friends out there that will always be there for you in times of trouble and misery. Because when you have
+a group peers, I believe that they're majority of them were not royal to you, so I don't dare to have a group of friends
+but rather few friends only who are true and good.</P>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anyway, Here are the list of my friends from elementary to college in which their surnames 
+are arranged in alphabetical order:</P>
+<OL Type="A">
+<li>ELEMENTARY
+<OL Type="square">
+<br>
+<li><Font Size="4" color="Pink" face="Tahoma">Cainglet, Jacqueline Sue</Font><IMG src="cainglet.jpg" height="40%" width="15%" align="left">
+<P align="justify">I had first known her when I was Grade 3. She is very nice, talkactive, and very caring. She indeed has a good heart. She is very
+humble and generous. She sometimes helped me in my Art projects in our M. A. P. E. subject. She is one of my closest friends during my elementary years.
+She didn't became classmates during the next 3 years in my elementary years. But our friendship continues in our high school years.</P>
+</P>
+<li><Font Size="4" color="DeepSkyBlue" face="Tahoma">Cruz, Alvin Roman</Font><IMG src="roman.jpg" height="40%" width="15%" align="left">
+<P align="justify">He is one of my closest classmates when I was in Grade 6. He is really good in Mathematics. He joined many Math and Science contests.
+He sometimes taught me Math and Science subjects. I really appreciate his generosity in imparting knowledge to me. He also told me about Playstation game
+console, which is very popular during this time. He also knows how to play many sports like soccer, basketball, badminton, arnis, and many others. I'm
+really happy to meet someone like him who is really helpful. I hope that he won't change and continue to impart knowledge to others.</P> 
+<li><Font Size="4" color="Pink" face="Tahoma">Pernia, Vanessa A.</Font><IMG src="vanessa.jpg" height="40%" width="15%" align="left">
+<P align="justify">When I was Grade 5, it was the first time that I had known her. She's beautiful and very popular because she's a very dynamic kind of
+person. She can't live with friends. And also she can act well maybe because she aspires to become an artist someday. But fortunately, I became one of her 
+friends although we're not that close. She excels at Filipino very well. And she has honors during this time. But later on, she focuses more on friends than 
+studies so when she'd reached High School she losts her honor.</P> 
+<li><Font Size="4" color="DeepSkyBlue" face="Tahoma">sy, Alvin Arthur</Font>
+<P align="justify">He is one of the most honest classmates that i'd ever known in my elementary days. He is very diligent in studying all of his subjects.
+He told me many animes and PC games that are popular during that time. He inspires me to join Math Club in our Extracurricular Activities. He got good 
+grades over me. He gives me advices about studies and badminton. He encouraged me to join Badminton during the first 2 years of my high school years. 
+We didn't get to communicate with each other since he doesn't have a Friendster account.</P>
+</OL>
+<CENTER><A HREF="My Friends.html" border="0"><IMG src="Go Top.gif" alt="GO TOP"></A></CENTER>
+<br>
+<li>HIGH SCHOOL
+<OL Type="circle">
+<br>
+<li><Font Size="4" color="Pink" face="Comic Sans MS">Cainglet, Jacqueline Sue</Font><IMG src="cainglet.jpg" height="60%" width="20%" align="left">
+<P align="justify">After 3 years since the elementary years, she became my classmate once again. But now, she's not only my closest friend, but also
+my best friend too. During this years, she shows her ability in communication and writing. She joined our Scribe, the official article in our school
+published every after a semester. She excels in English and Filipino, but poor in Math. As a friend, I do teach her and fortunately she passed. I
+really do miss her till now, because we'd share many years together as friends. But because of college life, we had to part ways. We only get to meet
+each other when there is a Reunion held in our school. I'm very grateful to have a friend like her who makes my day bright during my elementary and 
+high school days despite busy schedule and loads of assignments to deal with.</P>
+<li><Font Size="4" color="Pink" face="Comic Sans MS">Chan, Jennifer</Font><IMG src="jennifer.jpg" height="60%" width="20%" align="left">
+<P align="justify">She is one of my classmate who has many suitors. Maybe of her distinct charisma and appeal within her. 
+She has a gift of dancing, communicating with others, being business-minded, and being a romance-book lover. She is one 
+of my closest friend during my 3rd and 4th Year in H. S. We talked just about anything - music, movies, PS games, and many
+others. She is one of my group members when we're making a thesis in English about "Music - It's History and It's 
+Instrument". Unfortunately, I do not know of her whereabouts since we graduated.</P>
+<br>
+<li><Font Size="4" color="DeepSkyBlue" face="Comic Sans MS">Choi, Van Weily</Font>
+<IMG src="van.jpg" height="45%" width="20%" align="left">
+<P align="justify">He is a very good friend of mine. I remember the times when he was being paired by my classmates to 
+Jacqueline as a perfect couple. I befriended him and Jacqueline which led to an issue. Most of my classmates say that
+I'm the rival of him for the hand of Jacqueline. He is got to be one of the most brightest classmate of our time. He's 
+very superb in his Chinese studies. He has a very wide knowledge in Chinese language and culture. He's very reliable 
+when during my first 2 years, he helps me do my assignments in Math and Science. He's currently studying at DLSU Manila
+taking up Chemical Engineering. I didn't get to see him for 2 years now since we'd graduated.</P>
+<li><Font Size="4" color="Pink" face="Comic Sans MS">Chua, Hong Hong</Font><IMG src="hong_hong.jpg" height="45%" width="20%" align="left">
+<P align="justify">She is Joni Mae's bestfriend and one of Jacqueline's friend. So it is a must that she should be my
+friend too. She's very sports-minded and business-minded at the same time. She's very much different to my other female 
+classmates. Because she used to speak Chinese language than Filipino and English languages. She has difficulty in speaking 
+Tagalog. In Chinese, she is one of the brightest students in their batch.</P>
+<br>
+<li><Font Size="4" color="DeepSkyBlue" face="Comic Sans MS">Chua, Michael Erick</Font><IMG src="Mech.jpg" height="60%" width="20%" align="left">
+<P align="justify">He is one of my closest and funniest classmates that I had known in my high school life. He transferred
+to our school during our 1st Year H. S. During the first year of being at school, he is very quiet. But a year later, he 
+started to get talkactive and wacky. When we'd reached 3rd Year, he gets more talkactive and wackier than ever. By the way,
+he's very athletic. He virtually knows almost all sports like basketball, volleyball, arnis, chess, swimming, tennis, 
+badminton and others. He is also good in Mathematics and Computer subjects. Despite all of his achievements, he still gets
+to be a very happy-go-lucky person and very funny. Currently, he's taking up Computer Engineering at DLSU Caloocan. We still
+get to keep in touch through Friendster.</P>
+<li><Font Size="4" color="Pink" face="Comic Sans MS">Lazaro, Joni Mae</Font><IMG src="joni_mae.jpg" height="60%" width="20%" align="left">
+<P align="justify">She is one of my bestfriends in the school. She is sweet, caring, sincere, nice, simple, and diligent.
+She is very active in school because she is a member of the Student Council body. She loves to study Filipino and English
+subjects especially the Panitikan or the Literature part. She usually comfort me when I'm feeling down and low. She gives 
+me the inspiration to study hard during my 3rd and 4th Year respectively. She is the only classmate that I confidently 
+entrust all my secrets and problems. She's currently studying at PNU which means that she'll be a teacher someday. 
+Unfortunately, I can't get in touch with her because she is very busy in her studies. But I hope that someday, we can get
+to meet other again and reminesce all the happy moments that we had during our high school days.</P>
+<li><Font Size="4" color="Pink" face="Comic Sans MS">Lim, Aileen</Font><IMG src="aileen.jpg" height="60%" width="20%" align="left">
+<P align="justify">She is one of the most fascinating people that I had ever known in our school. She is as white as 
+snow like snow white. She's so simple and very down to earth. She is a type of person who loves novels about romance, 
+horror, and others. She told me before that she preferred to read books than to watch a motion picture. Because when 
+you read, it can widen your world and your own imagination to think of. She is also intelligent. She is the 3rd Honor 
+in our class. She's currently taking up Accountancy here in UE Manila.</P>
+<br><br>
+<li><Font Size="4" color="Pink" face="Comic Sans MS">Lin, Yan Hong</Font><IMG src="yan_hong.jpg" height="40%" width="15%" align="left">
+<P align="justify">He is the one classmate that I first perceived as very arrogant and all-knowing but I was wrong. He was nice,
+not that arrogant, willing to learn from his studies, and one of the most popular classmates of our batch. He became my classmate
+since I was in Grade 5. When I'd reached 4th Year, I used to become his "Instant Reviewer" in Social Studies quiz (World History).
+I never thought that he was the only one who greet me when I'd graduated aside from Joni Mae and Jacqueline.</P>   
+<li><Font Size="4" color="DeepSkyBlue" face="Comic Sans MS">Ngo, Patrick Rae</Font><IMG src="patrick.jpg" height="40%" width="15%" align="left">
+<P align="justify">He is the one classmate that I first perceived as very arrogant and all-knowing but I was wrong. He was nice,
+not that arrogant, willing to learn from his studies, and one of the most popular classmates of our batch. He became my classmate
+since I was in Grade 5. When I'd reached 4th Year, I used to become his "Instant Reviewer" in Social Studies quiz (World History).
+I never thought that he was the only one who greet me when I'd graduated aside from Joni Mae and Jacqueline.</P>   
+<li><Font Size="4" color="Pink" face="Comic Sans MS">Pernia, Vanessa A.</Font><IMG src="vanessa.jpg" height="40%" width="15%" align="left">
+<P align="justify">She is the most talkactive and very active in our batch. Because she's the so-called "ARTISTA" or I should
+say "MISS POPULAR" in all levels from Elementary to High School. Although she is not that intelligent, but she has various of
+talents like dancing, acting, and singing. We first became classmates when I was in Grade 5. And she's very annoying at that 
+time. Because she feel that she is much better than other people because at least she has a brain during that time. But when 
+High School days come, she became more attached to friends which led to her downfall. Since then, her attitude changes for the
+good. And we became friends when we'd reached 3rd Year. And I instantly became her mentor in Chemistry and Physics and of Math.
+I won't ever forget her role in our "Filipino Drama Play" during our 1st and 3rd Year, wherein she played as Donya Juana and Sisa respectively.
+I heard that she has also many suitors, but she's not ready yet to get into a relationship. She's petite but terrible!!!</P> 
+<li><Font size="4" color="Pink" face="Comic Sans MS">Policarpio, Raychelle</Font><IMG src="raychelle.jpg" height="35%" width="15%" 
+align="left"><P align="justify">She is one of the most funniest and cuddliest classmates that I'd ver known in my high school days. 
+She also gives me the encouragement of studying hard and giving me good advices to stand and deal with my high school days. She is 
+one of our CAT Officers. But I still consider her as an ordinary classmate full of joy and life. I last met her during her debut 
+held last May of this year.</P>
+<li><Font size="4" color="Pink" face="Comic Sans MS">Tan, Rowena</Font><IMG src="rowena.jpg" height="40% width="15%" align="left">
+<P align="justify">She is one of my closest friends in my Chinese class. We became classmates ever since Grade 3. Just like me, she retained for
+a year. We are so closely attached because she loves to talk with other people. She sometimes gave me good advice when I have a problem that is 
+a true friend. From Grade 3 to 4th Year of Chinese, we're classmates. But when 4th Year English comes, we both don't have Chinese classes anymore.
+During Thursday and friday, we have P. E. and C. A. T. to attend respectively. So we and some of the retainers of English meet at the Library to
+study and chat about anything. She is studying at Fatima taking up Nursing. I really do miss everything about her.</P>
+</OL>
+<CENTER><A HREF="My Friends.html" border="0"><IMG src="Go Top.gif" alt="GO TOP"></A></CENTER>
+<li>COLLEGE
+<OL Type="disc">
+<br>
+<li><Font Size="4" color="DeepSkyBlue" face="Comic Sans MS">Amante, Mark Roger</Font>
+<P align="justify">He is one of my best friends in my college life. We became classmates during my first study here in UE. At first, you'll 
+thought that he's arrogant, but he's not. He's "VERY SUPERB" in Computer Programming, as in he is one heck of a "COMPUTER GENIUS". He is really 
+good in Math subjects. Although, he is good in Math and Computer subjects, he is weak in subjects like English and Social Sciences. He also 
+plays Basketball as a Anti-Stress therapy to him. He is very gifted. Believe it or not. He didn't jot down notes and he only listens.</P>
+<li><Font Size="4" color="DeepSkyBlue" face="Comic Sans MS">Castillo, Argel Joseph</Font>
+<P align="justify">He is one of the most mysterious classmates that I'd ever known. At first, you'll notice that he looks like Morgan in 
+"Bananas In Pajamas", but later on you'll recognize that he's one of the finest in our class. He is very humble, talk less, and a good friend
+of mine. He's a Logic addict. He got a very high grade on our Philosophy subject when we're on 1st Year. It's because he liked it very much. 
+He also like Math and Computer subjects just as Mark Roger do. And also he's a best friend of Mark Roger. They're very close as if they're twins.</P> 
+<li><Font Size="4" color="Pink" face="Comic Sans MS">Cedro, Hanna May C.</Font>
+<P align="justify">She is one of my dearest classmates this college. She is the only person that I entrusted to keep my secrets, although some
+are revealed by her. She constantly relies on me at Math subjects because that subject is an "Instant Killer" to her. She aspires to become the
+future Song Hye Kyo. She loves Harry Potter so much that she is desperately want to become a sorceress in the series to challenge Harry Potter 
+himself. She also likes Endless Love 1 and 3 only. I can say that she's very talkactive, friendly, and reliable. Currently, she's not my classmate
+so I'm hoping that we'll be classmates on the next semesters to come.</P>
+<li><Font Size="4" color="Pink" face="Comic Sans MS">Dumago, Shyrmay</Font><IMG src="Shyrmay.jpg" height="50%" width="20%" align="left">
+<P align="justify">She is one of my closest friends in college. She became my classmate during the 2nd semester of last year. She 
+has multitudes of friends. According to my classmates, she is really good in P. E., although she is petite. She mimics almost all of 
+the most attractive commercial in our country today. For instance, she knows how to "beat" (the popular endorsement of Coke). She also 
+excels in her studies. I think she likes to drink Milk so that she will grow taller. She is really great in programming Visual Basic, 
+Pascal, and other Programming Languages. She is very friendly and reliable. She is one of my friends in Friendster.</P>
+<li><Font Size="4" color="DeepSkyBlue" face="Comic Sans MS">Lappay, Louie</Font>
+<P align="justify">He's one of the most friendly, reliable and responsible classmates that I'd ever known this college. He's usually funny but at times he's very
+serious. He is a very happy-go-lucky person. He has many friends like Argel, Ivan, Vincent, and many others. He's also very diligent in doing Computer
+Programs.</P>
+<li><Font Size="4" color="Pink" face="Comic Sans MS">Mangilit, Aimerica</Font>
+<P align="justify">She is one of the most finest faces I'd seen in my college life. She's very nice, caring, and ok to be with. She's not that
+talkactive, but I can say that she has many suitors. She occassionally consult me in Math subjects also like Hanna. Currently, she's not my
+classmate because she's on CCC. I hope that we'll be classmates on the succeeding semesters.</P>
+<li><Font Size="4" color="Pink" face="Comic Sans MS">Tamondong, Ailene</Font><IMG src="ailene.jpg" height="40%" width="20%" align="left">
+<P align="justify">She is my classmate when I first started studying at UE Manila. She is very quiet when no one is talking to her. But
+when people talks to her, she is very talkactive. She is one of our finest classmates in terms of Programming, because she is very
+literate in different Computer Languages. I think she is kind of secretive in terms of her personal life. She is also one of my friends 
+in Friendster.</P> 
+</OL>
+</Font>
+</TD>
+</TR>
+</TABLE>
+<br>
+<CENTER><A HREF="My Friends.html" border="0"><IMG src="Go Top.gif" alt="GO TOP"></A></CENTER>
+<br>
+<CENTER><A HREF="Home_Page.html"><IMG src="Earth6.gif" alt="HOME" border="0" height="15%" width="10%"></A></CENTER>
+<A HREF="My Family Background.html"><IMG src="Back.gif" border="0" align="left"></A>
+<A HREF="My Friendster.html"><IMG src="Next.gif" border="0" align="right"></A>
+</BODY>
+</HTML>

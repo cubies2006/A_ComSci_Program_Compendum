@@ -1,0 +1,8 @@
+MIDlet-1: Hard Drive Game, Hard Drive Game.png, HardDriveMIDlet
+MIDlet-Jar-Size: 6837
+MIDlet-Jar-URL: Hard Drive Game.jar
+MIDlet-Name: Hard Drive Game
+MIDlet-Vendor: Unknown
+MIDlet-Version: 1.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0

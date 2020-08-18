@@ -1,0 +1,18 @@
+<HTML>
+   <HEAD>
+      <TITLE>JAVASCRIPT EXAMPLE</TITLE>
+   </HEAD>
+   <BODY>
+      <SCRIPT LANGUAGE = "JAVASCRIPT">
+         document.write("hello world")
+         document.write("<br>")
+         function PrintNumbers()
+         {
+            var intCtr
+               for (intCtr = 1; intCtr <= 10; intCtr++)
+                  document.write("Number:: " + intCtr + "<br>")
+         }
+         PrintNumbers()
+      </SCRIPT>
+   </BODY>
+</HTML>

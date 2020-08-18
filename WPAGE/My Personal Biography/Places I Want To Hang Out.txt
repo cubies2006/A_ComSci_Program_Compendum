@@ -1,0 +1,55 @@
+<HTML>
+<HEAD>
+<TITLE>Places I Want To Hang Out</TITLE>
+<Bgsound src="yuh reum hyang gi 2 (Inst.).wma" loop="Infinite">
+<meta http-equiv="Page-Enter" content="BlendTrans(Duration=3.0,Transition=23)">
+</TITLE>
+</HEAD>
+<BODY Background="clouds.jpg" Bgproperties="fixed" vlink="Lavander" text="White">
+<TABLE Background="blue-snow.gif" Border="3" Bordercolorlight="deepskyblue" Bordercolordark="royalblue">
+<TR>
+<TD>
+<Font Color="White" face="Garamond" size="7"><CENTER>X. Places I Want To Hang Out</CENTER></Font>
+<Font face="Bookman Old Style">
+<OL Type="1">
+<li><Font face="Monotype Corsiva" size="5">SM Shopping Malls</Font>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SM is one the most favorite places that I've hang out 
+with. Because there you can buy almost anything you want, but you must have the money in order to buy 
+them. I also watched the latest movies there. Occassionally, it is the venue of the neophyte foreign 
+artists who would like to promote their song albums as well as to enhance their popularity worldwide. 
+Like for instance, M2M, Steps, and Ant & Dec had a mini-concert at different SM branches like Megamall, 
+City Edsa, City Manila, and others.</P>
+<li><Font face="Monotype Corsiva" size="5">Park</Font>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is one of the most peaceful places that I could go.
+Because in the park, you can enjoy the cool breeze, the serenity of the place which is very conducive for 
+studying, and the ambiance of the park, the greeness of the place such as trees, grasses, plants, and 
+shrubs. One of the secret of studying is concentration. And in an environment like this it not only 
+refreshes your mind it also soothes your intellectual soul.</P>
+<li><Font face="Monotype Corsiva" size="5">National Book Store</Font>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This place is one of the places that I go in SM. Because
+I always check out the latest books in Star Wars and Calculus Books. I feel very happy whenever my father
+bought me the books or things that I want whenever we visited National Book Store.</P>
+<li><Font face="Monotype Corsiva" size="5">Odyssey</Font>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is the place, that me and my sister most likely to hang
+out with. Because we can look up the latest albums of our  favorite artists. And in some Odyssey branches, you
+can listen to your favorite artists' CD tracks which comes handy and you can come back for more some other
+time.</P>
+<li><Font face="Monotype Corsiva" size="5">SM Cinema</Font>
+<P align="justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is one of the place that I want to go with. Because you
+can enjoy the amplified sound and view the latest movies of your favorite actors and actresses. In addition, it 
+is enjoyable to watch a movie together with your own family. I remember the times when I with my family watched 
+the cinema. One of the most finest memories in cinemas is the first time when I'd watched the first ever cartoon
+on the big screen. It was me and my father and my sister Athena went to SM City Cinemas to watch "Snow White and 
+The 7 Dwarfs".</P>
+</OL>
+</TD>
+</TR>
+</TABLE>
+<br>
+<CENTER><A HREF="Places I Want To Hang Out.html" border="0"><IMG src="Go Top.gif" alt="TOP"></A></CENTER>
+<br>
+<CENTER><A HREF="Home_Page.html"><IMG src="Earth6.gif" alt="HOME" border="0" height="15%" width="10%"></A></CENTER>
+<A HREF="My Friendster.html"><IMG src="Back.gif" border="0" align="left"></A>
+<A HREF="Page2.html"><IMG src="Next.gif" border="0" align="right"></A>
+</BODY>
+</HTML>

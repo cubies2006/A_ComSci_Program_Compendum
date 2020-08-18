@@ -1,0 +1,154 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Game main menu — S60, Java™ ME</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="stylesheet" href="Game_User_Experience_Library_v1_1_en_ns.css"><script type="text/javascript" language="JavaScript" title="WebHelpSplitCss">
+<!--
+if (navigator.appName !="Netscape")
+{   document.write("<link rel='stylesheet' href='Game_User_Experience_Library_v1_1_en.css'>");}
+//-->
+</script>
+<style>
+<!--
+A:visited { color:#800080; }
+A:link { color:#0000ff; }
+-->
+</style><style type="text/css">
+<!--
+img_whs1 { width:176px; height:208px; border-style:none; }
+ol.whs2 { list-style:disc; }
+ul.whs3 { list-style:disc; }
+-->
+</style><script type="text/javascript" language="JavaScript" title="WebHelpInlineScript">
+<!--
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//-->
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; }
+-->
+</style><script type="text/javascript" language="javascript1.2" src="whmsg.js"></script>
+<script type="text/javascript" language="javascript" src="whver.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whproxy.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+</head>
+<body lang="EN-US"><script type="text/javascript" language="javascript1.2">
+<!--
+if (window.gbWhTopic)
+{
+	if (window.addTocInfo)
+	{
+	addTocInfo("Main menu design\nGame main menu — S60, Java™ ME");
+addButton("show",BTN_TEXT,"Show","","","","",0,0,"","","");
+
+	}
+	if (window.writeBtnStyle)
+		writeBtnStyle();
+
+	if (window.writeIntopicBar)
+		writeIntopicBar(1);
+
+	if (window.setRelStartPage)
+	{
+	setRelStartPage("Game_User_Experience_Library_v1_1_en.htm");
+
+		autoSync(1);
+		sendSyncInfo();
+		sendAveInfoOut();
+	}
+}
+else
+	if (window.gbIE4)
+		document.location.reload();
+//-->
+</script>
+<h2>Game main menu <span lang=EN-GB>—</span> S60, Java™ ME</h2>
+
+<p class=BodyCopy>There are basically three possibilities for presenting 
+ the game’s main menu:</p>
+
+<p class=BodyCopy><img src="Game_User_Experience_Library_v1_1_en_files/image030.jpg" width="176px" height="208px" border="0" class="img_whs1"></p>
+
+<p class=InlineBodyTextNumbered
+	style="font-family: Arial;"><span style="font-weight: bold;"><B>1.</B></span><span 
+ style="font: 7.0pt 'Times New Roman';"><font size=1 style="font-size:7pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ </font></span><b>Implement the entire menu system with game graphics. </b>This 
+ is recommended for all games and entertainment applications. Although 
+ this possibility provides the most flexibility and the best chance for 
+ a good user experience, it is also the easiest way to make mistakes and 
+ requires the most memory. This menu implementation should only be used 
+ if it can be done well — it should work at least as well as the higher-level 
+ UI. Even if custom graphics are used, interaction needs to be consistent 
+ with other S60 applications. Sometimes developers have no other option 
+ than to use high-level UI components, for example for accessing the phone 
+ book or establishing Bluetooth connections. To ensure a seamless user 
+ experience, the use of dialogs with standard graphics should be limited 
+ to game menus. In the game itself, high-level components should be avoided. 
+ </p>
+
+<p class=InlineBodyTextNumbered
+	style="font-family: Arial;"><span style="font-weight: bold;"><B>2.</B></span><span 
+ style="font: 7.0pt 'Times New Roman';"><font size=1 style="font-size:7pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ </font></span><b>Use only a background image and Options menu.</b><br>
+If the application is simple enough, a pop-up Options menu can be used 
+ as the game's main menu, which can result in a usable navigation model 
+ for Java ME games. However, to guarantee a seamless user experience, all 
+ other menus should be implemented with game graphics in full-screen mode.&nbsp; 
+ </p>
+
+<p class=InlineBodyTextNumbered
+	style="font-family: Arial;"><span style="font-weight: bold;"><B>3.</B></span><span 
+ style="font: 7.0pt 'Times New Roman';"><font size=1 style="font-size:7pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ </font></span><b>Use high-level UI components in the game main menu.</b> <br>
+If the game is more complex, list components can be used for implementing 
+ the main menu. This menu implementation is problematic in many ways, but 
+ the main problem is that the left softkey cannot be labeled Select, because 
+ the system automatically provides an Options menu. This implementation 
+ often leads to various usability problems. If this implementation model 
+ is chosen despite its problems, the most important issue is that the Options 
+ menu should never offer only the Close option, but should also present 
+ some other, more desirable selection. It is also important to include 
+ the Close option for exiting the game in the main menu, not just in the 
+ Options menu.</p>
+
+<p>&nbsp;</p>
+
+<ol type="disc" class="whs2">
+	
+	<ul type="disc" class="whs3">
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">If it 
+ can be done well, you should implement the game's main menu with custom 
+ graphics. However, the interaction style must be consistent with the user 
+ interface styles for the S60 Platform.</p></li>
+		
+		<li class=kadov-p-CGuideline><p class=Guideline
+										style="margin-left: 0pt;">Avoid 
+ using standard UI components in the game itself.</p></li>
+	</ul>
+</ol>
+
+<script type="text/javascript" language="javascript1.2">
+<!--
+if (window.writeIntopicBar)
+	writeIntopicBar(0);
+//-->
+</script>
+</body>
+</html>

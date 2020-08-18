@@ -1,0 +1,180 @@
+<HTML>
+	<HEAD>
+		<script src="function.js"></script>
+		<script language="javascript">
+			function ValidateForm() 
+			{
+				if (!notEmpty(document.frmRegistration.txtStudentNo,"Student Number required.")) {
+					return false;
+				}
+				if (!notEmpty(document.frmRegistration.txtFirstName,"First name required.")) {
+					return false;
+				}
+				if (!notEmpty(document.frmRegistration.txtMI,"Middle initial required.")) {
+					return false;
+				}
+				if (!notEmpty(document.frmRegistration.txtLastname,"Last name required.")) {
+					return false;
+				}
+				if (document.frmRegistration.cboCollege.value=="Select College") {
+				              alert( "College Required")
+					return false;
+				}
+				if (document.frmRegistration.cboCourse.value=="Select Course") {
+					alert( "Course Required")
+					return false;
+				}
+				if (!notEmpty(document.frmRegistration.txtYear,"Year required.")) {
+					return false;
+				}
+				if (!isZero(document.frmRegistration.txtYear, "Year should not be zero."))
+				{
+					if(document.frmRegistration.txtYear.value==0)
+					{ 
+						document.frmRegistration.txtYear.focus();
+					 	return false;
+	 				}
+				}	
+				if (!isNumber(document.frmRegistration.txtYear, "Year should be numeric."))
+				{
+					var strTmp = document.frmRegistration.txtYear.value;
+					var ValidChars ="123456789";
+					for (i=0; i<=strTmp.length-1; i++) 
+						if (ValidChars.indexOf(strTmp.charAt(i)) == -1) 
+						{
+							document.frmRegistration.txtYear.focus();
+							return false;
+						}
+				}	
+				if (!notEmpty(document.frmRegistration.txtSection, "Section required.")) {
+					return false;
+				}
+				if (!notEmpty(document.frmRegistration.txtAddress,"Address required.")) {
+					return false;
+				}
+				if (!checkRadio(document.frmRegistration.rdoGender,"Gender required."))
+				{
+					var radio_choice = false;
+	                                          	for (counter = 0;  counter < document.frmRegistration.rdoGender.length; counter++)
+		                            	{
+						if (document.frmRegistration.rdoGender[counter].checked)
+							radio_choice = true; 
+					}
+                    return false;
+				}
+				if (!notEmpty(document.frmRegistration.txtBirthDate,"Birth Date required.")) {
+					return false;
+				}
+				if (!validDate(document.frmRegistration.txtBirthDate, "Birth Date should be a valid date."))
+				{
+					if (isDate(document.frmRegistration.txtBirthDate.value)==false)
+					{
+						document.frmRegistration.txtBirthDate.focus();
+					}
+					return false;
+				 }						
+				return true;
+			}
+		</script>
+		<TITLE>COMSSO Student Registration System</TITLE>
+	</HEAD>
+	<BODY>
+		<Font face = "Tahoma" size="6">
+			<TABLE Border = "1">
+		<FORM NAME = "frmRegistration" method="get" action="#" onsubmit="return ValidateForm()">
+				<TR>
+				<TD>&nbsp;Student # : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Input type="text" name="txtStudentNo" size="30" maxlength="11"><br>					
+				&nbsp;Student Name : &nbsp;
+				<Input type="text" name="txtFirstName" size = "30">&nbsp;&nbsp;&nbsp;
+				<Input type="text" name="txtMI" size="1" maxlength="1">&nbsp;&nbsp;&nbsp;
+				<Input type="text" name="txtLastname" size="30">&nbsp;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First name
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MI
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Name<br>
+				&nbsp;College : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 				<select name="cboCollege">
+					<option value="Select College">Select College</option>
+					<option value="GRADUATE SCHOOL">GRADUATE SCHOOL</option>
+					<option value="COLLEGE OF LAW">COLLEGE OF LAW</option>
+					<option value="COLLEGE OF DENTISTRY">COLLEGE OF DENTISTRY</option>
+					<option value="COLLEGE OF ARTS AND SCIENCES">COLLEGE OF ARTS AND SCIENCES</option>
+					<option value="COLLEGE OF BUSINESS ADMINISTRATION">COLLEGE OF BUSINESS ADMINISTRATION</option>
+					<option value="COLLEGE OF ENGINEERING">COLLEGE OF ENGINEERING</option>
+					<option value="COLLEGE OF COMPUTER STUDIES AND SYSTEMS">COLLEGE OF COMPUTER STUDIES AND SYSTEMS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+					<option value="COLLEGE OF EDUCATION">COLLEGE OF EDUCATION</option>
+				</select><br>
+				&nbsp;Course : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 				<select name="cboCourse">
+					<option selected value="Select Course">Select Course</option>
+					<option value="Doctor of Business Administration (DBA)">Doctor of Business Administration (DBA)</option>
+					<option value="Master in Business Administration (MBA)">Master in Business Administration (MBA)</option>
+					<option value="Master in Construction Management">Master in Construction Management</option>
+					<option value="Master of Arts in Teaching (MAT)">Master of Arts in Teaching (MAT)</option>
+					<option value="Master of Arts in Education (MA)">Master of Arts in Education (MA)</option>
+					<option value="Doctor of Education (Ed.D)">Doctor of Education (Ed.D)</option>
+					<option value="Master in Public Administration (MPA)">Master in Public Administration (MPA)</option>
+					<option value="Master of Science (MS)">Master of Science (MS)</option>
+					<option value="Master in Library and Information Science (MLIS)">Master in Library and Information Science (MLIS)</option>
+					<option value="Bachelor of Laws (LIB)">Bachelor of Laws (LIB)</option>
+					<option value="Bar Refresher Course (two semesters)">Bar Refresher Course (two semesters)</option>
+					<option value="Special Program for Executives"">Special Program for Executives</option>
+					<option value="Doctor of Dental Medicine (DMD)">Doctor of Dental Medicine (DMD)</option>
+					<option value="Associate in health Science Education (AHSE)">Associate in health Science Education (AHSE)</option>
+					<option value="AB Broadcast Communication">AB Broadcast Communication</option>
+					<option value="AB Journalism">AB Journalism</option>
+					<option value="Bachelor of Arts (AB)">Bachelor of Arts (AB)</option>
+					<option value="Bachelor of Science (BS)">Bachelor of Science (BS)</option>
+					<option value="Bachelor of Science in Accountancy and Computer-Based Accounting Systems (BSA-CAS)">Bachelor of Science in Accountancy and Computer-Based Accounting Systems (BSA-CAS)</option>
+					<option value="Bachelor of Science in Accountancy (BSA)">Bachelor of Science in Accountancy (BSA)</option>
+					<option value="Bachelor of Science in Business Administration (BSBA)">Bachelor of Science in Business Administration (BSBA)</option>
+					<option value="BSBA (Management) Special Degree Program">BSBA (Management) Special Degree Program</option>
+					<option value="Bachelor of Science in Civil Enginerring (BSCE)">Bachelor of Science in Civil Enginerring (BSCE)</option>
+					<option value="Bachelor of Science in Computer Enginerring (BSCoE)">Bachelor of Science in Computer Enginerring (BSCoE)</option>
+					<option value="Bachelor of Science in Electrical Engineering (BSEE)">Bachelor of Science in Electrical Engineering (BSEE)</option>
+					<option value="Bachelor of Science in Electronics and Communciations Engineering (BSECE)">Bachelor of Science in Electronics and Communciations Engineering (BSECE)</option>
+					<option value="Bachelor of Science in Industrial Enginerring (BSIE)">Bachelor of Science in Industrial Enginerring (BSIE)</option>
+					<option value="Bachelor of Science in Mechanical Enginerring (BSME)">Bachelor of Science in Mechanical Enginerring (BSME)</option>
+					<option value="Bachelor of Science in Electrical Engineering (BSEE)">Bachelor of Science in Electrical Engineering (BSEE)</option>
+					<option value="Bachelor of Science in Electronics and Communciations Engineering (BSECE)">Bachelor of Science in Electronics and Communciations Engineering (BSECE)</option>					
+					<option selected value="Bachelor of Science in Computer Science (BSCS)">Bachelor of Science in Computer Science (BSCS)</option>
+					<option value="Bachelor of Science in Information Technology (BSIT)">Bachelor of Science in Information technology (BSIT)</option>
+					<option value="Bachelor of Science in Information Management (BSIM)">Bachelor of Science in Information Management (BSIM)</option>
+					<option value="Bachelor of Science in Electronics and Communciations Engineering (BSECE)">Bachelor of Science in Electronics and Communciations Engineering (BSECE)</option>
+					<option value="Associate in Computer Technology (ACT)">Associate in Computer Technology (ACT)</option>
+					<option value="Bachelor of Secondary Education (BSEd)">Bachelor of Secondary Education (BSEd)</option>
+					<option value="Bachelor of Elementary Education (BEEd)">Bachelor of Elementary Education (BEEd)</option>
+					<option value="Bachelor of Science in Nutrition and Dietetics (BSND)">Bachelor of Science in Nutrition and Dietetics (BSND)</option>
+				</select><br>
+				&nbsp;Year : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<Input type="text" name="txtYear" size="1" maxlength="1">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Section : &nbsp;&nbsp;<Input type="text" name="txtSection"><br>
+				</TR>
+				<TR>
+				<TD>&nbsp;Address : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<Input type="text" name="txtAddress" size="90"><br>
+				&nbsp;Telephone # : &nbsp;&nbsp;<Input type="text" name="txtTelephoneNo" size="25">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mobile # : &nbsp;&nbsp;<Input type="text" name="txtMobileNo" size="25"><br>
+				&nbsp;Email Address : <Input type="text" name="txtEmailAddress" size="90"><br>
+				&nbsp;Gender: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<Input type="radio" name="rdoGender" value="Male"> Male&nbsp;&nbsp;&nbsp;
+				<Input type="radio" name="rdoGender" value="Female"> Female&nbsp;&nbsp;&nbsp;
+				&nbsp;Birth Date : <Input type="text" name="txtBirthDate" size="15">&nbsp;&nbsp;mm/dd/yyyy<br>
+				</TR>
+				<TR>
+				<TD>&nbsp;&nbsp;
+				<Input type="submit" name="cmdAdd" value="Add">&nbsp;
+				<Input type="submit" name="cmdEdit" value="Edit">&nbsp;
+				<Input type="submit" name="cmdDelete" value="Delete">&nbsp;
+				<Input type="submit" name="cmdSave" value="Save">&nbsp;
+				<Input type="reset" name="cmdCancel" value="Cancel">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<Input type="button" name="cmdAdd" value="Close" onClick="window.close()">
+				</TD>
+				</TR>
+		</Font> 
+		</FORM>
+	</BODY>
+</HTML>

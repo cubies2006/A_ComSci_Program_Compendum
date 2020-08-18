@@ -1,0 +1,5 @@
+-libraryjars C:\WTK25\lib\wma20.jar;C:\WTK25\lib\mmapi.jar;C:\WTK25\lib\jsr75.jar;C:\WTK25\lib\jsr082.jar;C:\WTK25\lib\j2me-ws.jar;C:\WTK25\lib\j2me-xmlrpc.jar;C:\WTK25\lib\jsr184.jar;C:\WTK25\lib\jsr179.jar;C:\WTK25\lib\satsa-apdu.jar;C:\WTK25\lib\satsa-jcrmi.jar;C:\WTK25\lib\satsa-pki.jar;C:\WTK25\lib\satsa-crypto.jar;C:\WTK25\lib\jsr211.jar;C:\WTK25\lib\jsr238.jar;C:\WTK25\lib\jsr229.jar;C:\WTK25\lib\jsr180.jar;C:\WTK25\lib\jsr234.jar;C:\WTK25\lib\jsr226.jar;C:\WTK25\lib\jsr239.jar;C:\WTK25\lib\midpapi20.jar;C:\WTK25\lib\cldcapi11.jar
+-injars C:\WTK25\apps\CUBIES (Version 1.1b)\bin\CUBIES (Version 1.1b).jar
+-outjar C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\CUBIES (Version 1.1b).jar
+-keep public class * extends javax.microedition.midlet.MIDlet 
+-dontusemixedcaseclassnames

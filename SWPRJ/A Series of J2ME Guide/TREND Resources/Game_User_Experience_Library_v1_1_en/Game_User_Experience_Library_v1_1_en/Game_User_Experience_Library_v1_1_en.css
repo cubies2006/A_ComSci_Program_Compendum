@@ -1,0 +1,1676 @@
+p { 
+   margin:0pt; 
+   margin-bottom:.0001pt; 
+   font-size:9.0pt; 
+   font-family:Arial;  }
+LI.kadov-p { 
+            font-size:9.0pt; 
+            font-family:Arial;  }
+h1 { 
+    margin-top:18.0pt; 
+    margin-right:0pt; 
+    margin-bottom:12.0pt; 
+    margin-left:14.2pt; 
+    font-size:13.0pt; 
+    font-family:Arial; 
+    font-weight:bold;  }
+LI.kadov-h1 { 
+             font-size:13.0pt; 
+             font-family:Arial; 
+             font-weight:bold;  }
+h2 { 
+    margin-top:12.0pt; 
+    margin-right:0pt; 
+    margin-bottom:12.0pt; 
+    margin-left:14.0pt; 
+    font-size:12.0pt; 
+    font-family:Arial; 
+    font-weight:bold;  }
+LI.kadov-h2 { 
+             font-size:12.0pt; 
+             font-family:Arial; 
+             font-weight:bold;  }
+h3 { 
+    margin-top:18.0pt; 
+    margin-right:0pt; 
+    margin-bottom:12.0pt; 
+    margin-left:14.0pt; 
+    font-size:11.0pt; 
+    font-family:Arial; 
+    font-weight:bold;  }
+LI.kadov-h3 { 
+             font-size:11.0pt; 
+             font-family:Arial; 
+             font-weight:bold;  }
+h4 { 
+    margin-top:12.0pt; 
+    margin-right:0pt; 
+    margin-bottom:12.0pt; 
+    margin-left:49.6pt; 
+    font-size:10.0pt; 
+    font-family:Arial; 
+    font-weight:normal; 
+    font-style:italic;  }
+LI.kadov-h4 { 
+             font-size:10.0pt; 
+             font-family:Arial; 
+             font-weight:normal; 
+             font-style:italic;  }
+h5 { 
+    margin-top:12.0pt; 
+    margin-right:0pt; 
+    margin-bottom:12.0pt; 
+    margin-left:49.6pt; 
+    font-size:10.0pt; 
+    font-family:Arial; 
+    font-weight:normal; 
+    font-style:italic;  }
+LI.kadov-h5 { 
+             font-size:10.0pt; 
+             font-family:Arial; 
+             font-weight:normal; 
+             font-style:italic;  }
+h6 { 
+    margin-top:12.0pt; 
+    margin-right:0pt; 
+    margin-bottom:3.0pt; 
+    margin-left:49.6pt; 
+    font-size:10.0pt; 
+    font-family:Arial; 
+    font-weight:normal; 
+    font-style:italic;  }
+LI.kadov-h6 { 
+             font-size:10.0pt; 
+             font-family:Arial; 
+             font-weight:normal; 
+             font-style:italic;  }
+p.Heading7 { 
+            margin-top:12.0pt; 
+            margin-right:0pt; 
+            margin-bottom:12.0pt; 
+            margin-left:49.6pt; 
+            font-size:10.0pt; 
+            font-family:Arial; 
+            font-style:italic;  }
+LI.kadov-p-CHeading7 { 
+                      font-size:10.0pt; 
+                      font-family:Arial; 
+                      font-style:italic;  }
+p.Heading8 { 
+            margin-top:12.0pt; 
+            margin-right:0pt; 
+            margin-bottom:12.0pt; 
+            margin-left:49.6pt; 
+            font-size:10.0pt; 
+            font-family:Arial; 
+            font-style:italic;  }
+LI.kadov-p-CHeading8 { 
+                      font-size:10.0pt; 
+                      font-family:Arial; 
+                      font-style:italic;  }
+p.Heading9 { 
+            margin-top:12.0pt; 
+            margin-right:0pt; 
+            margin-bottom:12.0pt; 
+            margin-left:49.6pt; 
+            font-size:10.0pt; 
+            font-family:Arial; 
+            font-style:italic;  }
+LI.kadov-p-CHeading9 { 
+                      font-size:10.0pt; 
+                      font-family:Arial; 
+                      font-style:italic;  }
+p.Toc1 { 
+        margin-top:6.0pt; 
+        margin-right:0pt; 
+        margin-bottom:6.0pt; 
+        margin-left:90.0pt; 
+        font-size:10.0pt; 
+        font-family:Nokia Sans SemiBold;  }
+LI.kadov-p-CToc1 { 
+                  font-size:10.0pt; 
+                  font-family:Nokia Sans SemiBold;  }
+p.Toc2 { 
+        margin-top:6.0pt; 
+        margin-right:0pt; 
+        margin-bottom:6.0pt; 
+        margin-left:108.0pt; 
+        font-size:10.0pt; 
+        font-family:Arial;  }
+LI.kadov-p-CToc2 { 
+                  font-size:10.0pt; 
+                  font-family:Arial;  }
+p.Toc3 { 
+        margin-top:6.0pt; 
+        margin-right:0pt; 
+        margin-bottom:6.0pt; 
+        margin-left:140.4pt; 
+        font-size:10.0pt; 
+        font-family:Arial;  }
+LI.kadov-p-CToc3 { 
+                  font-size:10.0pt; 
+                  font-family:Arial;  }
+p.Toc4 { 
+        margin-top:6.0pt; 
+        margin-right:0pt; 
+        margin-bottom:6.0pt; 
+        margin-left:162.0pt; 
+        font-size:10.0pt; 
+        font-family:Arial;  }
+LI.kadov-p-CToc4 { 
+                  font-size:10.0pt; 
+                  font-family:Arial;  }
+p.Toc5 { 
+        margin-top:0pt; 
+        margin-right:0pt; 
+        margin-bottom:.0001pt; 
+        margin-left:36.0pt; 
+        font-size:9.0pt; 
+        font-family:Arial;  }
+LI.kadov-p-CToc5 { 
+                  font-size:9.0pt; 
+                  font-family:Arial;  }
+p.Toc6 { 
+        margin-top:0pt; 
+        margin-right:0pt; 
+        margin-bottom:.0001pt; 
+        margin-left:45.0pt; 
+        font-size:9.0pt; 
+        font-family:Arial;  }
+LI.kadov-p-CToc6 { 
+                  font-size:9.0pt; 
+                  font-family:Arial;  }
+p.Toc7 { 
+        margin-top:0pt; 
+        margin-right:0pt; 
+        margin-bottom:.0001pt; 
+        margin-left:54.0pt; 
+        font-size:9.0pt; 
+        font-family:Arial;  }
+LI.kadov-p-CToc7 { 
+                  font-size:9.0pt; 
+                  font-family:Arial;  }
+p.Toc8 { 
+        margin-top:0pt; 
+        margin-right:0pt; 
+        margin-bottom:.0001pt; 
+        margin-left:63.0pt; 
+        font-size:9.0pt; 
+        font-family:Arial;  }
+LI.kadov-p-CToc8 { 
+                  font-size:9.0pt; 
+                  font-family:Arial;  }
+p.Toc9 { 
+        margin-top:0pt; 
+        margin-right:0pt; 
+        margin-bottom:.0001pt; 
+        margin-left:72.0pt; 
+        font-size:9.0pt; 
+        font-family:Arial;  }
+LI.kadov-p-CToc9 { 
+                  font-size:9.0pt; 
+                  font-family:Arial;  }
+p.CommentText { 
+               margin:0pt; 
+               margin-bottom:.0001pt; 
+               font-size:10.0pt; 
+               font-family:Arial;  }
+LI.kadov-p-CCommentText { 
+                         font-size:10.0pt; 
+                         font-family:Arial;  }
+p.Header { 
+          margin:0pt; 
+          margin-bottom:.0001pt; 
+          font-size:9.0pt; 
+          font-family:Nokia Sans;  }
+LI.kadov-p-CHeader { 
+                    font-size:9.0pt; 
+                    font-family:Nokia Sans;  }
+p.Footer { 
+          margin:0pt; 
+          margin-bottom:.0001pt; 
+          font-size:9.0pt; 
+          font-family:Nokia Sans;  }
+LI.kadov-p-CFooter { 
+                    font-size:9.0pt; 
+                    font-family:Nokia Sans;  }
+p.Caption { 
+           margin-top:6.0pt; 
+           margin-right:0pt; 
+           margin-bottom:12.0pt; 
+           margin-left:67.7pt; 
+           font-size:9.0pt; 
+           font-family:Arial;  }
+LI.kadov-p-CCaption { 
+                     font-size:9.0pt; 
+                     font-family:Arial;  }
+span.CommentReference {  }
+p.BodyText { 
+            margin:0pt; 
+            margin-bottom:.0001pt; 
+            text-align:right; 
+            font-size:9.0pt; 
+            font-family:Nokia Sans; 
+            color:#0040CC; 
+            letter-spacing:8.0pt;  }
+LI.kadov-p-CBodyText { 
+                      text-align:right; 
+                      font-size:9.0pt; 
+                      font-family:Nokia Sans; 
+                      color:#0040CC; 
+                      letter-spacing:8.0pt;  }
+a:link { 
+        color:#0000ff; 
+        x-text-underline:normal; 
+        text-underline:single; 
+        text-decoration:underline;  }
+span.Hyperlink { 
+                color:#0000ff; 
+                x-text-underline:normal; 
+                text-underline:single; 
+                text-decoration:underline;  }
+a:visited { 
+           color:#800080; 
+           x-text-underline:normal; 
+           text-underline:single; 
+           text-decoration:underline;  }
+span.HyperlinkFollowed { 
+                        color:#800080; 
+                        x-text-underline:normal; 
+                        text-underline:single; 
+                        text-decoration:underline;  }
+p.DocumentMap { 
+               margin:0pt; 
+               margin-bottom:.0001pt; 
+               background:#000080; 
+               font-size:9.0pt; 
+               font-family:Tahoma;  }
+LI.kadov-p-CDocumentMap { 
+                         font-size:9.0pt; 
+                         font-family:Tahoma;  }
+p.WordNormalWeb { 
+                 margin-right:0pt; 
+                 margin-left:0pt; 
+                 font-size:12.0pt; 
+                 font-family:Times New Roman;  }
+LI.kadov-p-CWordNormalWeb { 
+                           font-size:12.0pt; 
+                           font-family:Times New Roman;  }
+p.CommentSubject { 
+                  margin:0pt; 
+                  margin-bottom:.0001pt; 
+                  font-size:10.0pt; 
+                  font-family:Arial; 
+                  font-weight:bold;  }
+LI.kadov-p-CCommentSubject { 
+                            font-size:10.0pt; 
+                            font-family:Arial; 
+                            font-weight:bold;  }
+p.Acetate { 
+           margin:0pt; 
+           margin-bottom:.0001pt; 
+           font-size:8.0pt; 
+           font-family:Tahoma;  }
+LI.kadov-p-CAcetate { 
+                     font-size:8.0pt; 
+                     font-family:Tahoma;  }
+p.BodyCopy { 
+            margin-top:0pt; 
+            margin-right:0pt; 
+            margin-bottom:14.0pt; 
+            margin-left:26.95pt; 
+            font-size:10.0pt; 
+            font-family:Arial;  }
+LI.kadov-p-CBodyCopy { 
+                      font-size:10.0pt; 
+                      font-family:Arial;  }
+p.bodytextbullets { 
+                   margin-top:6.0pt; 
+                   margin-right:0pt; 
+                   margin-bottom:6.0pt; 
+                   font-size:10.0pt; 
+                   font-family:Arial; 
+                   margin-left:54pt;  }
+LI.kadov-p-Cbodytextbullets { 
+                             font-size:10.0pt; 
+                             font-family:Arial;  }
+p.BTSHeading { 
+              margin-top:0pt; 
+              margin-right:0pt; 
+              margin-bottom:10.0pt; 
+              margin-left:26.95pt; 
+              font-size:10.0pt; 
+              font-family:Nokia Sans SemiBold; 
+              color:#0040CC;  }
+LI.kadov-p-CBTSHeading { 
+                        font-size:10.0pt; 
+                        font-family:Nokia Sans SemiBold; 
+                        color:#0040CC;  }
+p.BTSLinks { 
+            margin-top:0pt; 
+            margin-right:0pt; 
+            margin-bottom:10.0pt; 
+            margin-left:26.95pt; 
+            font-size:10.0pt; 
+            font-family:Arial; 
+            color:#00A800;  }
+LI.kadov-p-CBTSLinks { 
+                      font-size:10.0pt; 
+                      font-family:Arial; 
+                      color:#00A800;  }
+p.BTSSubHead { 
+              margin-top:14.0pt; 
+              margin-right:0pt; 
+              margin-bottom:14.0pt; 
+              margin-left:26.95pt; 
+              font-size:10.0pt; 
+              font-family:Arial;  }
+LI.kadov-p-CBTSSubHead { 
+                        font-size:10.0pt; 
+                        font-family:Arial;  }
+p.BTSText { 
+           margin-top:0pt; 
+           margin-right:0pt; 
+           margin-bottom:9.0pt; 
+           margin-left:26.95pt; 
+           font-size:10.0pt; 
+           font-family:Arial;  }
+LI.kadov-p-CBTSText { 
+                     font-size:10.0pt; 
+                     font-family:Arial;  }
+p.BTSTitle { 
+            margin-top:0pt; 
+            margin-right:0pt; 
+            margin-bottom:.0001pt; 
+            margin-left:67.7pt; 
+            font-size:18.0pt; 
+            font-family:Nokia Sans;  }
+LI.kadov-p-CBTSTitle { 
+                      font-size:18.0pt; 
+                      font-family:Nokia Sans;  }
+p.Code1 { 
+         margin-top:0pt; 
+         margin-right:0pt; 
+         margin-bottom:.6pt; 
+         margin-left:67.7pt; 
+         font-size:10.0pt; 
+         font-family:Courier;  }
+LI.kadov-p-CCode1 { 
+                   font-size:10.0pt; 
+                   font-family:Courier;  }
+p.Code2 { 
+         margin-top:0pt; 
+         margin-right:0pt; 
+         margin-bottom:6.0pt; 
+         margin-left:85.7pt; 
+         font-size:10.0pt; 
+         font-family:Courier;  }
+LI.kadov-p-CCode2 { 
+                   font-size:10.0pt; 
+                   font-family:Courier;  }
+p.Code3 { 
+         margin-top:0pt; 
+         margin-right:0pt; 
+         margin-bottom:6.0pt; 
+         margin-left:103.7pt; 
+         font-size:10.0pt; 
+         font-family:Courier;  }
+LI.kadov-p-CCode3 { 
+                   font-size:10.0pt; 
+                   font-family:Courier;  }
+p.Code4 { 
+         margin-top:0pt; 
+         margin-right:0pt; 
+         margin-bottom:6.0pt; 
+         margin-left:118.1pt; 
+         font-size:10.0pt; 
+         font-family:Courier;  }
+LI.kadov-p-CCode4 { 
+                   font-size:10.0pt; 
+                   font-family:Courier;  }
+p.Code5 { 
+         margin-top:0pt; 
+         margin-right:0pt; 
+         margin-bottom:6.0pt; 
+         margin-left:139.7pt; 
+         font-size:10.0pt; 
+         font-family:Courier;  }
+LI.kadov-p-CCode5 { 
+                   font-size:10.0pt; 
+                   font-family:Courier;  }
+p.Code6 { 
+         margin-top:0pt; 
+         margin-right:0pt; 
+         margin-bottom:6.0pt; 
+         margin-left:162.0pt; 
+         font-size:10.0pt; 
+         font-family:Courier;  }
+LI.kadov-p-CCode6 { 
+                   font-size:10.0pt; 
+                   font-family:Courier;  }
+p.DisclaimerTitle { 
+                   margin-top:102.0pt; 
+                   margin-right:0pt; 
+                   margin-bottom:6.0pt; 
+                   margin-left:49.6pt; 
+                   font-size:9.0pt; 
+                   font-family:Nokia Sans SemiBold;  }
+LI.kadov-p-CDisclaimerTitle { 
+                             font-size:9.0pt; 
+                             font-family:Nokia Sans SemiBold;  }
+p.DisclaimerCopy { 
+                  margin-top:12.0pt; 
+                  margin-right:0pt; 
+                  margin-bottom:6.0pt; 
+                  margin-left:49.6pt; 
+                  font-size:9.0pt; 
+                  font-family:Nokia Sans;  }
+LI.kadov-p-CDisclaimerCopy { 
+                            font-size:9.0pt; 
+                            font-family:Nokia Sans;  }
+p.DocumentTitle { 
+                 margin-top:0pt; 
+                 margin-right:0pt; 
+                 margin-bottom:10.0pt; 
+                 margin-left:0pt; 
+                 text-align:right; 
+                 font-size:18.0pt; 
+                 font-family:Arial; 
+                 color:#00A800; 
+                 letter-spacing:1.5pt;  }
+LI.kadov-p-CDocumentTitle { 
+                           text-align:right; 
+                           font-size:18.0pt; 
+                           font-family:Arial; 
+                           color:#00A800; 
+                           letter-spacing:1.5pt;  }
+p.FigureText { 
+              margin-top:6.0pt; 
+              margin-right:0pt; 
+              margin-bottom:6.0pt; 
+              margin-left:67.7pt; 
+              text-indent:0pt; 
+              font-size:9.0pt; 
+              font-family:Arial;  }
+LI.kadov-p-CFigureText { 
+                        text-indent:0pt; 
+                        font-size:9.0pt; 
+                        font-family:Arial;  }
+p.ExampleText { 
+               margin-top:6.0pt; 
+               margin-right:0pt; 
+               margin-bottom:6.0pt; 
+               margin-left:67.7pt; 
+               text-indent:0pt; 
+               font-size:9.0pt; 
+               font-family:Arial;  }
+LI.kadov-p-CExampleText { 
+                         text-indent:0pt; 
+                         font-size:9.0pt; 
+                         font-family:Arial;  }
+p.footertitle { 
+               margin-top:0pt; 
+               margin-right:-37.45pt; 
+               margin-bottom:14.0pt; 
+               margin-left:0pt; 
+               font-size:7.0pt; 
+               font-family:Arial; 
+               color:#0070FF;  }
+LI.kadov-p-Cfootertitle { 
+                         font-size:7.0pt; 
+                         font-family:Arial; 
+                         color:#0070FF;  }
+p.GlossaryHeadings { 
+                    margin-top:0pt; 
+                    margin-right:0pt; 
+                    margin-bottom:11.0pt; 
+                    margin-left:0pt; 
+                    font-size:11.0pt; 
+                    font-family:Nokia Sans SemiBold; 
+                    layout-grid-mode:line;  }
+LI.kadov-p-CGlossaryHeadings { 
+                              font-size:11.0pt; 
+                              font-family:Nokia Sans SemiBold; 
+                              layout-grid-mode:line;  }
+p.GlossaryText { 
+                margin:0pt; 
+                margin-bottom:.0001pt; 
+                font-size:10.0pt; 
+                font-family:Nokia Sans;  }
+LI.kadov-p-CGlossaryText { 
+                          font-size:10.0pt; 
+                          font-family:Nokia Sans;  }
+p.Historybody { 
+               margin-top:0pt; 
+               margin-right:0pt; 
+               margin-bottom:14.0pt; 
+               margin-left:0pt; 
+               font-size:10.0pt; 
+               font-family:Arial;  }
+LI.kadov-p-CHistorybody { 
+                         font-size:10.0pt; 
+                         font-family:Arial;  }
+p.HistoryTitle { 
+                margin-top:6.0pt; 
+                margin-right:0pt; 
+                margin-bottom:6.0pt; 
+                margin-left:108.0pt; 
+                font-size:13.0pt; 
+                font-family:Nokia Sans SemiBold;  }
+LI.kadov-p-CHistoryTitle { 
+                          font-size:13.0pt; 
+                          font-family:Nokia Sans SemiBold;  }
+p.Notes { 
+         margin-top:0pt; 
+         margin-right:0pt; 
+         margin-bottom:14.0pt; 
+         margin-left:67.7pt; 
+         text-indent:0pt; 
+         border:none; 
+         padding:0pt; 
+         font-size:10.0pt; 
+         font-family:Nokia Sans SemiBold;  }
+LI.kadov-p-CNotes { 
+                   text-indent:0pt; 
+                   font-size:10.0pt; 
+                   font-family:Nokia Sans SemiBold;  }
+p.TabbedList { 
+              margin-top:0pt; 
+              margin-right:0pt; 
+              margin-bottom:14.0pt; 
+              margin-left:87.1pt; 
+              font-size:10.0pt; 
+              font-family:Arial;  }
+LI.kadov-p-CTabbedList { 
+                        font-size:10.0pt; 
+                        font-family:Arial;  }
+p.TableofContentsHeading { 
+                          margin-top:0pt; 
+                          margin-right:0pt; 
+                          margin-bottom:14.0pt; 
+                          margin-left:89.85pt; 
+                          font-size:13.0pt; 
+                          font-family:Arial; 
+                          font-weight:bold;  }
+LI.kadov-p-CTableofContentsHeading { 
+                                    font-size:13.0pt; 
+                                    font-family:Arial; 
+                                    font-weight:bold;  }
+p.Versiondate { 
+               margin-top:0pt; 
+               margin-right:0pt; 
+               margin-bottom:24.0pt; 
+               margin-left:0pt; 
+               text-align:right; 
+               font-size:10.0pt; 
+               font-family:Arial; 
+               color:#00A800;  }
+LI.kadov-p-CVersiondate { 
+                         text-align:right; 
+                         font-size:10.0pt; 
+                         font-family:Arial; 
+                         color:#00A800;  }
+p.text-title-lg5 { 
+                  margin-right:0pt; 
+                  margin-left:0pt; 
+                  font-size:18.0pt; 
+                  font-family:Times New Roman; 
+                  color:#0435B1; 
+                  font-weight:bold;  }
+LI.kadov-p-Ctext-title-lg5 { 
+                            font-size:18.0pt; 
+                            font-family:Times New Roman; 
+                            color:#0435B1; 
+                            font-weight:bold;  }
+p.LicenseTitle { 
+                margin-top:102.0pt; 
+                margin-right:0pt; 
+                margin-bottom:6.0pt; 
+                margin-left:49.6pt; 
+                font-size:9.0pt; 
+                font-family:Nokia Sans SemiBold;  }
+LI.kadov-p-CLicenseTitle { 
+                          font-size:9.0pt; 
+                          font-family:Nokia Sans SemiBold;  }
+p.\00311BodyText { 
+                  margin-top:0pt; 
+                  margin-right:0pt; 
+                  margin-bottom:11.0pt; 
+                  margin-left:64.9pt; 
+                  font-size:11.0pt; 
+                  font-family:Arial;  }
+LI.kadov-p-C11BodyText { 
+                        font-size:11.0pt; 
+                        font-family:Arial;  }
+p.Note { 
+        margin-top:0pt; 
+        margin-right:0pt; 
+        margin-bottom:11.0pt; 
+        margin-left:64.9pt; 
+        background:#ffff00; 
+        border:none; 
+        padding:0pt; 
+        font-size:11.0pt; 
+        font-family:Comic Sans MS;  }
+LI.kadov-p-CNote { 
+                  font-size:11.0pt; 
+                  font-family:Comic Sans MS;  }
+p.tablecell { 
+             margin:0pt; 
+             margin-bottom:.0001pt; 
+             font-size:11.0pt; 
+             font-family:Arial;  }
+LI.kadov-p-Ctablecell { 
+                       font-size:11.0pt; 
+                       font-family:Arial;  }
+p.\00300BodyText { 
+                  margin-top:0pt; 
+                  margin-right:0pt; 
+                  margin-bottom:11.0pt; 
+                  margin-left:0pt; 
+                  font-size:11.0pt; 
+                  font-family:Arial;  }
+LI.kadov-p-C00BodyText { 
+                        font-size:11.0pt; 
+                        font-family:Arial;  }
+p.BodyHeading1 { 
+                margin-top:12.0pt; 
+                margin-right:0pt; 
+                margin-bottom:12.0pt; 
+                margin-left:27.0pt; 
+                font-size:11.0pt; 
+                font-family:Arial; 
+                font-weight:bold;  }
+LI.kadov-p-CBodyHeading1 { 
+                          font-size:11.0pt; 
+                          font-family:Arial; 
+                          font-weight:bold;  }
+p.BodyHeading2 { 
+                margin-top:12.0pt; 
+                margin-right:0pt; 
+                margin-bottom:12.0pt; 
+                margin-left:27.0pt; 
+                font-size:10.0pt; 
+                font-family:Arial; 
+                font-weight:bold;  }
+LI.kadov-p-CBodyHeading2 { 
+                          font-size:10.0pt; 
+                          font-family:Arial; 
+                          font-weight:bold;  }
+p.HistoryBody0 { 
+                margin-top:3.0pt; 
+                margin-right:0pt; 
+                margin-bottom:3.0pt; 
+                margin-left:0pt; 
+                font-size:10.0pt; 
+                font-family:Arial;  }
+LI.kadov-p-CHistoryBody0 { 
+                          font-size:10.0pt; 
+                          font-family:Arial;  }
+p.BodyTextNumbered { 
+                    margin-top:6.0pt; 
+                    margin-right:0pt; 
+                    margin-bottom:.0001pt; 
+                    margin-left:85.7pt; 
+                    text-indent:-18.0pt; 
+                    font-size:10.0pt; 
+                    font-family:Nokia Sans;  }
+LI.kadov-p-CBodyTextNumbered { 
+                              text-indent:-18.0pt; 
+                              font-size:10.0pt; 
+                              font-family:Nokia Sans;  }
+p.bodytextbullets2 { 
+                    margin-top:6.0pt; 
+                    margin-right:0pt; 
+                    margin-bottom:6.0pt; 
+                    margin-left:108.0pt; 
+                    text-align:justify; 
+                    text-indent:-18.0pt; 
+                    font-size:10.0pt; 
+                    font-family:Arial;  }
+LI.kadov-p-Cbodytextbullets2 { 
+                              text-align:justify; 
+                              text-indent:-18.0pt; 
+                              font-size:10.0pt; 
+                              font-family:Arial;  }
+span.bodytextbulletsChar { 
+                          font-family:Nokia Sans;  }
+p.Guideline { 
+             margin-top:6.0pt; 
+             margin-right:0pt; 
+             margin-bottom:6.0pt; 
+             font-size:10.0pt; 
+             font-family:Arial; 
+             margin-left:41pt;  }
+LI.kadov-p-CGuideline { 
+                       font-size:10.0pt; 
+                       font-family:Arial;  }
+span.Symbian { 
+              font-weight:bold;  }
+span.bodytextbullets2Char { 
+                           font-family:Nokia Sans;  }
+span.J2ME { 
+           font-weight:bold;  }
+span.Series60 { 
+               font-weight:bold;  }
+span.Series80 { 
+               font-weight:bold;  }
+span.CodeinText { 
+                 font-family:Courier; 
+                 color:windowtext; 
+                 letter-spacing:0pt;  }
+span.Citation { 
+               font-family:Nokia Sans Italic;  }
+span.BodyTextbtChar { 
+                     font-family:Nokia Sans;  }
+p.Multiplayer { 
+               margin-top:6.0pt; 
+               margin-right:0pt; 
+               margin-bottom:6.0pt; 
+               margin-left:81.0pt; 
+               text-align:justify; 
+               text-indent:-18.0pt; 
+               font-size:10.0pt; 
+               font-family:Arial; 
+               font-weight:bold;  }
+LI.kadov-p-CMultiplayer { 
+                         text-align:justify; 
+                         text-indent:-18.0pt; 
+                         font-size:10.0pt; 
+                         font-family:Arial; 
+                         font-weight:bold;  }
+span.MultiplayerChar { 
+                      font-family:Nokia Sans; 
+                      font-weight:bold;  }
+p.Guideline2 { 
+              margin-top:6.0pt; 
+              margin-right:0pt; 
+              margin-bottom:6.0pt; 
+              font-size:10.0pt; 
+              font-family:Arial; 
+              font-style:italic; 
+              margin-left:54pt;  }
+LI.kadov-p-CGuideline2 { 
+                        font-size:10.0pt; 
+                        font-family:Arial; 
+                        font-style:italic;  }
+p.Seealso { 
+           margin-top:0pt; 
+           margin-right:0pt; 
+           margin-bottom:14.0pt; 
+           margin-left:45.0pt; 
+           text-indent:-18.0pt; 
+           font-size:10.0pt; 
+           font-family:Arial;  }
+LI.kadov-p-CSeealso { 
+                     text-indent:-18.0pt; 
+                     font-size:10.0pt; 
+                     font-family:Arial;  }
+p.Kuva { 
+        margin-top:3.0pt; 
+        margin-right:0pt; 
+        margin-bottom:3.0pt; 
+        margin-left:67.75pt; 
+        text-align:center; 
+        font-size:11.0pt; 
+        font-family:Times New Roman;  }
+LI.kadov-p-CKuva { 
+                  text-align:center; 
+                  font-size:11.0pt; 
+                  font-family:Times New Roman;  }
+p.tabletitle { 
+              margin-top:2.0pt; 
+              margin-right:0pt; 
+              margin-bottom:2.0pt; 
+              margin-left:0pt; 
+              font-size:9.0pt; 
+              font-family:Arial;  }
+LI.kadov-p-Ctabletitle { 
+                        font-size:9.0pt; 
+                        font-family:Arial;  }
+p.tabletext { 
+             margin-top:3.0pt; 
+             margin-right:0pt; 
+             margin-bottom:3.0pt; 
+             margin-left:0pt; 
+             font-size:9.0pt; 
+             font-family:Arial;  }
+LI.kadov-p-Ctabletext { 
+                       font-size:9.0pt; 
+                       font-family:Arial;  }
+span.BodyCopyChar { 
+                   font-family:Arial;  }
+p.Pienikuva { 
+             margin-top:2.0pt; 
+             margin-right:0pt; 
+             margin-bottom:2.0pt; 
+             margin-left:0pt; 
+             text-align:center; 
+             font-size:10.0pt; 
+             font-family:Arial;  }
+LI.kadov-p-CPienikuva { 
+                       text-align:center; 
+                       font-size:10.0pt; 
+                       font-family:Arial;  }
+p.taultxt-bold { 
+                margin-top:3.0pt; 
+                margin-right:2.85pt; 
+                margin-bottom:3.0pt; 
+                margin-left:0pt; 
+                font-size:9.0pt; 
+                font-family:Arial; 
+                font-weight:bold;  }
+LI.kadov-p-Ctaultxt-bold { 
+                          font-size:9.0pt; 
+                          font-family:Arial; 
+                          font-weight:bold;  }
+p.tabletitle-center { 
+                     margin-top:2.0pt; 
+                     margin-right:0pt; 
+                     margin-bottom:2.0pt; 
+                     margin-left:0pt; 
+                     text-align:center; 
+                     font-size:9.0pt; 
+                     font-family:Arial;  }
+LI.kadov-p-Ctabletitle-center { 
+                               text-align:center; 
+                               font-size:9.0pt; 
+                               font-family:Arial;  }
+p.TableHeadings { 
+                 margin-top:3.0pt; 
+                 margin-right:0pt; 
+                 margin-bottom:3.0pt; 
+                 margin-left:0pt; 
+                 font-size:11.0pt; 
+                 font-family:Arial; 
+                 layout-grid-mode:line; 
+                 font-weight:bold;  }
+LI.kadov-p-CTableHeadings { 
+                           font-size:11.0pt; 
+                           font-family:Arial; 
+                           layout-grid-mode:line; 
+                           font-weight:bold;  }
+p.TableText0 { 
+              margin-top:3.0pt; 
+              margin-right:0pt; 
+              margin-bottom:3.0pt; 
+              margin-left:0pt; 
+              font-size:10.0pt; 
+              font-family:Arial;  }
+LI.kadov-p-CTableText0 { 
+                        font-size:10.0pt; 
+                        font-family:Arial;  }
+p.ListItemBulleted { 
+                    margin-top:6.0pt; 
+                    margin-right:0pt; 
+                    margin-bottom:.0001pt; 
+                    margin-left:85.7pt; 
+                    text-indent:0pt; 
+                    font-size:10.0pt; 
+                    font-family:Nokia Sans;  }
+LI.kadov-p-CListItemBulleted { 
+                              text-indent:0pt; 
+                              font-size:10.0pt; 
+                              font-family:Nokia Sans;  }
+p.ListItemSubbullet { 
+                     margin-top:6.0pt; 
+                     margin-right:0pt; 
+                     margin-bottom:.0001pt; 
+                     margin-left:63.0pt; 
+                     text-indent:-18.0pt; 
+                     font-size:10.0pt; 
+                     font-family:Nokia Sans;  }
+LI.kadov-p-CListItemSubbullet { 
+                               text-indent:-18.0pt; 
+                               font-size:10.0pt; 
+                               font-family:Nokia Sans;  }
+p.BodyHeading1blue { 
+                    margin-top:12.0pt; 
+                    margin-right:0pt; 
+                    margin-bottom:12.0pt; 
+                    margin-left:27.0pt; 
+                    font-size:11.0pt; 
+                    font-family:Arial;  }
+LI.kadov-p-CBodyHeading1blue { 
+                              font-size:11.0pt; 
+                              font-family:Arial;  }
+p.StyleBodyHeading1Left159cmFirstline032cm { 
+                                            margin-top:12.0pt; 
+                                            margin-right:0pt; 
+                                            margin-bottom:12.0pt; 
+                                            margin-left:45.0pt; 
+                                            text-indent:9.0pt; 
+                                            font-size:11.0pt; 
+                                            font-family:Arial; 
+                                            font-weight:bold;  }
+LI.kadov-p-CStyleBodyHeading1Left159cmFirstline032cm { 
+                                                      text-indent:9.0pt; 
+                                                      font-size:11.0pt; 
+                                                      font-family:Arial; 
+                                                      font-weight:bold;  }
+span.StyleLatinNokiaSansTitleSemiBold12ptBoldWhite { 
+                                                    font-family:Arial; 
+                                                    color:#ffffff; 
+                                                    font-weight:bold;  }
+p.BodyHeading1White { 
+                     margin-top:12.0pt; 
+                     margin-right:0pt; 
+                     margin-bottom:12.0pt; 
+                     margin-left:27.0pt; 
+                     background:#003CCD; 
+                     border:none; 
+                     padding:0pt; 
+                     font-size:11.0pt; 
+                     font-family:Arial; 
+                     color:#ffffff; 
+                     font-weight:bold;  }
+LI.kadov-p-CBodyHeading1White { 
+                               font-size:11.0pt; 
+                               font-family:Arial; 
+                               color:#ffffff; 
+                               font-weight:bold;  }
+p.BodyHeading1Blue0 { 
+                     margin-top:12.0pt; 
+                     margin-right:0pt; 
+                     margin-bottom:12.0pt; 
+                     margin-left:27.0pt; 
+                     font-size:11.0pt; 
+                     font-family:Arial; 
+                     color:#0040CD; 
+                     font-weight:bold;  }
+LI.kadov-p-CBodyHeading1Blue0 { 
+                               font-size:11.0pt; 
+                               font-family:Arial; 
+                               color:#0040CD; 
+                               font-weight:bold;  }
+p.TopTenBullets { 
+                 margin-top:0pt; 
+                 margin-right:56.7pt; 
+                 margin-bottom:6.0pt; 
+                 margin-left:62.95pt; 
+                 text-indent:-18.0pt; 
+                 font-size:10.0pt; 
+                 font-family:Arial;  }
+LI.kadov-p-CTopTenBullets { 
+                           text-indent:-18.0pt; 
+                           font-size:10.0pt; 
+                           font-family:Arial;  }
+p.BodyHeading2Blue { 
+                    margin-top:12.0pt; 
+                    margin-right:0pt; 
+                    margin-bottom:12.0pt; 
+                    margin-left:27.0pt; 
+                    font-size:10.0pt; 
+                    font-family:Arial; 
+                    color:#0040CD; 
+                    font-weight:bold;  }
+LI.kadov-p-CBodyHeading2Blue { 
+                              font-size:10.0pt; 
+                              font-family:Arial; 
+                              color:#0040CD; 
+                              font-weight:bold;  }
+p.Good { 
+        margin-top:0pt; 
+        margin-right:0pt; 
+        margin-bottom:.0001pt; 
+        margin-left:14.2pt; 
+        text-align:center; 
+        font-size:10.0pt; 
+        font-family:Nokia Sans; 
+        color:#008000;  }
+LI.kadov-p-CGood { 
+                  text-align:center; 
+                  font-size:10.0pt; 
+                  font-family:Nokia Sans; 
+                  color:#008000;  }
+p.Bad { 
+       margin-top:0pt; 
+       margin-right:0pt; 
+       margin-bottom:.0001pt; 
+       margin-left:14.2pt; 
+       text-align:center; 
+       font-size:10.0pt; 
+       font-family:Nokia Sans; 
+       color:#800000;  }
+LI.kadov-p-CBad { 
+                 text-align:center; 
+                 font-size:10.0pt; 
+                 font-family:Nokia Sans; 
+                 color:#800000;  }
+p.Badfig { 
+          margin-top:6.0pt; 
+          margin-right:0pt; 
+          margin-bottom:6.0pt; 
+          margin-left:3.6pt; 
+          font-size:9.0pt; 
+          font-family:Nokia Sans; 
+          color:#008000;  }
+LI.kadov-p-CBadfig { 
+                    font-size:9.0pt; 
+                    font-family:Nokia Sans; 
+                    color:#008000;  }
+p.IRBodyType { 
+              margin:0pt; 
+              margin-bottom:.0001pt; 
+              line-height:150%; 
+              font-size:10.0pt; 
+              font-family:Arial;  }
+LI.kadov-p-CIRBodyType { 
+                        line-height:150%; 
+                        font-size:10.0pt; 
+                        font-family:Arial;  }
+p.IRTableHeading { 
+                  margin-top:3.0pt; 
+                  margin-right:5.65pt; 
+                  margin-bottom:4.0pt; 
+                  margin-left:0pt; 
+                  font-size:10.0pt; 
+                  font-family:Arial; 
+                  font-weight:bold;  }
+LI.kadov-p-CIRTableHeading { 
+                            font-size:10.0pt; 
+                            font-family:Arial; 
+                            font-weight:bold;  }
+p.IRTableTxt { 
+              margin-top:3.0pt; 
+              margin-right:5.65pt; 
+              margin-bottom:4.0pt; 
+              margin-left:0pt; 
+              font-size:9.0pt; 
+              font-family:Arial;  }
+LI.kadov-p-CIRTableTxt { 
+                        font-size:9.0pt; 
+                        font-family:Arial;  }
+span.IRBodyTypeChar { 
+                     font-family:Arial;  }
+p.Heading2 { 
+            margin-top:12.0pt; 
+            margin-right:0pt; 
+            margin-bottom:12.0pt; 
+            margin-left:17.85pt; 
+            font-size:11.0pt; 
+            font-family:Arial; 
+            font-weight:bold;  }
+LI.kadov-p-CHeading2 { 
+                      font-size:11.0pt; 
+                      font-family:Arial; 
+                      font-weight:bold;  }
+p.Default { 
+           margin:0pt; 
+           margin-bottom:.0001pt; 
+           text-autospace:none; 
+           font-size:12.0pt; 
+           font-family:EIKKDJ+NokiaSans; 
+           color:#000000;  }
+LI.kadov-p-CDefault { 
+                     text-autospace:none; 
+                     font-size:12.0pt; 
+                     font-family:EIKKDJ+NokiaSans; 
+                     color:#000000;  }
+span.msoIns { 
+             x-text-underline:normal; 
+             text-underline:single; 
+             color:#008080; 
+             text-decoration:underline;  }
+span.msoDel { 
+             x-text-line-through:normal; 
+             color:#ff0000; 
+             text-decoration:line-through;  }
+span.msoChangeProp {  }
+OL { 
+    margin-top:0px; 
+    margin-bottom:0px;  }
+UL { 
+    margin-top:0px; 
+    margin-bottom:0px;  }
+p.Inlinebodytextbullets { 
+                         margin-top:0pt; 
+                         margin-right:0pt; 
+                         margin-bottom:6.0pt; 
+                         margin-left:85.7pt; 
+                         text-indent:-18.0pt; 
+                         font-size:10.0pt; 
+                         font-family:Arial;  }
+LI.kadov-p-CInlinebodytextbullets { 
+                                   text-indent:-18.0pt; 
+                                   font-size:10.0pt; 
+                                   font-family:Arial;  }
+p.InlineBodyText1 { 
+                   margin:0pt; 
+                   margin-bottom:.0001pt; 
+                   text-align:center; 
+                   font-size:9.0pt; 
+                   font-family:Nokia Sans; 
+                   color:#0040CC; 
+                   letter-spacing:8.0pt;  }
+LI.kadov-p-CInlineBodyText1 { 
+                             text-align:center; 
+                             font-size:9.0pt; 
+                             font-family:Nokia Sans; 
+                             color:#0040CC; 
+                             letter-spacing:8.0pt;  }
+p.InlineBodyCopy6 { 
+                   margin-top:0pt; 
+                   margin-right:0pt; 
+                   margin-bottom:14.0pt; 
+                   margin-left:18.0pt; 
+                   font-size:10.0pt; 
+                   font-family:Arial;  }
+LI.kadov-p-CInlineBodyCopy6 { 
+                             font-size:10.0pt; 
+                             font-family:Arial;  }
+p.InlineKuva { 
+              margin-top:3.0pt; 
+              margin-right:0pt; 
+              margin-bottom:3.0pt; 
+              margin-left:67.75pt; 
+              text-align:left; 
+              font-size:11.0pt; 
+              font-family:Times New Roman;  }
+LI.kadov-p-CInlineKuva { 
+                        text-align:left; 
+                        font-size:11.0pt; 
+                        font-family:Times New Roman;  }
+p.InlineBodyCopy3 { 
+                   margin-top:0pt; 
+                   margin-right:0pt; 
+                   margin-bottom:14.0pt; 
+                   margin-left:26.95pt; 
+                   font-size:10.0pt; 
+                   font-family:Arial; 
+                   text-align:right;  }
+LI.kadov-p-CInlineBodyCopy3 { 
+                             font-size:10.0pt; 
+                             font-family:Arial; 
+                             text-align:right;  }
+p.InlineVersiondate { 
+                     margin-top:0pt; 
+                     margin-right:0pt; 
+                     margin-bottom:24.0pt; 
+                     margin-left:0pt; 
+                     text-align:left; 
+                     font-size:10.0pt; 
+                     font-family:Arial; 
+                     color:#00A800;  }
+LI.kadov-p-CInlineVersiondate { 
+                               text-align:left; 
+                               font-size:10.0pt; 
+                               font-family:Arial; 
+                               color:#00A800;  }
+p.InlineBodyCopy4 { 
+                   margin-top:0pt; 
+                   margin-right:0pt; 
+                   margin-bottom:14.0pt; 
+                   margin-left:0pt; 
+                   font-size:10.0pt; 
+                   font-family:Arial;  }
+LI.kadov-p-CInlineBodyCopy4 { 
+                             font-size:10.0pt; 
+                             font-family:Arial;  }
+p.InlineBodyTextNumbered1 { 
+                           margin-top:6.0pt; 
+                           margin-right:0pt; 
+                           margin-bottom:.0001pt; 
+                           margin-left:27.0pt; 
+                           text-indent:0pt; 
+                           font-size:10.0pt; 
+                           font-family:Nokia Sans;  }
+LI.kadov-p-CInlineBodyTextNumbered1 { 
+                                     text-indent:0pt; 
+                                     font-size:10.0pt; 
+                                     font-family:Nokia Sans;  }
+p.InlineBodyHeading1White1 { 
+                            margin-top:12.0pt; 
+                            margin-right:0pt; 
+                            margin-bottom:12.0pt; 
+                            margin-left:0pt; 
+                            background:#003CCD; 
+                            border:none; 
+                            padding:0pt; 
+                            font-size:11.0pt; 
+                            font-family:Arial; 
+                            color:#ffffff; 
+                            font-weight:bold;  }
+LI.kadov-p-CInlineBodyHeading1White1 { 
+                                      font-size:11.0pt; 
+                                      font-family:Arial; 
+                                      color:#ffffff; 
+                                      font-weight:bold;  }
+p.InlineNormal3 { 
+                 margin:0pt; 
+                 margin-bottom:.0001pt; 
+                 font-size:9.0pt; 
+                 font-family:Arial; 
+                 color:#00B300;  }
+LI.kadov-p-CInlineNormal3 { 
+                           font-size:9.0pt; 
+                           font-family:Arial; 
+                           color:#00B300;  }
+p.InlineDocumentTitle { 
+                       margin-top:0pt; 
+                       margin-right:0pt; 
+                       margin-bottom:10.0pt; 
+                       margin-left:0pt; 
+                       text-align:left; 
+                       font-size:18.0pt; 
+                       font-family:Arial; 
+                       color:#00A800; 
+                       letter-spacing:1.5pt;  }
+LI.kadov-p-CInlineDocumentTitle { 
+                                 text-align:left; 
+                                 font-size:18.0pt; 
+                                 font-family:Arial; 
+                                 color:#00A800; 
+                                 letter-spacing:1.5pt;  }
+p.InlineIRBodyType { 
+                    margin:0pt; 
+                    margin-bottom:.0001pt; 
+                    line-height:150%; 
+                    font-size:10.0pt; 
+                    font-family:Arial; 
+                    margin-top:3.0pt; 
+                    margin-right:0pt; 
+                    margin-left:35.7pt; 
+                    text-indent:-17.85pt;  }
+LI.kadov-p-CInlineIRBodyType { 
+                              line-height:150%; 
+                              font-size:10.0pt; 
+                              font-family:Arial; 
+                              text-indent:-17.85pt;  }
+p.InlineBadfig { 
+                margin-top:6.0pt; 
+                margin-right:0pt; 
+                margin-bottom:6.0pt; 
+                margin-left:3.6pt; 
+                font-size:9.0pt; 
+                font-family:Arial; 
+                color:#008000; 
+                text-align:center;  }
+LI.kadov-p-CInlineBadfig { 
+                          font-size:9.0pt; 
+                          font-family:Arial; 
+                          color:#008000; 
+                          text-align:center;  }
+p.InlineBodyCopy7 { 
+                   margin-top:0pt; 
+                   margin-right:0pt; 
+                   margin-bottom:14.0pt; 
+                   margin-left:26.95pt; 
+                   font-size:10.0pt; 
+                   font-family:Arial;  }
+LI.kadov-p-CInlineBodyCopy7 { 
+                             font-size:10.0pt; 
+                             font-family:Arial;  }
+p.InlineBodyCopy1 { 
+                   margin-top:0pt; 
+                   margin-right:0pt; 
+                   margin-bottom:14.0pt; 
+                   margin-left:53.85pt; 
+                   font-size:10.0pt; 
+                   font-family:Arial; 
+                   text-indent:-18.0pt;  }
+LI.kadov-p-CInlineBodyCopy1 { 
+                             font-size:10.0pt; 
+                             font-family:Arial; 
+                             text-indent:-18.0pt;  }
+p.InlineStyleBodyHeading1Left159cmFirstline032cm { 
+                                                  margin-top:12.0pt; 
+                                                  margin-right:0pt; 
+                                                  margin-bottom:12.0pt; 
+                                                  margin-left:45.0pt; 
+                                                  text-indent:9.0pt; 
+                                                  font-size:11.0pt; 
+                                                  font-family:Arial; 
+                                                  font-weight:bold;  }
+LI.kadov-p-CInlineStyleBodyHeading1Left159cmFirstline032cm { 
+                                                            text-indent:9.0pt; 
+                                                            font-size:11.0pt; 
+                                                            font-family:Arial; 
+                                                            font-weight:bold;  }
+p.InlineBodyCopy2 { 
+                   margin-top:0pt; 
+                   margin-right:0pt; 
+                   margin-bottom:6.0pt; 
+                   margin-left:62.95pt; 
+                   font-size:10.0pt; 
+                   font-family:Arial; 
+                   text-indent:-17.85pt;  }
+LI.kadov-p-CInlineBodyCopy2 { 
+                             font-size:10.0pt; 
+                             font-family:Arial; 
+                             text-indent:-17.85pt;  }
+p.InlineBadfig1 { 
+                 margin-top:6.0pt; 
+                 margin-right:0pt; 
+                 margin-bottom:6.0pt; 
+                 margin-left:3.6pt; 
+                 font-size:9.0pt; 
+                 font-family:Arial; 
+                 color:#800000; 
+                 text-align:center;  }
+LI.kadov-p-CInlineBadfig1 { 
+                           font-size:9.0pt; 
+                           font-family:Arial; 
+                           color:#800000; 
+                           text-align:center;  }
+p.InlineIRBodyType1 { 
+                     margin:0pt; 
+                     margin-bottom:.0001pt; 
+                     line-height:150%; 
+                     font-size:10.0pt; 
+                     font-family:Arial; 
+                     margin-left:36.0pt; 
+                     text-indent:-18.0pt;  }
+LI.kadov-p-CInlineIRBodyType1 { 
+                               line-height:150%; 
+                               font-size:10.0pt; 
+                               font-family:Arial; 
+                               text-indent:-18.0pt;  }
+p.InlineIRTableTxt { 
+                    margin-top:3.0pt; 
+                    margin-right:5.65pt; 
+                    margin-bottom:4.0pt; 
+                    margin-left:0pt; 
+                    font-size:9.0pt; 
+                    font-family:Arial;  }
+LI.kadov-p-CInlineIRTableTxt { 
+                              font-size:9.0pt; 
+                              font-family:Arial;  }
+p.InlineBodyText { 
+                  margin:0pt; 
+                  margin-bottom:.0001pt; 
+                  text-align:left; 
+                  font-size:9.0pt; 
+                  font-family:Nokia Sans; 
+                  color:#0040CC; 
+                  letter-spacing:8.0pt; 
+                  margin-left:36.0pt; 
+                  text-indent:31.7pt;  }
+LI.kadov-p-CInlineBodyText { 
+                            text-align:left; 
+                            font-size:9.0pt; 
+                            font-family:Nokia Sans; 
+                            color:#0040CC; 
+                            letter-spacing:8.0pt; 
+                            text-indent:31.7pt;  }
+p.InlineListItemSubbullet { 
+                           margin-top:6.0pt; 
+                           margin-right:0pt; 
+                           margin-bottom:.0001pt; 
+                           margin-left:103.7pt; 
+                           text-indent:-18.0pt; 
+                           font-size:10.0pt; 
+                           font-family:Nokia Sans;  }
+LI.kadov-p-CInlineListItemSubbullet { 
+                                     text-indent:-18.0pt; 
+                                     font-size:10.0pt; 
+                                     font-family:Nokia Sans;  }
+p.InlineBodyCopy { 
+                  margin-top:0pt; 
+                  margin-right:0pt; 
+                  margin-bottom:8.0pt; 
+                  margin-left:45.1pt; 
+                  font-size:10.0pt; 
+                  font-family:Arial;  }
+LI.kadov-p-CInlineBodyCopy { 
+                            font-size:10.0pt; 
+                            font-family:Arial;  }
+p.InlineBad { 
+             margin-top:0pt; 
+             margin-right:0pt; 
+             margin-bottom:.0001pt; 
+             margin-left:14.2pt; 
+             text-align:center; 
+             font-size:10.0pt; 
+             font-family:Arial; 
+             color:#800000; 
+             font-weight:bold;  }
+LI.kadov-p-CInlineBad { 
+                       text-align:center; 
+                       font-size:10.0pt; 
+                       font-family:Arial; 
+                       color:#800000; 
+                       font-weight:bold;  }
+p.InlineBodyCopy5 { 
+                   margin-top:0pt; 
+                   margin-right:0pt; 
+                   margin-bottom:14.0pt; 
+                   margin-left:45.0pt; 
+                   font-size:10.0pt; 
+                   font-family:Arial; 
+                   text-align:right;  }
+LI.kadov-p-CInlineBodyCopy5 { 
+                             font-size:10.0pt; 
+                             font-family:Arial; 
+                             text-align:right;  }
+p.InlineBodyHeading1White { 
+                           margin-top:12.0pt; 
+                           margin-right:0pt; 
+                           margin-bottom:12.0pt; 
+                           margin-left:0pt; 
+                           background:#003CCD; 
+                           border:none; 
+                           padding:0pt; 
+                           font-size:11.0pt; 
+                           font-family:Arial; 
+                           color:#ffffff; 
+                           font-weight:bold;  }
+LI.kadov-p-CInlineBodyHeading1White { 
+                                     font-size:11.0pt; 
+                                     font-family:Arial; 
+                                     color:#ffffff; 
+                                     font-weight:bold;  }
+p.InlineBodyHeading2 { 
+                      margin-top:12.0pt; 
+                      margin-right:0pt; 
+                      margin-bottom:12.0pt; 
+                      margin-left:27.0pt; 
+                      font-size:10.0pt; 
+                      font-family:Arial; 
+                      font-weight:bold;  }
+LI.kadov-p-CInlineBodyHeading2 { 
+                                font-size:10.0pt; 
+                                font-family:Arial; 
+                                font-weight:bold;  }
+p.InlineSeealso { 
+                 margin-top:0pt; 
+                 margin-right:0pt; 
+                 margin-bottom:14.0pt; 
+                 margin-left:126.0pt; 
+                 text-indent:-99.0pt; 
+                 font-size:10.0pt; 
+                 font-family:Arial;  }
+LI.kadov-p-CInlineSeealso { 
+                           text-indent:-99.0pt; 
+                           font-size:10.0pt; 
+                           font-family:Arial;  }
+p.InlineBodyHeading1 { 
+                      margin-top:12.0pt; 
+                      margin-right:0pt; 
+                      margin-bottom:12.0pt; 
+                      margin-left:27.0pt; 
+                      font-size:11.0pt; 
+                      font-family:Arial; 
+                      font-weight:bold;  }
+LI.kadov-p-CInlineBodyHeading1 { 
+                                font-size:11.0pt; 
+                                font-family:Arial; 
+                                font-weight:bold;  }
+p.InlineFigureText { 
+                    margin-top:6.0pt; 
+                    margin-right:0pt; 
+                    margin-bottom:6.0pt; 
+                    margin-left:67.7pt; 
+                    text-indent:0pt; 
+                    font-size:9.0pt; 
+                    font-family:Arial; 
+                    text-align:justify;  }
+LI.kadov-p-CInlineFigureText { 
+                              text-indent:0pt; 
+                              font-size:9.0pt; 
+                              font-family:Arial; 
+                              text-align:justify;  }
+p.InlineBodyTextNumbered { 
+                          margin-top:6.0pt; 
+                          margin-right:0pt; 
+                          margin-bottom:.0001pt; 
+                          margin-left:45.0pt; 
+                          text-indent:-18.0pt; 
+                          font-size:10.0pt; 
+                          font-family:Nokia Sans;  }
+LI.kadov-p-CInlineBodyTextNumbered { 
+                                    text-indent:-18.0pt; 
+                                    font-size:10.0pt; 
+                                    font-family:Nokia Sans;  }
+p.InlineNormal1 { 
+                 margin:0pt; 
+                 margin-bottom:.0001pt; 
+                 font-size:9.0pt; 
+                 font-family:Arial; 
+                 text-align:right;  }
+LI.kadov-p-CInlineNormal1 { 
+                           font-size:9.0pt; 
+                           font-family:Arial; 
+                           text-align:right;  }
+p.InlineGuideline { 
+                   margin-top:6.0pt; 
+                   margin-right:0pt; 
+                   margin-bottom:6.0pt; 
+                   font-size:10.0pt; 
+                   font-family:Arial; 
+                   list-style:circle; 
+                   margin-left:56pt;  }
+LI.kadov-p-CInlineGuideline { 
+                             font-size:10.0pt; 
+                             font-family:Arial; 
+                             list-style:circle;  }
+p.InlineBodyHeading2Blue { 
+                          margin-top:12.0pt; 
+                          margin-right:0pt; 
+                          margin-bottom:12.0pt; 
+                          margin-left:27.0pt; 
+                          font-size:10.0pt; 
+                          font-family:Arial; 
+                          color:#0040CD; 
+                          font-weight:bold;  }
+LI.kadov-p-CInlineBodyHeading2Blue { 
+                                    font-size:10.0pt; 
+                                    font-family:Arial; 
+                                    color:#0040CD; 
+                                    font-weight:bold;  }
+p.InlineBodyCopy8 { 
+                   margin-top:0pt; 
+                   margin-right:0pt; 
+                   margin-bottom:14.0pt; 
+                   margin-left:26.95pt; 
+                   font-size:10.0pt; 
+                   font-family:Arial; 
+                   text-align:center;  }
+LI.kadov-p-CInlineBodyCopy8 { 
+                             font-size:10.0pt; 
+                             font-family:Arial; 
+                             text-align:center;  }
+p.InlineBadfig2 { 
+                 margin-top:6.0pt; 
+                 margin-right:0pt; 
+                 margin-bottom:6.0pt; 
+                 font-size:9.0pt; 
+                 font-family:Arial, sans-serif; 
+                 margin-left:27pt;  }
+LI.kadov-p-CInlineBadfig2 { 
+                           font-size:9.0pt; 
+                           font-family:Arial, sans-serif;  }
+p.InlineFigureText1 { 
+                     margin-top:6.0pt; 
+                     margin-right:0pt; 
+                     margin-bottom:6.0pt; 
+                     margin-left:0pt; 
+                     text-indent:0pt; 
+                     font-size:9.0pt; 
+                     font-family:Arial;  }
+LI.kadov-p-CInlineFigureText1 { 
+                               text-indent:0pt; 
+                               font-size:9.0pt; 
+                               font-family:Arial;  }
+p.InlineBodyHeading1White2 { 
+                            margin-top:12.0pt; 
+                            margin-right:0pt; 
+                            margin-bottom:12.0pt; 
+                            margin-left:0pt; 
+                            background:#003CCD; 
+                            border:none; 
+                            padding:0pt; 
+                            font-size:11.0pt; 
+                            font-family:Arial; 
+                            color:#ffffff; 
+                            font-weight:bold;  }
+LI.kadov-p-CInlineBodyHeading1White2 { 
+                                      font-size:11.0pt; 
+                                      font-family:Arial; 
+                                      color:#ffffff; 
+                                      font-weight:bold;  }
+p.InlineNormal2 { 
+                 margin:0pt; 
+                 margin-bottom:.0001pt; 
+                 font-size:11.0pt; 
+                 font-family:Arial; 
+                 text-autospace:none; 
+                 font-weight:bold;  }
+LI.kadov-p-CInlineNormal2 { 
+                           font-size:11.0pt; 
+                           font-family:Arial; 
+                           text-autospace:none; 
+                           font-weight:bold;  }
+p.InlineBodyHeading { 
+                     margin-top:12.0pt; 
+                     margin-right:0pt; 
+                     margin-bottom:12.0pt; 
+                     margin-left:45.0pt; 
+                     font-size:10.0pt; 
+                     font-family:Arial; 
+                     font-weight:bold; 
+                     text-indent:9.0pt;  }
+LI.kadov-p-CInlineBodyHeading { 
+                               font-size:10.0pt; 
+                               font-family:Arial; 
+                               font-weight:bold; 
+                               text-indent:9.0pt;  }
+p.InlineNormal { 
+                margin:0pt; 
+                margin-bottom:.0001pt; 
+                font-size:9.0pt; 
+                font-family:Arial; 
+                margin-left:90.0pt; 
+                text-indent:-18.0pt;  }
+LI.kadov-p-CInlineNormal { 
+                          font-size:9.0pt; 
+                          font-family:Arial; 
+                          text-indent:-18.0pt;  }
+p.Inlinetabletext { 
+                   margin-top:3.0pt; 
+                   margin-right:0pt; 
+                   margin-bottom:3.0pt; 
+                   margin-left:0pt; 
+                   font-size:9.0pt; 
+                   font-family:Arial; 
+                   font-weight:bold;  }
+LI.kadov-p-CInlinetabletext { 
+                             font-size:9.0pt; 
+                             font-family:Arial; 
+                             font-weight:bold;  }
+p.InlineListItemBulleted { 
+                          margin-top:6.0pt; 
+                          margin-right:0pt; 
+                          margin-bottom:.0001pt; 
+                          margin-left:85.7pt; 
+                          text-indent:-18.0pt; 
+                          font-size:10.0pt; 
+                          font-family:Nokia Sans;  }
+LI.kadov-p-CInlineListItemBulleted { 
+                                    text-indent:-18.0pt; 
+                                    font-size:10.0pt; 
+                                    font-family:Nokia Sans;  }
+SPAN.Emphasize { 
+                font-style:normal; 
+                color:windowtext; 
+                font-family:Nokia Sans Italic;  }

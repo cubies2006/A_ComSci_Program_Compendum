@@ -1,0 +1,24 @@
+.cdd0_main_menu {
+	BACKGROUND-COLOR: #000000; BORDER-BOTTOM: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; COLOR: #cccccc; FONT-FAMILY: arial,helvetica; FONT-SIZE: 12px; FONT-WEIGHT: bolder; PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px; TEXT-ALIGN: center
+}
+.cdd0_main_items {
+	BACKGROUND-COLOR: #800019; BORDER-BOTTOM: #909090 1px solid; BORDER-LEFT: #909090 1px solid; BORDER-RIGHT: #909090 1px solid; BORDER-TOP: #909090 1px solid; CURSOR: hand; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 1px; PADDING-TOP: 1px
+}
+.cdd0_main_items_rollover {
+	BACKGROUND-COLOR: #606060; BORDER-BOTTOM: #909090 1px solid; BORDER-LEFT: #909090 1px solid; BORDER-RIGHT: #909090 1px solid; BORDER-TOP: #909090 1px solid; CURSOR: hand; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 1px; PADDING-TOP: 1px
+}
+.cdd0_sub_menu {
+	BACKGROUND-COLOR: #bed2bf; BORDER-BOTTOM: #666666 1px solid; BORDER-LEFT: #666666 1px solid; BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; COLOR: #333333; CURSOR: hand; FONT-FAMILY: arial,helvetica; FONT-SIZE: 10px; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; PADDING-TOP: 1px; TEXT-ALIGN: left
+}
+.cdd0_sub_items {
+	BORDER-BOTTOM: #bed2bf 1px solid; BORDER-LEFT: #bed2bf 1px solid; BORDER-RIGHT: #bed2bf 1px solid; BORDER-TOP: #bed2bf 1px solid; CURSOR: hand; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 1px; PADDING-TOP: 1px
+}
+.cdd0_sub_items_rollover {
+	BACKGROUND-COLOR: #800019; BORDER-BOTTOM: #aaaaaa 1px solid; BORDER-LEFT: #aaaaaa 1px solid; BORDER-RIGHT: #aaaaaa 1px solid; BORDER-TOP: #aaaaaa 1px solid; COLOR: #cccccc; CURSOR: hand; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 1px; PADDING-TOP: 1px; TEXT-DECORATION: underline
+}
+.cdd0_dividers_vertical {
+	
+}
+.cdd0_dividers_horizontal {
+	BACKGROUND-COLOR: #999999
+}

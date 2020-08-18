@@ -1,0 +1,1200 @@
+
+
+
+
+// name - name of the cookie
+// value - value of the cookie
+// [expires] - expiration date of the cookie (defaults to end of current session)
+// [path] - path for which the cookie is valid (defaults to path of calling document)
+// [domain] - domain for which the cookie is valid (defaults to domain of calling document)
+// [secure] - Boolean value indicating if the cookie transmission requires a secure transmission
+// * an argument defaults when it is assigned null as a placeholder
+// * a null placeholder is not required for trailing omitted arguments
+function setIFILMCookie(name, value, expires, path, domain, secure) {
+	if (setIFILMCookie.arguments.length<2) { 
+		alert("bad cookie");
+		return;
+	}
+  var curCookie = name + "=" + escape(value) +
+      ((expires) ? "; expires=" + expires.toGMTString() : "") +
+      ((path) ? "; path=" + path : "") +
+      ((domain) ? "; domain=" + domain : "") +
+      ((secure) ? "; secure" : "");
+  document.cookie = curCookie;
+}
+
+// name - name of the cookie
+// value - value of the cookie
+// [expires] - expiration date of the cookie (defaults to end of current session)
+// [path] - path for which the cookie is valid (defaults to path of calling document)
+// [domain] - domain for which the cookie is valid (defaults to domain of calling document)
+// [secure] - Boolean value indicating if the cookie transmission requires a secure transmission
+// * an argument defaults when it is assigned null as a placeholder
+// * a null placeholder is not required for trailing omitted arguments
+function setIFILMCookieNoEscape(name, value, expires, path, domain, secure) {
+	if (setIFILMCookieNoEscape.arguments.length<2) { 
+		alert("bad cookie");
+		return;
+	}
+    var curCookie = name + "=" + value +
+      ((expires) ? "; expires=" + expires.toGMTString() : "") +
+      ((path) ? "; path=" + path : "") +
+      ((domain) ? "; domain=" + domain : "") +
+      ((secure) ? "; secure" : "");
+  document.cookie = curCookie;
+}
+
+// name - name of the desired cookie
+// * return string containing value of specified cookie or null if cookie does not exist
+function getIFILMCookie(name) {
+  var dc = document.cookie;
+  var prefix = name + "=";
+  var begin = dc.indexOf("; " + prefix);
+  if (begin == -1) {
+    begin = dc.indexOf(prefix);
+    if (begin != 0) return null;
+  } else
+    begin += 2;
+  var end = document.cookie.indexOf(";", begin);
+  if (end == -1)
+    end = dc.length;
+  return unescape(dc.substring(begin + prefix.length, end));
+}
+
+// name - name of the cookie
+// [path] - path of the cookie (must be same as path used to create cookie)
+// [domain] - domain of the cookie (must be same as domain used to create cookie)
+// * path and domain default if assigned null or omitted if no explicit argument proceeds
+function deleteIFILMCookie(name, path, domain) {
+	if (deleteIFILMCookie.arguments.length<1) { 
+		alert("bad cookie delete");
+		return;
+	}
+  if (getIFILMCookie(name)) {
+    document.cookie = name + "=" + 
+    ((path) ? "; path=" + path : "") +
+    ((domain) ? "; domain=" + domain : "") +
+    "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+  }
+}
+
+function setIFILMChip(cookieName, chipName, chipValue, expires, path, domain, secure) {
+	var strNotSoYummyCookie = "";
+	var strYummyCookie = "";
+	strNotSoYummyCookie = getIFILMCookie(cookieName);
+	if (strNotSoYummyCookie == null) {	
+		strYummyCookie = chipName + "_CP_" + chipValue;
+	} else {		
+		var chips = strNotSoYummyCookie.split("_DH_");
+		var existingChip;
+		var existingChipName;
+		var existingChipValue;	
+		var bChipFound = false;		
+		for (i = 0; i < chips.length; ++i) {
+			existingChip = "";
+			existingChipName = "";
+			existingChipValue = "";
+			existingChip = chips[i].split("_CP_");
+			existingChipName = existingChip[0];
+			if (existingChip.length > 1) {
+				existingChipValue = existingChip[1];
+			} else {
+				existingChipValue = "";
+			}
+			if (strYummyCookie != "") {
+				strYummyCookie += "_DH_";
+			}	
+			if (existingChipName == chipName) {
+				strYummyCookie += chipName + "_CP_" + escape(chipValue);
+				bChipFound = true;		
+			} else {
+				strYummyCookie += existingChipName + "_CP_" + existingChipValue;
+			}	
+		}
+		if (!bChipFound) {
+			if (strYummyCookie != "") {
+				strYummyCookie += "_DH_";
+			}		
+			strYummyCookie += chipName + "_CP_" + escape(chipValue);
+		}
+	}	
+	setIFILMCookie(cookieName, strYummyCookie, expires, path, domain, secure);	
+}
+
+function setIFILMChipNoEscape(cookieName, chipName, chipValue, expires, path, domain, secure) {
+	var strNotSoYummyCookie = "";
+	var strYummyCookie = "";
+	strNotSoYummyCookie = getIFILMCookie(cookieName);
+	if (strNotSoYummyCookie == null) {	
+		strYummyCookie = chipName + "_CP_" + chipValue;
+	} else {		
+		var chips = strNotSoYummyCookie.split("_DH_");
+		var existingChip;
+		var existingChipName;
+		var existingChipValue;	
+		var bChipFound = false;		
+		for (i = 0; i < chips.length; ++i) {
+			existingChip = "";
+			existingChipName = "";
+			existingChipValue = "";
+			
+			existingChip = chips[i].split("_CP_");
+			existingChipName = existingChip[0];
+			if (existingChip.length > 1) {
+				existingChipValue = existingChip[1];
+			} else {
+				existingChipValue = "";
+			}
+			if (strYummyCookie != "") {
+				strYummyCookie += "_DH_";
+			}	
+			if (existingChipName == chipName) {
+				strYummyCookie += chipName + "_CP_" + chipValue;
+				bChipFound = true;		
+			} else {
+				strYummyCookie += existingChipName + "_CP_" + existingChipValue;
+			}	
+		}
+		if (!bChipFound) {
+			if (strYummyCookie != "") {
+				strYummyCookie += "_DH_";
+			}		
+			strYummyCookie += chipName + "_CP_" + chipValue;
+		}
+	}	
+	setIFILMCookieNoEscape(cookieName, strYummyCookie, expires, path, domain, secure);		
+}
+
+function getIFILMChip(cookieName, chipName) {
+	var strNotSoYummyCookie = "";
+	var strYummyCookie = "";
+	strNotSoYummyCookie = getIFILMCookie(cookieName);
+	if (strNotSoYummyCookie == null) {	
+		return null;
+	} else {		
+		var chips = strNotSoYummyCookie.split("_DH_");
+		var existingChip;
+		var existingChipName;
+		var existingChipValue;	
+		var bChipFound = false;		
+		for (i = 0; i < chips.length; ++i) {
+			existingChip = "";
+			existingChipName = "";
+			existingChipValue = "";
+			
+			existingChip = chips[i].split("_CP_");
+			existingChipName = existingChip[0];
+			if (existingChip.length > 1) {
+				existingChipValue = existingChip[1];
+			} else {
+				existingChipValue = "";
+			}
+			if (strYummyCookie != "") {
+				strYummyCookie += "_DH_";
+			}	
+			if (existingChipName == chipName) {
+				return unescape(existingChipValue);
+				bChipFound = true;
+			}	
+		}
+		if (!bChipFound) {
+			return null;
+		}
+	}	
+}
+
+// date - any instance of the Date object
+// * hand all instances of the Date object to this function for "repairs"
+function fixIFILMDate(date) {
+  var base = new Date(0);
+  var skew = base.getTime();
+  if (skew > 0)
+    date.setTime(date.getTime() - skew);
+}
+
+var featureBits = "";
+
+function setFeatureValue(bit, aValue) {
+	var newFeatures = "";
+	for (var i = 0; i < featureBits.length || i <= bit; i++) {
+		if (i == bit) {
+			if (aValue) {
+				newFeatures += "1";
+			} else {
+				newFeatures += "0";
+			}
+		} else {
+			if (featureBits.charAt(i) != "") {
+				newFeatures += featureBits.charAt(i);
+			} else {
+				newFeatures += "n";
+			}
+		}
+	}
+	featureBits = newFeatures;
+	setIFILMChip("ifilm_pers","ft",featureBits);
+}	
+	
+function getFeatureValue(bit) {
+	featureBits = getIFILMChip("ifilm_pers","ft");
+	if (featureBits != null) {
+		if (bit > featureBits.length) {
+			return null;
+		} else {
+			if (featureBits.charAt(bit) == "n") {
+				return null;
+			} else {
+				if (featureBits.charAt(bit) == "1") {
+					return true;
+				} else {
+					return false;
+				}
+			}				
+		}
+	} else {
+		return null;
+	}		
+}	
+
+function getFeature() {
+	return featureBits;
+}
+// convert all characters to lowercase to simplify testing
+var agt=navigator.userAgent.toLowerCase();
+var appVer = navigator.appVersion.toLowerCase();
+
+// *** BROWSER VERSION ****
+
+var is_minor = parseFloat(appVer);
+var is_major = parseInt(is_minor);
+
+// Note: On IE, start of appVersion return 3 or 4
+// which supposedly is the version of Netscape it is compatible with.
+// So we look for the real version further on in the string
+var iePos  = agt.indexOf('msie');
+if (iePos !=-1) {
+   is_minor = agt.substring(iePos+5,agt.indexOf(';',iePos));
+   //is_minor = parseFloat(appVer.substring(iePos+5,appVer.indexOf(';',iePos)))
+   is_major = parseInt(is_minor);
+}
+
+// Netscape6 is mozilla/5 + Netscape6/6.0!!!
+// Mozilla/5.0 (Windows; U; Win98; en-US; m18) Gecko/20001108 Netscape6/6.0
+var nav6Pos = agt.indexOf('netscape6');
+if (nav6Pos !=-1) {
+   is_minor = parseFloat(agt.substring(nav6Pos+10))
+   is_major = parseInt(is_minor)
+}
+
+var is_getElementById   = (document.getElementById) ? "true" : "false"; // 001121-abk
+var is_getElementsByTagName = (document.getElementsByTagName) ? "true" : "false"; // 001127-abk
+var is_documentElement = (document.documentElement) ? "true" : "false"; // 001121-abk
+
+var is_opera = (agt.indexOf("opera") != -1);
+var is_opera2 = (agt.indexOf("opera 2") != -1 || agt.indexOf("opera/2") != -1);
+var is_opera3 = (agt.indexOf("opera 3") != -1 || agt.indexOf("opera/3") != -1);
+var is_opera4 = (agt.indexOf("opera 4") != -1 || agt.indexOf("opera/4") != -1);
+var is_opera5 = (agt.indexOf("opera 5") != -1 || agt.indexOf("opera/5") != -1);
+var is_opera6 = (agt.indexOf("opera 6") != -1 || agt.indexOf("opera/6") != -1); // new 020128- abk
+var is_opera7 = (agt.indexOf("opera 7") != -1 || agt.indexOf("opera/7") != -1); // new 021205- dmr
+var is_opera5up = (is_opera && !is_opera2 && !is_opera3 && !is_opera4);
+var is_opera6up = (is_opera && !is_opera2 && !is_opera3 && !is_opera4 && !is_opera5); // new020128
+var is_opera7up = (is_opera && !is_opera2 && !is_opera3 && !is_opera4 && !is_opera5 && !is_opera6); // new021205 -- dmr	
+
+var is_safari = ((agt.indexOf('safari')!=-1)&&(agt.indexOf('mac')!=-1))?true:false;
+
+var is_gecko = ((!is_safari)&&(navigator.product)&&(navigator.product.toLowerCase()=="gecko"))?true:false;
+var is_gver  = 0;
+if (is_gecko) is_gver=navigator.productSub;
+
+var is_moz   = ((agt.indexOf('mozilla/5')!=-1) && (agt.indexOf('spoofer')==-1) &&
+                (agt.indexOf('compatible')==-1) && (agt.indexOf('opera')==-1)  &&
+                (agt.indexOf('webtv')==-1) && (agt.indexOf('hotjava')==-1)     &&
+                (is_gecko) && 
+                ((navigator.vendor=="")||(navigator.vendor=="Mozilla")));
+if (is_moz) {
+   var is_moz_ver = (navigator.vendorSub)?navigator.vendorSub:0;
+   if(!(is_moz_ver)) {
+       is_moz_ver = agt.indexOf('rv:');
+       is_moz_ver = agt.substring(is_moz_ver+3);
+       is_paren   = is_moz_ver.indexOf(')');
+       is_moz_ver = is_moz_ver.substring(0,is_paren);
+   }
+   is_minor = is_moz_ver;
+   is_major = parseInt(is_moz_ver);
+}
+
+if (is_safari) {
+   safariPos = agt.indexOf('safari/');
+   is_safari_ver = agt.substring(safariPos + 7);
+   is_minor = is_safari_ver;
+   is_major = parseInt(is_safari_ver);
+}
+
+// Does not include Mozilla in is_nav
+//var is_nav  = ((agt.indexOf('mozilla')!=-1) && (agt.indexOf('spoofer')==-1)
+//            && (agt.indexOf('compatible') == -1) && (agt.indexOf('opera')==-1)
+//            && (agt.indexOf('webtv')==-1) && (agt.indexOf('hotjava')==-1)
+//            && (!is_safari) && (!(is_moz)));
+
+var is_nav  = ((agt.indexOf('mozilla')!=-1) && (agt.indexOf('spoofer')==-1)
+            && (agt.indexOf('compatible') == -1) && (agt.indexOf('opera')==-1)
+            && (agt.indexOf('webtv')==-1) && (agt.indexOf('hotjava')==-1)
+            && (!is_safari));
+var is_nav2 = (is_nav && (is_major == 2));
+var is_nav3 = (is_nav && (is_major == 3));
+var is_nav4 = (is_nav && (is_major == 4));
+var is_nav4up = (is_nav && is_minor >= 4);  // changed to is_minor for
+                                            // consistency - dmr, 011001
+var is_nav4_5up = (is_nav && is_minor >= 4.5); 												
+var is_navonly      = (is_nav && ((agt.indexOf(";nav") != -1) ||
+                      (agt.indexOf("; nav") != -1)) );
+
+var is_nav7   = (is_nav && is_major == 7);
+var is_nav7up = (is_nav && is_minor >= 7);					  
+					  
+/*	var is_nav6 = (is_nav && (agt.indexOf('netscape6') != -1)); // new 001120 - abk
+	var is_nav6up = (is_nav && is_getElementById);              // new 001121 - abk
+*/
+var is_nav6   = (is_nav && is_major==6);    // new 010118 mhp
+var is_nav6up = (is_nav && is_minor >= 6) // new 010118 mhp
+var is_nav6_2up = (is_nav && is_minor >= 6.2) // new 010118 mhp
+
+var is_nav5   = (is_nav && is_major == 5 && !is_nav6); // checked for ns6
+var is_nav5up = (is_nav && is_minor >= 5);
+
+var is_ie   = (iePos!=-1);
+var is_ie3  = (is_ie && (is_major < 4));
+
+var is_ie4   = (is_ie && is_major == 4);
+var is_ie4up = (is_ie && is_minor >= 4);
+var is_ie4_5 = (is_ie && is_minor == 4.5);
+var is_ie4_5up = (is_ie && is_minor >= 4.5);
+var is_ie5   = (is_ie && is_major == 5);
+var is_ie5up = (is_ie && is_minor >= 5);
+
+var is_ie6   = (is_ie && is_major == 6);
+var is_ie6up = (is_ie && is_minor >= 6);
+
+// KNOWN BUG: On AOL4, returns false if IE3 is embedded browser
+// or if this is the first browser window opened.  Thus the
+// variables is_aol, is_aol3, and is_aol4 aren't 100% reliable.
+
+var is_aol   = (agt.indexOf("aol") != -1);
+var is_aol3  = (is_aol && is_ie3);
+var is_aol4  = (is_aol && is_ie4);
+var is_aol5  = (agt.indexOf("aol 5") != -1);
+var is_aol6  = (agt.indexOf("aol 6") != -1);
+var is_aol7  = ((agt.indexOf("aol 7")!=-1) || (agt.indexOf("aol7")!=-1));
+var is_aol8  = ((agt.indexOf("aol 8")!=-1) || (agt.indexOf("aol8")!=-1));
+	
+var is_webtv = (agt.indexOf("webtv") != -1);
+
+var is_r1 	= (agt.indexOf("(r1 ") != -1);
+
+// *** JAVASCRIPT VERSION CHECK ***
+// Useful to workaround Nav3 bug in which Nav3
+// loads <SCRIPT LANGUAGE="JavaScript1.2">.
+var is_js;
+if (is_nav2 || is_ie3) is_js = 1.0
+else if (is_nav3 || is_opera) is_js = 1.1
+else if ((is_nav4 && (is_minor <= 4.05)) || is_ie4) is_js = 1.2
+else if ((is_nav4 && (is_minor > 4.05)) || is_ie5) is_js = 1.3
+else if (is_nav5 && !(is_nav6)) is_js = 1.4
+else if (is_nav6) is_js = 1.5
+
+// NOTE: In the future, update this code when newer versions of JS
+// are released. For now, we try to provide some upward compatibility
+// so that future versions of Nav and IE will show they are at
+// *least* JS 1.x capable. Always check for JS version compatibility
+// with > or >=.
+
+else if (is_nav && (is_major > 5)) is_js = 1.4
+else if (is_ie && (is_major > 5)) is_js = 1.3
+// HACK: no idea for other browsers; always check for JS version with > or >=
+else is_js = 0.0;
+
+// *** PLATFORM ***
+var is_win   = ( (agt.indexOf("win")!=-1) || (agt.indexOf("16bit")!=-1) );
+// NOTE: On Opera 3.0, the userAgent string includes "Windows 95/NT4" on all
+//        Win32, so you can't distinguish between Win95 and WinNT.
+var is_win95 = ((agt.indexOf("win95")!=-1) || (agt.indexOf("windows 95")!=-1));
+
+// is this a 16 bit compiled version?
+var is_win16 = ((agt.indexOf("win16")!=-1) ||
+           (agt.indexOf("16bit")!=-1) || (agt.indexOf("windows 3.1")!=-1) ||
+           (agt.indexOf("windows 16-bit")!=-1) );
+
+var is_win31 = ((agt.indexOf("windows 3.1")!=-1) || (agt.indexOf("win16")!=-1) ||
+                (agt.indexOf("windows 16-bit")!=-1));
+
+// NOTE: Reliable detection of Win98 may not be possible. It appears that:
+//       - On Nav 4.x and before you'll get plain "Windows" in userAgent.
+//       - On Mercury client, the 32-bit version will return "Win98", but
+//         the 16-bit version running on Win98 will still return "Win95".
+var is_win98 = ((agt.indexOf("win98")!=-1) || (agt.indexOf("windows 98")!=-1));
+var is_winnt = ((agt.indexOf("winnt")!=-1) || (agt.indexOf("windows nt")!=-1));
+var is_win32 = (is_win95 || is_winnt || is_win98 ||
+                ((is_major >= 4) && (navigator.platform == "Win32")) ||
+                (agt.indexOf("win32")!=-1) || (agt.indexOf("32bit")!=-1));
+
+var is_os2   = ((agt.indexOf("os/2")!=-1) ||
+                (navigator.appVersion.indexOf("OS/2")!=-1) ||
+                (agt.indexOf("ibm-webexplorer")!=-1));
+
+var is_mac    = (agt.indexOf("mac")!=-1);
+var is_mac68k = (is_mac && ((agt.indexOf("68k")!=-1) ||
+                           (agt.indexOf("68000")!=-1)));
+var is_macppc = (is_mac && ((agt.indexOf("ppc")!=-1) ||
+                            (agt.indexOf("powerpc")!=-1)));
+
+var is_sun   = (agt.indexOf("sunos")!=-1);
+var is_sun4  = (agt.indexOf("sunos 4")!=-1);
+var is_sun5  = (agt.indexOf("sunos 5")!=-1);
+var is_suni86= (is_sun && (agt.indexOf("i86")!=-1));
+var is_irix  = (agt.indexOf("irix") !=-1);    // SGI
+var is_irix5 = (agt.indexOf("irix 5") !=-1);
+var is_irix6 = ((agt.indexOf("irix 6") !=-1) || (agt.indexOf("irix6") !=-1));
+var is_hpux  = (agt.indexOf("hp-ux")!=-1);
+var is_hpux9 = (is_hpux && (agt.indexOf("09.")!=-1));
+var is_hpux10= (is_hpux && (agt.indexOf("10.")!=-1));
+var is_aix   = (agt.indexOf("aix") !=-1);      // IBM
+var is_aix1  = (agt.indexOf("aix 1") !=-1);
+var is_aix2  = (agt.indexOf("aix 2") !=-1);
+var is_aix3  = (agt.indexOf("aix 3") !=-1);
+var is_aix4  = (agt.indexOf("aix 4") !=-1);
+var is_linux = (agt.indexOf("inux")!=-1);
+var is_sco   = (agt.indexOf("sco")!=-1) || (agt.indexOf("unix_sv")!=-1);
+var is_unixware = (agt.indexOf("unix_system_v")!=-1);
+var is_mpras    = (agt.indexOf("ncr")!=-1);
+var is_reliant  = (agt.indexOf("reliantunix")!=-1);
+var is_dec   = ((agt.indexOf("dec")!=-1) || (agt.indexOf("osf1")!=-1) ||
+       (agt.indexOf("dec_alpha")!=-1) || (agt.indexOf("alphaserver")!=-1) ||
+       (agt.indexOf("ultrix")!=-1) || (agt.indexOf("alphastation")!=-1));
+var is_sinix = (agt.indexOf("sinix")!=-1);
+var is_freebsd = (agt.indexOf("freebsd")!=-1);
+var is_bsd = (agt.indexOf("bsd")!=-1);
+var is_unix  = ((agt.indexOf("x11")!=-1) || is_sun || is_irix || is_hpux ||
+             is_sco ||is_unixware || is_mpras || is_reliant ||
+             is_dec || is_sinix || is_aix || is_linux || is_bsd || is_freebsd);
+
+var is_vms   = ((agt.indexOf("vax")!=-1) || (agt.indexOf("openvms")!=-1));
+// additional checks, abk
+var is_anchors = (document.anchors) ? "true":"false";
+var is_regexp = (window.RegExp) ? "true":"false";
+var is_option = (window.Option) ? "true":"false";
+var is_all = (document.all) ? "true":"false";
+// cookies - 990624 - abk
+//document.cookie = "cookies=true";
+//var is_cookie = (document.cookie) ? "true" : "false";
+setIFILMChip("ifilm_session","cookiesEnabled","true","","/");
+var is_cookie = getIFILMChip("ifilm_session","cookiesEnabled") ? "true" : "false";
+var is_images = (document.images) ? "true":"false";
+var is_layers = (document.layers) ? "true":"false"; // gecko m7 bug?
+// new doc obj tests 990624-abk
+var is_forms = (document.forms) ? "true" : "false";
+var is_links = (document.links) ? "true" : "false";
+var is_frames = (window.frames) ? "true" : "false";
+var is_screen = (window.screen) ? "true" : "false";
+
+// java
+var is_java = (navigator.javaEnabled());
+
+var browser = null;
+if (is_r1) {
+	browser = "r1";
+} else if (is_ie) {
+	browser = "ie";
+} else if (is_moz) {
+	browser = "moz";		
+} else if (is_nav) {
+	browser = "nav";
+} else if (is_safari) {
+	browser = "safari";					
+} else if (is_opera) {
+	browser = "opera";						
+} else {
+	browser = "other";
+}
+
+
+// Following media capabilities sniffing added Sep. 11, 2003 (J. Hung)
+
+// flash checking code adapted from Doc JavaScript information; 
+// see http://webref.com/js/column84/2.html
+
+   var is_Flash        = false;
+   var is_FlashVersion = 0;
+
+   if ((is_nav||is_opera||is_moz)||(is_mac&&is_ie5up)) {  //030617 - bdn - put on one line
+	                                                        //IMHO it makes it easier to follow flow
+      var plugin = (navigator.mimeTypes && 
+                    navigator.mimeTypes["application/x-shockwave-flash"] &&
+                    navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin) ?
+                    navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin : 0;
+      if (plugin) {
+         is_Flash = true;
+         is_FlashVersion = parseInt(plugin.description.substring(plugin.description.indexOf(".")-1));
+      }
+   }
+
+   if (is_win&&is_ie4up)
+   {
+      document.write(
+         '<scr' + 'ipt language=VBScript>' + '\n' +
+         'Dim hasPlayer, playerversion' + '\n' +
+         'hasPlayer = false' + '\n' +
+         'playerversion = 10' + '\n' +
+         'Do While playerversion > 0' + '\n' +
+            'On Error Resume Next' + '\n' +
+            'hasPlayer = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash." & playerversion)))' + '\n' +
+            'If hasPlayer = true Then Exit Do' + '\n' +
+            'playerversion = playerversion - 1' + '\n' +
+         'Loop' + '\n' +
+         'is_FlashVersion = playerversion' + '\n' +
+         'is_Flash = hasPlayer' + '\n' +
+         '<\/sc' + 'ript>'
+      );
+   }
+
+// Windows Media Player checking code adapted from
+// eMedia Communications Strategies information and Microsoft documentation 
+// see http://www.emediacommunications.biz/sm5/articlesm5.html
+// and http://support.microsoft.com/default.aspx?scid=kb;en-us;279022
+//
+//Note: Windows Media Player version 7+ ships with the old 6.4
+//      control as well as the newest version.  For this reason,
+//      is_WMP64 will remain true even if is_WMP7up
+//      is set to true.
+
+   var is_WMP = false;
+   var is_WMP64 = false;
+   var is_WMP7up = false;
+
+   if (is_win&&is_ie4up)  //use ActiveX test
+   {
+      var objMediaPlayer;
+
+      try {
+        objMediaPlayer = new ActiveXObject("MediaPlayer.MediaPlayer.1");
+        is_WMP = true;
+        is_WMP64 = true;
+      }
+      catch(objError) {
+        is_WMP = false;
+        is_WMP64 = false;
+      }
+
+      if (is_WMP) {
+        try {
+          objMediaPlayer = new ActiveXObject("WMPlayer.OCX");
+          is_WMP7up = true;
+        }
+        catch(objError) {
+          is_WMP7up = false;
+        }
+      }
+   }
+   else {  //use plugin test (this not tested yet)
+     var numPlugins = navigator.plugins.length;
+
+     for (var i = 0; i < numPlugins; i++) {
+       if (navigator.plugins[i].name.substring(0,20)=="Windows Media Player") {
+         is_WMP = true;
+         is_WMP64 = true;
+       }
+     }
+   }
+
+   var WMPVer;
+
+   if (is_WMP7up)
+   {
+      WMPVer = objMediaPlayer.versionInfo;
+      objMediaPlayer = null;
+   }
+   else WMPVer = "6.4";
+
+   var is_WMPMinor = parseFloat(WMPVer);
+   var is_WMPMajor = parseInt(is_WMPMinor);
+
+   var is_WMP7 = (is_WMPMinor == 7.0);
+   var is_WMP71 = (is_WMPMinor == 7.1);
+   var is_WMP8 = (is_WMPMajor == 8);
+   var is_WMP9 = (is_WMPMajor == 9);
+   var is_WMP71up = (is_WMPMinor >= 7.1);
+   var is_WMP8up = (is_WMPMinor >= 8);
+   var is_WMP9up = (is_WMPMinor >= 9);
+
+
+function lib_bwcheck(){ //Browsercheck (needed)
+	this.ver=navigator.appVersion
+	this.agent=navigator.userAgent
+	this.dom=document.getElementById?1:0
+	this.opera5=this.agent.indexOf("Opera 5")>-1
+	this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom && !this.opera5)?1:0; 
+	this.ie6=(this.ver.indexOf("MSIE 6")>-1 && this.dom && !this.opera5)?1:0;
+	this.ie4=(document.all && !this.dom && !this.opera5)?1:0;
+	this.ie=this.ie4||this.ie5||this.ie6
+	this.mac=this.agent.indexOf("Mac")>-1
+	this.ns6=(this.dom && parseInt(this.ver) >= 5) ?1:0; 
+	this.ns4=(document.layers && !this.dom)?1:0;
+	this.bw=(this.ie6 || this.ie5 || this.ie4 || this.ns4 || this.ns6 || this.opera5)
+	return this
+}
+var bw=new lib_bwcheck()
+
+
+
+/***************************************************************************************
+Variables to set:
+***************************************************************************************/
+messages=new Array()
+//Write your descriptions in here.
+messages[0] = "<table width='100%' border='0' cellpadding='2' cellspacing='0'><tr><td class='ifilm bdr2topleftbottom' colspan='2' align='center' valign='middle'><div class='clTitle1'>Free</div></td><td  class='ifilm bdr2full' align='center' valign='middle'><div class='clTitle2'>Subscription</div></td></tr><tr><td class='shade3 bdr2left' align='center' valign='top'><a class='hdrtext'>56K</a></td><td class='shade3' align='center' valign='top'><a class='hdrtext'>200K</a><br></td><td class='shadeplus bdr2sides' align='center' valign='middle'><a class='plus'>500K</a></td></tr><tr><td class='shade3 bdr2leftbottom' colspan='2' align='center' valign='middle' nowrap><div class='clCaptionsm'>(No Subscription <br>Required)</div></td><td class='shadeplus bdr2' align='center' valign='middle' nowrap><div class='clCaptionsm'>(IFILM Plus or <br>RealOne SuperPass <br>subscription required)</div></td></tr></table>";
+messages[1] = "<table width='100%' border='0' cellpadding='2' cellspacing='0'><tr><td class='ifilm bdr2full' colspan='3' align='center' valign='middle'><div class='clTitle2'>Subscription Exclusive</div></td></tr><tr><td class='shadeplus bdr2left' align='center' valign='top'><a class='plus hdrtext'>56K</a></td><td class='shadeplus' align='center' valign='top'><a class='plus hdrtext'>200K</a><br></td><td class='shadeplus bdr2right' align='center' valign='middle'><a class='plus hdrtext'>500K</a></td></tr><tr><td colspan='3' class='shadeplus bdr2' align='center' valign='middle' nowrap><div class='clCaptionsm'>(IFILM Plus or <br>RealOne SuperPass <br>Subscription Required)</div></td></tr></table>";
+
+fromX = 30 //How much from the actual mouse X should the description box appear?
+fromY = -20 //How much from the actual mouse Y should the description box appear?
+
+//To set the font size, font type, border color or remove the border or whatever,
+//change the clDescription class in the stylesheet.
+
+// A unit of measure that will be added when setting the position of a layer.
+var px = bw.ns4||window.opera?"":"px";
+
+function b_writeIt(text){
+	if (bw.ns4){this.wref.write(text);this.wref.close()}
+	else this.wref.innerHTML = text
+}
+
+//Makes crossbrowser object.
+function makeObj(obj){								
+   	this.evnt=bw.dom? document.getElementById(obj):bw.ie4?document.all[obj]:bw.ns4?document.layers[obj]:0;
+	if(!this.evnt) return false
+	this.css=bw.dom||bw.ie4?this.evnt.style:bw.ns4?this.evnt:0;	
+   	this.wref=bw.dom||bw.ie4?this.evnt:bw.ns4?this.css.document:0;		
+	this.writeIt=b_writeIt;
+	this.open=false;																
+	return this;
+}
+
+//Capturing mousemove
+var descx = 0
+var descy = 0
+function popmousemove(e){descx=bw.ns4||bw.ns6?e.pageX:event.x; descy=bw.ns4||bw.ns6?e.pageY:event.y}
+
+var oDesc;
+//Shows the messages
+function tooltipUp(num){
+	if(!(is_mac && is_ie && is_minor==5.0)) {
+	    if(oDesc){
+			oDesc.writeIt('<div class="clDescription">'+messages[num]+'</div>')
+			if(bw.ie5||bw.ie6) descy = descy+document.body.scrollTop
+			oDesc.css.left = (descx+fromX)+px
+			oDesc.css.top = (descy+fromY)+px
+			oDesc.css.visibility = "visible"
+	    }
+	}	    
+}
+//Hides it
+function tooltipOut(){
+	if(oDesc) oDesc.css.visibility = "hidden"
+}
+
+help=new Array()
+//Write your descriptions in here.
+help[0] = "<table border='0' cellpadding='2' cellspacing='0' width='200px'><tr><td class='help bdr2topleftbottom' colspan='2' align='center' valign='middle'><div class='clTitle1'>Help</div></td></tr><tr><td class='bdr2left hdrtext helpshade1' align='center' valign='top'>Q.</td><td  class='bdr2right hdrtext helpshade1' valign='top'>How do I play the video?</td></tr><tr><td class='bdr2leftbottom hdrtext helpshade2' align='center' valign='top'>A.</td><td  class='bdr2rightbottom hdrtext helpshade2' valign='top'>Playing video is pretty simple.  Just click the links labeled 56K, 200K, or 500K.  Then cross your fingers--and if you have the media players, you're good to go.</td></tr></table>";
+help[1] = "<table border='0' cellpadding='2' cellspacing='0'><tr><td class='plus bdr2full' colspan='3' align='center' valign='middle'><div class='clTitle2'>Subscription Exclusive</div></td></tr><tr><td class='plus bdr2left' align='center' valign='top'><a class='hdrtext'>56K</a></td><td class='plus' align='center' valign='top'><a class='hdrtext'>200K</a><br></td><td class='plus bdr2right' align='center' valign='middle'><a class='hdrtext'>500K</a></td></tr><tr><td colspan='3' class='plus bdr2' align='center' valign='middle' nowrap><div class='clCaptionsm'>(IFILM Plus or <br>RealOne SuperPass <br>subscription required)</div></td></tr></table>";
+
+for (var i=0;i<help.length;++i) {
+	eval("var oHelp" + i);
+}
+
+helpFromX = 11; 
+helpFromY = -13;
+
+function showCursorHand(el) { 
+	if(el){
+		el.style.cursor = 'hand';
+	}
+}
+function showCursorDefault(el)	{ 
+	if(el){
+		el.style.cursor = 'default';
+	}
+}
+
+//Shows the help
+function toggleHelp(num){
+	if(!(is_mac && is_ie && is_minor==5.0)) {
+		var el = eval("oHelp" + num);
+	    if(el){
+	    	if (!el.open) {
+		    	el.open = true;
+				el.writeIt('<div class="helpbg">'+help[num]+'</div>');
+				if(bw.ie5||bw.ie6) descy = descy+document.body.scrollTop;
+				el.css.left = (descx+helpFromX)+px;
+				el.css.top = (descy+helpFromY)+px;
+				el.css.visibility = "visible";
+		    } else {
+		    	el.open = false;	    
+				el.css.visibility = "hidden";	    	
+			}	
+	    }
+	}	    
+}
+//Hides it
+function closeHelp(){
+	if(oDesc) oDesc.css.visibility = "hidden";
+}
+
+function setPopup(){
+   	if(bw.ns4)document.captureEvents(Event.MOUSEMOVE)
+    document.onmousemove = popmousemove;
+	oDesc = new makeObj('divDescription');
+	for (var i=0;i<help.length;++i) {
+		eval("oHelp" + i + "= new makeObj('divHelp');");
+	}
+}
+// path - url to click to - used for list boxes
+function gotoUrl(path) {            
+        if (path != "") {                    
+                self.location=path; 
+        }
+}
+
+// call this function to spawn a pop up window
+function popwin(theURL,winName,features) {
+	window.open(theURL,winName,features);
+}
+function setHelper1Loc(loc) {
+	window.helper1.location.href = loc;
+}
+
+function setHelper2Loc(loc) {
+	window.helper2.location.href = loc;
+}
+
+function setHelper3Loc(loc) {
+	window.helper3.location.href = loc;
+}
+
+
+
+
+// convert all characters to lowercase to simplify testing
+var agt=navigator.userAgent.toLowerCase();
+var appVer = navigator.appVersion.toLowerCase();
+
+// *** BROWSER VERSION ****
+
+var is_minor = parseFloat(appVer);
+var is_major = parseInt(is_minor);
+
+// Note: On IE, start of appVersion return 3 or 4
+// which supposedly is the version of Netscape it is compatible with.
+// So we look for the real version further on in the string
+var iePos  = agt.indexOf('msie');
+if (iePos !=-1) {
+   is_minor = agt.substring(iePos+5,agt.indexOf(';',iePos));
+   //is_minor = parseFloat(appVer.substring(iePos+5,appVer.indexOf(';',iePos)))
+   is_major = parseInt(is_minor);
+}
+
+// Netscape6 is mozilla/5 + Netscape6/6.0!!!
+// Mozilla/5.0 (Windows; U; Win98; en-US; m18) Gecko/20001108 Netscape6/6.0
+var nav6Pos = agt.indexOf('netscape6');
+if (nav6Pos !=-1) {
+   is_minor = parseFloat(agt.substring(nav6Pos+10))
+   is_major = parseInt(is_minor)
+}
+
+var is_getElementById   = (document.getElementById) ? "true" : "false"; // 001121-abk
+var is_getElementsByTagName = (document.getElementsByTagName) ? "true" : "false"; // 001127-abk
+var is_documentElement = (document.documentElement) ? "true" : "false"; // 001121-abk
+
+var is_opera = (agt.indexOf("opera") != -1);
+var is_opera2 = (agt.indexOf("opera 2") != -1 || agt.indexOf("opera/2") != -1);
+var is_opera3 = (agt.indexOf("opera 3") != -1 || agt.indexOf("opera/3") != -1);
+var is_opera4 = (agt.indexOf("opera 4") != -1 || agt.indexOf("opera/4") != -1);
+var is_opera5 = (agt.indexOf("opera 5") != -1 || agt.indexOf("opera/5") != -1);
+var is_opera6 = (agt.indexOf("opera 6") != -1 || agt.indexOf("opera/6") != -1); // new 020128- abk
+var is_opera7 = (agt.indexOf("opera 7") != -1 || agt.indexOf("opera/7") != -1); // new 021205- dmr
+var is_opera5up = (is_opera && !is_opera2 && !is_opera3 && !is_opera4);
+var is_opera6up = (is_opera && !is_opera2 && !is_opera3 && !is_opera4 && !is_opera5); // new020128
+var is_opera7up = (is_opera && !is_opera2 && !is_opera3 && !is_opera4 && !is_opera5 && !is_opera6); // new021205 -- dmr	
+
+var is_safari = ((agt.indexOf('safari')!=-1)&&(agt.indexOf('mac')!=-1))?true:false;
+
+var is_gecko = ((!is_safari)&&(navigator.product)&&(navigator.product.toLowerCase()=="gecko"))?true:false;
+var is_gver  = 0;
+if (is_gecko) is_gver=navigator.productSub;
+
+var is_moz   = ((agt.indexOf('mozilla/5')!=-1) && (agt.indexOf('spoofer')==-1) &&
+                (agt.indexOf('compatible')==-1) && (agt.indexOf('opera')==-1)  &&
+                (agt.indexOf('webtv')==-1) && (agt.indexOf('hotjava')==-1)     &&
+                (is_gecko) && 
+                ((navigator.vendor=="")||(navigator.vendor=="Mozilla")));
+if (is_moz) {
+   var is_moz_ver = (navigator.vendorSub)?navigator.vendorSub:0;
+   if(!(is_moz_ver)) {
+       is_moz_ver = agt.indexOf('rv:');
+       is_moz_ver = agt.substring(is_moz_ver+3);
+       is_paren   = is_moz_ver.indexOf(')');
+       is_moz_ver = is_moz_ver.substring(0,is_paren);
+   }
+   is_minor = is_moz_ver;
+   is_major = parseInt(is_moz_ver);
+}
+
+if (is_safari) {
+   safariPos = agt.indexOf('safari/');
+   is_safari_ver = agt.substring(safariPos + 7);
+   is_minor = is_safari_ver;
+   is_major = parseInt(is_safari_ver);
+}
+
+// Does not include Mozilla in is_nav
+//var is_nav  = ((agt.indexOf('mozilla')!=-1) && (agt.indexOf('spoofer')==-1)
+//            && (agt.indexOf('compatible') == -1) && (agt.indexOf('opera')==-1)
+//            && (agt.indexOf('webtv')==-1) && (agt.indexOf('hotjava')==-1)
+//            && (!is_safari) && (!(is_moz)));
+
+var is_nav  = ((agt.indexOf('mozilla')!=-1) && (agt.indexOf('spoofer')==-1)
+            && (agt.indexOf('compatible') == -1) && (agt.indexOf('opera')==-1)
+            && (agt.indexOf('webtv')==-1) && (agt.indexOf('hotjava')==-1)
+            && (!is_safari));
+var is_nav2 = (is_nav && (is_major == 2));
+var is_nav3 = (is_nav && (is_major == 3));
+var is_nav4 = (is_nav && (is_major == 4));
+var is_nav4up = (is_nav && is_minor >= 4);  // changed to is_minor for
+                                            // consistency - dmr, 011001
+var is_nav4_5up = (is_nav && is_minor >= 4.5); 												
+var is_navonly      = (is_nav && ((agt.indexOf(";nav") != -1) ||
+                      (agt.indexOf("; nav") != -1)) );
+
+var is_nav7   = (is_nav && is_major == 7);
+var is_nav7up = (is_nav && is_minor >= 7);					  
+					  
+/*	var is_nav6 = (is_nav && (agt.indexOf('netscape6') != -1)); // new 001120 - abk
+	var is_nav6up = (is_nav && is_getElementById);              // new 001121 - abk
+*/
+var is_nav6   = (is_nav && is_major==6);    // new 010118 mhp
+var is_nav6up = (is_nav && is_minor >= 6) // new 010118 mhp
+var is_nav6_2up = (is_nav && is_minor >= 6.2) // new 010118 mhp
+
+var is_nav5   = (is_nav && is_major == 5 && !is_nav6); // checked for ns6
+var is_nav5up = (is_nav && is_minor >= 5);
+
+var is_ie   = (iePos!=-1);
+var is_ie3  = (is_ie && (is_major < 4));
+
+var is_ie4   = (is_ie && is_major == 4);
+var is_ie4up = (is_ie && is_minor >= 4);
+var is_ie4_5 = (is_ie && is_minor == 4.5);
+var is_ie4_5up = (is_ie && is_minor >= 4.5);
+var is_ie5   = (is_ie && is_major == 5);
+var is_ie5up = (is_ie && is_minor >= 5);
+
+var is_ie6   = (is_ie && is_major == 6);
+var is_ie6up = (is_ie && is_minor >= 6);
+
+// KNOWN BUG: On AOL4, returns false if IE3 is embedded browser
+// or if this is the first browser window opened.  Thus the
+// variables is_aol, is_aol3, and is_aol4 aren't 100% reliable.
+
+var is_aol   = (agt.indexOf("aol") != -1);
+var is_aol3  = (is_aol && is_ie3);
+var is_aol4  = (is_aol && is_ie4);
+var is_aol5  = (agt.indexOf("aol 5") != -1);
+var is_aol6  = (agt.indexOf("aol 6") != -1);
+var is_aol7  = ((agt.indexOf("aol 7")!=-1) || (agt.indexOf("aol7")!=-1));
+var is_aol8  = ((agt.indexOf("aol 8")!=-1) || (agt.indexOf("aol8")!=-1));
+	
+var is_webtv = (agt.indexOf("webtv") != -1);
+
+var is_r1 	= (agt.indexOf("(r1 ") != -1);
+
+// *** JAVASCRIPT VERSION CHECK ***
+// Useful to workaround Nav3 bug in which Nav3
+// loads <SCRIPT LANGUAGE="JavaScript1.2">.
+var is_js;
+if (is_nav2 || is_ie3) is_js = 1.0
+else if (is_nav3 || is_opera) is_js = 1.1
+else if ((is_nav4 && (is_minor <= 4.05)) || is_ie4) is_js = 1.2
+else if ((is_nav4 && (is_minor > 4.05)) || is_ie5) is_js = 1.3
+else if (is_nav5 && !(is_nav6)) is_js = 1.4
+else if (is_nav6) is_js = 1.5
+
+// NOTE: In the future, update this code when newer versions of JS
+// are released. For now, we try to provide some upward compatibility
+// so that future versions of Nav and IE will show they are at
+// *least* JS 1.x capable. Always check for JS version compatibility
+// with > or >=.
+
+else if (is_nav && (is_major > 5)) is_js = 1.4
+else if (is_ie && (is_major > 5)) is_js = 1.3
+// HACK: no idea for other browsers; always check for JS version with > or >=
+else is_js = 0.0;
+
+// *** PLATFORM ***
+var is_win   = ( (agt.indexOf("win")!=-1) || (agt.indexOf("16bit")!=-1) );
+// NOTE: On Opera 3.0, the userAgent string includes "Windows 95/NT4" on all
+//        Win32, so you can't distinguish between Win95 and WinNT.
+var is_win95 = ((agt.indexOf("win95")!=-1) || (agt.indexOf("windows 95")!=-1));
+
+// is this a 16 bit compiled version?
+var is_win16 = ((agt.indexOf("win16")!=-1) ||
+           (agt.indexOf("16bit")!=-1) || (agt.indexOf("windows 3.1")!=-1) ||
+           (agt.indexOf("windows 16-bit")!=-1) );
+
+var is_win31 = ((agt.indexOf("windows 3.1")!=-1) || (agt.indexOf("win16")!=-1) ||
+                (agt.indexOf("windows 16-bit")!=-1));
+
+// NOTE: Reliable detection of Win98 may not be possible. It appears that:
+//       - On Nav 4.x and before you'll get plain "Windows" in userAgent.
+//       - On Mercury client, the 32-bit version will return "Win98", but
+//         the 16-bit version running on Win98 will still return "Win95".
+var is_win98 = ((agt.indexOf("win98")!=-1) || (agt.indexOf("windows 98")!=-1));
+var is_winnt = ((agt.indexOf("winnt")!=-1) || (agt.indexOf("windows nt")!=-1));
+var is_win32 = (is_win95 || is_winnt || is_win98 ||
+                ((is_major >= 4) && (navigator.platform == "Win32")) ||
+                (agt.indexOf("win32")!=-1) || (agt.indexOf("32bit")!=-1));
+
+var is_os2   = ((agt.indexOf("os/2")!=-1) ||
+                (navigator.appVersion.indexOf("OS/2")!=-1) ||
+                (agt.indexOf("ibm-webexplorer")!=-1));
+
+var is_mac    = (agt.indexOf("mac")!=-1);
+var is_mac68k = (is_mac && ((agt.indexOf("68k")!=-1) ||
+                           (agt.indexOf("68000")!=-1)));
+var is_macppc = (is_mac && ((agt.indexOf("ppc")!=-1) ||
+                            (agt.indexOf("powerpc")!=-1)));
+
+var is_sun   = (agt.indexOf("sunos")!=-1);
+var is_sun4  = (agt.indexOf("sunos 4")!=-1);
+var is_sun5  = (agt.indexOf("sunos 5")!=-1);
+var is_suni86= (is_sun && (agt.indexOf("i86")!=-1));
+var is_irix  = (agt.indexOf("irix") !=-1);    // SGI
+var is_irix5 = (agt.indexOf("irix 5") !=-1);
+var is_irix6 = ((agt.indexOf("irix 6") !=-1) || (agt.indexOf("irix6") !=-1));
+var is_hpux  = (agt.indexOf("hp-ux")!=-1);
+var is_hpux9 = (is_hpux && (agt.indexOf("09.")!=-1));
+var is_hpux10= (is_hpux && (agt.indexOf("10.")!=-1));
+var is_aix   = (agt.indexOf("aix") !=-1);      // IBM
+var is_aix1  = (agt.indexOf("aix 1") !=-1);
+var is_aix2  = (agt.indexOf("aix 2") !=-1);
+var is_aix3  = (agt.indexOf("aix 3") !=-1);
+var is_aix4  = (agt.indexOf("aix 4") !=-1);
+var is_linux = (agt.indexOf("inux")!=-1);
+var is_sco   = (agt.indexOf("sco")!=-1) || (agt.indexOf("unix_sv")!=-1);
+var is_unixware = (agt.indexOf("unix_system_v")!=-1);
+var is_mpras    = (agt.indexOf("ncr")!=-1);
+var is_reliant  = (agt.indexOf("reliantunix")!=-1);
+var is_dec   = ((agt.indexOf("dec")!=-1) || (agt.indexOf("osf1")!=-1) ||
+       (agt.indexOf("dec_alpha")!=-1) || (agt.indexOf("alphaserver")!=-1) ||
+       (agt.indexOf("ultrix")!=-1) || (agt.indexOf("alphastation")!=-1));
+var is_sinix = (agt.indexOf("sinix")!=-1);
+var is_freebsd = (agt.indexOf("freebsd")!=-1);
+var is_bsd = (agt.indexOf("bsd")!=-1);
+var is_unix  = ((agt.indexOf("x11")!=-1) || is_sun || is_irix || is_hpux ||
+             is_sco ||is_unixware || is_mpras || is_reliant ||
+             is_dec || is_sinix || is_aix || is_linux || is_bsd || is_freebsd);
+
+var is_vms   = ((agt.indexOf("vax")!=-1) || (agt.indexOf("openvms")!=-1));
+// additional checks, abk
+var is_anchors = (document.anchors) ? "true":"false";
+var is_regexp = (window.RegExp) ? "true":"false";
+var is_option = (window.Option) ? "true":"false";
+var is_all = (document.all) ? "true":"false";
+// cookies - 990624 - abk
+//document.cookie = "cookies=true";
+//var is_cookie = (document.cookie) ? "true" : "false";
+setIFILMChip("ifilm_session","cookiesEnabled","true","","/");
+var is_cookie = getIFILMChip("ifilm_session","cookiesEnabled") ? "true" : "false";
+var is_images = (document.images) ? "true":"false";
+var is_layers = (document.layers) ? "true":"false"; // gecko m7 bug?
+// new doc obj tests 990624-abk
+var is_forms = (document.forms) ? "true" : "false";
+var is_links = (document.links) ? "true" : "false";
+var is_frames = (window.frames) ? "true" : "false";
+var is_screen = (window.screen) ? "true" : "false";
+
+// java
+var is_java = (navigator.javaEnabled());
+
+var browser = null;
+if (is_r1) {
+	browser = "r1";
+} else if (is_ie) {
+	browser = "ie";
+} else if (is_moz) {
+	browser = "moz";		
+} else if (is_nav) {
+	browser = "nav";
+} else if (is_safari) {
+	browser = "safari";					
+} else if (is_opera) {
+	browser = "opera";						
+} else {
+	browser = "other";
+}
+
+
+// Following media capabilities sniffing added Sep. 11, 2003 (J. Hung)
+
+// flash checking code adapted from Doc JavaScript information; 
+// see http://webref.com/js/column84/2.html
+
+   var is_Flash        = false;
+   var is_FlashVersion = 0;
+
+   if ((is_nav||is_opera||is_moz)||(is_mac&&is_ie5up)) {  //030617 - bdn - put on one line
+	                                                        //IMHO it makes it easier to follow flow
+      var plugin = (navigator.mimeTypes && 
+                    navigator.mimeTypes["application/x-shockwave-flash"] &&
+                    navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin) ?
+                    navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin : 0;
+      if (plugin) {
+         is_Flash = true;
+         is_FlashVersion = parseInt(plugin.description.substring(plugin.description.indexOf(".")-1));
+      }
+   }
+
+   if (is_win&&is_ie4up)
+   {
+      document.write(
+         '<scr' + 'ipt language=VBScript>' + '\n' +
+         'Dim hasPlayer, playerversion' + '\n' +
+         'hasPlayer = false' + '\n' +
+         'playerversion = 10' + '\n' +
+         'Do While playerversion > 0' + '\n' +
+            'On Error Resume Next' + '\n' +
+            'hasPlayer = (IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash." & playerversion)))' + '\n' +
+            'If hasPlayer = true Then Exit Do' + '\n' +
+            'playerversion = playerversion - 1' + '\n' +
+         'Loop' + '\n' +
+         'is_FlashVersion = playerversion' + '\n' +
+         'is_Flash = hasPlayer' + '\n' +
+         '<\/sc' + 'ript>'
+      );
+   }
+
+// Windows Media Player checking code adapted from
+// eMedia Communications Strategies information and Microsoft documentation 
+// see http://www.emediacommunications.biz/sm5/articlesm5.html
+// and http://support.microsoft.com/default.aspx?scid=kb;en-us;279022
+//
+//Note: Windows Media Player version 7+ ships with the old 6.4
+//      control as well as the newest version.  For this reason,
+//      is_WMP64 will remain true even if is_WMP7up
+//      is set to true.
+
+   var is_WMP = false;
+   var is_WMP64 = false;
+   var is_WMP7up = false;
+
+   if (is_win&&is_ie4up)  //use ActiveX test
+   {
+      var objMediaPlayer;
+
+      try {
+        objMediaPlayer = new ActiveXObject("MediaPlayer.MediaPlayer.1");
+        is_WMP = true;
+        is_WMP64 = true;
+      }
+      catch(objError) {
+        is_WMP = false;
+        is_WMP64 = false;
+      }
+
+      if (is_WMP) {
+        try {
+          objMediaPlayer = new ActiveXObject("WMPlayer.OCX");
+          is_WMP7up = true;
+        }
+        catch(objError) {
+          is_WMP7up = false;
+        }
+      }
+   }
+   else {  //use plugin test (this not tested yet)
+     var numPlugins = navigator.plugins.length;
+
+     for (var i = 0; i < numPlugins; i++) {
+       if (navigator.plugins[i].name.substring(0,20)=="Windows Media Player") {
+         is_WMP = true;
+         is_WMP64 = true;
+       }
+     }
+   }
+
+   var WMPVer;
+
+   if (is_WMP7up)
+   {
+      WMPVer = objMediaPlayer.versionInfo;
+      objMediaPlayer = null;
+   }
+   else WMPVer = "6.4";
+
+   var is_WMPMinor = parseFloat(WMPVer);
+   var is_WMPMajor = parseInt(is_WMPMinor);
+
+   var is_WMP7 = (is_WMPMinor == 7.0);
+   var is_WMP71 = (is_WMPMinor == 7.1);
+   var is_WMP8 = (is_WMPMajor == 8);
+   var is_WMP9 = (is_WMPMajor == 9);
+   var is_WMP71up = (is_WMPMinor >= 7.1);
+   var is_WMP8up = (is_WMPMinor >= 8);
+   var is_WMP9up = (is_WMPMinor >= 9);
+
+
+// check for ad vars in the query string and
+// if found return the name value pairs
+
+var ShoshFile = "";
+var mon = "";
+var adVars = "";
+var bust = Math.floor(1000000*Math.random());
+var transID = Math.floor(1000000*Math.random());
+
+function getAdVars() {
+	var adRefVal = '';
+	var strUrl = location.search.substring(1);
+	var posAdvar = strUrl.indexOf("ad_ref=")
+	if (posAdvar != -1) {
+		var startPos = posAdvar + 7;
+		var endPos = strUrl.indexOf("&", startPos)	
+		if (endPos == -1) endPos = strUrl.length;
+		adRefVal = 'ad_ref=' + strUrl.substring(startPos, endPos);
+	} 
+	
+	var posAdvar2 = strUrl.indexOf("cch=")
+	if (posAdvar2 != -1) {
+		var startPos2 = posAdvar2 + 4;
+		var endPos2 = strUrl.indexOf("&", startPos2)	
+		if (endPos2 == -1) endPos2 = strUrl.length;
+		if (adRefVal != '') {
+			adRefVal += '&cch=' + strUrl.substring(startPos2, endPos2);
+		} else {
+			adRefVal += 'cch=' + strUrl.substring(startPos2, endPos2);
+		}	
+	} 
+	return adRefVal
+}
+
+
+function screenSniff() {
+	var monitor = '';
+	if (screen.width >= 1024) {
+		monitor = '&mon=high';	 
+	} else {
+		monitor = '&mon=low';
+	}
+	return monitor
+}
+mon = screenSniff();
+
+
